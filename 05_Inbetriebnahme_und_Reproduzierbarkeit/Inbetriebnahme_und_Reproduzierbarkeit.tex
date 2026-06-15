@@ -1,0 +1,49 @@
+\section{Dokumentation der Entwicklungspipeline}
+\label{sec:ergebnisse}
+
+\subsection{Omniverse-Extension und ROS\,2-Anbindung als Entwicklungsergebnisse}
+
+Im Rahmen dieser Arbeit wurden zwei funktionsfähige Softwareerweiterungen für NVIDIA Isaac Sim entwickelt, erprobt und an das LFP übergeben.
+
+\textbf{Maze Runner -- Omniverse-Extension:} Die entwickelte modulare Extension im \emph{Omniverse Kit Extension Framework} umfasst acht spezialisierte Module und realisiert eine bidirektionale Echtzeit-Datenkopplung zwischen der Siemens-SPS S7-1200 und dem Digitalen Zwilling in Isaac Sim (vgl.\ Abschnitt~\ref{subsubsec:mazerunner_extension}). Die datengetriebene Konfiguration über \texttt{nodes\_db.json} ermöglicht die Übertragung der Extension auf weitere SPS-gestützte Anlagen ohne Quellcodeänderungen. In 30-minütigen Dauerläufen wurde eine stabile End-to-End-Latenz von \SI{18}{\milli\second} (Standardabweichung \SI{4}{\milli\second}) nachgewiesen.
+
+\textbf{Dobot Magician -- ROS\,2-Bridge:} Für den Dobot Magician entstand ein dreistufiges ROS\,2-Brückensystem: Das Python-Skript \texttt{dobot\_ros\_bridge.py} liest die Gelenkwinkel J1--J4 über die \emph{pydobot}-Bibliothek zyklisch aus und publiziert sie als standardisierte \texttt{sensor\_msgs/JointState}-Nachrichten im 20-Hz-Takt. Isaac Sim empfängt diese über den Action~Graph und aktualisiert das URDF-Modell in Echtzeit. Beide Erweiterungen sind im LFP-GitLab-Repository versioniert und gemäß der Reproduzierbarkeitsdokumentation (vgl.\ Abschnitt~\ref{subsec:reprodoku}) nachvollziehbar.
+
+\subsection{Reproduzierbarkeitsdokumentation}
+\label{subsec:reprodoku}
+
+\subsubsection{Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}
+Aus den Erfahrungen der Modellerstellung wurde eine generische Anleitung in sieben Schritten abgeleitet (vgl.\ Anhang~\ref{anhang:repro}):
+\begin{enumerate}
+    \item Anforderungsanalyse und Schnittstellenmatrix der Zielanlage,
+    \item CAD-Aufbereitung und Export nach OpenUSD,
+    \item Definition kinematischer Strukturen in Isaac Sim (Articulations),
+    \item Auswahl und Einrichtung der geeigneten Middleware (OPC~UA, MQTT, ROS\,2),
+    \item Implementierung der bidirektionalen Datenkopplung,
+    \item Validierung anhand definierter Testszenarien,
+    \item Übergabe und Versionierung im LFP-Repository.
+\end{enumerate}
+
+\subsubsection{Reproduzierbarkeitsdokumentation Dobot Magician}
+Analog zur Maze-Runner-Dokumentation wurde für den Dobot Magician eine eigenständige Inbetriebnahme-Anleitung erstellt. Diese umfasst:
+\begin{enumerate}
+    \item Installation und Konfiguration von \emph{usbipd-win} sowie WSL\,2 mit Ubuntu\,22.04,
+    \item Einrichtung von ROS\,2~Humble und der \emph{pydobot}-Bibliothek,
+    \item URDF-Import in Isaac Sim mit den erforderlichen Parametereinstellungen (\emph{Merge Fixed Joints}, \emph{Fix Base Link}, deaktiviertes \emph{Instanceable}),
+    \item Konfiguration des Action~Graphs und Verifikation der Gelenkzustandsübertragung,
+    \item Betrieb des Software-Mocks für hardware-unabhängige Entwicklung und Tests.
+\end{enumerate}
+Alle Schritte sind im LFP-GitLab-Repository versioniert. Die Anleitung ist so strukturiert, dass sie ohne physischen Roboter vollständig nachvollzogen werden kann.
+
+\subsubsection{Medienformate}
+Die Anleitungen wurden in komplementären Formaten aufbereitet:
+\begin{itemize}
+    \item \textbf{Foliensatz} (PowerPoint, 32 Folien) als didaktische Grundlage für Lehrveranstaltungen,
+    \item \textbf{VR-Demonstration} auf Meta Quest~3 zur immersiven Inspektion der Digitalen Zwillinge.
+\end{itemize}
+
+\subsubsection{Übergabe an das LFP}
+Alle erstellten Artefakte -- USD-Stages, URDF-Dateien, Python-Extensions, OPC-UA-Konfigurationen, Reproduktionsanleitungen und die schriftliche Ausarbeitung -- wurden gemäß Aufgabenstellung digital an das LFP übergeben und in einem internen GitLab-Repository versioniert. Eine Open-Access-Ver\-öffent\-lichung über die Bibliothek der Hochschule Hannover ist vorgesehen.
+
+\subsection{Gegenüberstellung und Gesamtbewertung}
+Beide Anlagen bestätigen die Machbarkeit einer durchgängigen Datenkette von CAD über OpenUSD bis zur Echtzeit-Simulation in Isaac Sim ohne proprietäre Konvertierungsschritte~\cite{pixar_openusd}. Die Protokollwahl -- OPC~UA für die SPS-Anlage, ROS\,2 für den Roboter -- korrespondiert mit den Empfehlungen von Profanter et al.\ und der in RAMI~4.0 angelegten Architektur~\cite{profanter2019,dinspec91345}. Hinsichtlich der Skalierbarkeit wächst die GPU-Last linear mit der Anzahl gleichzeitig simulierter Articulations, was die in Kapitel~\ref{sec:grundlagen} adressierte Infrastrukturanforderung bestätigt. Eine Kombination beider Ansätze -- OPC~UA für die Anlagenebene, ROS\,2 für die Roboterebene -- wird für vergleichbare Laboraufbauten empfohlen.

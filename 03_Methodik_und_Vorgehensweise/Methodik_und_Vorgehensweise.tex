@@ -1,0 +1,76 @@
+\section{Methodik und Vorgehensweise}
+\label{sec:methodik}
+
+\subsection{Vorgehensweise}
+Die methodische Bearbeitung der Aufgabenstellung orientiert sich an einem ingenieurwissenschaftlichen Konstruktionsprozess mit den Phasen Aufgabenklärung, Konzeption, Entwurf und Ausarbeitung. Übertragen auf den Kontext Digitaler Zwillinge ergeben sich folgende Phasen:
+\begin{enumerate}
+    \item \textbf{Aufgabenklärung:} Analyse der Aufgabenstellung, Ableitung von Anforderungen und Erstellung einer Anforderungsliste.
+    \item \textbf{Konzeption:} Recherche des Standes der Technik (Kapitel~\ref{sec:grundlagen}), Identifikation von Defiziten und Auswahl geeigneter Technologien.
+    \item \textbf{Entwurf:} Modellierung der Digitalen Zwillinge in Isaac Sim, Definition der Schnittstellen zur realen Hardware.
+    \item \textbf{Ausarbeitung:} Inbetriebnahme, Validierung, Reproduzierbarkeitsdokumentation und Diskussion.
+\end{enumerate}
+
+\subsection{Anforderungsanalyse}
+Aus der Aufgabenstellung sowie den in Kapitel~\ref{sec:grundlagen} herausgearbeiteten Defiziten ergeben sich die in Tabelle~\ref{tab:anforderungen} dargestellten Anforderungen.
+
+\begin{table}[htbp]
+\centering
+\caption{Anforderungsliste für die Anforderungsanalyse}
+\label{tab:anforderungen}
+\begin{tabularx}{\textwidth}{lXc}
+\toprule
+\textbf{Nr.} & \textbf{Anforderung} & \textbf{Klasse} \\
+\midrule
+A1  & Geometrische Abbildung der Anlage in OpenUSD       & Festforderung \\
+A2  & Bidirektionaler Datenfluss zwischen Anlage und DT  & Festforderung \\
+A3  & Physikalisch korrekte Kinematik in PhysX           & Festforderung \\
+A4  & SPS-Anbindung Maze Runner via OPC UA               & Festforderung \\
+A5  & Roboteranbindung Dobot via ROS\,2                  & Festforderung \\
+A6  & Latenz der Datenkopplung $<$ \SI{50}{\milli\second} & Mindestforderung \\
+A7  & Reproduzierbare Modellerstellung dokumentiert      & Festforderung \\
+A8  & Bereitstellung als PowerPoint, Video, VR/AR        & Festforderung \\
+A9  & Skalierbarkeit auf weitere Anlagen                 & Wunsch \\
+A10 & Open-Access-Veröffentlichung über HsH-Bibliothek   & Wunsch \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Toolkette}
+Die Bearbeitung erfolgt unter Nutzung folgender Werkzeuge:
+\begin{itemize}
+    \item \textbf{CAD-Aufbereitung:} SolidWorks bzw. STEP-Export der Bestandsmodelle.
+    \item \textbf{Datenformat:} OpenUSD als zentrale Austauschstruktur \cite{pixar_openusd}.
+    \item \textbf{Simulation:} NVIDIA Omniverse Kit mit Isaac Sim \cite{nvidia_isaacsim}.
+    \item \textbf{Physik-Engine:} NVIDIA PhysX \cite{nvidia_physx}.
+    \item \textbf{Middleware:} OPC UA (open62541), MQTT-Broker (Eclipse Mosquitto), ROS\,2 Humble.
+    \item \textbf{Roboterbeschreibung:} URDF \cite{ros_urdf}.
+    \item \textbf{Versionskontrolle:} Git mit GitLab-Instanz der HsH.
+    \item \textbf{Dokumentation:} \LaTeX{} (vorliegende Arbeit), PowerPoint, OBS Studio (Videoaufzeichnung), Meta Quest 3 für VR-Demonstrationen.
+\end{itemize}
+
+\subsection{Zeit- und Arbeitsplan}
+Die praktische Umsetzung beider Digitaler Zwillinge wurde ab Februar~2026 (KW~6) aufgenommen, noch vor dem offiziellen Ausgabedatum. Maze-Runner-Anlage und Dobot-Magician-Roboterarm wurden dabei parallel modelliert, erprobt und in Betrieb genommen; begleitend erfolgten Literaturrecherche und strukturelle Vorbereitung der Ausarbeitung. Die offizielle Bearbeitungszeit beträgt knapp acht Wochen ab Ausgabe am 19.06.2026~(KW~25) bis zur Abgabe am 10.08.2026~(KW~33). Tabelle~\ref{tab:zeitplan} stellt den vollständigen Projektablauf mit Arbeitspaketen und Kalenderwochen dar.
+
+\begin{table}[htbp]
+\centering
+\caption{Zeit- und Arbeitsplan der Bachelorarbeit}
+\label{tab:zeitplan}
+\begin{tabularx}{\textwidth}{l X c}
+\toprule
+\textbf{AP} & \textbf{Inhalt} & \textbf{KW} \\
+\midrule
+\multicolumn{3}{l}{\textit{Vorbereitungsphase (Februar -- 18.\ Juni 2026)}} \\[2pt]
+V1 & DZ Maze-Runner-Anlage: CAD-Aufbereitung, USD-Konvertierung, OPC-UA-Anbindung, Inbetriebnahme & 6--16 \\
+V2 & DZ Dobot Magician: URDF-Modellierung, ROS\,2-Anbindung, Hardwarekonzept                     & 6--22 \\
+V3 & Literaturrecherche, Theoretische Grundlagen, Strukturplanung Bachelorarbeit                  & 10--24 \\
+\addlinespace
+\multicolumn{3}{l}{\textit{Offizielle Bearbeitungszeit (19.\ Juni -- 10.\ August 2026, KW~25--33)}} \\[2pt]
+AP1 & Aufgabenklärung, Anforderungsliste, Auswahl Toolkette                                       & 25 \\
+AP2 & Ausarbeitung Kap.\,1--4 (Einleitung, Grundlagen, Methodik, Entwicklung DZ)                 & 25--28 \\
+AP3 & Ausarbeitung Kap.\,5--7 (Inbetriebnahme, Potenziale, Fazit)                                & 28--31 \\
+AP4 & Reproduzierbarkeitsdokumentation (PowerPoint, Video, VR/AR)                                 & 31--32 \\
+AP5 & Validierung, Überarbeitung, Korrekturlesen                                                  & 32--33 \\
+AP6 & Abgabe und Vorbereitung Kolloquium                                                          & 33     \\
+\bottomrule
+\end{tabularx}
+\end{table}

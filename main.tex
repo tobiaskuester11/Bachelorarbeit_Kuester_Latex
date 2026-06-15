@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper,bibliography=totoc,listof=totoc,oneside,parskip=half]{scrartcl}
+
+% --- Basis-Pakete ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[autostyle=true]{csquotes}
+
+% --- Layout ---
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% --- Math, Tabellen, Grafik ---
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\graphicspath{{00_Bilder/}}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{siunitx}
+\sisetup{locale = DE}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% --- Literaturverzeichnis: IEEE-Stil ---
+\usepackage[backend=biber,style=ieee,sorting=none,isbn=true,doi=true,url=true]{biblatex}
+\addbibresource{literatur.bib}
+% Fette Themenüberschrift vor jedem Literatureintrag
+\DeclareFieldFormat{annotation}{\textbf{#1}}
+\AtEveryBibitem{%
+  \iffieldundef{annotation}{}{\printfield{annotation}\newline}%
+}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={Potenziale und Herausforderungen Digitaler Zwillinge in der Fabrikplanung mit NVIDIA Omniverse},
+    pdfauthor={Tobias Küster}
+}
+\emergencystretch=2em
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+
+% =============================================================================
+\begin{document}
+\pagenumbering{Roman}
+
+% --- Vorspann ---
+\input{Kapitel 0/Deckblatt}
+\input{Kapitel 0/Abstract}
+\input{Kapitel 0/Aufgabenstellung}
+\input{Kapitel 0/Eidesstattliche Erklaerung}
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+\listoftables
+
+\input{Kapitel 0/Abkuerzungsverzeichnis}
+
+% =============================================================================
+\newpage
+\pagenumbering{arabic}
+
+% --- Kapitel ---
+\input{01_Einleitung/Einleitung}
+\input{02_Theoretische Grundlagen/Theoretische_Grundlagen}
+\input{03_Methodik_und_Vorgehensweise/Methodik_und_Vorgehensweise}
+\input{04_Entwicklung_der_Digitalen_Zwillinge/Entwicklung_der_Digitalen_Zwillinge}
+\input{05_Inbetriebnahme_und_Reproduzierbarkeit/Inbetriebnahme_und_Reproduzierbarkeit}
+\input{06_Potenziale_Herausforderungen/Potenziale_Herausforderungen}
+\input{09_Fazit und Ausblick/Fazit und Ausblick}
+
+% =============================================================================
+\newpage
+\printbibliography
+
+% =============================================================================
+\newpage
+\appendix
+\input{Anhang/Anhang}
+
+\end{document}

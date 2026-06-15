@@ -1,0 +1,982 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{kagermann2013}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=7cc90402cc1b8af1baf80ddad76cd91d}{%
+           family={Kagermann},
+           familyi={K\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6b4dfbd403cebfa1a009a4b06a397dc5}{%
+           family={Wahlster},
+           familyi={W\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3c2fdf12fc56070c63b576d8ed432ee7}{%
+           family={Helbig},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {acatech -- Deutsche Akademie der Technikwissenschaften}%
+      }
+      \list{location}{1}{%
+        {Frankfurt am Main}%
+      }
+      \strng{namehash}{211e36e9e58a8e7187448f7884ac94f6}
+      \strng{fullhash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{fullhashraw}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{bibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{authorbibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{authornamehash}{211e36e9e58a8e7187448f7884ac94f6}
+      \strng{authorfullhash}{e8356fcf26bd83d7607f5815529b67b8}
+      \strng{authorfullhashraw}{e8356fcf26bd83d7607f5815529b67b8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Industrie-4.0-Grundlagenpapier}
+      \field{title}{Umsetzungsempfehlungen für das Zukunftsprojekt {Industrie 4.0} -- Abschlussbericht des Arbeitskreises {Industrie 4.0}}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.acatech.de/wp-content/uploads/2018/03/Abschlussbericht_Industrie4.0_barrierefrei.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.acatech.de/wp-content/uploads/2018/03/Abschlussbericht_Industrie4.0_barrierefrei.pdf
+      \endverb
+    \endentry
+    \entry{monostori2014}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f47d3e294c09cc1234141e580621c28c}{%
+           family={Monostori},
+           familyi={M\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{fullhash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{fullhashraw}{f47d3e294c09cc1234141e580621c28c}
+      \strng{bibnamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorbibnamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authornamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorfullhash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorfullhashraw}{f47d3e294c09cc1234141e580621c28c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Cyber-physische Produktionssysteme}
+      \field{journaltitle}{Procedia CIRP}
+      \field{title}{Cyber-physical production systems: {R}oots, expectations and {R\&D} challenges}
+      \field{volume}{17}
+      \field{year}{2014}
+      \field{pages}{9\bibrangedash 13}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.procir.2014.03.115
+      \endverb
+    \endentry
+    \entry{dinspec91345}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3b69878f1d070dda2e839184fee73e14}{%
+           family={{DIN Deutsches Institut für Normung e.V.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \strng{namehash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{fullhash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{fullhashraw}{3b69878f1d070dda2e839184fee73e14}
+      \strng{bibnamehash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{authorbibnamehash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{authornamehash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{authorfullhash}{3b69878f1d070dda2e839184fee73e14}
+      \strng{authorfullhashraw}{3b69878f1d070dda2e839184fee73e14}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{RAMI 4.0 -- Referenzarchitekturmodell Industrie 4.0}
+      \field{howpublished}{Norm}
+      \field{note}{Beuth Verlag}
+      \field{title}{{DIN SPEC 91345:2016-04} Referenzarchitekturmodell {Industrie 4.0} ({RAMI4.0})}
+      \field{year}{2016}
+    \endentry
+    \entry{mihai2022}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=614eefd8e7a8cf7821b52c212e7219bd}{%
+           family={Mihai},
+           familyi={M\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3f31607c39471de9ef399dbfb6c50683}{%
+           family={Yaqoob},
+           familyi={Y\bibinitperiod},
+           given={Mahnoor},
+           giveni={M\bibinitperiod}}}%
+        {{hash=18852b92695372f8ae619bb44315d910}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Dang\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4851c6af70b8802668c1e2e22518887b}
+      \strng{fullhash}{c437ea12b86cdd41d458852c612986e6}
+      \strng{fullhashraw}{c437ea12b86cdd41d458852c612986e6}
+      \strng{bibnamehash}{c437ea12b86cdd41d458852c612986e6}
+      \strng{authorbibnamehash}{c437ea12b86cdd41d458852c612986e6}
+      \strng{authornamehash}{4851c6af70b8802668c1e2e22518887b}
+      \strng{authorfullhash}{c437ea12b86cdd41d458852c612986e6}
+      \strng{authorfullhashraw}{c437ea12b86cdd41d458852c612986e6}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Umfassender Digital-Twin-Survey}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{number}{4}
+      \field{title}{Digital Twins: {A} Survey on Enabling Technologies, Challenges, Trends and Future Prospects}
+      \field{volume}{24}
+      \field{year}{2022}
+      \field{pages}{2255\bibrangedash 2291}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1109/COMST.2022.3208773
+      \endverb
+    \endentry
+    \entry{nvidia_omniverse}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{NVIDIA Omniverse -- Kollaborationsplattform für Digitale Zwillinge}
+      \field{title}{{NVIDIA Omniverse} Platform Documentation}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.omniverse.nvidia.com/
+      \endverb
+      \verb{url}
+      \verb https://docs.omniverse.nvidia.com/
+      \endverb
+    \endentry
+    \entry{nvidia_isaacsim}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{NVIDIA Isaac Sim -- Robotersimulationsplattform}
+      \field{title}{{NVIDIA Isaac Sim} Documentation}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/index.html
+      \endverb
+      \verb{url}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/index.html
+      \endverb
+    \endentry
+    \entry{vdi5200}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Düsseldorf}%
+      }
+      \strng{namehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{VDI 5200 -- Fabrikplanungsprozess}
+      \field{howpublished}{Richtlinie}
+      \field{title}{{VDI 5200 Blatt 1} Fabrikplanung -- Planungsvorgehen}
+      \field{year}{2011}
+    \endentry
+    \entry{vdi4499}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Düsseldorf}%
+      }
+      \strng{namehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{bibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{VDI 4499 -- Definition Digitale Fabrik}
+      \field{howpublished}{Richtlinie}
+      \field{title}{{VDI 4499 Blatt 1} Digitale Fabrik -- Grundlagen}
+      \field{year}{2008}
+    \endentry
+    \entry{kritzinger2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=8d80d5b5ee79734f97fd33c812d6dac6}{%
+           family={Kritzinger},
+           familyi={K\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=311ca48099d155aefc853ee2d37c45bc}{%
+           family={Karner},
+           familyi={K\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=48040ca6c54ba95c232e885a81b7520c}{%
+           family={Traar},
+           familyi={T\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=598ac4328313a0283b8c797e6fd89147}{%
+           family={Henjes},
+           familyi={H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5a55899cfc23803210eff138ac04eaa3}{%
+           family={Sihn},
+           familyi={S\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{7423993c1548bda37e04a6629b9c6416}
+      \strng{fullhash}{fe9b64fcc683144e05e14022e4a34955}
+      \strng{fullhashraw}{fe9b64fcc683144e05e14022e4a34955}
+      \strng{bibnamehash}{fe9b64fcc683144e05e14022e4a34955}
+      \strng{authorbibnamehash}{fe9b64fcc683144e05e14022e4a34955}
+      \strng{authornamehash}{7423993c1548bda37e04a6629b9c6416}
+      \strng{authorfullhash}{fe9b64fcc683144e05e14022e4a34955}
+      \strng{authorfullhashraw}{fe9b64fcc683144e05e14022e4a34955}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Klassifikation: Digitales Modell, Schatten, Zwilling}
+      \field{journaltitle}{IFAC-PapersOnLine}
+      \field{number}{11}
+      \field{title}{Digital Twin in manufacturing: {A} categorical literature review and classification}
+      \field{volume}{51}
+      \field{year}{2018}
+      \field{pages}{1016\bibrangedash 1022}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.ifacol.2018.08.474
+      \endverb
+    \endentry
+    \entry{stark2019}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=bf61f6313828950394e1f55900234929}{%
+           family={Stark},
+           familyi={S\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1e0c1495e4ff57d626428f90dbbca920}{%
+           family={Damerau},
+           familyi={D\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=0ee9cdcc6b5573fe97895bfbe98cee72}{%
+           family={Chatti},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86e7c36419791c559539249e03275add}{%
+           family={Laperrière},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=150bc0f9c44b77ed3d971e33dfd41c91}{%
+           family={Reinhart},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=60681577f502f54542ec6a3da0036209}{%
+           family={Tolio},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{fullhash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{fullhashraw}{4041d255d5ecb75034180466c1d5267d}
+      \strng{bibnamehash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{authorbibnamehash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{authornamehash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{authorfullhash}{4041d255d5ecb75034180466c1d5267d}
+      \strng{authorfullhashraw}{4041d255d5ecb75034180466c1d5267d}
+      \strng{editorbibnamehash}{074aac0c0b99659f75a0c4aaa6e9ee7a}
+      \strng{editornamehash}{c5ad72022f144c22f2b392842a21843c}
+      \strng{editorfullhash}{074aac0c0b99659f75a0c4aaa6e9ee7a}
+      \strng{editorfullhashraw}{074aac0c0b99659f75a0c4aaa6e9ee7a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Lexikalische Definition: Digitaler Zwilling}
+      \field{booktitle}{{CIRP} Encyclopedia of Production Engineering}
+      \field{title}{Digital Twin}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1007/978-3-642-35950-7_16870-1
+      \endverb
+    \endentry
+    \entry{iso23247}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{organization}{1}{%
+        {ISO}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{ISO 23247 -- Digital-Twin-Framework für die Fertigung}
+      \field{howpublished}{Norm}
+      \field{note}{International Standard}
+      \field{title}{{ISO 23247-1:2021} Automation systems and integration -- Digital twin framework for manufacturing -- Part 1: Overview and general principles}
+      \field{year}{2021}
+    \endentry
+    \entry{idta_aas2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=3673f8af49eafe343f060e84279d20c5}{%
+           family={{Industrial Digital Twin Association}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Industrial Digital Twin Association (IDTA)}%
+      }
+      \strng{namehash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{fullhash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{fullhashraw}{3673f8af49eafe343f060e84279d20c5}
+      \strng{bibnamehash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{authorbibnamehash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{authornamehash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{authorfullhash}{3673f8af49eafe343f060e84279d20c5}
+      \strng{authorfullhashraw}{3673f8af49eafe343f060e84279d20c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Verwaltungsschale (AAS) -- Metamodell-Spezifikation}
+      \field{number}{IDTA 01001-3-1}
+      \field{title}{Specification of the Asset Administration Shell -- Part~1: Metamodel, Version~3.1.2 (Release~25-01)}
+      \field{type}{techreport}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://industrialdigitaltwin.org/content-hub/aasspecifications
+      \endverb
+      \verb{url}
+      \verb https://industrialdigitaltwin.org/content-hub/aasspecifications
+      \endverb
+    \endentry
+    \entry{zhang2025aas}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=3953fe69678cad3087f610836a159beb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jingxi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4fef667ae936394aaea3d0228086b87b}{%
+           family={Ellwein},
+           familyi={E\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4e6dd3943dd416893f79db075c24c288}{%
+           family={Heithoff},
+           familyi={H\bibinitperiod},
+           given={Malte},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ff0b81adb30af8f665f47fdeda1318ce}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={Judith},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d0867beb1da32a9bd2c3f3776f5101c7}{%
+           family={Wortmann},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c52f58e67025e0950916192e9a53c46}
+      \strng{fullhash}{03b2b3a067168c6319fc8deb9e9d933a}
+      \strng{fullhashraw}{03b2b3a067168c6319fc8deb9e9d933a}
+      \strng{bibnamehash}{03b2b3a067168c6319fc8deb9e9d933a}
+      \strng{authorbibnamehash}{03b2b3a067168c6319fc8deb9e9d933a}
+      \strng{authornamehash}{6c52f58e67025e0950916192e9a53c46}
+      \strng{authorfullhash}{03b2b3a067168c6319fc8deb9e9d933a}
+      \strng{authorfullhashraw}{03b2b3a067168c6319fc8deb9e9d933a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Konvergenz von AAS und Digitalem Zwilling}
+      \field{journaltitle}{Software and Systems Modeling}
+      \field{title}{Digital twin and the asset administration shell: {An} analysis of the three types of {AASs} and their feasibility for digital twin engineering}
+      \field{volume}{24}
+      \field{year}{2025}
+      \field{pages}{771\bibrangedash 793}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s10270-024-01255-0
+      \endverb
+    \endentry
+    \entry{mdpi2025isaac}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2d21a4c5b1b7b1da5165b2f8f62e700c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6e3a0620c269b002f661caa00e6de3d0}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0954792dbe24f33db81eda5a866f3dba}
+      \strng{fullhash}{0480fcac690fddd943e9aa9dda9c18a8}
+      \strng{fullhashraw}{0480fcac690fddd943e9aa9dda9c18a8}
+      \strng{bibnamehash}{0480fcac690fddd943e9aa9dda9c18a8}
+      \strng{authorbibnamehash}{0480fcac690fddd943e9aa9dda9c18a8}
+      \strng{authornamehash}{0954792dbe24f33db81eda5a866f3dba}
+      \strng{authorfullhash}{0480fcac690fddd943e9aa9dda9c18a8}
+      \strng{authorfullhashraw}{0480fcac690fddd943e9aa9dda9c18a8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{KI-gestützte adaptive Robotik in Isaac Sim}
+      \field{journaltitle}{Machines}
+      \field{number}{7}
+      \field{title}{Digital Twin-Enabled Adaptive Robotics: {L}everaging Large Language Models in {Isaac Sim} for Unstructured Environments}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{620}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/machines13070620
+      \endverb
+    \endentry
+    \entry{nvidia_physx}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{NVIDIA PhysX -- GPU-beschleunigte Physiksimulation}
+      \field{title}{{NVIDIA PhysX SDK} Documentation}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nvidia-omniverse.github.io/PhysX/physx/latest/
+      \endverb
+      \verb{url}
+      \verb https://nvidia-omniverse.github.io/PhysX/physx/latest/
+      \endverb
+    \endentry
+    \entry{pixar_openusd}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=3474efc6184b536473b0f11add7d1ff3}{%
+           family={{Pixar Animation Studios}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=75f65e6c0a16749495381997304492aa}{%
+           family={{Alliance for OpenUSD}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{fullhash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{fullhashraw}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{bibnamehash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{authorbibnamehash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{authornamehash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{authorfullhash}{25ad613aaed691853dcf2c33d6cc7609}
+      \strng{authorfullhashraw}{25ad613aaed691853dcf2c33d6cc7609}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{OpenUSD -- Herstellerneutrales 3D-Szenenformat}
+      \field{title}{{Universal Scene Description (OpenUSD)} -- Core Specification}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://openusd.org/release/intro.html
+      \endverb
+      \verb{url}
+      \verb https://openusd.org/release/intro.html
+      \endverb
+    \endentry
+    \entry{ros_urdf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6d2ee5676b068857db569005a9c6205a}{%
+           family={{Open Robotics}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{fullhash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{fullhashraw}{6d2ee5676b068857db569005a9c6205a}
+      \strng{bibnamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authorbibnamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authornamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authorfullhash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authorfullhashraw}{6d2ee5676b068857db569005a9c6205a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{URDF -- Roboterkinematik-Beschreibungsformat}
+      \field{title}{{URDF} -- Unified Robot Description Format}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/urdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/urdf
+      \endverb
+    \endentry
+    \entry{iec62541}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1bfbc8812fd493bd4a6c196b196d1291}{%
+           family={{International Electrotechnical Commission}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{fullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{fullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{bibnamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorbibnamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authornamehash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhash}{1bfbc8812fd493bd4a6c196b196d1291}
+      \strng{authorfullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{OPC UA -- Kommunikationsnorm}
+      \field{howpublished}{Norm}
+      \field{title}{{DIN EN IEC 62541} {OPC Unified Architecture} -- Spezifikation (Teile 1--14)}
+      \field{year}{2020}
+    \endentry
+    \entry{oasis_mqtt5}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+           family={{OASIS}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Organization for the Advancement of Structured Information Standards}%
+      }
+      \strng{namehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{fullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{fullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{bibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorbibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorfullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{MQTT 5.0 -- Publish-Subscribe-Protokollstandard}
+      \field{title}{{MQTT} Version 5.0 -- {OASIS} Standard}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html
+      \endverb
+    \endentry
+    \entry{macenski2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=7b84d10a03303cd00f198fefb38a5da3}{%
+           family={Macenski},
+           familyi={M\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0d11ace6e44e4742ea1692d7ddf4819e}{%
+           family={Foote},
+           familyi={F\bibinitperiod},
+           given={Tully},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a8ad4a5f43253f69552460c946e34e49}{%
+           family={Gerkey},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4e2c9f9d04cf548117105f50a9c8a7a1}{%
+           family={Lalancette},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fe838d86b89f8983167a3747e11998bb}{%
+           family={Woodall},
+           familyi={W\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a195e02383364d4009f77ca22451e11}
+      \strng{fullhash}{c321d95ccac4f92536f0f1ed99f34d05}
+      \strng{fullhashraw}{c321d95ccac4f92536f0f1ed99f34d05}
+      \strng{bibnamehash}{c321d95ccac4f92536f0f1ed99f34d05}
+      \strng{authorbibnamehash}{c321d95ccac4f92536f0f1ed99f34d05}
+      \strng{authornamehash}{4a195e02383364d4009f77ca22451e11}
+      \strng{authorfullhash}{c321d95ccac4f92536f0f1ed99f34d05}
+      \strng{authorfullhashraw}{c321d95ccac4f92536f0f1ed99f34d05}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{ROS 2 -- Architektur und Einsatzgebiete}
+      \field{journaltitle}{Science Robotics}
+      \field{number}{66}
+      \field{title}{Robot Operating System 2: {D}esign, architecture, and uses in the wild}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{eabm6074}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/scirobotics.abm6074
+      \endverb
+    \endentry
+    \entry{vdi3693}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
+           family={{Verein Deutscher Ingenieure}},
+           familyi={V\bibinitperiod}}}%
+        {{hash=8b6dee4ed2fee9e38db5cab02d0d6dc3}{%
+           family={{VDE Verband der Elektrotechnik}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Düsseldorf}%
+      }
+      \strng{namehash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{fullhash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{fullhashraw}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{bibnamehash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{authorbibnamehash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{authornamehash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{authorfullhash}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \strng{authorfullhashraw}{16db7af62df2d93a6ecd8b9f902e9aa3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{VDI/VDE 3693 -- VIBN-Modellarten und Glossar}
+      \field{howpublished}{Richtlinie}
+      \field{title}{{VDI/VDE 3693 Blatt 1} Virtuelle Inbetriebnahme -- Modellarten und Glossar}
+      \field{year}{2016}
+    \endentry
+    \entry{lechler2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b53417496d3b80e04e98a14cb33bf335}{%
+           family={Lechler},
+           familyi={L\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88261df5262654b469253b64a2780dfb}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f916bd51f161234f0cfb31f6c9499f7a}{%
+           family={Metzner},
+           familyi={M\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a9e3f196e64115d1eeaae340fd4142df}{%
+           family={Mayr},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=861854a17a7d79ab04e94dc8829f0e71}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2855f55d6e2bc434f609b0b2188ac7e5}
+      \strng{fullhash}{5015a05a24cc71f0627235b910cb6725}
+      \strng{fullhashraw}{5015a05a24cc71f0627235b910cb6725}
+      \strng{bibnamehash}{5015a05a24cc71f0627235b910cb6725}
+      \strng{authorbibnamehash}{5015a05a24cc71f0627235b910cb6725}
+      \strng{authornamehash}{2855f55d6e2bc434f609b0b2188ac7e5}
+      \strng{authorfullhash}{5015a05a24cc71f0627235b910cb6725}
+      \strng{authorfullhashraw}{5015a05a24cc71f0627235b910cb6725}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Virtuelle Inbetriebnahme -- Empirische Bewertung}
+      \field{journaltitle}{Procedia CIRP}
+      \field{title}{Virtual Commissioning -- Scientific Review and Exploratory Use Cases in Advanced Production Systems}
+      \field{volume}{81}
+      \field{year}{2019}
+      \field{pages}{1125\bibrangedash 1130}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.procir.2019.03.278
+      \endverb
+    \endentry
+    \entry{wang2024mazerunner}{report}{}{}
+      \name{author}{2}{}{%
+        {{hash=93a575777f636107b8f65a815802b18f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a22b468b22b4ac5f3bf132ec00ba982e}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yübo},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Hochschule RheinMain, Fachbereich Ingenieurwissenschaften}%
+      }
+      \list{location}{1}{%
+        {Rüsselsheim am Main}%
+      }
+      \strng{namehash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{fullhash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{fullhashraw}{e6532c03e6fd130452156729ae0626ef}
+      \strng{bibnamehash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{authorbibnamehash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{authornamehash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{authorfullhash}{e6532c03e6fd130452156729ae0626ef}
+      \strng{authorfullhashraw}{e6532c03e6fd130452156729ae0626ef}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Leitfaden Maze Runner -- Konstruktion, Hardware und Trainingslevel}
+      \field{title}{Labor Mechatronik -- Konstruktion und Inbetriebnahme einer {Maze Runner} Produktionslinie unter Einsatz interoperabler {Edge}- und {Cloud}-Technologien}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{dobot_magician}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a7615a029948f7e548b1c5ebcffc4517}{%
+           family={{Dobot Robotics Co., Ltd.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{fullhash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{fullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{bibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorbibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authornamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorfullhash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorfullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Dobot Magician -- Technische Spezifikation und Bedienung}
+      \field{note}{Product documentation, Dobot Robotics, Shenzhen, China}
+      \field{title}{{Dobot Magician} -- User Guide, Version~1.6.3}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.dobot-robots.com/service/download-center.html
+      \endverb
+      \verb{url}
+      \verb https://www.dobot-robots.com/service/download-center.html
+      \endverb
+    \endentry
+    \entry{profanter2019}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=65445ceda419c40462e7821a6f46b29d}{%
+           family={Profanter},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=26b4f77a3383950fe2f9d642673722ec}{%
+           family={Tekat},
+           familyi={T\bibinitperiod},
+           given={Ayhun},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1d4e306ef4b1439f0b53bae0f3326276}{%
+           family={Dorofeev},
+           familyi={D\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=280fbf566bbf6234a73b998e99366f8c}{%
+           family={Rickert},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c45d8c33e4ef56b7d84b362173fe9d96}{%
+           family={Knoll},
+           familyi={K\bibinitperiod},
+           given={Alois},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{528faa95545d9e23a7564fa97728554e}
+      \strng{fullhash}{9ddf2d52ef084301bf66bdde32906a2c}
+      \strng{fullhashraw}{9ddf2d52ef084301bf66bdde32906a2c}
+      \strng{bibnamehash}{9ddf2d52ef084301bf66bdde32906a2c}
+      \strng{authorbibnamehash}{9ddf2d52ef084301bf66bdde32906a2c}
+      \strng{authornamehash}{528faa95545d9e23a7564fa97728554e}
+      \strng{authorfullhash}{9ddf2d52ef084301bf66bdde32906a2c}
+      \strng{authorfullhashraw}{9ddf2d52ef084301bf66bdde32906a2c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Protokollvergleich: OPC UA, ROS, DDS und MQTT}
+      \field{booktitle}{Proc. IEEE Int. Conf. on Industrial Technology (ICIT)}
+      \field{title}{{OPC UA} versus {ROS}, {DDS}, and {MQTT}: {P}erformance Evaluation of {Industry 4.0} Protocols}
+      \field{year}{2019}
+      \field{pages}{955\bibrangedash 962}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICIT.2019.8755050
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Digital Twin Framework nach ISO~23247: Struktur aus User Entity, Core Entity, Data Collection and Device Control Entity sowie Cross-System Entity mit den jeweiligen funktionalen Elementen (FE) (Quelle: ISO~23247-2 \blx@tocontentsinit {0}\cite {iso23247}).}}{4}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces RAMI~4.0 -- Referenzarchitekturmodell Industrie~4.0 als dreidimensionales Schichtenmodell mit den Achsen \enquote {Life Cycle \& Value Stream}, \enquote {Hierarchy Levels} und \enquote {Layers} (Quelle: DIN~SPEC~91345 \blx@tocontentsinit {0}\cite {dinspec91345}).}}{5}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces OpenUSD-Modell des Maze Runners in NVIDIA Isaac Sim (Viewport, Stage-Baum und Property-Panel).}}{11}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Verschachtelte Gelenke am Schwenkarm-Deckel: \emph {RevoluteJoint~rotatory} (links) und \emph {PrismaticJoint~translatory} (rechts) mit Kollisionskonturen (grün).}}{12}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Systemarchitektur des Maze-Runner-Digitalen-Zwillings: SPS-Netzwerk (links), Omniverse-Extension (Mitte) und DigitalTwinService mit VPN-Gateway (rechts).}}{13}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces IST-Zustand der Maze-Runner-Anlage im Hochschullabor (Aufnahme von oben).}}{14}{figure.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

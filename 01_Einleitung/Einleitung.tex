@@ -1,0 +1,24 @@
+\section{Einleitung}
+\label{sec:einleitung}
+
+\subsection{Ausgangssituation und Motivation}
+Die produzierende Industrie befindet sich in einem tiefgreifenden strukturellen Wandel. Steigende Variantenvielfalt, verkürzte Produktlebenszyklen und die Forderung nach individualisierten Erzeugnissen verlangen von Fabriken eine kontinuierlich wachsende Wandlungsfähigkeit. Klassische, statische Planungsansätze stoßen dabei an ihre Grenzen, da sie weder mit der erforderlichen Geschwindigkeit auf Marktveränderungen reagieren noch die zunehmende Komplexität verteilter Produktionssysteme adäquat abbilden können \cite{kagermann2013}. Monostori beschreibt die hieraus resultierenden cyber-physischen Produktionssysteme (CPPS) als enge \enquote{Kopplung und fundamentale Verschränkung physischer Operationen mit softwaretechnischen und kommunikationsorientierten Netzwerken} \cite{monostori2014}. Das strukturelle Pendant zu dieser Entwicklung bildet das Referenzarchitekturmodell RAMI~4.0, das in DIN~SPEC~91345 als dreidimensionales Schichtenmodell verankert ist und Kommunikationsstrukturen sowie eine gemeinsame Begriffsbasis für Industrie~4.0 definiert \cite{dinspec91345}.
+
+\subsection{Problemstellung}
+Die in CPPS anfallenden Datenmengen und die wachsende Heterogenität der eingesetzten Engineering-Werkzeuge führen zu Medienbrüchen entlang des gesamten Lebenszyklus einer Fabrik. Geometriedaten, Steuerungsinformationen und Verhaltensmodelle liegen typischerweise in proprietären Formaten verteilt vor, was den Aufbau eines konsistenten, in Echtzeit aktualisierten digitalen Abbildes erschwert. Bestehende Simulationsumgebungen bieten zwar leistungsfähige Einzelfunktionen, scheitern jedoch häufig an der Skalierbarkeit im Dauerbetrieb sowie an der Integration heterogener Datenquellen \cite{mihai2022}. Mit NVIDIA Omniverse und Isaac Sim sind Plattformen verfügbar, die durch das offene Datenformat OpenUSD, GPU-beschleunigte Physik und fotorealistisches Rendering einen alternativen, integrierten Ansatz versprechen \cite{nvidia_omniverse,nvidia_isaacsim}. Inwieweit diese Plattformen die Anforderungen der Fabrikplanung erfüllen und welche Herausforderungen sich daraus ergeben, ist bislang nur unzureichend systematisch untersucht.
+
+\subsection{Zielsetzung und Forschungsfragen}
+Ziel der vorliegenden Arbeit ist es, Potenziale und Herausforderungen der Integration Digitaler Zwillinge in die Fabrikplanung am Beispiel von NVIDIA Omniverse und Isaac Sim systematisch zu untersuchen. Hierzu werden im Labor für Produktentwicklung und Digitale Fabrik (LFP) der Hochschule Hannover Digitale Zwillinge zweier realer Anlagen entwickelt -- ein Rundtakttisch (\enquote{Maze Runner}) und der Desktop-Roboter \enquote{Dobot}. Auf dieser Basis werden folgende Forschungsfragen bearbeitet:
+
+\begin{enumerate}
+    \item Welche normativen und konzeptionellen Grundlagen sind für die Erstellung Digitaler Zwillinge in der Fabrikplanung maßgebend?
+    \item Wie lassen sich reale Produktionsanlagen unter Nutzung von OpenUSD, Isaac Sim und industrieller Middleware (OPC~UA, MQTT, ROS\,2) als Digitale Zwillinge abbilden?
+    \item Wie kann die Reproduzierbarkeit eines solchen Erstellungsprozesses für nachfolgende Anwender gewährleistet werden?
+    \item Welche Handlungsempfehlungen lassen sich für Industrieunternehmen und Hochschulen ableiten?
+\end{enumerate}
+
+\subsection{Vorstellung des Labors für Produktentwicklung und Digitale Fabrik}
+Das Labor für Produktentwicklung und Digitale Fabrik (LFP) der Fakultät II der Hochschule Hannover bündelt Forschung und Lehre in den Themenfeldern methodische Produktentwicklung, virtuelle Fabrikplanung und digitale Prozessketten. Die vorhandene Infrastruktur umfasst CAD- und Simulationsarbeitsplätze, Workstations mit RTX-GPU-Beschleunigung für den Einsatz von NVIDIA Omniverse, eine VR-/AR-Demoumgebung sowie reale Demonstrationsanlagen zur Validierung digitaler Modelle.
+
+\subsection{Aufbau der Arbeit}
+Die Arbeit gliedert sich in sieben Kapitel. Nach der Einleitung legt Kapitel~\ref{sec:grundlagen} die theoretischen Grundlagen und den normativen Rahmen dar. Kapitel~\ref{sec:methodik} beschreibt die Methodik nach VDI~2222 sowie den Zeit- und Arbeitsplan. In Kapitel~\ref{sec:entwicklung} erfolgt die Entwicklung der Digitalen Zwillinge der beiden Anlagen, Kapitel~\ref{sec:inbetriebnahme} behandelt Inbetriebnahme, Reproduzierbarkeit und Diskussion der Ergebnisse. Kapitel~\ref{sec:potenziale} fasst Potenziale, Herausforderungen und Handlungsempfehlungen zusammen, bevor Kapitel~\ref{sec:fazit} eine abschließende Bewertung und einen Ausblick gibt.
