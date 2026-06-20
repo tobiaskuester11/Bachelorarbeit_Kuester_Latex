@@ -1,79 +1,345 @@
 \section{Theoretische Grundlagen}
 \label{sec:grundlagen}
 
+Der Aufbau eines \emph{Digitalen Zwillings} setzt Kenntnisse aus Fabrikplanung, Virtueller Inbetriebnahme und industrieller Kommunikationstechnik voraus.
+Die im Folgenden erarbeiteten Grundlagen bilden den begrifflichen Rahmen, auf den Entwicklung, Inbetriebnahme und Bewertung der in dieser Arbeit realisierten \emph{Digitalen Zwillinge} in den nachfolgenden Kapiteln aufbauen.
+
+Das vorliegende Kapitel erarbeitet das methodische und technische Fundament dafür.
+Die klassische Fabrikplanung nach VDI~5200 strukturiert den Planungsprozess in
+sequenzielle Phasen, deren Grenzen durch proprietäre Datenformate und fehlende
+Interoperabilität der eingesetzten Werkzeuge entstehen.
+Das Konzept der Digitalen Fabrik nach VDI~4499 ergänzt dieses Modell durch ein
+durchgängiges Datenmanagement, das diese Phasengrenzen überwindet und die bisher
+isoliert arbeitenden Planungsabschnitte miteinander vernetzt.
+Anschließend werden die Virtuelle Inbetriebnahme nach VDI/VDE~3693 sowie
+Klassifikationen Digitaler Zwillinge eingeführt.
+Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) und der normative Rahmen
+nach ISO~23247 verorten den \emph{Digitalen Zwilling} im industriellen Kontext,
+bevor abschließend die eingesetzten Technologien und Kommunikationsstandards
+vorgestellt werden.
+
 \subsection{Fabrikplanung und Digitale Fabrik}
-Die Richtlinie VDI~5200 Blatt~1 gliedert die Fabrikplanung in sieben sequenzielle Phasen und liefert damit das methodische Grundgerüst, das in dieser Arbeit durch digitale Methoden erweitert wird \cite{vdi5200}. VDI~4499 Blatt~1 definiert die Digitale Fabrik als vernetztes System aus digitalen Modellen, Methoden und Werkzeugen zur ganzheitlichen Planung und Steuerung von Fabrikprozessen \cite{vdi4499}. Cyber-physische Produktionssysteme (CPPS) ergänzen diesen Rahmen um die bidirektionale Echtzeit-Kopplung zwischen physischer Anlage und digitalem Abbild und bilden damit die technische Voraussetzung für Digitale Zwillinge im engeren Sinne \cite{monostori2014}. Der industrielle Bedarf an solchen Lösungen ist branchenübergreifend belegt -- exemplarisch zeigt die Automobilindustrie, dass durchgängige digitale Fabrikmodelle Planungszeiten signifikant verkürzen und Anlaufrisiken reduzieren \cite{mihai2022}.
+Die Richtlinie VDI~5200 Blatt~1 gliedert die Fabrikplanung in sieben sequenzielle Phasen,
+von der \emph{Zielfestlegung} (Phase~1) über \emph{Grundlagenermittlung},
+\emph{Konzeptplanung} und \emph{Detailplanung} bis hin zu
+\emph{Realisierungsvorbereitung}, \emph{Realisierungsüberwachung} und
+\emph{Hochlaufbetreuung} (Phase~7).
+Damit liefert sie das methodische Grundgerüst für die systematische Planung von
+Produktionsanlagen \cite{vdi5200}.
+Sämtliche Phasen werden von einem übergreifenden Projektmanagementprozess begleitet,
+wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
 
-\subsection{Digitalisierungsstufen und Klassifikation Digitaler Zwillinge}
-
-\subsubsection{Klassifikation nach Kritzinger et al.}
-Die in der Literatur am häufigsten herangezogene Differenzierung der Digitalisierungsstufen stammt von Kritzinger et al. und unterscheidet anhand des Datenflusses zwischen physischem und digitalem Objekt drei Reifegrade \cite{kritzinger2018}:
-\begin{itemize}
-    \item \textbf{Digitales Modell:} Keine automatisierte Datenkopplung; jegliche Aktualisierung zwischen physischem und digitalem Objekt erfolgt manuell.
-    \item \textbf{Digitaler Schatten:} Ein automatisierter, unidirektionaler Datenfluss vom physischen zum digitalen Objekt; das digitale Objekt spiegelt den Zustand des physischen wider, wirkt aber nicht auf dieses zurück.
-    \item \textbf{Digitaler Zwilling:} Ein \enquote{vollständig integrierter, in beide Richtungen automatisierter Datenfluss zwischen dem physischen und dem digitalen Objekt} \cite{kritzinger2018}. Veränderungen am physischen Objekt führen unmittelbar zu Anpassungen des digitalen Abbildes -- und umgekehrt.
-\end{itemize}
-Diese Klassifikation dient in der vorliegenden Arbeit als Maßstab zur Einordnung der entwickelten Lösungen.
-
-\subsubsection{Definition nach Stark und Damerau}
-Ergänzend liefert die CIRP Encyclopedia of Production Engineering durch Stark und Damerau eine lexikalisch verbindliche Definition, nach der ein Digitaler Zwilling \enquote{ein digitales Abbild eines aktiven, einzigartigen Produkts \dots oder Produktionssystems ist, das durch ausgewählte Eigenschaften, Bedingungen und Verhaltensweisen mittels Modellen, Informationen und Daten charakterisiert wird} \cite{stark2019}. Damit wird der Aspekt der Einzigartigkeit -- jedes physische Objekt besitzt genau einen Zwilling -- explizit hervorgehoben.
-
-\subsubsection{Normativer Rahmen: ISO 23247}
-Die Normenreihe ISO~23247 stellt erstmals einen international abgestimmten Rahmen für Digitale Zwillinge in der Fertigung bereit. Teil~1 definiert den Digitalen Zwilling als synchronisierte Repräsentation eines \enquote{observable manufacturing element} und legt allgemeine Grundsätze, Anwendungsfälle und Anforderungen fest \cite{iso23247}. Die weiteren Teile spezifizieren die Referenzarchitektur (Teil~2), die Klassifikation fertigungsrelevanter Elemente (Teil~3) sowie den Informationsaustausch (Teil~4). Abbildung~\ref{fig:iso23247} zeigt das zugrunde liegende \emph{Digital Twin Framework} mit seinen Entitäten und funktionalen Elementen. Für die vorliegende Arbeit bildet ISO~23247 die maßgebende normative Grundlage, an der die entwickelten Lösungen gemessen werden.
-
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{ISO23247}
-    \caption{Digital Twin Framework nach ISO~23247: Struktur aus User Entity, Core Entity, Data Collection and Device Control Entity sowie Cross-System Entity mit den jeweiligen funktionalen Elementen (FE) (Quelle: ISO~23247-2 \cite{iso23247}).}
-    \label{fig:iso23247}
+    \includegraphics[trim={30pt 655pt 30pt 40pt},clip,width=\linewidth]{vdi5200_phasenmodell}
+    \caption{Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1
+        (Quelle: \cite{vdi5200}).}
+    \label{fig:vdi5200_phasen}
 \end{figure}
 
-\subsubsection{Referenzarchitekturmodell RAMI 4.0}
-DIN~SPEC~91345 beschreibt mit RAMI~4.0 ein dreidimensionales Schichtenmodell, das den Lebenszyklus eines Assets (\enquote{Life Cycle Value Stream}), die Hierarchieebenen der Produktion (\enquote{Hierarchy Levels}) und die Architekturschichten (\enquote{Layers}: Asset, Integration, Communication, Information, Functional, Business) miteinander verschränkt \cite{dinspec91345}. Abbildung~\ref{fig:rami40} veranschaulicht die räumliche Anordnung der drei Achsen. Digitale Zwillinge lassen sich innerhalb dieses Modells eindeutig verorten und werden so anschlussfähig zu weiteren Industrie-4.0-Konzepten.
+Das Phasenmodell ist dabei grundsätzlich sequenziell ausgerichtet, wobei spätere Phasen
+auf den Ergebnissen früherer aufbauen. Klassischerweise werden die einzelnen Phasen
+jedoch mit weitgehend eigenständigen, kaum miteinander verknüpften Modellen und
+Werkzeugen bearbeitet.
+Um diese Grenzen zwischen den Phasen zu überwinden, setzt die Digitale Fabrik auf ein
+durchgängiges Datenmanagement, das alle Planungsphasen miteinander vernetzt.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{rami}
-    \caption{RAMI~4.0 -- Referenzarchitekturmodell Industrie~4.0 als dreidimensionales Schichtenmodell mit den Achsen \enquote{Life Cycle \& Value Stream}, \enquote{Hierarchy Levels} und \enquote{Layers} (Quelle: DIN~SPEC~91345 \cite{dinspec91345}).}
+    \includegraphics[width=\linewidth]{vdi4499_phasenmodell}
+    \caption{Digitaler Fabrikbetrieb in den Lebenszyklusphasen eines Produktionssystems
+        (Quelle: VDI~4499 Blatt~2 \cite{vdi4499b2}, Bild~2).}
+    \label{fig:vdi4499_phasen}
+\end{figure}
+
+Das gezeigte Bild verdeutlicht, wie VDI~4499 Blatt~2 dieses Konzept in den
+Lebenszyklusphasen eines Produktionssystems konkretisiert \cite{vdi4499b2}.
+VDI~4499 Blatt~1 definiert die Digitale Fabrik als vernetztes System digitaler Modelle,
+Methoden und Werkzeuge zur ganzheitlichen Planung und Steuerung von Fabrikprozessen
+\cite{vdi4499} und schafft damit eine gemeinsame Datenbasis über alle Phasengrenzen hinweg.
+
+\subsection{Virtuelle Inbetriebnahme nach VDI/VDE~3693}
+\label{subsec:defizite}
+Die \emph{Virtuelle Inbetriebnahme} (VIBN) setzt bereits in den Planungs- und
+Realisierungsphasen an und ermöglicht es, Steuerungsprogramme und Produktionsabläufe
+an einem digitalen Anlagenmodell zu erproben und zu optimieren, noch bevor die reale
+Anlage fertiggestellt und die eigentliche Inbetriebnahme durchgeführt wird.
+Die Richtlinie VDI/VDE~3693 Blatt~1 definiert VIBN als methodisches Vorgehen zur
+frühzeitigen Absicherung der Steuerungssoftware vor der realen Inbetriebnahme einer
+Anlage \cite{vdi3693} und unterscheidet dabei verschiedene Modellarten
+(\emph{Software-in-the-Loop}, \emph{Hardware-in-the-Loop}).
+Technische Grundlage bilden dabei cyber-physische Produktionssysteme (CPPS), die durch
+bidirektionale Echtzeit-Kopplung zwischen physischer Anlage und digitalem Abbild die
+Voraussetzung für Digitale Zwillinge schaffen \cite{monostori2014}.
+Lechler et al.\ belegen empirisch, dass VIBN die Qualität und Effizienz im Engineering
+steigert, Anlaufzeiten durch frühzeitige Fehlererkennung verkürzt und eine sicherere
+Inbetriebnahme ermöglicht, indem erkannte Fehler bereits vor der realen Inbetriebnahme
+behoben werden \cite{lechler2019}.
+
+\subsection{Klassifikation Digitaler Zwillinge}
+Um Digitale Zwillinge im Kontext dieser Arbeit präzise einordnen zu können, wird die
+in der Literatur am weitesten verbreitete Klassifikation nach Kritzinger et al.
+herangezogen.
+Sie unterscheidet anhand des Datenflusses zwischen physischem Objekt und digitalem Abbild
+drei Reifegrade \cite{kritzinger2018}.
+\begin{itemize}
+    \item \textbf{Digitales Modell:} Keine automatisierte Datenkopplung. Jegliche
+        Aktualisierung zwischen physischem und digitalem Objekt erfolgt manuell.
+    \item \textbf{Digitaler Schatten:} Ein automatisierter, unidirektionaler Datenfluss
+        vom physischen zum digitalen Objekt. Das digitale Objekt spiegelt den Zustand
+        des physischen wider, wirkt aber nicht auf dieses zurück.
+    \item \textbf{Digitaler Zwilling:} Ein vollständig integrierter, in beide
+        Richtungen automatisierter Datenfluss zwischen dem physischen und dem digitalen
+        Objekt \cite{kritzinger2018}. Veränderungen am physischen Objekt führen
+        unmittelbar zu Anpassungen des digitalen Abbildes und umgekehrt.
+\end{itemize}
+Diese Klassifikation dient in der vorliegenden Arbeit als Maßstab zur Einordnung der
+entwickelten Lösungen.
+
+\iffalse
+\subsubsection{Definition nach Stark und Damerau}
+Stark und Damerau halten in der CIRP Encyclopedia of Production Engineering fest,
+dass trotz intensiver Forschung bis heute keine einheitlich akzeptierte
+wissenschaftliche Definition des Begriffs Digitaler Zwilling existiert.
+Ihre Arbeit dokumentiert allein 19 verschiedene Definitionen aus der Literatur
+\cite{stark2019}.
+Den Ursprung des Konzepts führen sie auf Grieves zurück, der es 2002 an der University
+of Michigan als \enquote{Mirrored Spaces Model} eingeführt hat.
+Ihre eigene Definition lautet: Ein Digitaler Zwilling ist \enquote{ein digitales Abbild
+eines aktiven, einzigartigen Produkts oder Produktionssystems, das durch ausgewählte
+Eigenschaften, Bedingungen und Verhaltensweisen mittels Modellen, Informationen und
+Daten charakterisiert wird} \cite{stark2019}.
+
+Um zu verstehen, was das konkret bedeutet, unterscheiden Stark und Damerau drei
+Bestandteile, die erst zusammen einen echten Digitalen Zwilling ergeben:
+
+\textbf{(1) Digital Master:} Der \emph{Digital Master} ist das in der Entwicklungsphase
+erstellte virtuelle Modell einer Anlage, das Geometrie, Kinematik und
+Materialeigenschaften beschreibt.
+Für den Maze Runner ist dies das aus CAD-Daten exportierte 3D-Modell in Isaac Sim,
+das alle Bauteile originalgetreu abbildet.
+Für den Dobot Magician ist es die kinematische Beschreibung des Roboterarms mit seinen
+Gelenken, Drehachsen und Gelenklimits.
+
+\textbf{(2) Digital Shadow:} Der \emph{Digital Shadow} sind die Echtzeitdaten, die die
+physische Anlage laufend erzeugt: Sensorwerte, Schaltstellungen und Positionen.
+Die Steuerungseinheit der physischen Anlage übermittelt diese Daten kontinuierlich an
+das digitale Modell, sodass der aktuelle Betriebszustand stets im digitalen Abbild
+sichtbar ist.
+
+\textbf{(3) Verknüpfung:} Erst die Verbindung zwischen Konstruktionsmodell und
+Livedaten erzeugt den eigentlichen Digitalen Zwilling.
+Eine Middleware-Schicht liest die Betriebsdaten der physischen Anlage aus und setzt sie
+in Bewegungsänderungen des digitalen Modells um, sodass beide Instanzen synchron laufen.
+
+Besonders betonen Stark und Damerau den Aspekt der \emph{Einzigartigkeit}: Ein
+Digitaler Zwilling bildet stets eine bestimmte physische Instanz ab, nicht ein
+generisches Produktionslinienmodell.
+\fi
+
+\subsection{Referenzarchitekturmodell RAMI~4.0}
+Die klassische Automatisierungspyramide erfasst die vertikale Betriebshierarchie einer
+Fabrik, bleibt jedoch auf die Betriebsphase beschränkt und berücksichtigt weder
+Architekturschichten noch Lebenszyklusaspekte. Für eine durchgängige Beschreibung von
+Industrie-4.0-Komponenten sind beide Dimensionen unerlässlich.
+Mit dem Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) wurde dieser Mangel
+normativ adressiert. Es ergänzt die Automatisierungspyramide um genau diese fehlenden
+Dimensionen und stellt eine gemeinsame Beschreibungssprache bereit, mit der Maschinen,
+Anlagen, Softwarekomponenten und Digitale Zwillinge in einem einheitlichen
+dreidimensionalen Koordinatensystem verortet und miteinander in Beziehung gesetzt
+werden können \cite{dinspec91345}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{rami.jpg}
+    \caption{RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales
+        Schichtenmodell mit den Achsen \enquote{Life Cycle \& Value Stream},
+        \enquote{Hierarchy Levels} und \enquote{Layers}
+        (Quelle: DIN~SPEC~91345 \cite{dinspec91345}).}
     \label{fig:rami40}
 \end{figure}
 
-\subsubsection{Verwaltungsschale (Asset Administration Shell)}
-Die Industrial Digital Twin Association (IDTA) konkretisiert RAMI~4.0 durch die Spezifikation der Verwaltungsschale (Asset Administration Shell, AAS). Die aktuelle Fassung IDTA~01001 v3.1.2 (Release~25-01) definiert das Metamodell der AAS als standardisierte digitale Repräsentation, die alle Informationen und Eigenschaften eines Assets über dessen gesamten Lebenszyklus hinweg einheitlich bereitstellt \cite{idta_aas2025}. Zhang et al.\ zeigen, dass die AAS und das Konzept des Digitalen Zwillings methodisch konvergieren: Die AAS liefert die normierte Informationsstruktur, während der Digitale Zwilling die dynamische Verhaltenskomponente ergänzt \cite{zhang2025aas}.
+Grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
+oder virtuelle Objekt mit definierten Eigenschaften und Wert verstanden wird, vom
+einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage.
+Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell) angelegt
+werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert.
+
+Die \textbf{Hierarchieachse} übernimmt die Struktur der Automatisierungspyramide mit
+den Ebenen Feldgerät, Steuerungseinheit, Arbeitsstation und Arbeitszelle und ergänzt
+sie um Betrieb sowie Vernetzte Welt, welche übergeordnete Cloud- und IoT-Dienste
+einschließt. Jedes Asset lässt sich einer oder mehreren dieser Ebenen zuordnen.
+
+Quer durch alle Hierarchieebenen verlaufen sechs \textbf{Architekturschichten}, die
+beschreiben, welche Fähigkeiten ein Asset auf der jeweiligen Hierarchieebene
+bereitstellt. Sie umfassen die Schichten Asset (die physische Komponente selbst),
+Integration, Kommunikation, Information, Funktionen und Geschäftsprozesse.
+Kommunikationsstandards wie OPC~UA sind der Kommunikationsschicht zuzuordnen,
+Datenformate wie OpenUSD der Informationsschicht.
+
+Die dritte Achse erfasst den \textbf{Lebenszyklus} eines Assets von der Entwicklung
+über den Betrieb bis zur Außerbetriebnahme und unterscheidet dabei zwischen Typ, dem
+allgemeinen Modell einer Komponente, und Instanz, dem konkreten Exemplar im Einsatz.
+Digitale Zwillinge bilden stets Instanzen ab, da sie den aktuellen Zustand einer
+bestimmten physischen Anlage repräsentieren.
+
+\subsection{Normativer Rahmen nach ISO~23247}
+
+Die Normenreihe ISO~23247 legt als internationaler Standard erstmals fest, wie ein
+Digitaler Zwilling in einer Fertigungsumgebung strukturiert, klassifiziert und an
+physische Anlagen angebunden werden soll \cite{iso23247}.
+Sie schafft damit eine gemeinsame Grundlage, anhand derer unterschiedliche
+Implementierungen verglichen und eingeordnet werden können.
+
+Das in Teil~2 spezifizierte \emph{Digital Twin Framework} unterscheidet dabei zwei
+funktional verschiedene Einsatzkontexte.
+Im Unternehmenskontext sind Aspekte wie die Integration übergeordneter Systeme
+(ERP, MES), rollenbasierte Zugangskontrolle sowie die Vernetzung mehrerer Zwillinge
+untereinander über die Cross-System Entity bedeutsam.
+Für einen Digitalen Zwilling als eigenständige Instanz, die eine einzelne physische
+Anlage konsistent abbildet, stehen hingegen die Core Entity als Träger der digitalen
+Repräsentation und die DCDCE als Kommunikationsschicht zur realen Anlage im Vordergrund.
+Abbildung~\ref{fig:iso23247} zeigt die vollständige Architektur des Frameworks mit
+allen Entitäten und den dort aufgeführten funktionalen Elementen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ISO23247}
+    \caption{Digital Twin Framework nach ISO~23247: Struktur aus User Entity,
+        Core Entity, Data Collection and Device Control Entity sowie Cross-System Entity
+        mit den jeweiligen funktionalen Elementen (FE)
+        (Quelle: \cite{iso23247}).}
+    \label{fig:iso23247}
+\end{figure}
+
+Für die vorliegende Arbeit ist die \textbf{DCDCE} die funktional relevanteste Entität.
+Sie bildet die Schnittstellenschicht zwischen physischer Anlage und digitalem Zwilling,
+erfasst kontinuierlich die Zustandsdaten der realen Anlage und leitet sie an die Core
+Entity weiter. In Gegenrichtung übersetzt sie Steuerbefehle aus dem digitalen Modell
+in Signale für die physische Anlage. Beim Maze Runner übernimmt diese Funktion die
+OPC-UA-Anbindung, beim Dobot Magician ROS~2.
+
+Teil~3 der Normenreihe klassifiziert physische Fertigungselemente in acht Typen
+beobachtbarer Objekte, sogenannte Observable Manufacturing Elements.
+Für die vorliegende Arbeit sind die Typen \emph{Equipment} (Maschinen und
+Betriebsmittel) und \emph{Process} (Fertigungsoperationen) maßgebend. Beide Anlagen
+werden als Equipment-Instanzen abgebildet, ihre Steuerungsabläufe als Process-Instanzen.
+
 \subsection{NVIDIA Omniverse-Ökosystem}
 \label{subsec:omniverse}
-NVIDIA Omniverse stellt eine GPU-beschleunigte, modulare Kollaborationsplattform für die Entwicklung und den Betrieb industrieller 3D-Anwendungen und Digitaler Zwillinge bereit \cite{nvidia_omniverse}. Ihr Kern, \emph{Omniverse Kit}, fungiert als erweiterbares Anwendungsframework, das sich durch drei wesentliche Eigenschaften von klassischen Fabrikplanungswerkzeugen unterscheidet:
+NVIDIA Omniverse stellt eine GPU-beschleunigte, modulare Kollaborationsplattform für
+die Entwicklung und den Betrieb industrieller 3D-Anwendungen und Digitaler Zwillinge
+bereit \cite{nvidia_omniverse}.
+Ihr Kern, \emph{Omniverse Kit}, fungiert als erweiterbares Anwendungsframework, das
+sich durch drei wesentliche Eigenschaften von klassischen Fabrikplanungswerkzeugen
+unterscheidet.
 
 \begin{itemize}
-    \item \textbf{Konnektoren-Ökosystem:} Omniverse bindet bestehende Engineering-Werkzeuge über sogenannte \emph{Connectors} an, die proprietäre Daten in OpenUSD übersetzen und einen bidirektionalen Datenaustausch herstellen. Dies umfasst Anbindungen an CAD-, BIM- und PLM-Systeme (z.\,B. Autodesk Revit, Siemens NX, PTC Creo) sowie domänenspezifische Werkzeuge wie \emph{ipolog} für die Materialflussplanung. Bestandsmodelle lassen sich so ohne manuellen Konvertierungsaufwand in einer gemeinsamen Szene zusammenführen.
-    \item \textbf{Nucleus als zentrale Kollaborationsschicht:} Das technische Rückgrat bildet der \emph{Omniverse Nucleus} (\emph{database and collaboration engine}), an dem mehrere Clients gleichzeitig live verbunden sind. Änderungen an den Modellen werden in Echtzeit zwischen allen Clients propagiert, wobei die Plattform als Enterprise-Variante für einen hochverfügbaren 24/7-Dauerbetrieb in produktionsnahen Szenarien ausgelegt ist.
-    \item \textbf{Parallele Simulation von Anlage und Produkt:} Basierend auf dem NVIDIA DSX Blueprint für AI-Factory-Digitale-Zwillinge werden Geometrie-, thermische und elektrische Simulationsdaten verschiedener Disziplinen über USD-Layer verknüpft. Sowohl die Anlage als auch das prozessierte Produkt liegen in derselben Szene als parallel simulierbare Entitäten vor. Für das in dieser Arbeit betrachtete Szenario ermöglicht dies, das Verhalten des Rundtakttisches und der Werkstücke im selben physikalischen Kontext zu beobachten (z.\,B. für Kollisionsanalysen oder Greifsimulationen).
+    \item \textbf{Konnektoren-Ökosystem:} Omniverse bindet bestehende
+        Engineering-Werkzeuge über sogenannte \emph{Connectors} an, die proprietäre
+        Daten in OpenUSD übersetzen und einen bidirektionalen Datenaustausch herstellen.
+        Dies umfasst Anbindungen an CAD-, BIM- und PLM-Systeme (z.\,B. Autodesk Revit,
+        Siemens NX, PTC Creo) sowie domänenspezifische Werkzeuge wie \emph{ipolog} für
+        die Materialflussplanung. Bestandsmodelle lassen sich so ohne manuellen
+        Konvertierungsaufwand in einer gemeinsamen Szene zusammenführen
+        \cite{nvidia_omniverse_connectors}.
+    \item \textbf{Nucleus als zentrale Kollaborationsschicht:} Das technische Rückgrat
+        bildet der \emph{Omniverse Nucleus} (\emph{database and collaboration engine}),
+        an dem mehrere Clients gleichzeitig live verbunden sind. Änderungen an den
+        Modellen werden in Echtzeit zwischen allen Clients propagiert, wobei die
+        Plattform als Enterprise-Variante für einen hochverfügbaren 24/7-Dauerbetrieb
+        in produktionsnahen Szenarien ausgelegt ist \cite{nvidia_nucleus_arch}.
+    \item \textbf{Parallele Simulation von Anlage und Produkt:} Basierend auf dem
+        NVIDIA DSX Blueprint für AI-Factory-Digitale-Zwillinge werden Geometrie-,
+        thermische und elektrische Simulationsdaten verschiedener Disziplinen über
+        USD-Layer verknüpft. Sowohl die Anlage als auch das prozessierte Produkt liegen
+        in derselben Szene als parallel simulierbare Entitäten vor
+        \cite{nvidia_omniverse}.
 \end{itemize}
 
-Aufbauend auf diesem Ökosystem stellt \emph{Isaac Sim} eine Referenzanwendung für Robotik\-simulation und synthetische Datengenerierung dar \cite{nvidia_isaacsim}. Die Plattform kombiniert physikalisch korrekte Starrkörperdynamik mit fotorealistischem Rendering und unterstützt nativ die Schnittstellen ROS\,2 sowie OPC~UA, was sie für den Einsatz in bidirektionalen Digitalen-Zwillings-Szenarien prädestiniert. Liu et al.\ demonstrieren darüber hinaus, dass Isaac Sim in Verbindung mit Large Language Models eine adaptive Robotersteuerung in unstrukturierten Umgebungen ermöglicht und damit über klassische Simulationszwecke hinausweist \cite{mdpi2025isaac}.
+Aufbauend auf diesem Ökosystem stellt \emph{Isaac Sim} eine Referenzanwendung für
+Robotik\-simulation und synthetische Datengenerierung dar \cite{nvidia_isaacsim}.
+Die Plattform kombiniert physikalisch korrekte Starrkörperdynamik mit fotorealistischem
+Rendering. Schnittstellen zu industriellen Kommunikationsprotokollen wie ROS\,2 oder
+OPC~UA werden nicht nativ mitgeliefert, sondern über eigens entwickelte Extensions
+realisiert. Da Isaac Sim vollständig Python-basiert und offen gegenüber externem
+API-Zugriff ist, lassen sich solche Anbindungen flexibel programmieren und in den
+Simulationsablauf integrieren.
 
-Das physikalische Fundament beider Anwendungen bildet die Physik-Engine \emph{PhysX}, die Starrkörperdynamik, Gelenkkräfte und Kollisionserkennung GPU-parallel berechnet \cite{nvidia_physx}. Durch die enge Verzahnung von PhysX mit der Isaac-Sim-Artikulationsschicht lassen sich komplexe kinematische Ketten -- wie der in dieser Arbeit modellierte Rundtakttisch und der Dobot-Roboter -- deterministisch und echtzeitnah simulieren.
+Das physikalische Fundament beider Anwendungen bildet die Physik-Engine \emph{PhysX},
+die Starrkörperdynamik, Gelenkkräfte und Kollisionserkennung GPU-parallel berechnet
+\cite{nvidia_physx}.
+Durch die enge Verzahnung von PhysX mit der Isaac-Sim-Artikulationsschicht lassen sich
+komplexe kinematische Ketten deterministisch und echtzeitnah simulieren.
 
-\subsection{Datenformate: OpenUSD und URDF}
+Zum Omniverse-Ökosystem gehören weitere spezialisierte Anwendungen
+\cite{nvidia_omniverse}: \emph{Isaac Lab} erweitert Isaac Sim um ein Framework für
+Reinforcement Learning, das das Training von Roboterpolicies in massiv-paralleler
+Simulation ermöglicht und den anschließenden Sim-to-Real-Transfer auf reale Hardware
+unterstützt.
+\emph{Omniverse Showroom} stellt eine fotorealistische Präsentationsumgebung bereit,
+in der digitale Zwillinge und Fabrikszenarien interaktiv visualisiert und auch für
+nicht-technische Stakeholder erlebbar gemacht werden können.
+
+\subsection{Datenformate OpenUSD und URDF}
 \label{subsec:datenformate}
-Das von Pixar Animation Studios entwickelte und von der Alliance for OpenUSD weitergeführte Format \emph{Universal Scene Description} (OpenUSD) dient als herstellerneutrale Grundspezifikation für austauschbare 3D-Szenen und Produktionspipelines \cite{pixar_openusd}. Über ein non-destruktives Schichtenmodell aus \emph{Layers} und \emph{Stages} lassen sich heterogene Szenenbestandteile (Geometrie, Materialien, Physik-Parameter und Animationen) kompositorisch überlagern und unabhängig voneinander versionieren, ohne die Originaldaten zu verändern. OpenUSD bildet die zentrale Austauschstruktur der Omniverse-Plattform und ermöglicht eine durchgängige Datenkette vom CAD-Export bis zur laufenden Simulation, in der jede Disziplin ihren eigenen Layer beiträgt.
+Das von Pixar Animation Studios entwickelte Format \emph{Universal Scene Description}
+(OpenUSD) organisiert Szenendaten als hierarchischen Namensraum aus \emph{Prims}
+(Primitives) \cite{pixar_openusd}.
+NVIDIA Omniverse nutzt OpenUSD als natives Dateiformat, sodass CAD-Geometrien,
+Simulationsparameter und Laufzeitdaten verschiedener Planungsphasen ohne
+werkzeugspezifische Konvertierungen in einer gemeinsamen Szene zusammenwachsen
+\cite{nvidia_omniverse}.
+Dies schafft auf Datenformatsebene die Grundlage für das durchgängige Datenmodell,
+das VDI~4499 als Ziel der Digitalen Fabrik beschreibt.
 
-Für die roboterspezifische Strukturbeschreibung ergänzt das \emph{Unified Robot Description Format} (URDF) das OpenUSD-Ökosystem \cite{ros_urdf}. URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie visuelle, kollisions- und trägheitsrelevante Geometrien in einer XML-Struktur und ist der De-facto-Standard in der ROS-Welt. 
+Für die roboterspezifische Strukturbeschreibung ergänzt das \emph{Unified Robot
+Description Format} (URDF) das OpenUSD-Ökosystem \cite{ros_urdf}.
+URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie
+visuelle, kollisions- und trägheitsrelevante Geometrien in einer XML-Struktur und wird
+in der Robotik als verbreitetes Standardbeschreibungsformat eingesetzt \cite{ros_urdf}.
 
-Die Relevanz für diese Arbeit liegt in der Methodik: Ein aus CAD-Daten bestehendes Modell des Roboters lässt sich durch eine URDF-Datei mit definierten Drehachsen, Gelenklimits und Antriebsparametern zu einer simulationsfähigen Struktur zusammensetzen. Der \emph{Isaac Sim URDF-Importer} überführt diese Beschreibung direkt in eine USD-Articulation. Für den eingesetzten \emph{Dobot Magician} bedeutet dies, dass die in der Robotik-Community etablierte Modellbeschreibung direkt als Ausgangspunkt genutzt werden kann und nicht parallel in einem weiteren Format gepflegt werden muss.
+
 \subsection{Middleware-Architekturen für die industrielle Kommunikation}
 
+Middleware-Architekturen bilden die kommunikative Brücke zwischen der physischen Anlage
+und der Omniverse-Extension, die den digitalen Zwilling in der Simulationsszene steuert.
+Sie übernehmen den Transport von Sensordaten, Steuerungsbefehlen und Zustandsinformationen
+in Echtzeit.
+Die im Folgenden vorgestellten Protokolle OPC~UA, MQTT und ROS~2 sind industriell
+etabliert, weit verbreitet und decken unterschiedliche Anforderungen an Semantik,
+Bandbreite und Echtzeitfähigkeit ab.
+
 \subsubsection{OPC UA (DIN EN IEC 62541)}
-Das Protokoll \emph{Open Platform Communications Unified Architecture} (OPC~UA) ist in der Normenreihe DIN~EN~IEC~62541 festgeschrieben \cite{iec62541}. OPC~UA fungiert nicht ausschließlich als Transportprotokoll, sondern ermöglicht eine semantische Informationsmodellierung industrieller Assets, sodass Maschinenstrukturen herstellerübergreifend maschinenlesbar abgebildet werden können. Eigenschaften wie integrierte Sicherheitsmechanismen, plattformunabhängige Implementierung sowie das Konzept der \emph{Companion Specifications} machen OPC~UA zum De-facto-Standard für die vertikale Integration in Industrie~4.0-Architekturen.
+Das Protokoll \emph{Open Platform Communications Unified Architecture} (OPC~UA) ist in
+der Normenreihe DIN~EN~IEC~62541 festgeschrieben \cite{iec62541}.
+Im OPC~UA-Client-Server-Modell stellt die Steuerungseinheit einer Anlage als Server
+Maschinensignale und Zustandsdaten strukturiert bereit.
+Ein OPC~UA-Client verbindet sich mit diesem Server, liest Sensorwerte aus und schreibt
+bei Bedarf Sollwerte zurück.
+Integrierte Sicherheitsmechanismen und plattformunabhängige Implementierung machen
+OPC~UA zu einem weit verbreiteten Standard für die vertikale Integration in
+Industrie~4.0-Architekturen.
 
 \subsubsection{MQTT v5.0}
-Das von OASIS standardisierte Protokoll \emph{Message Queuing Telemetry Transport} (MQTT) Version~5.0 verfolgt einen leichtgewichtigen Publish-Subscribe-Ansatz und ist insbesondere für ressourcenbeschränkte IoT-Knoten und stark verteilte Netzwerke konzipiert \cite{oasis_mqtt5}. Gegenüber Version~3.1.1 führt MQTT~5.0 unter anderem \emph{User Properties}, verbesserte Fehlerrückmeldungen sowie \emph{Shared Subscriptions} ein, was die Eignung für ereignisgesteuerte Industriearchitekturen erhöht.
+Das von OASIS standardisierte Protokoll \emph{Message Queuing Telemetry Transport}
+(MQTT) Version~5.0 verfolgt einen leichtgewichtigen Publish-Subscribe-Ansatz und ist
+insbesondere für ressourcenbeschränkte IoT-Knoten und stark verteilte Netzwerke
+konzipiert \cite{oasis_mqtt5}.
+Gegenüber Version~3.1.1 führt MQTT~5.0 unter anderem \emph{User Properties},
+verbesserte Fehlerrückmeldungen sowie \emph{Shared Subscriptions} ein, was die Eignung
+für ereignisgesteuerte Industriearchitekturen erhöht \cite{oasis_mqtt5}.
 
 \subsubsection{ROS 2 und DDS}
-Das \emph{Robot Operating System~2} (ROS\,2) basiert auf dem \emph{Data Distribution Service} (DDS) und stellt damit ein deterministisches, echtzeitfähiges Kommunikationsframework für verteilte Robotersysteme bereit. Macenski et al.\ heben hervor, dass ROS\,2 \enquote{auf einer DDS-basierten Architektur aufbaut, die eine deterministische und echtzeitfähige Kommunikation für verteilte Robotersysteme} ermöglicht \cite{macenski2022}. Durch \emph{Quality-of-Service}-Profile lässt sich die Kommunikation gezielt auf Latenz, Zuverlässigkeit oder Durchsatz hin optimieren -- eine Voraussetzung für die Kopplung von Isaac Sim mit realer Roboterhardware.
-
-\subsection{Virtuelle Inbetriebnahme nach VDI/VDE 3693}
-\label{subsec:defizite}
-Die Richtlinie VDI/VDE~3693 Blatt~1 definiert die Virtuelle Inbetriebnahme (VIBN) als methodisches Vorgehen zur frühzeitigen Absicherung der Steuerungssoftware vor der realen Inbetriebnahme einer Anlage \cite{vdi3693}. Sie unterscheidet verschiedene Modellarten (\emph{Software-in-the-Loop}, \emph{Hardware-in-the-Loop}) und liefert ein einheitliches Glossar. Lechler et al.\ weisen empirisch nach, dass die VIBN ein \enquote{effektives Werkzeug zur signifikanten Verkürzung von Anlaufzeiten und zur frühzeitigen Absicherung der Steuerungssoftware} darstellt \cite{lechler2019}. Industrielle Anwender -- darunter Automobilhersteller und Anlagenbauer -- setzen VIBN gezielt ein, um Inbetriebnahmerisiken zu minimieren und parallele Konstruktions- und Steuerungsentwicklung zu ermöglichen. Die in dieser Arbeit entwickelten Digitalen Zwillinge bilden eine konkrete technische Grundlage für solche VIBN-Szenarien im Hochschullabor.
-
-Aus der Gesamtschau der theoretischen Grundlagen ergeben sich vier Defizite, die die vorliegende Arbeit adressiert: fehlende \textbf{Interoperabilität} in proprietären Simulationsumgebungen \cite{mihai2022}; die in der Praxis selten erreichte \textbf{Echtzeit-Kopplung} im Sinne eines echten Digitalen Zwillings \cite{kritzinger2018}; mangelnde \textbf{Reproduzierbarkeit} bei der Modellerstellung; sowie erhöhte \textbf{Infrastruktur- und Qualifikationsanforderungen} durch GPU-beschleunigte Plattformen.
+Das \emph{Robot Operating System~2} (ROS\,2) basiert auf dem \emph{Data Distribution
+Service} (DDS) und stellt ein deterministisches Kommunikationsframework für verteilte
+Robotersysteme bereit \cite{ros2_humble_docs}.
+Praktische Anwendungsfelder reichen von der Intralogistik mit Navigation und
+Koordination autonomer Transportfahrzeuge bis hin zur Fertigungsautomation mit
+kameragestützten Pick-and-Place-Aufgaben \cite{ros2_humble_docs}.
+Über standardisierte Nachrichtentypen lassen sich Gelenkwinkel von Roboterarmen in
+Echtzeit übertragen, was ROS\,2 besonders für die Ansteuerung von Drehbewegungen in
+kinematischen Ketten geeignet macht.
+Konfigurierbare \emph{Quality-of-Service}-Profile erlauben es, die Kommunikation gezielt
+auf Latenz, Zuverlässigkeit oder Durchsatz abzustimmen \cite{ros2_humble_docs}.
+Dies ist eine Voraussetzung für die Kopplung von Isaac Sim mit realer Roboterhardware.

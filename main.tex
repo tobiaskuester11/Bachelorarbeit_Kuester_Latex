@@ -18,6 +18,7 @@
 % --- Math, Tabellen, Grafik ---
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{pdfpages}
 \graphicspath{{00_Bilder/}}
 \usepackage{booktabs}
@@ -52,6 +53,12 @@
 \setcounter{biburlnumpenalty}{9000}
 \setcounter{biburlucpenalty}{9000}
 \setcounter{biburllcpenalty}{9000}
+
+% Abschnittsnummern: Hauptabschnitt mit Schlusspunkt (2.), Unterabschnitte ohne (2.2, 2.2.4)
+\KOMAoptions{numbers=noenddot}
+\renewcommand*{\thesection}{\arabic{section}.}
+\renewcommand*{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand*{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 
 % =============================================================================
 \begin{document}

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Bachelorarbeit\\\\Bachelorarbeit_Kuester_Latex\" -Recurse)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python c:\\Bachelorarbeit\\Bachelorarbeit_Kuester_Latex\\pipeline_hook.py",
+            "timeout": 30,
+            "statusMessage": "Diktat-Pipeline läuft..."
+          }
+        ]
+      }
+    ]
+  }
+}
