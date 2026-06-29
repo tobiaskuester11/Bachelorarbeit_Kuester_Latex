@@ -1,55 +1,174 @@
 \section{Methodik und Vorgehensweise}
 \label{sec:methodik}
 
+Für die Inbetriebnahme der Maze-Runner-Anlage und die Erstellung des Digitalen Zwillings
+mussten Aufgaben aus verschiedenen Disziplinen wie Mechanik, Pneumatik, Konstruktion,
+Elektrik, Steuerungstechnik, Softwareentwicklung und Simulation bewältigt werden.
+In industriellen Projekten wird eine solche Aufgabe üblicherweise auf mehrere
+Projektteams verteilt.
+Da alle Bereiche von einer Einzelperson zu bearbeiten waren, erforderte eine
+strukturierte Vorgehensweise eine klare Abgrenzung der Themenfelder.
+
 \subsection{Vorgehensweise}
-Die methodische Bearbeitung der Aufgabenstellung orientiert sich an einem ingenieurwissenschaftlichen Konstruktionsprozess mit den Phasen Aufgabenklärung, Konzeption, Entwurf und Ausarbeitung. Übertragen auf den Kontext Digitaler Zwillinge ergeben sich folgende Phasen:
-\begin{enumerate}
-    \item \textbf{Aufgabenklärung:} Analyse der Aufgabenstellung, Ableitung von Anforderungen und Erstellung einer Anforderungsliste.
-    \item \textbf{Konzeption:} Recherche des Standes der Technik (Kapitel~\ref{sec:grundlagen}), Identifikation von Defiziten und Auswahl geeigneter Technologien.
-    \item \textbf{Entwurf:} Modellierung der Digitalen Zwillinge in Isaac Sim, Definition der Schnittstellen zur realen Hardware.
-    \item \textbf{Ausarbeitung:} Inbetriebnahme, Validierung, Reproduzierbarkeitsdokumentation und Diskussion.
-\end{enumerate}
+Im Rahmen der Arbeit wurden zwei Digitale Zwillinge entwickelt.
+Zunächst entstand im Rahmen des IIM-Projektes der Digitale Zwilling des Maze Runner,
+wobei die erlangten Kenntnisse in einer Schritt-für-Schritt-Anleitung dokumentiert
+wurden und als Grundlage für die weitere Arbeit dienten.
+Der Maze Runner lag zu Projektbeginn weder vollständig aufgebaut noch betriebsbereit vor.
+Von der Hochschule RheinMain standen eine CAD-Baugruppe der Anlage, Dokumentation
+vergangener Projekte mit Stücklisten sowie auf Moodle hinterlegte Trainingslevel zur
+Einarbeitung in den Anlagenbau zur Verfügung.
+Die CAD-Baugruppe bildete dabei die geometrische Grundlage für das digitale Modell.
+Anlageninbetriebnahme und Einarbeitung in NVIDIA Isaac Sim mussten daher von Beginn an
+parallel vorangetrieben werden.
+Für die Inbetriebnahme des Maze Runner waren die Bereiche Mechanik, Konstruktion,
+Pneumatik, Elektrik, Steuerungstechnik und Netzwerktechnik relevant.
+Den Digitalen Zwilling des Maze Runner betrafen die Schnittstelle zur Steuerungstechnik,
+Softwareentwicklung sowie die Einarbeitung in die Simulationsumgebung NVIDIA Isaac Sim.
+Die ortsgebundenen Aufgaben wurden an der Hochschule Hannover durchgeführt, wobei
+kurze Rücksprachen mit den betreuenden Personen im Labor zur Festhaltung des
+aktuellen Fortschritts sowie zur Diskussion weiterer Anforderungen genutzt wurden.
+Softwareentwicklung, Simulation und Dokumentation wurden im Homeoffice bearbeitet.
+Wartezeiten, die etwa durch laufende Inbetriebnahmeschritte oder das Eintreffen
+bestellter Teile entstanden, wurden genutzt, um anderen Bereichen nachzugehen und
+dem Ziel eines Digitalen Zwillings schrittweise näherzukommen.
+
+Anlagenteile, die zum Zeitpunkt der Modellierung noch nicht in Betrieb waren, wurden
+im Digitalen Zwilling anhand der Dokumentation der Hochschule RheinMain virtuell in
+Betrieb genommen und später an der realen Anlage verifiziert oder angepasst.
+
+Yübo Wang kommunizierte im zweiwöchigen Rhythmus über Microsoft Teams und stellte
+seine Anforderungen an die Anlagenweiterentwicklung über das Task-Tracking-Tool Jira
+von Atlassian bereit.
+Über die Kommentar- und Bildfunktion konnten Ideen zur Umsetzung von
+Aufgabenanforderungen festgehalten werden, wie in Abbildung~\ref{fig:kanban} zu sehen ist.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Jira.png}
+    \caption{Task-Tracking-Tool Jira von Atlassian, Maze-Runner-Weiterentwicklung (Stand: Juni 2026)}
+    \label{fig:kanban}
+\end{figure}
+
+Nach erfolgreichem Abschluss des IIM-Projektes wurde im Rahmen der Bachelorarbeit
+ein Digitaler Zwilling des Dobot Magician erstellt.
+Da kein CAD-Modell vorhanden war, musste eines direkt beim Hersteller angefragt werden.
+Für den Dobot Magician wurde ebenfalls eine Extension entwickelt, wobei die Erstellungszeit
+durch die Kenntnisse aus der Einarbeitung in Isaac Sim und der vorherigen Extension-Entwicklung
+erheblich verkürzt werden konnte.
+Die Schritt-für-Schritt-Anleitung des Maze Runner wird durch die technische Dokumentation
+des Digitalen Zwillings des Dobot Magician so ergänzt, dass sich beide Anlagen
+reproduzieren lassen.
 
 \subsection{Anforderungsanalyse}
-Aus der Aufgabenstellung sowie den in Kapitel~\ref{sec:grundlagen} herausgearbeiteten Defiziten ergeben sich die in Tabelle~\ref{tab:anforderungen} dargestellten Anforderungen.
+Eine tabellarische Anforderungsanalyse gliedert Projektziele in überprüfbare
+Einzelanforderungen.
+Die Klassifizierung in Festforderungen, die vollständig umgesetzt werden müssen, und
+Wunschforderungen, die bei verbleibenden Ressourcen angestrebt werden, entspricht
+ingenieurwissenschaftlichem Vorgehen.
+Die Nummerierung der Anforderungen schafft im weiteren Verlauf der Arbeit eine
+eindeutige Rückverfolgbarkeit.
+Im Folgenden sind die Anforderungstabellen der beiden Digitalen Zwillinge aufgeführt.
 
 \begin{table}[htbp]
 \centering
-\caption{Anforderungsliste für die Anforderungsanalyse}
-\label{tab:anforderungen}
+\caption{Anforderungen an den Digitalen Zwilling des Maze Runner}
+\label{tab:anf_mazerunner}
 \begin{tabularx}{\textwidth}{lXc}
 \toprule
 \textbf{Nr.} & \textbf{Anforderung} & \textbf{Klasse} \\
 \midrule
-A1  & Geometrische Abbildung der Anlage in OpenUSD       & Festforderung \\
-A2  & Bidirektionaler Datenfluss zwischen Anlage und DT  & Festforderung \\
-A3  & Physikalisch korrekte Kinematik in PhysX           & Festforderung \\
-A4  & SPS-Anbindung Maze Runner via OPC UA               & Festforderung \\
-A5  & Roboteranbindung Dobot via ROS\,2                  & Festforderung \\
-A6  & Latenz der Datenkopplung $<$ \SI{50}{\milli\second} & Mindestforderung \\
-A7  & Reproduzierbare Modellerstellung dokumentiert      & Festforderung \\
-A8  & Bereitstellung als PowerPoint, Video, VR/AR        & Festforderung \\
-A9  & Skalierbarkeit auf weitere Anlagen                 & Wunsch \\
-A10 & Open-Access-Veröffentlichung über HsH-Bibliothek   & Wunsch \\
+MR-1 & Geometrische Abbildung der Anlage in NVIDIA Isaac Sim      & Festforderung \\
+MR-2 & Steuern der Anlagenteile via OPC~UA                        & Festforderung \\
+MR-3 & Abfrage geänderter Steuerungswerte per MQTT               & Wunsch \\
+MR-4 & Korrekte Kinematik aller Bewegungsachsen in PhysX         & Festforderung \\
+MR-5 & Reproduzierbare Modellerstellung, als Tutorial dokumentiert & Festforderung \\
+MR-6 & Dashboard in der Digital Twin App der Hochschule RheinMain & Festforderung \\
+MR-7 & Bereitstellung als Lehr- und Demonstrationsvideo          & Wunsch \\
+MR-8 & VR-Demonstration mit Meta Quest~3                        & Wunsch \\
+MR-9 & Open-Access-Veröffentlichung über HsH-Bibliothek          & Festforderung \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Anforderungen an den Digitalen Zwilling des Dobot Magician}
+\label{tab:anf_dobot}
+\begin{tabularx}{\textwidth}{lXc}
+\toprule
+\textbf{Nr.} & \textbf{Anforderung} & \textbf{Klasse} \\
+\midrule
+DO-1 & Geometrische Abbildung des Roboters in OpenUSD            & Festforderung \\
+DO-2 & Bidirektionaler Datenfluss via ROS\,2                     & Festforderung \\
+DO-3 & Pick-and-Place-Szenario in der Simulation ausführbar      & Festforderung \\
+DO-4 & Technische Dokumentation der Erstellung des Digitalen Zwillings & Festforderung \\
+DO-5 & Open-Access-Veröffentlichung über HsH-Bibliothek          & Festforderung \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \subsection{Toolkette}
-Die Bearbeitung erfolgt unter Nutzung folgender Werkzeuge:
-\begin{itemize}
-    \item \textbf{CAD-Aufbereitung:} SolidWorks bzw. STEP-Export der Bestandsmodelle.
-    \item \textbf{Datenformat:} OpenUSD als zentrale Austauschstruktur \cite{pixar_openusd}.
-    \item \textbf{Simulation:} NVIDIA Omniverse Kit mit Isaac Sim \cite{nvidia_isaacsim}.
-    \item \textbf{Physik-Engine:} NVIDIA PhysX \cite{nvidia_physx}.
-    \item \textbf{Middleware:} OPC UA (open62541), MQTT-Broker (Eclipse Mosquitto), ROS\,2 Humble.
-    \item \textbf{Roboterbeschreibung:} URDF \cite{ros_urdf}.
-    \item \textbf{Versionskontrolle:} Git mit GitLab-Instanz der HsH.
-    \item \textbf{Dokumentation:} \LaTeX{} (vorliegende Arbeit), PowerPoint, OBS Studio (Videoaufzeichnung), Meta Quest 3 für VR-Demonstrationen.
-\end{itemize}
+Die Erstellung der Digitalen Zwillinge folgte einem mehrstufigen Workflow.
+Tabelle~\ref{tab:toolkette} stellt die eingesetzten Werkzeuge beider Anlagen gegenüber.
+
+\begin{table}[htbp]
+\centering
+\caption{Toolkette der Digitalen Zwillinge im Vergleich}
+\label{tab:toolkette}
+\begin{tabularx}{\textwidth}{p{3.3cm}XX}
+\toprule
+\textbf{Schritt} & \textbf{Maze Runner} & \textbf{Dobot Magician} \\
+\midrule
+Modell\-beschaffung
+  & CAD-Baugruppe (SolidWorks STEP) von Hochschule RheinMain \cite{pixar_openusd}
+  & URDF-Modell beim Hersteller angefragt \cite{ros_urdf} \\
+Konstruktion
+  & Autodesk Inventor (Bauteile), Zoo Studio (Texteingabe)
+  & -- \\
+Import und Szenen\-aufbau
+  & STP-Import, Konvertierung nach OpenUSD in Isaac Sim \cite{nvidia_isaacsim}
+  & URDF-Import in Isaac Sim \\
+Kinematik\-definition
+  & Gelenke als \texttt{\_fix}/\texttt{\_move}
+  & Artikulationsbaum via URDF \\
+Physik\-aufbau
+  & Rigid Body + Kinematic in NVIDIA PhysX \cite{nvidia_physx}
+  & PhysX Articulation \\
+Steuerungs\-schicht
+  & TIA Portal (SPS-Programmierung, OPC-UA-Server)
+  & pydobot, ROS\,2 Humble (Gelenkwinkelsteuerung) \\
+Extension\-entwicklung
+  & Python-Extension in VS~Code: OPC-UA-Client, MQTT-Publisher
+  & Python-Extension in VS~Code: ROS\,2 Bridge \\
+Kommunikations\-anbindung
+  & OPC~UA via open62541 \cite{iec62541}, MQTT via paho-mqtt~1.6.1 \cite{oasis_mqtt5}
+  & ROS\,2 Humble unter WSL2/Ubuntu~22.04, usbipd-win \\
+Validierung
+  & Funktionsprüfung im Labor, VR-Demo (Meta Quest~3)
+  & Funktionsprüfung im Labor, Pick-and-Place-Test \\
+Dokumentation
+  & Schritt-für-Schritt-Anleitung, Demonstrations\-video (OBS Studio)
+  & Technische Dokumentation \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Systemseitig wurden NVIDIA Studio-Treiber~591.74, CUDA~12.6 und Python~3.11.15
+eingesetzt.
+Versionskontrolle und Projektmanagement erfolgten über Git mit der GitLab-Instanz der HsH.
+Bei steuerungstechnischen Fragen konnte auf Kollegen des Fachbereichs Steuerungstechnik
+der Hochschule Hannover zurückgegriffen werden.
 
 \subsection{Zeit- und Arbeitsplan}
-Die praktische Umsetzung beider Digitaler Zwillinge wurde ab Februar~2026 (KW~6) aufgenommen, noch vor dem offiziellen Ausgabedatum. Maze-Runner-Anlage und Dobot-Magician-Roboterarm wurden dabei parallel modelliert, erprobt und in Betrieb genommen; begleitend erfolgten Literaturrecherche und strukturelle Vorbereitung der Ausarbeitung. Die offizielle Bearbeitungszeit beträgt knapp acht Wochen ab Ausgabe am 19.06.2026~(KW~25) bis zur Abgabe am 10.08.2026~(KW~33). Tabelle~\ref{tab:zeitplan} stellt den vollständigen Projektablauf mit Arbeitspaketen und Kalenderwochen dar.
+Die praktische Umsetzung beider Digitaler Zwillinge wurde ab Februar~2026 (KW~6)
+im Rahmen des IIM-Projektes aufgenommen.
+Die Bachelorarbeit wurde zum 15.~Juni~2026 angemeldet, wobei die Bearbeitungszeit
+mindestens acht Wochen beträgt und die Abgabe somit frühestens am
+10.~August~2026~(KW~33) erfolgen kann.
+Das Kolloquium ist für KW~34 (17.--21.~August~2026) angesetzt.
+Tabelle~\ref{tab:zeitplan} stellt den Projektablauf mit Arbeitspaketen und
+Kalenderwochen dar und zeigt die zeitliche Abfolge beider Entwicklungsstränge.
 
 \begin{table}[htbp]
 \centering
@@ -60,17 +179,19 @@ Die praktische Umsetzung beider Digitaler Zwillinge wurde ab Februar~2026 (KW~6)
 \textbf{AP} & \textbf{Inhalt} & \textbf{KW} \\
 \midrule
 \multicolumn{3}{l}{\textit{Vorbereitungsphase (Februar -- 18.\ Juni 2026)}} \\[2pt]
-V1 & DZ Maze-Runner-Anlage: CAD-Aufbereitung, USD-Konvertierung, OPC-UA-Anbindung, Inbetriebnahme & 6--16 \\
-V2 & DZ Dobot Magician: URDF-Modellierung, ROS\,2-Anbindung, Hardwarekonzept                     & 6--22 \\
-V3 & Literaturrecherche, Theoretische Grundlagen, Strukturplanung Bachelorarbeit                  & 10--24 \\
+V1 & Übergabe Maze Runner, Inbetriebnahme, CAD-Aufbereitung                    & 6--16 \\
+V2 & DZ Maze Runner: OPC-UA-Anbindung, Twin App                                & 6--22 \\
+V3 & DZ Dobot Magician: URDF-Modellierung, ROS\,2-Anbindung, Pick-and-Place    & 14--22 \\
+V4 & Literaturrecherche, Theoretische Grundlagen, Strukturplanung               & 10--24 \\
 \addlinespace
 \multicolumn{3}{l}{\textit{Offizielle Bearbeitungszeit (19.\ Juni -- 10.\ August 2026, KW~25--33)}} \\[2pt]
-AP1 & Aufgabenklärung, Anforderungsliste, Auswahl Toolkette                                       & 25 \\
-AP2 & Ausarbeitung Kap.\,1--4 (Einleitung, Grundlagen, Methodik, Entwicklung DZ)                 & 25--28 \\
-AP3 & Ausarbeitung Kap.\,5--7 (Inbetriebnahme, Potenziale, Fazit)                                & 28--31 \\
-AP4 & Reproduzierbarkeitsdokumentation (PowerPoint, Video, VR/AR)                                 & 31--32 \\
-AP5 & Validierung, Überarbeitung, Korrekturlesen                                                  & 32--33 \\
-AP6 & Abgabe und Vorbereitung Kolloquium                                                          & 33     \\
+AP1 & Anforderungsliste, Methodik, Überarbeitung Grundlagen                     & 25--26 \\
+AP2 & Ausarbeitung Kap.\,4--5 (Entwicklung DZ, Inbetriebnahme)                 & 25--29 \\
+AP3 & Ausarbeitung Kap.\,6--7 (Potenziale, Fazit und Ausblick)                 & 29--31 \\
+AP4 & Reproduzierbarkeitsdokumentation (Tutorial, Video, VR/AR)                 & 31--32 \\
+AP5 & Validierung, Überarbeitung, Korrekturlesen                                & 32--33 \\
+AP6 & Abgabe                                                                    & 33     \\
+AP7 & Kolloquium                                                                & 34     \\
 \bottomrule
 \end{tabularx}
 \end{table}

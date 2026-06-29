@@ -2,12 +2,17 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1 (Quelle: \blx@tocontentsinit {0}\cite {vdi5200}).}}{4}{figure.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1 (Quelle: \blx@tocontentsinit {0}\cite {vdi5200}).}}{3}{figure.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Digitaler Fabrikbetrieb in den Lebenszyklusphasen eines Produktionssystems (Quelle: VDI~4499 Blatt~2 \blx@tocontentsinit {0}\cite {vdi4499b2}, Bild~2).}}{4}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales Schichtenmodell mit den Achsen \enquote {Life Cycle \& Value Stream}, \enquote {Hierarchy Levels} und \enquote {Layers} (Quelle: DIN~SPEC~91345 \blx@tocontentsinit {0}\cite {dinspec91345}).}}{6}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Digital Twin Framework nach ISO~23247: Struktur aus User Entity, Core Entity, Data Collection and Device Control Entity sowie Cross-System Entity mit den jeweiligen funktionalen Elementen (FE) (Quelle: \blx@tocontentsinit {0}\cite {iso23247}).}}{7}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces OpenUSD-Modell des Maze Runners in NVIDIA Isaac Sim (Viewport, Stage-Baum und Property-Panel).}}{13}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Verschachtelte Gelenke am Schwenkarm-Deckel: \emph {RevoluteJoint~rotatory} (links) und \emph {PrismaticJoint~translatory} (rechts) mit Kollisionskonturen (grün).}}{14}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Systemarchitektur des Maze-Runner-Digitalen-Zwillings: SPS-Netzwerk (links), Omniverse-Extension (Mitte) und DigitalTwinService mit VPN-Gateway (rechts).}}{15}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces IST-Zustand der Maze-Runner-Anlage im Hochschullabor (Aufnahme von oben).}}{16}{figure.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces IoT-Rahmenwerk für Digitale Zwillinge in der Fertigung mit Anwendungsschicht, Digitalem Zwilling, Gerätekommunikation und beobachtbaren Fertigungselementen (Quelle: ISO/FDIS~23247-1 \blx@tocontentsinit {0}\cite {iso23247}, Figure~2).}}{6}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales Schichtenmodell mit den Achsen \enquote {Life Cycle \& Value Stream}, \enquote {Hierarchy Levels} und \enquote {Layers} (Quelle: DIN~SPEC~91345 \blx@tocontentsinit {0}\cite {dinspec91345}).}}{7}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Funktionale Referenzarchitektur des Digital Twin Frameworks für die Fertigung mit User Entity, Core Entity, Data Collection and Device Control Entity und Cross-System Entity sowie den beobachtbaren Fertigungselementen außerhalb der Frameworkgrenze (Quelle: \blx@tocontentsinit {0}\cite {iso23247}).}}{9}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces NVIDIA Isaac Sim Viewport mit aktiviertem RTX Path Tracing. Simultane Darstellung unterschiedlicher Verarbeitungszustände in einer USD-Szene \blx@tocontentsinit {0}\cite {bmw_nvidia_2021}}}{10}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Paralleles Training von Robotern in NVIDIA Isaac Lab \blx@tocontentsinit {0}\cite {nvidia_isaaclab}}}{11}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Erfassen und Übertragen menschlicher Bedienabläufe per VR-Brille mit Isaac TeleOp und Isaac GR00T \blx@tocontentsinit {0}\cite {nvidia_isaacteleoperation,nvidia_groot}}}{11}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Task-Tracking-Tool Jira von Atlassian, Maze-Runner-Weiterentwicklung (Stand: Juni 2026)}}{14}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces OpenUSD-Modell des Maze Runners in NVIDIA Isaac Sim (Viewport, Stage-Baum und Property-Panel).}}{18}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Verschachtelte Gelenke am Schwenkarm-Deckel: \emph {RevoluteJoint~rotatory} (links) und \emph {PrismaticJoint~translatory} (rechts) mit Kollisionskonturen (grün).}}{19}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Systemarchitektur des Maze-Runner-Digitalen-Zwillings: SPS-Netzwerk (links), Omniverse-Extension (Mitte) und DigitalTwinService mit VPN-Gateway (rechts).}}{20}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces IST-Zustand der Maze-Runner-Anlage im Hochschullabor (Aufnahme von oben).}}{21}{figure.13}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

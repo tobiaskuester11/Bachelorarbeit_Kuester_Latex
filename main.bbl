@@ -19,52 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{kagermann2013}{report}{}{}
-      \name{author}{3}{}{%
-        {{hash=7cc90402cc1b8af1baf80ddad76cd91d}{%
-           family={Kagermann},
-           familyi={K\bibinitperiod},
-           given={Henning},
-           giveni={H\bibinitperiod}}}%
-        {{hash=6b4dfbd403cebfa1a009a4b06a397dc5}{%
-           family={Wahlster},
-           familyi={W\bibinitperiod},
-           given={Wolfgang},
-           giveni={W\bibinitperiod}}}%
-        {{hash=3c2fdf12fc56070c63b576d8ed432ee7}{%
-           family={Helbig},
-           familyi={H\bibinitperiod},
-           given={Johannes},
-           giveni={J\bibinitperiod}}}%
+    \entry{vdma_leitfaden_i40}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=feec1575ee417743584ed4ec3bbd172e}{%
+           family={{VDMA Forum Industrie 4.0}},
+           familyi={V\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {acatech -- Deutsche Akademie der Technikwissenschaften}%
+        {VDMA Verlag}%
       }
       \list{location}{1}{%
         {Frankfurt am Main}%
       }
-      \strng{namehash}{211e36e9e58a8e7187448f7884ac94f6}
-      \strng{fullhash}{e8356fcf26bd83d7607f5815529b67b8}
-      \strng{fullhashraw}{e8356fcf26bd83d7607f5815529b67b8}
-      \strng{bibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
-      \strng{authorbibnamehash}{e8356fcf26bd83d7607f5815529b67b8}
-      \strng{authornamehash}{211e36e9e58a8e7187448f7884ac94f6}
-      \strng{authorfullhash}{e8356fcf26bd83d7607f5815529b67b8}
-      \strng{authorfullhashraw}{e8356fcf26bd83d7607f5815529b67b8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \strng{namehash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{fullhash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{fullhashraw}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{bibnamehash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{authorbibnamehash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{authornamehash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{authorfullhash}{feec1575ee417743584ed4ec3bbd172e}
+      \strng{authorfullhashraw}{feec1575ee417743584ed4ec3bbd172e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{annotation}{Industrie-4.0-Grundlagenpapier}
-      \field{title}{Umsetzungsempfehlungen für das Zukunftsprojekt {Industrie 4.0} -- Abschlussbericht des Arbeitskreises {Industrie 4.0}}
+      \field{annotation}{VDMA Leitfaden Industrie 4.0}
+      \field{title}{{Leitfaden Industrie 4.0: Orientierungshilfe zur Einführung in den Mittelstand}}
       \field{type}{techreport}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.acatech.de/wp-content/uploads/2018/03/Abschlussbericht_Industrie4.0_barrierefrei.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.acatech.de/wp-content/uploads/2018/03/Abschlussbericht_Industrie4.0_barrierefrei.pdf
-      \endverb
+      \field{year}{2016}
     \endentry
     \entry{nvidia_omniverse}{online}{}{}
       \name{author}{1}{}{%
@@ -81,8 +63,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{NVIDIA Omniverse -- Kollaborationsplattform für Digitale Zwillinge}
@@ -114,53 +96,22 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{NVIDIA Isaac Sim -- Robotersimulationsplattform}
       \field{title}{{NVIDIA Isaac Sim} Documentation}
-      \field{urlday}{26}
-      \field{urlmonth}{5}
+      \field{urlday}{27}
+      \field{urlmonth}{6}
       \field{urlyear}{2026}
       \field{year}{2025}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/index.html
+      \verb https://developer.nvidia.com/isaac/sim
       \endverb
       \verb{url}
-      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/index.html
-      \endverb
-    \endentry
-    \entry{monostori2014}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=f47d3e294c09cc1234141e580621c28c}{%
-           family={Monostori},
-           familyi={M\bibinitperiod},
-           given={László},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{fullhash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{fullhashraw}{f47d3e294c09cc1234141e580621c28c}
-      \strng{bibnamehash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{authorbibnamehash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{authornamehash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{authorfullhash}{f47d3e294c09cc1234141e580621c28c}
-      \strng{authorfullhashraw}{f47d3e294c09cc1234141e580621c28c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Cyber-physische Produktionssysteme}
-      \field{journaltitle}{Procedia CIRP}
-      \field{title}{Cyber-physical production systems: {R}oots, expectations and {R\&D} challenges}
-      \field{volume}{17}
-      \field{year}{2014}
-      \field{pages}{9\bibrangedash 13}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1016/j.procir.2014.03.115
+      \verb https://developer.nvidia.com/isaac/sim
       \endverb
     \endentry
     \entry{lfp_hsh}{online}{}{}
@@ -177,8 +128,8 @@
       \strng{authornamehash}{b4c3e7e6fe9dba7ca03feffbe956828c}
       \strng{authorfullhash}{b4c3e7e6fe9dba7ca03feffbe956828c}
       \strng{authorfullhashraw}{b4c3e7e6fe9dba7ca03feffbe956828c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{LFP -- Laborvorstellung, Hochschule Hannover Fakultät II}
@@ -296,14 +247,45 @@
       \strng{authornamehash}{16db7af62df2d93a6ecd8b9f902e9aa3}
       \strng{authorfullhash}{16db7af62df2d93a6ecd8b9f902e9aa3}
       \strng{authorfullhashraw}{16db7af62df2d93a6ecd8b9f902e9aa3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{VDI/VDE 3693 -- VIBN-Modellarten und Glossar}
       \field{howpublished}{Richtlinie}
       \field{title}{{VDI/VDE 3693 Blatt 1} Virtuelle Inbetriebnahme -- Modellarten und Glossar}
       \field{year}{2016}
+    \endentry
+    \entry{monostori2014}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f47d3e294c09cc1234141e580621c28c}{%
+           family={Monostori},
+           familyi={M\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{fullhash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{fullhashraw}{f47d3e294c09cc1234141e580621c28c}
+      \strng{bibnamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorbibnamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authornamehash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorfullhash}{f47d3e294c09cc1234141e580621c28c}
+      \strng{authorfullhashraw}{f47d3e294c09cc1234141e580621c28c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Cyber-physische Produktionssysteme}
+      \field{journaltitle}{Procedia CIRP}
+      \field{title}{Cyber-physical production systems: {R}oots, expectations and {R\&D} challenges}
+      \field{volume}{17}
+      \field{year}{2014}
+      \field{pages}{9\bibrangedash 13}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.procir.2014.03.115
+      \endverb
     \endentry
     \entry{lechler2019}{article}{}{}
       \name{author}{5}{}{%
@@ -341,8 +323,8 @@
       \strng{authornamehash}{2855f55d6e2bc434f609b0b2188ac7e5}
       \strng{authorfullhash}{5015a05a24cc71f0627235b910cb6725}
       \strng{authorfullhashraw}{5015a05a24cc71f0627235b910cb6725}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Virtuelle Inbetriebnahme -- Empirische Bewertung}
@@ -408,6 +390,36 @@
       \verb 10.1016/j.ifacol.2018.08.474
       \endverb
     \endentry
+    \entry{iso23247}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \list{organization}{1}{%
+        {ISO}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{ISO 23247-1 -- Überblick und allgemeine Grundsätze des Digital-Twin-Frameworks}
+      \field{howpublished}{Norm}
+      \field{note}{International Standard}
+      \field{title}{{ISO 23247-1:2021} Automation systems and integration -- Digital twin framework for manufacturing -- Part 1: Overview and general principles}
+      \field{year}{2021}
+    \endentry
     \entry{dinspec91345}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=3b69878f1d070dda2e839184fee73e14}{%
@@ -435,35 +447,38 @@
       \field{title}{{DIN SPEC 91345:2016-04} Referenzarchitekturmodell {Industrie 4.0} ({RAMI4.0})}
       \field{year}{2016}
     \endentry
-    \entry{iso23247}{misc}{}{}
+    \entry{bmw_nvidia_2021}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=7058e4bd76f877c52b621c942b30613c}{%
-           family={{International Organization for Standardization}},
-           familyi={I\bibinitperiod}}}%
+        {{hash=7867cc8ca15932cbab179c68ee4a8fbb}{%
+           family={{BMW Group}},
+           familyi={B\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Geneva}%
-      }
-      \list{organization}{1}{%
-        {ISO}%
-      }
-      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
-      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{fullhash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{fullhashraw}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{bibnamehash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{authorbibnamehash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{authornamehash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{authorfullhash}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \strng{authorfullhashraw}{7867cc8ca15932cbab179c68ee4a8fbb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{annotation}{ISO 23247 -- Digital-Twin-Framework für die Fertigung}
-      \field{howpublished}{Norm}
-      \field{note}{International Standard}
-      \field{title}{{ISO 23247-1:2021} Automation systems and integration -- Digital twin framework for manufacturing -- Part 1: Overview and general principles}
+      \field{annotation}{BMW Group Pressemitteilung -- Einsatz von NVIDIA Omniverse in der virtuellen Fabrikplanung}
+      \field{month}{4}
+      \field{title}{{BMW Group und NVIDIA heben virtuelle Fabrikplanung auf die nächste Ebene}}
+      \field{urlday}{25}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
       \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.press.bmwgroup.com/deutschland/article/detail/T0329569DE/bmw-group-und-nvidia-heben-virtuelle-fabrikplanung-auf-die-naechste-ebene
+      \endverb
+      \verb{url}
+      \verb https://www.press.bmwgroup.com/deutschland/article/detail/T0329569DE/bmw-group-und-nvidia-heben-virtuelle-fabrikplanung-auf-die-naechste-ebene
+      \endverb
     \endentry
     \entry{nvidia_omniverse_connectors}{online}{}{}
       \name{author}{1}{}{%
@@ -480,8 +495,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Omniverse Connect -- CAD/BIM/PLM-Konnektoren}
@@ -513,8 +528,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Omniverse Nucleus -- Kollaborationsarchitektur}
@@ -547,8 +562,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{NVIDIA PhysX -- GPU-beschleunigte Physiksimulation}
@@ -563,6 +578,171 @@
       \endverb
       \verb{url}
       \verb https://nvidia-omniverse.github.io/PhysX/physx/latest/
+      \endverb
+    \endentry
+    \entry{nvidia_isaaclab}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{NVIDIA Isaac Lab -- Reinforcement-Learning-Framework für Robotertraining}
+      \field{title}{{Isaac Lab} -- Unified Framework for Robot Learning}
+      \field{urlday}{26}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://isaac-sim.github.io/IsaacLab/
+      \endverb
+      \verb{url}
+      \verb https://isaac-sim.github.io/IsaacLab/
+      \endverb
+    \endentry
+    \entry{nvidia_isaacteleoperation}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac TeleOp -- Standardisierte Teleoperation für Demonstrationsdatenerfassung}
+      \field{title}{{Isaac Lab}: Teleoperation}
+      \field{urlday}{26}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://isaac-sim.github.io/IsaacLab/main/source/teleoperation/index.html
+      \endverb
+      \verb{url}
+      \verb https://isaac-sim.github.io/IsaacLab/main/source/teleoperation/index.html
+      \endverb
+    \endentry
+    \entry{nvidia_groot}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac GR00T -- Grundlagenmodell für humanoide Roboter}
+      \field{title}{{Isaac GR00T}: Foundation Model for Humanoid Robots}
+      \field{urlday}{27}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/NVIDIA/Isaac-GR00T
+      \endverb
+      \verb{url}
+      \verb https://github.com/NVIDIA/Isaac-GR00T
+      \endverb
+    \endentry
+    \entry{nvidia_isaacros}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac ROS -- Hardwarebeschleunigte ROS-2-Pakete für mobile Robotik}
+      \field{title}{{Isaac ROS}: Hardware-Accelerated {ROS 2} Packages}
+      \field{urlday}{27}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/NVIDIA-ISAAC-ROS
+      \endverb
+      \verb{url}
+      \verb https://github.com/NVIDIA-ISAAC-ROS
+      \endverb
+    \endentry
+    \entry{nvidia_cosmos}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{10}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{NVIDIA Cosmos -- Generatives Welt-Grundlagenmodell für synthetische Trainingsdaten}
+      \field{title}{{NVIDIA Cosmos}: World Foundation Model Platform for Physical {AI}}
+      \field{urlday}{27}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nvidia.com/en-us/ai/cosmos/
+      \endverb
+      \verb{url}
+      \verb https://www.nvidia.com/en-us/ai/cosmos/
       \endverb
     \endentry
     \entry{pixar_openusd}{online}{}{}
@@ -582,8 +762,8 @@
       \strng{authornamehash}{25ad613aaed691853dcf2c33d6cc7609}
       \strng{authorfullhash}{25ad613aaed691853dcf2c33d6cc7609}
       \strng{authorfullhashraw}{25ad613aaed691853dcf2c33d6cc7609}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{OpenUSD -- Herstellerneutrales 3D-Szenenformat}
@@ -615,8 +795,8 @@
       \strng{authorfullhash}{6d2ee5676b068857db569005a9c6205a}
       \strng{authorfullhashraw}{6d2ee5676b068857db569005a9c6205a}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{URDF -- Roboterkinematik-Beschreibungsformat}
@@ -650,8 +830,8 @@
       \strng{authornamehash}{1bfbc8812fd493bd4a6c196b196d1291}
       \strng{authorfullhash}{1bfbc8812fd493bd4a6c196b196d1291}
       \strng{authorfullhashraw}{1bfbc8812fd493bd4a6c196b196d1291}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{OPC UA -- Kommunikationsnorm}
@@ -676,8 +856,8 @@
       \strng{authornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
       \strng{authorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
       \strng{authorfullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{MQTT 5.0 -- Publish-Subscribe-Protokollstandard}
@@ -706,8 +886,8 @@
       \strng{authorfullhash}{6d2ee5676b068857db569005a9c6205a}
       \strng{authorfullhashraw}{6d2ee5676b068857db569005a9c6205a}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{ROS 2 Humble -- Dokumentation und Anwendungsgebiete}
@@ -751,8 +931,8 @@
       \strng{authornamehash}{e6532c03e6fd130452156729ae0626ef}
       \strng{authorfullhash}{e6532c03e6fd130452156729ae0626ef}
       \strng{authorfullhashraw}{e6532c03e6fd130452156729ae0626ef}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Leitfaden Maze Runner -- Konstruktion, Hardware und Trainingslevel}
@@ -774,8 +954,8 @@
       \strng{authornamehash}{a7615a029948f7e548b1c5ebcffc4517}
       \strng{authorfullhash}{a7615a029948f7e548b1c5ebcffc4517}
       \strng{authorfullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Dobot Magician -- Technische Spezifikation und Bedienung}
@@ -821,8 +1001,8 @@
       \strng{authornamehash}{0954792dbe24f33db81eda5a866f3dba}
       \strng{authorfullhash}{0480fcac690fddd943e9aa9dda9c18a8}
       \strng{authorfullhashraw}{0480fcac690fddd943e9aa9dda9c18a8}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{KI-gestützte adaptive Robotik in Isaac Sim}
@@ -854,8 +1034,8 @@
       \strng{authornamehash}{3673f8af49eafe343f060e84279d20c5}
       \strng{authorfullhash}{3673f8af49eafe343f060e84279d20c5}
       \strng{authorfullhashraw}{3673f8af49eafe343f060e84279d20c5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Verwaltungsschale (AAS) -- Metamodell-Spezifikation}
@@ -910,8 +1090,8 @@
       \strng{authornamehash}{6c52f58e67025e0950916192e9a53c46}
       \strng{authorfullhash}{03b2b3a067168c6319fc8deb9e9d933a}
       \strng{authorfullhashraw}{03b2b3a067168c6319fc8deb9e9d933a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Konvergenz von AAS und Digitalem Zwilling}
