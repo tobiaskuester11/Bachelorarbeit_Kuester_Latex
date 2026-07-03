@@ -11,98 +11,13 @@ strukturierte Analyse der Anforderungen, deren zeitliche Einteilung sowie eine k
 Abgrenzung der Themenfelder als Grundlage für die Vorgehensweise.
 
 \subsection{Vorgehensweise}
-Im Rahmen der Arbeit wurden zwei Digitale Zwillinge entwickelt.
+Im Rahmen der Arbeit wurden zwei Digitale Zwillinge nacheinander entwickelt.
 Zunächst entstand im Rahmen des IIM-Projektes der Digitale Zwilling des Maze-Runner,
-wobei die erlangten Kenntnisse festgehalten wurden und als Grundlage für die weitere Arbeit dienten.
-Der Maze-Runner lag zu Projektbeginn weder vollständig aufgebaut noch betriebsbereit vor.
-Von der HSRM standen eine CAD-Baugruppe der Anlage, Dokumentation
-vergangener Projekte mit Stücklisten sowie auf Moodle hinterlegte Trainingslevel zur
-Einarbeitung in den Anlagenbau- und SPS-Programmierung zur Verfügung.
-Die CAD-Baugruppe bildete dabei die Grundlage für das digitale Modell.
-Während für die Inbetriebnahme des Maze-Runners die Bereiche Mechanik, Konstruktion, Pneumatik, Elektrik, Steuerungstechnik und Netzwerktechnik relevant waren, betrafen den Digitalen Zwilling vorrangig die Schnittstellen zur Steuerungstechnik, Softwareentwicklung sowie die Einarbeitung in die Simulationsumgebung NVIDIA Isaac Sim.
-Softwareentwicklung, Simulation und Dokumentation wurden im Homeoffice bearbeitet.
-Parallel dazu wurden die ortsgebundenen Aufgaben an der HsH durchgeführt, wobei
-kurze Rücksprachen mit den betreuenden Personen im Labor zur Festhaltung des
-aktuellen Fortschritts sowie zur Diskussion weiterer Anforderungen genutzt wurden.
-Bei steuerungstechnischen Fragen konnte auf Kollegen des Fachbereichs der HsH zurückgegriffen werden.
-Wartezeiten, die etwa durch laufende Inbetriebnahmeschritte oder das Eintreffen
-bestellter Teile entstanden, wurden genutzt, um anderen Bereichen nachzugehen und
-dem Ziel eines Digitalen Zwillings schrittweise näherzukommen.
-
-Anlagenteile, die zum Zeitpunkt der Modellierung noch nicht in Betrieb waren, wurden
-im Digitalen Zwilling anhand der Dokumentation der HSRM virtuell in
-Betrieb genommen und später an der realen Anlage verifiziert oder angepasst.
-
-Herr Wang kommunizierte im zweiwöchigen Rhythmus über Microsoft Teams und stellte
-seine Anforderungen an die Anlagenweiterentwicklung über das Task-Tracking-Tool Jira
-von Atlassian bereit.
-Über die Kommentar- und Bildfunktion konnten Ideen zur Umsetzung von
-Aufgabenanforderungen festgehalten werden, wie in Abbildung~\ref{fig:kanban} zu sehen ist.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{Jira.png}
-    \caption{Task-Tracking-Tool Jira von Atlassian, Maze-Runner-Weiterentwicklung (Stand: Juni 2026)}
-    \label{fig:kanban}
-\end{figure}
-
-Nach erfolgreichem Abschluss des IIM-Projektes wurde im Rahmen der Bachelorarbeit
-ein Digitaler Zwilling des Dobot Magician erstellt.
-Da kein CAD-Modell vorhanden war, musste eines direkt beim Hersteller angefragt werden.
-Für den Dobot Magician wurde ebenfalls eine Extension entwickelt, wobei die Erstellungszeit
-durch die Kenntnisse aus der Einarbeitung in NVIDIA Isaac Sim und der vorherigen Extension-Entwicklung
-erheblich verkürzt werden konnte.
-Die Schritt-für-Schritt-Reproduzierbarkeitsdokumentation des Maze-Runner wird durch die technische Dokumentation
-des Digitalen Zwillings des Dobot Magician so ergänzt, dass sich beide Anlagen
-reproduzieren lassen.
-
-\subsection{Anforderungsanalyse}
-Eine tabellarische Anforderungsanalyse gliedert Projektziele in überprüfbare
-Einzelanforderungen.
-Die Klassifizierung in Festforderungen, die vollständig umgesetzt werden müssen, und
-Wunschforderungen, die bei verbleibenden Ressourcen angestrebt werden, entspricht
-ingenieurwissenschaftlichem Vorgehen.
-Die Nummerierung der Anforderungen schafft im weiteren Verlauf der Arbeit eine
-eindeutige Rückverfolgbarkeit.
-Im Folgenden sind die Anforderungstabellen der beiden Digitalen Zwillinge aufgeführt.
-Das Kürzel MR steht für Maze-Runner, DM steht für Dobot Magician.
-
-\begin{table}[H]
-\centering
-\caption{Anforderungen an den Digitalen Zwilling des Maze-Runner}
-\label{tab:anf_mazerunner}
-\begin{tabularx}{\textwidth}{lXc}
-\toprule
-\textbf{Nr.} & \textbf{Anforderung} & \textbf{Klasse} \\
-\midrule
-MR-1 & Gesamte Maze-Runner-Anlage in Betrieb nehmen                                      & Festforderung \\
-MR-2 & CAD-Modell der Maze-Runner-Anlage in NVIDIA Isaac Sim konvertieren und hierarchisch sortieren & Festforderung \\
-MR-3 & Anlage an die Netzwerkinfrastruktur der HSRM zur Nutzung per Digital Twin App anpassen      & Festforderung \\
-MR-4 & Bewegungsachsen mit PhysX in NVIDIA Isaac Sim simulieren                                    & Festforderung \\
-MR-5 & Reale Anlage über die Digital Twin App der HSRM steuern                                     & Festforderung \\
-MR-6 & Digitales Modell bei ausgehendem OPC-UA-Befehl ebenfalls steuern               & Festforderung \\
-MR-7 & Schritt-für-Schritt-Reproduzierbarkeitsdokumentation erstellen                & Festforderung \\
-MR-8 & Geänderte Steuerungswerte der SPS per MQTT empfangen                            & Wunsch \\
-MR-9 & Anlage in VR mit der Meta Quest~3 demonstrieren                                 & Wunsch \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Anforderungen an den Digitalen Zwilling des Dobot Magician}
-\label{tab:anf_dobot}
-\begin{tabularx}{\textwidth}{lXc}
-\toprule
-\textbf{Nr.} & \textbf{Anforderung} & \textbf{Klasse} \\
-\midrule
-DM-1 & CAD-Modell des Dobot Magician in NVIDIA Isaac Sim konvertieren               & Festforderung \\
-DM-2 & Bidirektionalen Datenfluss via ROS\,2 herstellen                           & Festforderung \\
-DM-3 & Pick-and-Place-Szenario in der Simulation ausführen                        & Festforderung \\
-DM-4 & Erstellung des Digitalen Zwillings als technische Anleitung dokumentieren  & Festforderung \\
-\bottomrule
-\end{tabularx}
-\end{table}
+anschließend wurde im Rahmen der Bachelorarbeit der Digitale Zwilling des Dobot
+Magician erstellt.
+Die zugrunde liegende Anforderungsanalyse, die konkrete Projektorganisation sowie die
+eingesetzte Toolkette werden zu Beginn von Kapitel~\ref{sec:entwicklung} vorgestellt,
+da sie unmittelbar aus der Entwicklung der beiden Digitalen Zwillinge hervorgehen.
 
 \subsection{Zeit- und Arbeitsplan}
 Die praktische Umsetzung des Digitalen Zwillings der Maze-Runner-Anlage sowie
@@ -160,49 +75,3 @@ Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderung
 \caption{Zeit- und Arbeitsplan der Bachelorarbeit}
 \label{fig:gantt}
 \end{figure}
-
-\subsection{Toolkette}
-Die Erstellung der Digitalen Zwillinge folgte einem mehrstufigen Workflow.
-Tabelle~\ref{tab:toolkette} stellt die eingesetzten Werkzeuge beider Anlagen gegenüber.
-
-\begin{table}[H]
-\centering
-\caption{Toolkette der Digitalen Zwillinge im Vergleich}
-\label{tab:toolkette}
-\begin{tabularx}{\linewidth}{p{3.3cm}XX}
-\toprule
-\textbf{Schritt} & \textbf{Maze-Runner} & \textbf{Dobot Magician} \\
-\midrule
-Modell\-beschaffung
-  & Maze-Runner-CAD-Baugruppe der HSRM
-  & Einzelteile und URDF-basierte Baugruppe vom Hersteller \\
-Konstruktion
-  & Autodesk Inventor, Bambu Studio
-  & Autodesk Inventor, Zoo Studio, Bambu Studio \\
-Import und Szenen\-aufbau
-  & STP-Import, Konvertierung nach OpenUSD in NVIDIA Isaac Sim
-  & URDF-Import in NVIDIA Isaac Sim \\
-Kinematik\-definition
-  & Ordner\-struktur mit \texttt{\_fix}/\texttt{\_move} und Gelenk\-definition
-  & Artikulationsbaum via URDF \\
-Steuerungs\-schicht
-  & TIA Portal V17 (SPS-Programmierung, OPC-UA-Server), UaExpert (OPC-UA-Knotenbrowser)
-  & Interne Steuerung des Dobot Magician, COM-Port (USB~3.0) \\
-Extension\-entwicklung
-  & Visual Studio Code, mit KI-Werkzeugen (s.\ Anhang~\ref{anhang:ki})
-  & Visual Studio Code, mit KI-Werkzeugen (s.\ Anhang~\ref{anhang:ki}) \\
-Versions\-kontrolle
-  & Git, GitHub-Verzeichnis, VS~Code GitHub-Extension
-  & Git, GitHub-Verzeichnis, VS~Code GitHub-Extension \\
-Kommunikations\-anbindung
-  & OPC-UA via open62541, MQTT via paho-mqtt~1.6.1
-  & ROS\,2 Humble, usbipd-win (USB-Treiber für Windows, USB~3.0/COM-Port) \\
-Validierung
-  & Funktionsprüfung an der Maze-Runner-Anlage im Labor, korrektes Verhalten der NVIDIA Isaac Sim Szene
-  & Funktionsprüfung mit realer Hardware im Pick-and-Place-Szenario, korrektes Verhalten der NVIDIA Isaac Sim Szene \\
-Dokumentation
-  & Schritt-für-Schritt-Reproduzierbarkeitsdokumentation (PowerPoint-Folien)
-  & Technische Dokumentation (PDF, \LaTeX) \\
-\bottomrule
-\end{tabularx}
-\end{table}

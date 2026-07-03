@@ -31,7 +31,7 @@ wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[trim={30pt 655pt 30pt 40pt},clip,width=\linewidth]{vdi5200_phasenmodell}
+    \makebox[\linewidth][c]{\includegraphics[trim={30pt 655pt 30pt 40pt},clip,width=1.15\linewidth]{vdi5200_phasenmodell}}
     \caption{Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1
         (Quelle: \cite{vdi5200}).}
     \label{fig:vdi5200_phasen}
@@ -43,17 +43,17 @@ jedoch mit weitgehend eigenständigen, kaum miteinander verknüpften Modellen un
 Werkzeugen bearbeitet.
 Um diese Grenzen zwischen den Phasen zu überwinden, setzt die Digitale Fabrik auf ein
 durchgängiges Datenmanagement, das alle Planungsphasen miteinander vernetzt \cite{bmw_nvidia_2021}.
+Abbildung~\ref{fig:vdi4499_phasen} verdeutlicht, wie VDI~4499 Blatt~2 dieses Konzept
+konkretisiert \cite{vdi4499b2}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{vdi4499_phasenmodell}
+    \makebox[\linewidth][c]{\includegraphics[width=1.15\linewidth]{vdi4499_phasenmodell_cropped}}
     \caption{Digitaler Fabrikbetrieb in den Lebenszyklusphasen eines Produktionssystems
         (Quelle: VDI~4499 Blatt~2 \cite{vdi4499b2}, Bild~2).}
     \label{fig:vdi4499_phasen}
 \end{figure}
 
-Das gezeigte Bild verdeutlicht, wie VDI~4499 Blatt~2 dieses Konzept in den
-Lebenszyklusphasen eines Produktionssystems konkretisiert \cite{vdi4499b2}.
 VDI~4499 Blatt~1 definiert die Digitale Fabrik als vernetztes System digitaler Modelle,
 Methoden und Werkzeuge zur ganzheitlichen Planung und Steuerung von Fabrikprozessen
 \cite{vdi4499} und ermöglicht damit ein durchgängiges Datenmanagement über alle Phasengrenzen hinweg.
@@ -95,47 +95,53 @@ drei Reifegrade \cite{kritzinger2018}.
 \end{itemize}
 Diese Klassifikation bildet den Bewertungsmaßstab für den in den nachfolgenden Kapiteln
 beschriebenen Umsetzungsgrad.
+Sie deckt dabei nicht jede denkbare Datenflussrichtung eigenständig ab.
+Für die Richtung vom physischen zum digitalen Objekt definiert Kritzinger et al.\
+mit dem Digitalen Schatten eine eigene Stufe, die umgekehrte Richtung vom digitalen
+Modell zur Realität wird dagegen nicht als eigene Stufe geführt, sondern nur
+innerhalb des vollständig bidirektionalen Digitalen Zwillings mit erfasst.
 
-\iffalse
-\subsubsection{Definition nach Stark und Damerau}
-Stark und Damerau halten in der CIRP Encyclopedia of Production Engineering fest,
-dass trotz intensiver Forschung bis heute keine einheitlich akzeptierte
-wissenschaftliche Definition des Begriffs Digitaler Zwilling existiert.
-Ihre Arbeit dokumentiert allein 19 verschiedene Definitionen aus der Literatur
+\subsection{Weitere Begrifflichkeiten zu Digitalen Zwillingen}
+Neben der Klassifikation nach Kritzinger et al.\ finden sich in der Literatur weitere
+Begriffssystematiken, die verwandte, jedoch konzeptuell abweichende Konstrukte
+beschreiben.
+
+Grieves und Vickers unterscheiden zwei Ausprägungen des Digitalen Zwillings.
+Der \textbf{Digital Twin Prototype (DTP)} bezeichnet das in der Entwicklungsphase
+entstehende virtuelle Modell, das Anforderungen, ein vollständig annotiertes 3D-Modell,
+Stücklisten und Fertigungsprozesse eines noch nicht gebauten Produkts beschreibt.
+Die \textbf{Digital Twin Instance (DTI)} bezeichnet dagegen den Zwilling eines konkret
+gefertigten Exemplars, der über dessen gesamten Lebenszyklus mit dem physischen Objekt
+verknüpft bleibt und dessen tatsächliche Geometrie, Bauteilhistorie und
+Betriebszustände abbildet.
+Beide Ausprägungen werden in einer \textbf{Digital Twin Environment (DTE)} betrieben,
+einer domänenübergreifenden Simulationsumgebung für vorausschauende und abfragende
+Anwendungen~\cite{Grieves2017}.
+
+Im PLM-Kontext nähern sich Stark und Damerau dem Digitalen Zwilling in der CIRP
+Encyclopedia of Production Engineering komplementär über seine Bestandteile
 \cite{stark2019}.
-Den Ursprung des Konzepts führen sie auf Grieves zurück, der es 2002 an der University
-of Michigan als \enquote{Mirrored Spaces Model} eingeführt hat.
-Ihre eigene Definition lautet: Ein Digitaler Zwilling ist \enquote{ein digitales Abbild
-eines aktiven, einzigartigen Produkts oder Produktionssystems, das durch ausgewählte
-Eigenschaften, Bedingungen und Verhaltensweisen mittels Modellen, Informationen und
-Daten charakterisiert wird} \cite{stark2019}.
-
-Um zu verstehen, was das konkret bedeutet, unterscheiden Stark und Damerau drei
-Bestandteile, die erst zusammen einen echten Digitalen Zwilling ergeben:
-
-\textbf{(1) Digital Master:} Der \emph{Digital Master} ist das in der Entwicklungsphase
-erstellte virtuelle Modell einer Anlage, das Geometrie, Kinematik und
-Materialeigenschaften beschreibt.
-Für den Maze Runner ist dies das aus CAD-Daten exportierte 3D-Modell in NVIDIA Isaac Sim,
-das alle Bauteile originalgetreu abbildet.
-Für den Dobot Magician ist es die kinematische Beschreibung des Roboterarms mit seinen
-Gelenken, Drehachsen und Gelenklimits.
-
-\textbf{(2) Digital Shadow:} Der \emph{Digital Shadow} sind die Echtzeitdaten, die die
-physische Anlage laufend erzeugt: Sensorwerte, Schaltstellungen und Positionen.
-Die Steuerungseinheit der physischen Anlage übermittelt diese Daten kontinuierlich an
-das digitale Modell, sodass der aktuelle Betriebszustand stets im digitalen Abbild
-sichtbar ist.
-
-\textbf{(3) Verknüpfung:} Erst die Verbindung zwischen Konstruktionsmodell und
-Livedaten erzeugt den eigentlichen Digitalen Zwilling.
-Eine Middleware-Schicht liest die Betriebsdaten der physischen Anlage aus und setzt sie
-in Bewegungsänderungen des digitalen Modells um, sodass beide Instanzen synchron laufen.
-
-Besonders betonen Stark und Damerau den Aspekt der \emph{Einzigartigkeit}: Ein
+Sie unterscheiden drei Bestandteile, die erst zusammen einen Digitalen Zwilling
+ergeben.
+Der \textbf{Digital Master} ist das in der Entwicklungsphase erstellte generalisierte
+Produktbeschreibungsmodell, etwa ein CAD-Modell der Geometrie oder ein
+Simulationsmodell des Verhaltens, aus dem eine für den jeweiligen Einsatzzweck
+zugeschnittene Instanz abgeleitet wird \cite{stark2019}.
+Für den Maze-Runner ist dies das aus CAD-Daten exportierte 3D-Modell in NVIDIA Isaac
+Sim, für den Dobot Magician die aus der URDF-Beschreibung abgeleitete kinematische
+Struktur des Roboterarms.
+Der \textbf{Digital Shadow} umfasst die während Betrieb und Nutzung erfassten
+Prozessdaten wie Sensorwerte, Schaltstellungen und Positionen, die den Zustand des
+physischen Objekts fortlaufend abbilden \cite{stark2019}.
+Erst die \textbf{Verknüpfung} von Digital Master und Digital Shadow über Algorithmen,
+Simulationsmodelle oder Korrelationen erzeugt den eigentlichen Digitalen Zwilling
+\cite{stark2019}.
+Besonders betonen Stark und Damerau dabei den Aspekt der Einzigartigkeit, ein
 Digitaler Zwilling bildet stets eine bestimmte physische Instanz ab, nicht ein
-generisches Produktionslinienmodell.
-\fi
+generisches Modell.
+
+Da diese Begriffe in der vorliegenden Arbeit nicht weiter verwendet werden, dient
+die Klassifikation nach Kritzinger et al.\ als alleiniger Bezugsrahmen.
 
 \subsection{Digitale Zwillinge im Fertigungskontext}
 Die Klassifikation nach Kritzinger et al.\ beschreibt, in welchem Maß der Datenfluss
@@ -212,9 +218,11 @@ mitwirken.
     \item Normungsgremien und Zertifizierungsstellen
 \end{itemize}
 
+Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bieten, ordnet RAMI~4.0 jedes Asset entlang der drei Achsen Lebenszyklus, Hierarchieebene und Architekturschicht ein, wie Abbildung~\ref{fig:rami40} zeigt.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{rami.jpg}
+    \makebox[\linewidth][c]{\includegraphics[width=1.28\linewidth]{rami.jpg}}
     \caption{RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales
         Schichtenmodell mit den Achsen \enquote{Life Cycle \& Value Stream},
         \enquote{Hierarchy Levels} und \enquote{Layers}
@@ -323,45 +331,52 @@ die Starrkörperdynamik, Gelenkkräfte und Kollisionserkennung GPU-parallel bere
 PhysX ist zudem in verbreiteten Simulationsumgebungen wie Visual Components oder
 KUKA.Sim integriert.
 
-Zum Omniverse-Ökosystem gehören weitere spezialisierte Anwendungen.
-\textbf{Isaac Lab} erweitert NVIDIA Isaac Sim um ein Framework für Reinforcement Learning,
-mit dem Roboter-Verhaltensweisen trainiert und per Sim-to-Real-Transfer auf reale
-Hardware übertragen werden können, wie in Abbildung~\ref{fig:isaac_lab} gezeigt
-\cite{nvidia_isaaclab}.
-Als drittes Glied der Isaac-Familie zeichnet \textbf{Isaac TeleOp} menschliche
-Bedienabläufe als Trainingsdaten auf, wobei verschiedene Eingabegeräte wie etwa
-VR-Brillen verwendet werden, wie in Abbildung~\ref{fig:isaac_teleop} gezeigt
-\cite{nvidia_isaacteleoperation}.
-\textbf{Isaac GR00T} stellt ein Grundlagenmodell für humanoide Roboter bereit und
-kann aus den von Isaac TeleOp aufgezeichneten Bewegungsabläufen humanoide Roboter
-trainieren, wie in den Abbildungen~\ref{fig:isaac_lab} und~\ref{fig:isaac_teleop}
-gezeigt \cite{nvidia_groot}.
-\textbf{Isaac ROS} ist für Mobilitätsanwendungen bis hin zum autonomen Fahren
-ausgelegt \cite{nvidia_isaacros}.
-Um eine ausreichende Datensatzvielfalt für KI-Modellanwendungen sicherzustellen,
-wurde \textbf{NVIDIA Cosmos} entwickelt, um aus bestehenden Simulationsszenen
-Variationen in Beleuchtung, Textur und Materialeigenschaften zu erzeugen
-\cite{nvidia_cosmos}.
+Zum Omniverse-Ökosystem gehören weitere spezialisierte Anwendungen, die Training und
+KI-gestützte Anwendungen in den Vordergrund rücken.
+Dieser Trainingsaspekt bildet gegenüber klassischen Fabrikplanungswerkzeugen ein
+zentrales Alleinstellungsmerkmal von NVIDIA Omniverse, da die physikalisch korrekte
+Simulationsumgebung nicht nur zur Absicherung von Steuerungsprogrammen, sondern auch
+zur Erzeugung von Trainingsdaten für KI-Modelle genutzt wird.
+
+\textbf{Isaac Lab} erweitert NVIDIA Isaac Sim um ein Framework für Reinforcement
+Learning.
+Darin werden zahlreiche Instanzen eines Roboters gleichzeitig in parallelen,
+physikalisch simulierten Umgebungen trainiert, wie Abbildung~\ref{fig:isaac_lab}
+zeigt.
+Die daraus resultierenden Verhaltensweisen lassen sich anschließend per
+Sim-to-Real-Transfer auf reale Hardware übertragen \cite{nvidia_isaaclab}.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}[t]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{isaac lab.png}
-        \caption{Paralleles Training von Robotern in NVIDIA Isaac Lab
-            \cite{nvidia_isaaclab}}
-        \label{fig:isaac_lab}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{NVIDIA Cosmos.png}
-        \caption{Erfassen und Übertragen menschlicher Bedienabläufe per VR-Brille
-            mit Isaac TeleOp und Isaac GR00T
-            \cite{nvidia_isaacteleoperation,nvidia_groot}}
-        \label{fig:isaac_teleop}
-    \end{minipage}
+    \includegraphics[width=0.85\linewidth]{isaac lab.png}
+    \caption{Paralleles Training von Robotern in NVIDIA Isaac Lab
+        \cite{nvidia_isaaclab}}
+    \label{fig:isaac_lab}
 \end{figure}
+
+Als weiteres Glied der Isaac-Familie zeichnet \textbf{Isaac TeleOp} menschliche
+Bedienabläufe als Trainingsdaten auf, wobei Eingabegeräte wie VR-Brillen zum Einsatz
+kommen.
+Auf Grundlage dieser aufgezeichneten Bewegungsabläufe trainiert \textbf{Isaac GR00T},
+ein Grundlagenmodell für humanoide Roboter, deren Steuerungsverhalten.
+Abbildung~\ref{fig:isaac_teleop} zeigt diesen Ablauf von der Erfassung menschlicher
+Bewegungen per VR-Brille bis zum trainierten GR00T-Modell
+\cite{nvidia_isaacteleoperation,nvidia_groot}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{NVIDIA Cosmos.png}
+    \caption{Erfassen und Übertragen menschlicher Bedienabläufe per VR-Brille
+        mit Isaac TeleOp und Isaac GR00T
+        \cite{nvidia_isaacteleoperation,nvidia_groot}}
+    \label{fig:isaac_teleop}
+\end{figure}
+
+\textbf{Isaac ROS} ist für Mobilitätsanwendungen bis hin zum autonomen Fahren
+ausgelegt \cite{nvidia_isaacros}.
+Um eine ausreichende Datensatzvielfalt für diese KI-Modellanwendungen sicherzustellen,
+erzeugt \textbf{NVIDIA Cosmos} aus bestehenden Simulationsszenen Variationen in
+Beleuchtung, Textur und Materialeigenschaften \cite{nvidia_cosmos}.
 
 
 \subsection{Datenformate OpenUSD und URDF}
@@ -431,3 +446,36 @@ Als Transportprotokoll dient \emph{Hypertext Transfer Protocol} (HTTP), das die 
 Eine \emph{Uniform Resource Locator} (URL) ist die Adresse einer Ressource in einem Rechnernetz, gültig sowohl im lokalen Netz als auch im Internet.
 Über eine GET-Anfrage wird der aktuelle Zustand der unter einer URL bereitgestellten Ressource abgerufen, über eine POST-Anfrage werden strukturierte Daten an denselben Endpunkt gesendet.
 Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, der Server mit den angeforderten Daten antwortet und kein dauerhafter Verbindungskanal vorgehalten werden muss \cite{ietf_rfc9110}.
+
+Die vorgestellten Datenformate und Middleware-Architekturen erfüllen unterschiedliche, einander ergänzende Aufgaben im Datenfluss zwischen physischer Anlage und Digitalem Zwilling.
+OpenUSD und URDF beschreiben die Struktur und Geometrie der virtuellen Szene, während OPC~UA, MQTT, ROS\,2 und REST den laufenden Datenaustausch mit der physischen Anlage übernehmen.
+Abbildung~\ref{fig:middleware_overview} fasst dieses Zusammenspiel zusammen.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        box/.style={draw, rounded corners, minimum width=3cm, minimum height=1cm, align=center, font=\small, fill=gray!10},
+        arr/.style={-{Latex[length=2.2mm]}, thick}
+    ]
+        \node[box, minimum width=6.2cm] (anlage) {Physische Anlage\\(SPS, Sensoren, Aktoren)};
+
+        \node[box, below=1.3cm of anlage, xshift=-4.65cm] (opcua) {OPC~UA};
+        \node[box, below=1.3cm of anlage, xshift=-1.55cm] (mqtt) {MQTT};
+        \node[box, below=1.3cm of anlage, xshift=1.55cm] (ros2) {ROS\,2};
+        \node[box, below=1.3cm of anlage, xshift=4.65cm] (rest) {REST};
+
+        \node[box, below=1.3cm of mqtt, xshift=1.55cm, minimum width=6.2cm] (omniverse) {NVIDIA Omniverse / Isaac Sim\\(OpenUSD-Szene, URDF-Import)};
+
+        \draw[arr] (anlage.south) -- (opcua.north);
+        \draw[arr] (anlage.south) -- (mqtt.north);
+        \draw[arr] (anlage.south) -- (ros2.north);
+        \draw[arr] (anlage.south) -- (rest.north);
+
+        \draw[arr] (opcua.south) -- (omniverse.north);
+        \draw[arr] (mqtt.south) -- (omniverse.north);
+        \draw[arr] (ros2.south) -- (omniverse.north);
+        \draw[arr] (rest.south) -- (omniverse.north);
+    \end{tikzpicture}
+    \caption{Zusammenspiel von Middleware-Architekturen und Datenformaten bei der Anbindung physischer Anlagen an NVIDIA Omniverse.}
+    \label{fig:middleware_overview}
+\end{figure}
