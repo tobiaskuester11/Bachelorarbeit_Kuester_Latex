@@ -1,20 +1,20 @@
 \section{Theoretische Grundlagen}
 \label{sec:grundlagen}
 
-Der Aufbau eines \emph{Digitalen Zwillings} setzt Kenntnisse aus Fabrikplanung, Virtueller Inbetriebnahme und industrieller Kommunikationstechnik voraus.
-Die im Folgenden erarbeiteten Grundlagen bilden den begrifflichen Rahmen, auf den Entwicklung, Inbetriebnahme und Bewertung der in dieser Arbeit realisierten \emph{Digitalen Zwillinge} in den nachfolgenden Kapiteln aufbauen.
-
+Der Aufbau eines Digitalen Zwillings setzt Kenntnisse aus Fabrikplanung, Virtueller Inbetriebnahme und industrieller Kommunikationstechnik voraus.
+Die im Folgenden erarbeiteten Grundlagen bilden den begrifflichen Rahmen, auf den die Entwicklung, die Inbetriebnahme und die Bewertung der in dieser Arbeit realisierten digitalen Zwillinge aufbauen.
 Das vorliegende Kapitel erarbeitet das methodische und technische Fundament dafür.
+
 Die klassische Fabrikplanung nach VDI~5200 strukturiert den Planungsprozess in
 sequenzielle Phasen, deren Grenzen durch proprietäre Datenformate und fehlende
-Interoperabilität der eingesetzten Werkzeuge entstehen.
+Kompatibilität der eingesetzten Werkzeuge entstehen.
 Das Konzept der Digitalen Fabrik nach VDI~4499 ergänzt dieses Modell durch ein
 durchgängiges Datenmanagement, das diese Phasengrenzen überwindet und die bisher
 isoliert arbeitenden Planungsabschnitte miteinander vernetzt.
 Anschließend werden die Virtuelle Inbetriebnahme nach VDI/VDE~3693 sowie
 Klassifikationen Digitaler Zwillinge eingeführt.
 Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) und der normative Rahmen
-nach ISO~23247 verorten den \emph{Digitalen Zwilling} im industriellen Kontext,
+nach ISO~23247 verorten den Digitalen Zwilling im industriellen Kontext,
 bevor abschließend die eingesetzten Technologien und Kommunikationsstandards
 vorgestellt werden.
 
@@ -24,7 +24,7 @@ von der \emph{Zielfestlegung} (Phase~1) über \emph{Grundlagenermittlung},
 \emph{Konzeptplanung} und \emph{Detailplanung} bis hin zu
 \emph{Realisierungsvorbereitung}, \emph{Realisierungsüberwachung} und
 \emph{Hochlaufbetreuung} (Phase~7).
-Damit liefert sie das methodische Grundgerüst für die systematische Planung von
+Damit liefert sie das methodische Grundgerüst für die Planung von
 Produktionsanlagen \cite{vdi5200}.
 Sämtliche Phasen werden von einem übergreifenden Projektmanagementprozess begleitet,
 wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
@@ -37,12 +37,12 @@ wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
     \label{fig:vdi5200_phasen}
 \end{figure}
 
-Das Phasenmodell ist dabei grundsätzlich sequenziell ausgerichtet, wobei spätere Phasen
+Das Phasenmodell ist dabei sequenziell ausgerichtet, wobei spätere Phasen
 auf den Ergebnissen früherer aufbauen. Klassischerweise werden die einzelnen Phasen
 jedoch mit weitgehend eigenständigen, kaum miteinander verknüpften Modellen und
 Werkzeugen bearbeitet.
 Um diese Grenzen zwischen den Phasen zu überwinden, setzt die Digitale Fabrik auf ein
-durchgängiges Datenmanagement, das alle Planungsphasen miteinander vernetzt.
+durchgängiges Datenmanagement, das alle Planungsphasen miteinander vernetzt \cite{bmw_nvidia_2021}.
 
 \begin{figure}[H]
     \centering
@@ -56,7 +56,7 @@ Das gezeigte Bild verdeutlicht, wie VDI~4499 Blatt~2 dieses Konzept in den
 Lebenszyklusphasen eines Produktionssystems konkretisiert \cite{vdi4499b2}.
 VDI~4499 Blatt~1 definiert die Digitale Fabrik als vernetztes System digitaler Modelle,
 Methoden und Werkzeuge zur ganzheitlichen Planung und Steuerung von Fabrikprozessen
-\cite{vdi4499} und schafft damit eine gemeinsame Datenbasis über alle Phasengrenzen hinweg.
+\cite{vdi4499} und ermöglicht damit ein durchgängiges Datenmanagement über alle Phasengrenzen hinweg.
 
 \subsection{Virtuelle Inbetriebnahme nach VDI/VDE~3693}
 \label{subsec:defizite}
@@ -116,7 +116,7 @@ Bestandteile, die erst zusammen einen echten Digitalen Zwilling ergeben:
 \textbf{(1) Digital Master:} Der \emph{Digital Master} ist das in der Entwicklungsphase
 erstellte virtuelle Modell einer Anlage, das Geometrie, Kinematik und
 Materialeigenschaften beschreibt.
-Für den Maze Runner ist dies das aus CAD-Daten exportierte 3D-Modell in Isaac Sim,
+Für den Maze Runner ist dies das aus CAD-Daten exportierte 3D-Modell in NVIDIA Isaac Sim,
 das alle Bauteile originalgetreu abbildet.
 Für den Dobot Magician ist es die kinematische Beschreibung des Roboterarms mit seinen
 Gelenken, Drehachsen und Gelenklimits.
@@ -171,9 +171,23 @@ vorausschauende Risikobewertung \cite{iso23247}.
 Die Darstellung vermittelt damit einen anschaulichen ersten Überblick über das
 Zusammenspiel von digitalem Abbild, Gerätekopplung und Anwendungsnutzen.
 
+\subsection{Normativer Rahmen nach ISO~23247-2}
+
+ISO~23247-1 legt das übergeordnete Rahmenwerk für Digitale Zwillinge in der Fertigung fest und definiert allgemeine Grundsätze sowie Anforderungen \cite{iso23247}. Im vorangehenden Unterkapitel wurde das Digital-Twin-Framework auf dieser Grundlage als Grobdarstellung in Abbildung~\ref{fig:dt_manufacturing} eingeführt, ohne die Bestandteile des Digitalen Zwillings weiter aufzugliedern. ISO~23247-2 ergänzt dieses Rahmenwerk durch ein entitätenbasiertes Referenzmodell, das den Digitalen Zwilling in funktionale Einheiten gliedert \cite{iso23247_2}. Abbildung~\ref{fig:iso23247} stellt diese Gliederung dar und zeigt, welche Komponenten an der Kommunikation mit der physischen Anlage und an der digitalen Repräsentation beteiligt sind.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{{Functional view of the Digital Twin reference model for manufacturing}}
+    \caption{Funktionale Referenzarchitektur des Digital-Twin-Frameworks für die Fertigung
+        nach ISO~23247-2 mit den vier Entitäten und den beobachtbaren Fertigungselementen
+        außerhalb der Frameworkgrenze
+        (Quelle: \cite{iso23247_2}).}
+    \label{fig:iso23247}
+\end{figure}
+
 \subsection{Referenzarchitekturmodell RAMI~4.0}
-An Planung, Umsetzung und Betrieb vernetzter Industrie-4.0-Anlagen sind Fachleute
-aus verschiedenen Disziplinen beteiligt. Jede Disziplin beschreibt Komponenten in
+An Planung, Umsetzung und Betrieb vernetzter Industrie-4.0-Anlagen sind verschiedene
+Fachabteilungen beteiligt. Jede Fachabteilung beschreibt Komponenten in
 eigenen Begriffen, sodass Zuständigkeiten über Systemgrenzen hinweg schwer
 abzustimmen und Probleme an Schnittstellen schwer einzugrenzen sind.
 Für die Einordnung nach Betriebsebene diente traditionell die Automatisierungspyramide,
@@ -182,10 +196,10 @@ Sie erfasst jedoch weder den Produktlebenszyklus noch die Architekturschichten, 
 für eine vollständige Beschreibung vernetzter Industrie-4.0-Komponenten notwendig sind.
 Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) schließt diese Lücke und
 erweitert die Automatisierungspyramide um die Achsen Lebenszyklus und Wertschöpfung
-sowie sechs Architekturschichten. Es stellt damit den dreidimensionalen Rahmen bereit,
+sowie sechs Architekturschichten (Abbildung~\ref{fig:rami40}). Es stellt damit den dreidimensionalen Rahmen bereit,
 in dem sich Maschinen, Anlagen, Softwarekomponenten und Digitale Zwillinge einheitlich
 beschreiben und zueinander in Beziehung setzen lassen \cite{dinspec91345}.
-Das Modell richtet sich an alle Akteursgruppen, die an Industrie-4.0-Systemen
+Das Modell richtet sich an alle Fachabteilungen, die an Industrie-4.0-Systemen
 mitwirken.
 
 \begin{itemize}
@@ -197,8 +211,6 @@ mitwirken.
     \item Systemintegratoren
     \item Normungsgremien und Zertifizierungsstellen
 \end{itemize}
-
-In Abbildung~\ref{fig:rami40} ist das Modell als dreidimensionale Struktur dargestellt.
 
 \begin{figure}[H]
     \centering
@@ -212,94 +224,32 @@ In Abbildung~\ref{fig:rami40} ist das Modell als dreidimensionale Struktur darge
 
 Grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
 oder virtuelle Objekt mit definierten Eigenschaften und Wert verstanden wird, vom
-einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage.
+einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage \cite{dinspec91345}.
 Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell) angelegt
-werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert.
+werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert \cite{idta_aas2025}.
 
 Die \textbf{Hierarchieachse} übernimmt die Struktur der Automatisierungspyramide mit
 den Ebenen Feldgerät, Steuerungseinheit, Arbeitsstation und Arbeitszelle und ergänzt
 sie um Betrieb sowie Vernetzte Welt, welche übergeordnete Cloud- und IoT-Dienste
-einschließt. Jedes Asset lässt sich einer oder mehreren dieser Ebenen zuordnen.
+einschließt. Jedes Asset lässt sich einer oder mehreren dieser Ebenen zuordnen \cite{dinspec91345}.
 
 In vertikaler Richtung gliedern sechs \textbf{Architekturschichten} jede Hierarchieebene
 und beschreiben, welche Fähigkeiten ein Asset dort bereitstellt. Sie umfassen die Schichten Asset (die physische Komponente selbst),
-Integration, Kommunikation, Information, Funktionen und Geschäftsprozesse.
+Integration, Kommunikation, Information, Funktionen und Geschäftsprozesse \cite{dinspec91345}.
 Kommunikationsstandards wie OPC~UA sind der Kommunikationsschicht zuzuordnen,
 Datenformate wie OpenUSD der Informationsschicht.
 
 Die dritte Achse erfasst den \textbf{Lebenszyklus} eines Assets von der Entwicklung
 über den Betrieb bis zur Außerbetriebnahme und unterscheidet dabei zwischen Typ, dem
-allgemeinen Modell einer Komponente, und Instanz, dem konkreten Exemplar im Einsatz.
+allgemeinen Modell einer Komponente, und Instanz, dem konkreten Exemplar im Einsatz \cite{dinspec91345}.
 Digitale Zwillinge bilden stets Instanzen ab, da sie den aktuellen Zustand einer
-bestimmten physischen Anlage repräsentieren.
+bestimmten physischen Anlage repräsentieren \cite{kritzinger2018}.
 
 Damit steht Maschinenbauern, Elektroingenieuren, IT-Architekten und Inbetriebnehmern
 eine gemeinsame Beschreibungssprache zur Verfügung. Systeme lassen sich
 schichtenweise analysieren, Schnittstellen eindeutig verorten und Probleme an
 Systemgrenzen gezielt eingrenzen, ohne das Gesamtsystem vollständig durchleuchten
 zu müssen.
-
-\subsection{Normativer Rahmen nach ISO~23247}
-
-Im vorangehenden Unterkapitel wurde das Digital-Twin-Framework in seiner Grundstruktur
-dargestellt.
-Eine formale Beschreibung der einzelnen Entitäten und ihrer Schnittstellen fehlt darin.
-Für Fertigungsumgebungen liegt mit ISO~23247 ein internationaler Standard vor, der
-diesen Rahmen beschreibt.
-Sie ist in vier Teile gegliedert. Teil~1 beschreibt allgemeine Grundsätze und
-Anforderungen, Teil~2 die Referenzarchitektur mit funktionalen Sichten, Teil~3
-die Informationsattribute der beobachtbaren Fertigungselemente und Teil~4 die
-technischen Anforderungen an den Informationsaustausch \cite{iso23247}.
-
-Das in Teil~2 spezifizierte \emph{Digital Twin Framework} unterscheidet dabei zwei
-funktional verschiedene Einsatzkontexte.
-Im Unternehmenskontext sind Aspekte wie die Integration übergeordneter Systeme
-(ERP, MES), rollenbasierte Zugangskontrolle sowie die Vernetzung mehrerer Zwillinge
-untereinander über die Cross-System Entity bedeutsam.
-Für einen Digitalen Zwilling als eigenständige Instanz, die eine einzelne physische
-Anlage konsistent abbildet, stehen hingegen die Core Entity als Träger der digitalen
-Repräsentation und die \emph{Data Collection and Device Control Entity} (DCDCE) als Kommunikationsschicht zur realen Anlage im Vordergrund.
-Abbildung~\ref{fig:iso23247} zeigt das funktionale Referenzmodell des Frameworks mit
-der hierarchischen Anordnung seiner vier Entitäten.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{{Functional view of the Digital Twin reference model for manufacturing}}
-    \caption{Funktionale Referenzarchitektur des Digital Twin Frameworks für die Fertigung
-        mit User Entity, Core Entity, Data Collection and Device Control Entity
-        und Cross-System Entity sowie den beobachtbaren Fertigungselementen außerhalb
-        der Frameworkgrenze
-        (Quelle: \cite{iso23247}).}
-    \label{fig:iso23247}
-\end{figure}
-
-Ein Digitaler Zwilling, der eine einzelne Fertigungsanlage mit zugehöriger
-Nutzerschnittstelle abbildet, ohne in Unternehmenssysteme eingebettet zu sein oder
-auf weitere Zwillinge zuzugreifen, erfordert primär die direkte Kopplung zwischen
-physischer und digitaler Welt.
-Die \textbf{DCDCE} ist dabei die funktional zentrale Entität. Sie erfasst kontinuierlich
-die Zustandsdaten der physischen Anlage, leitet sie an die Core Entity weiter und
-übersetzt in Gegenrichtung Steuerbefehle in Signale für die physische Anlage.
-Den Kommunikationsteil dieser Entität bildet eine Middleware-Schicht, die den
-Datentransport zur physischen Anlage übernimmt. Protokolle wie OPC~UA oder ROS~2 werden
-in dieser Rolle eingesetzt. Die DCDCE reicht jedoch über den reinen Datentransport
-hinaus und umfasst auch die Steuerungslogik für Gerätebefehle sowie die
-Synchronisationsschnittstelle zur Core Entity.
-
-Die \textbf{Core Entity} strukturiert ihre Funktionen über mehrere Functional Interfaces.
-Für einen eigenständigen Digitalen Zwilling sind die Schnittstellen für digitale
-Modellbildung (\emph{Digital Modeling FI}), Datensynchronisation (\emph{Synchronization FI})
-und physikalische Simulation (\emph{Simulation FI}) zentral.
-Die \emph{Reporting FI} ermöglicht die strukturierte Ausgabe von Zustandsdaten.
-Die \emph{Peer Interface FI}, die der direkten Verbindung mit weiteren Digitalen Zwillingen
-dient, ist für einen Zwilling ohne Vernetzungsanforderung nicht relevant.
-
-In ISO~23247 werden acht Typen beobachtbarer Fertigungselemente unterschieden,
-sogenannte \emph{Observable Manufacturing Elements} (OME) \cite{iso23247}.
-Fertigungsanlagen und Betriebsmittel werden dem Typ \emph{Equipment} zugeordnet,
-die durch sie ausgeführten Operationen dem Typ \emph{Process}.
-Das in der Anlage verarbeitete oder beförderte Werkstück ordnet die Norm dem Typ
-\emph{Product} zu und trennt es damit konzeptuell von der Fertigungsanlage selbst.
 
 \subsection{NVIDIA Omniverse-Ökosystem}
 \label{subsec:omniverse}
@@ -308,13 +258,13 @@ Engineering-Werkzeuge verschiedener Hersteller über Konnektoren in OpenUSD-Szen
 zusammenführt, Änderungen über den Nucleus-Server im 24/7-Dauerbetrieb zwischen
 allen Clients synchronisiert und Anlage sowie Produkt parallel in derselben Szene
 simuliert \cite{nvidia_omniverse}.
-Als Simulationsanwendung des Ökosystems verbindet \emph{Isaac Sim} physikalisch
+Als Simulationsanwendung des Ökosystems verbindet \emph{NVIDIA Isaac Sim} physikalisch
 korrekte Starrkörperdynamik mit fotorealistischem RTX-Rendering und wird in dieser
 Arbeit für die Entwicklung der Digitalen Zwillinge eingesetzt \cite{nvidia_isaacsim}.
 Auch in der Automobilindustrie wird Omniverse für die virtuelle Fabrikplanung
 eingesetzt, um Planungsdaten verschiedener Werkzeuge ohne Kompatibilitätshürden in
 einer gemeinsamen Simulationsumgebung zusammenzuführen \cite{bmw_nvidia_2021}.
-Wie eine solche Simulation in Isaac Sim aussieht, zeigt Abbildung~\ref{fig:isaac_bmw}.
+Wie eine solche Simulation in NVIDIA Isaac Sim aussieht, zeigt Abbildung~\ref{fig:isaac_bmw}.
 
 \begin{figure}[H]
     \centering
@@ -328,8 +278,7 @@ Wie eine solche Simulation in Isaac Sim aussieht, zeigt Abbildung~\ref{fig:isaac
 Im Viewport sind gleichzeitig unterschiedliche Darstellungszustände einer USD-Szene
 sichtbar.
 Die Karosserie im Vordergrund ist vollständig mit RTX Path Tracing berechnet.
-Reflexionen auf der Metalloberfläche und der Schattenwurf entstehen durch physikalisch
-basierte Lichtpfadsimulation.
+Reflexionen auf der Metalloberfläche und der Schattenwurf entstehen durch Lichtpfadsimulation.
 Der rechte Szenenbereich, bestehend aus Gabelstapler, Hallendecke und angrenzenden
 Strukturen, wird im Wireframe-Modus dargestellt und repräsentiert approximierte
 Kollisionsgeometrien.
@@ -360,10 +309,10 @@ Fabrikplanungswerkzeugen unterscheiden.
         thermische und elektrische Simulationsdaten verschiedener Disziplinen über
         USD-Layer verknüpft. Sowohl die Anlage als auch das prozessierte Produkt liegen
         in derselben Szene als parallel simulierbare Entitäten vor
-        \cite{nvidia_omniverse}.
+        \cite{nvidia_omniverse,nvidia_isaacsim}.
 \end{itemize}
 
-Isaac Sim wird mit einem vorinstallierten Extension-Katalog ausgeliefert, der
+NVIDIA Isaac Sim wird mit einem vorinstallierten Extension-Katalog ausgeliefert, der
 allgemeine Werkzeuge innerhalb der Simulationsumgebung bereitstellt, wie eine
 VR-Experience oder den Script Editor, über den Python-Code direkt in der laufenden
 Szene ausgeführt werden kann.
@@ -375,7 +324,7 @@ PhysX ist zudem in verbreiteten Simulationsumgebungen wie Visual Components oder
 KUKA.Sim integriert.
 
 Zum Omniverse-Ökosystem gehören weitere spezialisierte Anwendungen.
-\textbf{Isaac Lab} erweitert Isaac Sim um ein Framework für Reinforcement Learning,
+\textbf{Isaac Lab} erweitert NVIDIA Isaac Sim um ein Framework für Reinforcement Learning,
 mit dem Roboter-Verhaltensweisen trainiert und per Sim-to-Real-Transfer auf reale
 Hardware übertragen werden können, wie in Abbildung~\ref{fig:isaac_lab} gezeigt
 \cite{nvidia_isaaclab}.
@@ -417,26 +366,29 @@ Variationen in Beleuchtung, Textur und Materialeigenschaften zu erzeugen
 
 \subsection{Datenformate OpenUSD und URDF}
 \label{subsec:datenformate}
-Das von Pixar Animation Studios entwickelte Format \emph{Universal Scene Description}
-(OpenUSD) organisiert Szenendaten als hierarchischen Namensraum aus \emph{Prims}
-(Primitives) \cite{pixar_openusd}.
-NVIDIA Omniverse nutzt OpenUSD als natives Dateiformat, sodass CAD-Geometrien,
+\emph{Universal Scene Description} (OpenUSD) wird von NVIDIA Omniverse als natives Dateiformat genutzt, sodass CAD-Geometrien,
 Simulationsparameter und Laufzeitdaten verschiedener Planungsphasen ohne
 werkzeugspezifische Konvertierungen in einer gemeinsamen Szene zusammenwachsen
 \cite{nvidia_omniverse}.
 Dies schafft auf Datenformatsebene die Grundlage für das durchgängige Datenmodell,
 das VDI~4499 als Ziel der Digitalen Fabrik beschreibt.
 
+Innerhalb einer USD-Szene wird jedes Objekt als \emph{Prim} (Primitiv) abgebildet \cite{pixar_openusd}.
+Ein \emph{Mesh}-Prim speichert dabei das Polygonnetz eines Bauteils, ein \emph{Xform}-Prim enthält Transformationsdaten zu Position, Rotation und Skalierung und dient als Gruppenknoten für untergeordnete Prims \cite{pixar_openusd}.
+Durch die Verschachtelung von Xform-Prims entsteht eine Baumstruktur, die die Hierarchie aus Baugruppe, Unterbaugruppe und Einzelteil eines CAD-Modells direkt abbilden kann \cite{pixar_openusd}.
+Beim Import eines STEP-Modells werden Baugruppenhierarchien automatisch als Xform-Knoten und Einzelteile als Mesh-Prims übernommen, sodass die logische Gliederung der CAD-Baugruppe in der Simulationsszene erhalten bleibt \cite{nvidia_isaacsim}.
+OpenUSD wurde ursprünglich von Pixar Animation Studios entwickelt und als offener Standard veröffentlicht \cite{pixar_openusd}.
+
 Für die roboterspezifische Strukturbeschreibung ergänzt das \emph{Unified Robot
 Description Format} (URDF) das OpenUSD-Ökosystem \cite{ros_urdf}.
-URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie
-visuelle, kollisions- und trägheitsrelevante Geometrien in einer XML-Struktur und wird
-in der Robotik als verbreitetes Standardbeschreibungsformat eingesetzt \cite{ros_urdf}.
+URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie deren Parameter und Materialeigenschaften in einer XML-Struktur und wird in der Robotik als verbreitetes Standardbeschreibungsformat eingesetzt \cite{ros_urdf}.
+Eine URDF-Datei ermöglicht zusammen mit den Bauteil-Dateien des Roboters den Import einer Baugruppe mit allen Gelenken, die nach dem Import unmittelbar für die bidirektionale Kopplung zur realen Anlage bereitsteht \cite{ros_urdf}.
+Beim Import in NVIDIA Isaac Sim wird die URDF-Beschreibung in eine USD-Stage konvertiert, sodass die Baugruppe anschließend als OpenUSD-Szene vorliegt \cite{nvidia_isaacsim}.
 
 
 \subsection{Middleware-Architekturen für die industrielle Kommunikation}
 
-Middleware-Architekturen bilden die kommunikative Brücke zwischen der physischen Anlage
+Middleware-Architekturen vermitteln die Kommunikation zwischen der physischen Anlage
 und der Omniverse-Extension, die den digitalen Zwilling in der Simulationsszene steuert.
 Sie übernehmen den Transport von Sensordaten, Steuerungsbefehlen und Zustandsinformationen
 in Echtzeit.
@@ -453,6 +405,8 @@ OPC~UA zum verbreiteten Standard für die vertikale Integration in
 Industrie~4.0-Architekturen gemacht.
 Das Protokoll \emph{Open Platform Communications Unified Architecture} (OPC~UA) ist in
 der Normenreihe DIN~EN~IEC~62541 festgeschrieben \cite{iec62541}.
+Zur Inspektion des Adressraums werden Browsing-Werkzeuge wie UaExpert eingesetzt.
+Mit ihnen werden die von einer SPS bereitgestellten Knoten ausgelesen, bevor die eigentliche Cliententwicklung beginnt.
 
 \subsubsection{MQTT v5.0}
 Im Publish-Subscribe-Ansatz veröffentlichen Sender Nachrichten an einen Broker,
@@ -464,12 +418,16 @@ von OASIS standardisiert \cite{oasis_mqtt5}.
 \subsubsection{ROS 2 und DDS}
 ROS\,2 ist für die Ansteuerung kinematischer Ketten ausgelegt, da Gelenkwinkel von
 Roboterarmen über standardisierte Nachrichtentypen in Echtzeit übertragen werden.
-Konfigurierbare \emph{Quality-of-Service}-Profile erlauben es, die Kommunikation gezielt
-auf Latenz, Zuverlässigkeit oder Durchsatz abzustimmen, was die Kopplung von Isaac Sim
-mit realer Roboterhardware unterstützt \cite{ros2_humble_docs}.
 Praktische Einsatzbereiche reichen von der Intralogistik bis zur Fertigungsautomation
 mit kameragestützten Pick-and-Place-Aufgaben.
 Für Anwendungen im autonomen Fahren stellt NVIDIA mit Isaac ROS hardwarebeschleunigte
 ROS\,2-Pakete bereit \cite{nvidia_isaacros}.
 Die technische Grundlage bildet der \emph{Data Distribution Service} (DDS), auf dem
 \emph{Robot Operating System~2} (ROS\,2) aufbaut \cite{ros2_humble_docs}.
+
+\subsubsection{REST API}
+Die Kernkomponente von \emph{Representational State Transfer} (REST) ist das Prinzip, dass jede Ressource in einem Rechnernetz über eine eindeutige Adresse erreichbar ist und über standardisierte Anfragen gelesen oder verändert werden kann \cite{ietf_rfc9110}.
+Als Transportprotokoll dient \emph{Hypertext Transfer Protocol} (HTTP), das die Kommunikationsregeln zwischen Client und Server festlegt.
+Eine \emph{Uniform Resource Locator} (URL) ist die Adresse einer Ressource in einem Rechnernetz, gültig sowohl im lokalen Netz als auch im Internet.
+Über eine GET-Anfrage wird der aktuelle Zustand der unter einer URL bereitgestellten Ressource abgerufen, über eine POST-Anfrage werden strukturierte Daten an denselben Endpunkt gesendet.
+Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, der Server mit den angeforderten Daten antwortet und kein dauerhafter Verbindungskanal vorgehalten werden muss \cite{ietf_rfc9110}.

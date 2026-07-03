@@ -1,23 +1,38 @@
 \section{Verwendete KI-Software}
 \label{anhang:ki}
-Im Rahmen der Erstellung dieser Arbeit wurden KI-basierte Werkzeuge ausschließlich unterstützend eingesetzt. Tabelle~\ref{tab:ki} dokumentiert die verwendeten Tools, ihren Einsatzbereich und den Bearbeitungsumfang gemäß den Hinweisen von Prof.\ Diersen.
+Im Rahmen der Erstellung dieser Arbeit wurden KI-basierte Werkzeuge ausschließlich unterstützend eingesetzt.
+Tabelle~\ref{tab:ki} dokumentiert die verwendeten Tools, ihren Einsatzbereich und den Bearbeitungsumfang gemäß den Hinweisen von Prof.\ Diersen.
+Alle KI-generierten Inhalte wurden inhaltlich überprüft, gegen wissenschaftliche Primärquellen abgeglichen und in eigenen Worten in den Text integriert.
+Eine unmittelbare Übernahme generierter Passagen erfolgte nicht.
 \begin{table}[htbp]
 \centering
 \caption{Übersicht verwendeter KI-Software}
 \label{tab:ki}
-\begin{tabularx}{\textwidth}{lXX}
+\begin{tabularx}{\textwidth}{p{3.8cm}XX}
 \toprule
 \textbf{Tool} & \textbf{Einsatzbereich} & \textbf{Umfang} \\
 \midrule
-Claude Code (Anthropic), VS-Code-Extension & Python-Code-Unterstützung (Omniverse-Extension), LaTeX-Textbearbeitung und -Formatierung, Strukturierung und Verwaltung des Literatur- und Dokumentenordners & kontinuierlich, alle Inhalte inhaltlich geprüft und überarbeitet \\
-GWDG Chat AI         & Strukturierung Inhaltsverzeichnis, sprachliche Glättung & punktuell, gegengeprüft \\
-NVIDIA NIM (LLM)     & Erläuterung Isaac-Sim-API, Python-Snippet-Vorschläge    & punktuell, gegengeprüft \\
-DeepL                & Übersetzung Kurzfassung Deutsch--Englisch              & vollständig manuell überarbeitet \\
-Grammarly            & Orthografische Prüfung englische Abstracts             & rein orthografisch \\
+Claude Code (Anthropic),\newline VS-Code-Extension
+  & Python-Code-Unterstützung (Omniverse-Extension), Strukturierung und Verwaltung des Literatur- und Dokumentenordners
+  & kontinuierlich, alle Inhalte inhaltlich geprüft und überarbeitet \\
+GWDG Chat AI
+  & Strukturierung Inhaltsverzeichnis, sprachliche Glättung
+  & punktuell, gegengeprüft \\
+LanguageTool\newline (LanguageTool GmbH)
+  & KI-gestützte Grammatik- und Stilprüfung auf Deutsch, Erkennung stilistischer Mängel im Fließtext
+  & punktuell, rein korrekturlesend \\
+Duden Mentor\newline (Bibliographisches Institut)
+  & Orthografische und grammatikalische Kontrolle deutschsprachiger Texte auf Regelwerks-Basis
+  & punktuell, rein orthografisch \\
+Ragnar (app.ragnar.build),\newline AI Text- \& Image-to-CAD
+  & Erzeugung eines CAD-Modells der Schutzverkleidung für den \enquote{Mr.\,Fusion}-Reaktor am DeLorean-Modell im Pick-and-Place-Szenario des Dobot Magician anhand des Prompts \enquote{Erstelle einen Hohlzylinder mit einem Innendurchmesser von 13\,mm, einem Außendurchmesser von 14\,mm und einer Höhe von 10\,mm. Eine Seite ist geschlossen. Die Kanten an der offenen Seite sind abgerundet.}
+  & einmalig genutzt, Ergebnis entsprach direkt den Anforderungen, keine Nachbearbeitung notwendig \\
+Zoo Text-to-CAD\newline (Zoo Studio)
+  & Erzeugung eines CAD-Modells des Sauggreifers für den Dobot Magician anhand des Prompts \enquote{Erstelle ein CAD-Modell des abgebildeten Sauggreifers} mit einem Screenshot aus der Dobot-Anleitung als Bildvorlage
+  & einmalig genutzt, Ergebnis inhaltlich geprüft \\
 \bottomrule
 \end{tabularx}
 \end{table}
-Alle KI-generierten Inhalte wurden inhaltlich überprüft, gegen wissenschaftliche Primärquellen abgeglichen und in eigenen Worten in den Text integriert. Eine unmittelbare Übernahme generierter Passagen erfolgte nicht.
 
 \section{Reproduktions-Anleitung (Auszug)}
 \label{anhang:repro}
@@ -70,7 +85,7 @@ Der vollständige Reproduktions-Leitfaden ist als digitales Übergabepaket im LF
 
 \section{Küster Omniverse Tutorial -- Reproduktionsanleitung}
 \label{anhang:omniverse_tutorial}
-Die nachfolgende Anleitung dokumentiert vollständig den Prozess der Erstellung eines Digitalen Zwillings mit NVIDIA Omniverse und Isaac Sim, wie er im Rahmen dieser Arbeit erarbeitet wurde. Sie richtet sich an Studierende und Mitarbeitende des LFP, die den Prozess eigenständig nachvollziehen möchten.
+Die nachfolgende Anleitung dokumentiert vollständig den Prozess der Erstellung eines Digitalen Zwillings mit NVIDIA Omniverse und NVIDIA Isaac Sim, wie er im Rahmen dieser Arbeit erarbeitet wurde. Sie richtet sich an Studierende und Mitarbeitende des LFP, die den Prozess eigenständig nachvollziehen möchten.
 
 \includepdf[pages=-,pagecommand={\thispagestyle{plain}},fitpaper=true]{Doku_Hinweise_Leitfaeden/Kuester_Omniverse_Tutorial.pdf}
 

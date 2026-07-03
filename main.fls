@@ -134,6 +134,11 @@ INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
@@ -163,6 +168,127 @@ INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.st
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgfgantt\pgfgantt.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgfgantt\pgfgantt.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeyslibraryfiltered.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfint.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorerdf.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypatterns.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypatterns.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfcalendar.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfcalendar.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfcalendar.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfcalendar.code.tex
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfcalendar.code.tex
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
@@ -280,6 +406,8 @@ INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
@@ -404,6 +532,13 @@ INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 OUTPUT main.lof
 INPUT .\main.lot
 INPUT .\main.lot
@@ -414,8 +549,6 @@ INPUT .\Kapitel 0\Abkuerzungsverzeichnis.tex
 INPUT .\Kapitel 0\Abkuerzungsverzeichnis.tex
 INPUT .\Kapitel 0\Abkuerzungsverzeichnis.tex
 INPUT Kapitel 0\Abkuerzungsverzeichnis.tex
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT .\01_Einleitung\Einleitung.tex
 INPUT .\01_Einleitung\Einleitung.tex
 INPUT .\01_Einleitung\Einleitung.tex
@@ -447,18 +580,18 @@ INPUT .\00_Bilder\DT for manufacturing.png
 INPUT .\00_Bilder\DT for manufacturing.png
 INPUT .\00_Bilder\DT for manufacturing.png
 INPUT .\00_Bilder\DT for manufacturing.png
-INPUT .\00_Bilder\rami.jpg
-INPUT .\00_Bilder\rami.jpg
-INPUT .\00_Bilder\rami.jpg
-INPUT .\00_Bilder\rami.jpg
-INPUT .\00_Bilder\rami.jpg
-INPUT .\00_Bilder\rami.jpg
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
 INPUT .\00_Bilder\Functional view of the Digital Twin reference model for manufacturing.png
+INPUT .\00_Bilder\rami.jpg
+INPUT .\00_Bilder\rami.jpg
+INPUT .\00_Bilder\rami.jpg
+INPUT .\00_Bilder\rami.jpg
+INPUT .\00_Bilder\rami.jpg
+INPUT .\00_Bilder\rami.jpg
 INPUT .\00_Bilder\BMW_Isaac Sim.jpg
 INPUT .\00_Bilder\BMW_Isaac Sim.jpg
 INPUT .\00_Bilder\BMW_Isaac Sim.jpg
@@ -488,16 +621,54 @@ INPUT .\00_Bilder\Jira.png
 INPUT .\00_Bilder\Jira.png
 INPUT .\00_Bilder\Jira.png
 INPUT .\00_Bilder\Jira.png
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT .\04_Entwicklung_der_Digitalen_Zwillinge\Entwicklung_der_Digitalen_Zwillinge.tex
 INPUT .\04_Entwicklung_der_Digitalen_Zwillinge\Entwicklung_der_Digitalen_Zwillinge.tex
 INPUT .\04_Entwicklung_der_Digitalen_Zwillinge\Entwicklung_der_Digitalen_Zwillinge.tex
 INPUT .\04_Entwicklung_der_Digitalen_Zwillinge\Entwicklung_der_Digitalen_Zwillinge.tex
 INPUT 04_Entwicklung_der_Digitalen_Zwillinge\Entwicklung_der_Digitalen_Zwillinge.tex
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT .\00_Bilder\Dobot und Mazerunner.png
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazeRunnerProdukt.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\MazerunnerLevel1.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunner level2.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
+INPUT .\00_Bilder\Mazerunnerlevel3.png
 INPUT .\00_Bilder\Mazerunner_in_Isaac_Sim.png
 INPUT .\00_Bilder\Mazerunner_in_Isaac_Sim.png
 INPUT .\00_Bilder\Mazerunner_in_Isaac_Sim.png
@@ -510,6 +681,24 @@ INPUT .\00_Bilder\verschachtelte_Gelenke_am_Schwenkarm.png
 INPUT .\00_Bilder\verschachtelte_Gelenke_am_Schwenkarm.png
 INPUT .\00_Bilder\verschachtelte_Gelenke_am_Schwenkarm.png
 INPUT .\00_Bilder\verschachtelte_Gelenke_am_Schwenkarm.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\MazerunnerGithubRepo.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\MazerunnerExtension.png
+INPUT .\00_Bilder\MazerunnerExtension.png
+INPUT .\00_Bilder\MazerunnerExtension.png
+INPUT .\00_Bilder\MazerunnerExtension.png
+INPUT .\00_Bilder\MazerunnerExtension.png
+INPUT .\00_Bilder\MazerunnerExtension.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
@@ -517,7 +706,6 @@ INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT .\00_Bilder\Ist-Zustand_Mazerunner.png
@@ -526,7 +714,31 @@ INPUT .\00_Bilder\Ist-Zustand_Mazerunner.png
 INPUT .\00_Bilder\Ist-Zustand_Mazerunner.png
 INPUT .\00_Bilder\Ist-Zustand_Mazerunner.png
 INPUT .\00_Bilder\Ist-Zustand_Mazerunner.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_Gelenkwinkel.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
+INPUT .\00_Bilder\Dobot_PP_Szenario.png
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
+INPUT .\00_Bilder\Sauggreifer_Anschließen.png
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex
@@ -551,7 +763,6 @@ INPUT .\Anhang\Anhang.tex
 INPUT .\Anhang\Anhang.tex
 INPUT Anhang\Anhang.tex
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt9.tfm
-INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT .\Doku_Hinweise_Leitfaeden\Kuester_Omniverse_Tutorial.pdf
 INPUT .\Doku_Hinweise_Leitfaeden\Kuester_Omniverse_Tutorial.pdf
 INPUT .\Doku_Hinweise_Leitfaeden\Kuester_Omniverse_Tutorial.pdf

@@ -21,6 +21,7 @@
 \usepackage{float}
 \usepackage{pdfpages}
 \graphicspath{{00_Bilder/}}
+\usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{longtable}
@@ -28,6 +29,7 @@
 \sisetup{locale = DE}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{pgfgantt}
 
 % --- Literaturverzeichnis: IEEE-Stil ---
 \usepackage[backend=biber,style=ieee,sorting=none,isbn=true,doi=true,url=true]{biblatex}
@@ -59,6 +61,8 @@
 \renewcommand*{\thesection}{\arabic{section}.}
 \renewcommand*{\thesubsection}{\arabic{section}.\arabic{subsection}}
 \renewcommand*{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\setcounter{tocdepth}{3}
 
 % =============================================================================
 \begin{document}
