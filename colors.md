@@ -1,0 +1,1 @@
+Bestätigt: oben ist jetzt Türkis (159,225,203 ≈ #9FE1CB), unten Blau (181,212,244 ≈ #B5D4F4).

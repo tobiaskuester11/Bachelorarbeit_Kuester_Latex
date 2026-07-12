@@ -1,10 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(Get-ChildItem -Path \"c:\\\\Bachelorarbeit\\\\Bachelorarbeit_Kuester_Latex\" -Recurse)",
+      "Bash(Get-ChildItem -Path \"c:\\Bachelorarbeit\\Bachelorarbeit_Kuester_Latex\" -Recurse)",
       "Bash(Select-Object FullName, PSIsContainer)",
-      "Bash(Format-Table -AutoSize)"
+      "Bash(Format-Table -AutoSize)",
+      "Bash(latexmk *)",
+      "Bash(pdftoppm *)",
+      "Bash(pdftotext *)",
+      "Bash(awk *)",
+      "Bash(pdflatex *)",
+      "Bash(pdfinfo *)",
+      "Bash(identify *)",
+      "Bash(biber *)"
     ]
-  
   }
 }

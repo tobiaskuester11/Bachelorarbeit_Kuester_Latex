@@ -31,9 +31,9 @@ wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[trim={30pt 655pt 30pt 40pt},clip,width=1.15\linewidth]{vdi5200_phasenmodell}}
+    \makebox[\linewidth][c]{\includegraphics[trim={30pt 655pt 30pt 70pt},clip,width=1.28\linewidth]{vdi5200_phasenmodell}}
     \caption{Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1
-        (Quelle: \cite{vdi5200}).}
+        (Quelle: \cite{vdi5200b2}).}
     \label{fig:vdi5200_phasen}
 \end{figure}
 
@@ -124,12 +124,10 @@ Encyclopedia of Production Engineering komplementär über seine Bestandteile
 Sie unterscheiden drei Bestandteile, die erst zusammen einen Digitalen Zwilling
 ergeben.
 Der \textbf{Digital Master} ist das in der Entwicklungsphase erstellte generalisierte
-Produktbeschreibungsmodell, etwa ein CAD-Modell der Geometrie oder ein
-Simulationsmodell des Verhaltens, aus dem eine für den jeweiligen Einsatzzweck
-zugeschnittene Instanz abgeleitet wird \cite{stark2019}.
-Für den Maze-Runner ist dies das aus CAD-Daten exportierte 3D-Modell in NVIDIA Isaac
-Sim, für den Dobot Magician die aus der URDF-Beschreibung abgeleitete kinematische
-Struktur des Roboterarms.
+Produktbeschreibungsmodell, zum Beispiel ein CAD-Modell der Geometrie oder ein
+Simulationsmodell des Verhaltens \cite{stark2019}.
+Aus diesem Modell wird für jeden konkreten Anwendungsfall eine eigene, angepasste
+Instanz erzeugt \cite{stark2019}.
 Der \textbf{Digital Shadow} umfasst die während Betrieb und Nutzung erfassten
 Prozessdaten wie Sensorwerte, Schaltstellungen und Positionen, die den Zustand des
 physischen Objekts fortlaufend abbilden \cite{stark2019}.
@@ -202,7 +200,7 @@ Sie erfasst jedoch weder den Produktlebenszyklus noch die Architekturschichten, 
 für eine vollständige Beschreibung vernetzter Industrie-4.0-Komponenten notwendig sind.
 Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) schließt diese Lücke und
 erweitert die Automatisierungspyramide um die Achsen Lebenszyklus und Wertschöpfung
-sowie sechs Architekturschichten (Abbildung~\ref{fig:rami40}). Es stellt damit den dreidimensionalen Rahmen bereit,
+sowie sechs Architekturschichten, wie Abbildung~\ref{fig:rami40} verdeutlicht. Es stellt damit den dreidimensionalen Rahmen bereit,
 in dem sich Maschinen, Anlagen, Softwarekomponenten und Digitale Zwillinge einheitlich
 beschreiben und zueinander in Beziehung setzen lassen \cite{dinspec91345}.
 Das Modell richtet sich an alle Fachabteilungen, die an Industrie-4.0-Systemen
@@ -285,7 +283,7 @@ Wie eine solche Simulation in NVIDIA Isaac Sim aussieht, zeigt Abbildung~\ref{fi
 
 Im Viewport sind gleichzeitig unterschiedliche Darstellungszustände einer USD-Szene
 sichtbar.
-Die Karosserie im Vordergrund ist vollständig mit RTX Path Tracing berechnet.
+Der reflektierende Teil der Karosserie im Vordergrund ist mit RTX Path Tracing berechnet.
 Reflexionen auf der Metalloberfläche und der Schattenwurf entstehen durch Lichtpfadsimulation.
 Der rechte Szenenbereich, bestehend aus Gabelstapler, Hallendecke und angrenzenden
 Strukturen, wird im Wireframe-Modus dargestellt und repräsentiert approximierte
@@ -322,29 +320,74 @@ Fabrikplanungswerkzeugen unterscheiden.
 
 NVIDIA Isaac Sim wird mit einem vorinstallierten Extension-Katalog ausgeliefert, der
 allgemeine Werkzeuge innerhalb der Simulationsumgebung bereitstellt, wie eine
-VR-Experience oder den Script Editor, über den Python-Code direkt in der laufenden
-Szene ausgeführt werden kann.
+VR-Schnittstelle, oder den Script Editor, über den Python-Code direkt in der
+laufenden Szene ausgeführt werden kann.
 
 Das physikalische Fundament der Simulation bildet die Physik-Engine \emph{PhysX},
 die Starrkörperdynamik, Gelenkkräfte und Kollisionserkennung GPU-parallel berechnet
 \cite{nvidia_physx}.
 PhysX ist zudem in verbreiteten Simulationsumgebungen wie Visual Components oder
-KUKA.Sim integriert.
+KUKA Sim integriert.
 
-Zum Omniverse-Ökosystem gehören weitere spezialisierte Anwendungen, die Training und
-KI-gestützte Anwendungen in den Vordergrund rücken.
-Dieser Trainingsaspekt bildet gegenüber klassischen Fabrikplanungswerkzeugen ein
-zentrales Alleinstellungsmerkmal von NVIDIA Omniverse, da die physikalisch korrekte
-Simulationsumgebung nicht nur zur Absicherung von Steuerungsprogrammen, sondern auch
-zur Erzeugung von Trainingsdaten für KI-Modelle genutzt wird.
+Ein zentrales Alleinstellungsmerkmal von NVIDIA Omniverse gegenüber klassischen
+Fabrikplanungswerkzeugen bildet die Ausrichtung auf physische KI-Anwendungen, für die
+das Ökosystem sowohl die Simulationsumgebung als auch die notwendigen Trainingsdaten
+sowie die Schnittstelle zur Übertragung der erstellten Steuerungsmodelle auf die
+reale Hardware bereitstellt \cite{nvidia_omniverse}.
+Im Folgenden wird genauer auf die dabei zum Tragen kommenden Komponenten von
+NVIDIA eingegangen.
 
-\textbf{Isaac Lab} erweitert NVIDIA Isaac Sim um ein Framework für Reinforcement
-Learning.
-Darin werden zahlreiche Instanzen eines Roboters gleichzeitig in parallelen,
-physikalisch simulierten Umgebungen trainiert, wie Abbildung~\ref{fig:isaac_lab}
-zeigt.
+Innerhalb der physischen KI-Anwendungen unterscheidet NVIDIA zwischen
+allgemeinen Robotern wie Gelenkarmrobotern oder vierbeinigen Laufrobotern und
+humanoiden Robotern, deren komplexere Kinematik der menschlichen Bewegung
+nachempfunden ist.
+Als Ausgangspunkt für das Training dient dabei wahlweise ein virtuelles Modell,
+wie zum Beispiel aus einem CAD- oder URDF-Import oder ein vorgefertigtes Modell
+aus dem Isaac-Sim-Katalog, oder eine per \textbf{Isaac TeleOp} aufgezeichnete
+menschliche Bedienabfolge.
+\textbf{Isaac Sim} simuliert daraus zunächst die zugehörige Szene, die
+\textbf{NVIDIA Cosmos} anschließend hinsichtlich Beleuchtung, Textur und
+Materialeigenschaften vervielfältigt.
+Mit Hilfe der Variation trainiert \textbf{Isaac Lab} den Roboter per
+Reinforcement Learning, wobei wiederum Isaac Sim als Simulationskern dient.
+Das trainierte Modell lässt sich anschließend direkt über Isaac ROS auf reale
+Hardware übertragen.
+Betrifft das Training menschenähnliche Bewegungsabläufe eines humanoiden
+Roboters, kann das Modell stattdessen zunächst per \textbf{Isaac GR00T} in ein
+für humanoide Roboter optimiertes Steuerungsmodell überführt werden.
+Anschließend lässt sich das Ergebnis ebenfalls über Isaac ROS auf die reale
+Hardware übertragen.
+Der Weg über Isaac GR00T ist optional und weder an das virtuelle Modell noch an
+die TeleOp-Aufzeichnung gebunden.
+Abbildung~\ref{fig:isaac_ecosystem} zeigt diesen Ablauf im Überblick.
+
+\begin{figure}[H]
+    \centering
+    \makebox[\linewidth][c]{\includegraphics[width=1.28\linewidth]{isaac_ecosystem_horizontal_v2}}
+    \caption{Trainingspipeline für Roboter im NVIDIA-Omniverse-Ökosystem.}
+    \label{fig:isaac_ecosystem}
+\end{figure}
+
+Isaac Sim simuliert dabei anhand des virtuellen Modells oder der
+TeleOp-Aufzeichnung zunächst die physikalische Umgebung des Roboters,
+einschließlich seines Körpers, seiner Gelenke und der Objekte, mit denen er
+interagiert.
+NVIDIA Cosmos erzeugt daraus die entsprechenden Variationen, damit der Roboter
+auch mit realen Bedingungen fehlerfrei interagiert \cite{nvidia_cosmos}.
+Eine solche Variation verändert etwa Reflexionen auf Oberflächen, den Schattenwurf
+oder die Schattierung von Bauteilen, sodass dieselbe simulierte Szene in vielen
+optisch unterschiedlichen Ausprägungen für das Training zur Verfügung steht.
+
+Anschließend trainiert Isaac Lab den Roboter per Reinforcement Learning, wobei
+zahlreiche Instanzen gleichzeitig in parallelen, physikalisch simulierten
+Umgebungen trainiert werden, wie Abbildung~\ref{fig:isaac_lab} zeigt.
+Eine Belohnungsfunktion bewertet dabei laufend das Roboterverhalten und vergibt je
+nach Aktion einen höheren oder niedrigeren Reward, beispielsweise indem sie beim
+Treppensteigen Fortschritt und Balance belohnt und Stürze oder Kollisionen
+bestraft.
 Die daraus resultierenden Verhaltensweisen lassen sich anschließend per
-Sim-to-Real-Transfer auf reale Hardware übertragen \cite{nvidia_isaaclab}.
+Sim-to-Real-Transfer, gegebenenfalls mit Zwischenschaltung von Isaac GR00T, auf
+reale Hardware übertragen \cite{nvidia_isaaclab}.
 
 \begin{figure}[H]
     \centering
@@ -354,14 +397,18 @@ Sim-to-Real-Transfer auf reale Hardware übertragen \cite{nvidia_isaaclab}.
     \label{fig:isaac_lab}
 \end{figure}
 
-Als weiteres Glied der Isaac-Familie zeichnet \textbf{Isaac TeleOp} menschliche
-Bedienabläufe als Trainingsdaten auf, wobei Eingabegeräte wie VR-Brillen zum Einsatz
-kommen.
-Auf Grundlage dieser aufgezeichneten Bewegungsabläufe trainiert \textbf{Isaac GR00T},
-ein Grundlagenmodell für humanoide Roboter, deren Steuerungsverhalten.
-Abbildung~\ref{fig:isaac_teleop} zeigt diesen Ablauf von der Erfassung menschlicher
-Bewegungen per VR-Brille bis zum trainierten GR00T-Modell
-\cite{nvidia_isaacteleoperation,nvidia_groot}.
+Während sich grobmotorische Fähigkeiten wie das Treppensteigen auf diese Weise
+trainieren lassen, profitieren feinmotorische, menschenähnliche Bedienabläufe
+zusätzlich von menschlicher Demonstration als Trainingsgrundlage.
+\textbf{Isaac TeleOp} zeichnet dafür menschliche Bedienabläufe auf, wobei
+Eingabegeräte wie VR-Brillen zum Einsatz kommen.
+Die erfassten Abläufe werden zunächst in Isaac Sim auf den simulierten Roboter
+übertragen, die entstehende Szene wird anschließend durch NVIDIA Cosmos
+vervielfältigt und in Isaac Lab trainiert, bevor das Ergebnis per
+\textbf{Isaac GR00T} in ein Steuerungsmodell für humanoide Roboter überführt wird.
+Abbildung~\ref{fig:isaac_teleop} zeigt die Erfassung der menschlichen
+Bedienabläufe per VR-Brille und die simulierte Szene, welche diese Abläufe
+abspielt \cite{nvidia_isaacteleoperation,nvidia_groot}.
 
 \begin{figure}[H]
     \centering
@@ -372,11 +419,11 @@ Bewegungen per VR-Brille bis zum trainierten GR00T-Modell
     \label{fig:isaac_teleop}
 \end{figure}
 
-\textbf{Isaac ROS} ist für Mobilitätsanwendungen bis hin zum autonomen Fahren
-ausgelegt \cite{nvidia_isaacros}.
-Um eine ausreichende Datensatzvielfalt für diese KI-Modellanwendungen sicherzustellen,
-erzeugt \textbf{NVIDIA Cosmos} aus bestehenden Simulationsszenen Variationen in
-Beleuchtung, Textur und Materialeigenschaften \cite{nvidia_cosmos}.
+Unabhängig vom gewählten Weg erfolgt die Übertragung auf reale Hardware über
+\textbf{Isaac ROS}.
+Isaac ROS stellt hardwarebeschleunigte ROS\,2-Pakete für Wahrnehmung und
+Manipulation bereit und bildet damit die Brücke zwischen den trainierten Modellen
+und der physischen Robotersteuerung \cite{nvidia_isaacros}.
 
 
 \subsection{Datenformate OpenUSD und URDF}
@@ -394,11 +441,22 @@ Durch die Verschachtelung von Xform-Prims entsteht eine Baumstruktur, die die Hi
 Beim Import eines STEP-Modells werden Baugruppenhierarchien automatisch als Xform-Knoten und Einzelteile als Mesh-Prims übernommen, sodass die logische Gliederung der CAD-Baugruppe in der Simulationsszene erhalten bleibt \cite{nvidia_isaacsim}.
 OpenUSD wurde ursprünglich von Pixar Animation Studios entwickelt und als offener Standard veröffentlicht \cite{pixar_openusd}.
 
-Für die roboterspezifische Strukturbeschreibung ergänzt das \emph{Unified Robot
-Description Format} (URDF) das OpenUSD-Ökosystem \cite{ros_urdf}.
+Für die roboterspezifische Strukturbeschreibung ermöglicht das \emph{Unified Robot
+Description Format} (URDF) den Import von Einzelteilen und deren Zusammenfügen über
+Gelenke zu einer OpenUSD-Szene \cite{ros_urdf}.
 URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie deren Parameter und Materialeigenschaften in einer XML-Struktur und wird in der Robotik als verbreitetes Standardbeschreibungsformat eingesetzt \cite{ros_urdf}.
 Eine URDF-Datei ermöglicht zusammen mit den Bauteil-Dateien des Roboters den Import einer Baugruppe mit allen Gelenken, die nach dem Import unmittelbar für die bidirektionale Kopplung zur realen Anlage bereitsteht \cite{ros_urdf}.
 Beim Import in NVIDIA Isaac Sim wird die URDF-Beschreibung in eine USD-Stage konvertiert, sodass die Baugruppe anschließend als OpenUSD-Szene vorliegt \cite{nvidia_isaacsim}.
+Wie in Abbildung~\ref{fig:urdf_usd_theorie} gezeigt, referenziert die URDF-Beschreibung zunächst die starren Bauteile als Links und legt deren Gelenke mit Typ, Achse, Grenzwert, Steifigkeit und Dämpfung fest.
+Der URDF-Importer überführt Links in Xform- und Mesh-Prims und Gelenke in PhysicsJoint-Prims, beispielsweise als Dreh- oder Schubgelenk, unter Übernahme der in der URDF-Beschreibung hinterlegten Parameter.
+Die resultierende USD-Stage enthält damit alle Links und Joints und bildet die Grundlage für Simulation, Weiterbearbeitung und Speicherung der zusammengefügten Baugruppe, wobei Steifigkeit, Dämpfung und Masse anschließend das Beschleunigungsverhalten der Physiksimulation bestimmen und die Links die zugehörigen Kollisionskörper bilden.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{aufbau_digitaler_zwilling_urdf_usd_horizontal}
+    \caption{Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene.}
+    \label{fig:urdf_usd_theorie}
+\end{figure}
 
 
 \subsection{Middleware-Architekturen für die industrielle Kommunikation}
@@ -429,16 +487,21 @@ der sie an alle Abonnenten des jeweiligen Themas weiterleitet, was MQTT~5.0
 besonders für ressourcenbeschränkte IoT-Knoten geeignet macht.
 Das Protokoll \emph{Message Queuing Telemetry Transport} (MQTT) ist in Version~5.0
 von OASIS standardisiert \cite{oasis_mqtt5}.
+Da klassisches MQTT auf Port~1883 in vielen Netzwerken durch Firewalls blockiert wird, lassen sich die MQTT-Nachrichten alternativ in WebSocket-Pakete verpacken und darüber übertragen, da WebSocket-Verkehr von Firewalls in der Regel als regulärer Web-Traffic durchgelassen wird.
 
 \subsubsection{ROS 2 und DDS}
 ROS\,2 ist für die Ansteuerung kinematischer Ketten ausgelegt, da Gelenkwinkel von
 Roboterarmen über standardisierte Nachrichtentypen in Echtzeit übertragen werden.
+Neben solchen ortsfesten Gelenkarmrobotern werden mit ROS\,2 ebenso fahrende
+Fahrzeuge gesteuert, wofür NVIDIA mit Isaac ROS hardwarebeschleunigte Pakete bis hin
+zum autonomen Fahren bereitstellt \cite{nvidia_isaacros}.
 Praktische Einsatzbereiche reichen von der Intralogistik bis zur Fertigungsautomation
 mit kameragestützten Pick-and-Place-Aufgaben.
-Für Anwendungen im autonomen Fahren stellt NVIDIA mit Isaac ROS hardwarebeschleunigte
-ROS\,2-Pakete bereit \cite{nvidia_isaacros}.
 Die technische Grundlage bildet der \emph{Data Distribution Service} (DDS), auf dem
 \emph{Robot Operating System~2} (ROS\,2) aufbaut \cite{ros2_humble_docs}.
+DDS folgt dabei demselben Publish-Subscribe-Prinzip wie auch MQTT, ergänzt es
+jedoch um eine dezentrale Teilnehmererkennung ohne zentrale Vermittlungsinstanz sowie
+konfigurierbare Quality-of-Service-Einstellungen (QoS) \cite{ros2_dds_design}.
 
 \subsubsection{REST API}
 Die Kernkomponente von \emph{Representational State Transfer} (REST) ist das Prinzip, dass jede Ressource in einem Rechnernetz über eine eindeutige Adresse erreichbar ist und über standardisierte Anfragen gelesen oder verändert werden kann \cite{ietf_rfc9110}.
@@ -446,36 +509,3 @@ Als Transportprotokoll dient \emph{Hypertext Transfer Protocol} (HTTP), das die 
 Eine \emph{Uniform Resource Locator} (URL) ist die Adresse einer Ressource in einem Rechnernetz, gültig sowohl im lokalen Netz als auch im Internet.
 Über eine GET-Anfrage wird der aktuelle Zustand der unter einer URL bereitgestellten Ressource abgerufen, über eine POST-Anfrage werden strukturierte Daten an denselben Endpunkt gesendet.
 Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, der Server mit den angeforderten Daten antwortet und kein dauerhafter Verbindungskanal vorgehalten werden muss \cite{ietf_rfc9110}.
-
-Die vorgestellten Datenformate und Middleware-Architekturen erfüllen unterschiedliche, einander ergänzende Aufgaben im Datenfluss zwischen physischer Anlage und Digitalem Zwilling.
-OpenUSD und URDF beschreiben die Struktur und Geometrie der virtuellen Szene, während OPC~UA, MQTT, ROS\,2 und REST den laufenden Datenaustausch mit der physischen Anlage übernehmen.
-Abbildung~\ref{fig:middleware_overview} fasst dieses Zusammenspiel zusammen.
-
-\begin{figure}[H]
-    \centering
-    \begin{tikzpicture}[
-        box/.style={draw, rounded corners, minimum width=3cm, minimum height=1cm, align=center, font=\small, fill=gray!10},
-        arr/.style={-{Latex[length=2.2mm]}, thick}
-    ]
-        \node[box, minimum width=6.2cm] (anlage) {Physische Anlage\\(SPS, Sensoren, Aktoren)};
-
-        \node[box, below=1.3cm of anlage, xshift=-4.65cm] (opcua) {OPC~UA};
-        \node[box, below=1.3cm of anlage, xshift=-1.55cm] (mqtt) {MQTT};
-        \node[box, below=1.3cm of anlage, xshift=1.55cm] (ros2) {ROS\,2};
-        \node[box, below=1.3cm of anlage, xshift=4.65cm] (rest) {REST};
-
-        \node[box, below=1.3cm of mqtt, xshift=1.55cm, minimum width=6.2cm] (omniverse) {NVIDIA Omniverse / Isaac Sim\\(OpenUSD-Szene, URDF-Import)};
-
-        \draw[arr] (anlage.south) -- (opcua.north);
-        \draw[arr] (anlage.south) -- (mqtt.north);
-        \draw[arr] (anlage.south) -- (ros2.north);
-        \draw[arr] (anlage.south) -- (rest.north);
-
-        \draw[arr] (opcua.south) -- (omniverse.north);
-        \draw[arr] (mqtt.south) -- (omniverse.north);
-        \draw[arr] (ros2.south) -- (omniverse.north);
-        \draw[arr] (rest.south) -- (omniverse.north);
-    \end{tikzpicture}
-    \caption{Zusammenspiel von Middleware-Architekturen und Datenformaten bei der Anbindung physischer Anlagen an NVIDIA Omniverse.}
-    \label{fig:middleware_overview}
-\end{figure}

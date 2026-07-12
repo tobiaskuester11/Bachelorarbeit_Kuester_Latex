@@ -27,8 +27,7 @@ Aus den Erfahrungen der Modellerstellung wurde eine generische Anleitung in sieb
 \subsubsection{Reproduzierbarkeitsdokumentation Dobot Magician}
 Analog zur Maze-Runner-Dokumentation wurde für den Dobot Magician eine eigenständige Inbetriebnahme-Anleitung erstellt. Diese umfasst:
 \begin{enumerate}
-    \item Installation und Konfiguration von \emph{usbipd-win} sowie WSL\,2 mit Ubuntu\,22.04,
-    \item Einrichtung von ROS\,2~Humble und der \emph{pydobot}-Bibliothek,
+    \item Einrichtung von ROS\,2~Humble und der \emph{pydobot}-Bibliothek direkt unter Windows, wofür die intern vorinstallierte ROS\,2-Extension von NVIDIA Isaac Sim als Middleware dient,
     \item URDF-Import in NVIDIA Isaac Sim mit den erforderlichen Parametereinstellungen (\emph{Merge Fixed Joints}, \emph{Fix Base Link}, deaktiviertes \emph{Instanceable}),
     \item Konfiguration des Action~Graphs und Verifikation der Gelenkzustandsübertragung,
     \item Betrieb des Software-Mocks für hardware-unabhängige Entwicklung und Tests.
@@ -47,3 +46,42 @@ Alle erstellten Artefakte -- USD-Stages, URDF-Dateien, Python-Extensions, OPC-UA
 
 \subsection{Gegenüberstellung und Gesamtbewertung}
 Beide Anlagen bestätigen die Machbarkeit einer durchgängigen Datenkette von CAD über OpenUSD bis zur Echtzeit-Simulation in NVIDIA Isaac Sim ohne proprietäre Konvertierungsschritte~\cite{pixar_openusd}. Die Protokollwahl, OPC~UA für die SPS-Anlage und ROS\,2 für den Roboter, richtet sich nach den unterschiedlichen Kommunikationsanforderungen beider Anlagen. Hinsichtlich der Skalierbarkeit wächst die GPU-Last linear mit der Anzahl gleichzeitig simulierter Articulations, was die in Kapitel~\ref{sec:grundlagen} adressierte Infrastrukturanforderung bestätigt. Eine Kombination beider Ansätze -- OPC~UA für die Anlagenebene, ROS\,2 für die Roboterebene -- wird für vergleichbare Laboraufbauten empfohlen.
+
+% =====================================================================
+% GEPARKT (2026-07-05): Abschnitt "Projektorganisation" aus Kapitel 4.1
+% entfernt, damit der Text nicht verloren geht. Bei Bedarf hier wieder
+% einordnen und als \subsection aktivieren.
+% =====================================================================
+\iffalse
+\subsection{Projektorganisation}
+Zunächst entstand im Rahmen des IIM-Projektes der Digitale Zwilling des Maze-Runner,
+wobei die erlangten Kenntnisse festgehalten wurden und als Grundlage für die weitere Arbeit dienten.
+Der Maze-Runner lag zu Projektbeginn weder vollständig aufgebaut noch betriebsbereit vor.
+Von der HSRM standen eine CAD-Baugruppe der Anlage, Dokumentation
+vergangener Projekte mit Stücklisten sowie auf Moodle hinterlegte Trainingslevel zur
+Einarbeitung in den Anlagenbau- und SPS-Programmierung zur Verfügung.
+Die CAD-Baugruppe bildete dabei die Grundlage für das digitale Modell.
+Während für die Inbetriebnahme des Maze-Runners die Bereiche Mechanik, Konstruktion, Pneumatik, Elektrik, Steuerungstechnik und Netzwerktechnik relevant waren, betrafen den Digitalen Zwilling vorrangig die Schnittstellen zur Steuerungstechnik, Softwareentwicklung sowie die Einarbeitung in die Simulationsumgebung NVIDIA Isaac Sim.
+Softwareentwicklung, Simulation und Dokumentation wurden im Homeoffice bearbeitet.
+Parallel dazu wurden die ortsgebundenen Aufgaben an der HsH durchgeführt, wobei
+kurze Rücksprachen mit den betreuenden Personen im Labor zur Festhaltung des
+aktuellen Fortschritts sowie zur Diskussion weiterer Anforderungen genutzt wurden.
+Bei steuerungstechnischen Fragen konnte auf Kollegen des Fachbereichs der HsH zurückgegriffen werden.
+Wartezeiten, die etwa durch laufende Inbetriebnahmeschritte oder das Eintreffen
+bestellter Teile entstanden, wurden genutzt, um anderen Bereichen nachzugehen und
+dem Ziel eines Digitalen Zwillings schrittweise näherzukommen.
+
+Anlagenteile, die zum Zeitpunkt der Modellierung noch nicht in Betrieb waren, wurden
+im Digitalen Zwilling anhand der Dokumentation der HSRM virtuell in
+Betrieb genommen und später an der realen Anlage verifiziert oder angepasst.
+
+Nach erfolgreichem Abschluss des IIM-Projektes wurde im Rahmen der Bachelorarbeit
+ein Digitaler Zwilling des Dobot Magician erstellt.
+Da kein CAD-Modell vorhanden war, musste eines direkt beim Hersteller angefragt werden.
+Für den Dobot Magician wurde ebenfalls eine Extension entwickelt, wobei die Erstellungszeit
+durch die Kenntnisse aus der Einarbeitung in NVIDIA Isaac Sim und der vorherigen Extension-Entwicklung
+erheblich verkürzt werden konnte.
+Die Schritt-für-Schritt-Reproduzierbarkeitsdokumentation des Maze-Runner wird durch die technische Dokumentation
+des Digitalen Zwillings des Dobot Magician so ergänzt, dass sich beide Anlagen
+reproduzieren lassen.
+\fi

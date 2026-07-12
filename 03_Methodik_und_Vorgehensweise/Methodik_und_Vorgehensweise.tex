@@ -10,25 +10,18 @@ Da alle Bereiche von einer Einzelperson zu bearbeiten waren, erforderte dies ein
 strukturierte Analyse der Anforderungen, deren zeitliche Einteilung sowie eine klare
 Abgrenzung der Themenfelder als Grundlage für die Vorgehensweise.
 
-\subsection{Vorgehensweise}
-Im Rahmen der Arbeit wurden zwei Digitale Zwillinge nacheinander entwickelt.
-Zunächst entstand im Rahmen des IIM-Projektes der Digitale Zwilling des Maze-Runner,
-anschließend wurde im Rahmen der Bachelorarbeit der Digitale Zwilling des Dobot
-Magician erstellt.
-Die zugrunde liegende Anforderungsanalyse, die konkrete Projektorganisation sowie die
-eingesetzte Toolkette werden zu Beginn von Kapitel~\ref{sec:entwicklung} vorgestellt,
-da sie unmittelbar aus der Entwicklung der beiden Digitalen Zwillinge hervorgehen.
-
 \subsection{Zeit- und Arbeitsplan}
 Die praktische Umsetzung des Digitalen Zwillings der Maze-Runner-Anlage sowie
 deren Inbetriebnahme wurde im Februar~2026 im Rahmen des IIM-Projektes aufgenommen.
 Als dieses abgeschlossen war, wurde der Dobot Magician als Digitaler Zwilling
 in NVIDIA Isaac Sim überführt, woraufhin die Bachelorarbeit am 15.~Juni~2026 angemeldet wurde.
 Die Bearbeitungszeit beträgt mindestens acht Wochen, sodass die Abgabe frühestens
-am 10.~August~2026~(KW~33) erfolgen kann.
+am 10.~August~2026~(KW~33) erfolgen kann, das Kolloquium ist für den
+19.~August~2026~(KW~34) vorgesehen.
 Da eine Vielzahl an Festforderungen termingerecht zu erfüllen ist, schafft der Zeitplan die Grundlage dafür, den Überblick zu behalten, wann welche Aufgaben abgeschlossen sein müssen.
-Abbildung~\ref{fig:gantt} ordnet die Anforderungen aus
-Tabellen~\ref{tab:anf_mazerunner} und~\ref{tab:anf_dobot} in einen Zeitplan ein.
+Abbildung~\ref{fig:gantt} ordnet die Anforderungen aus der in
+Abschnitt~\ref{subsec:anforderungsanalyse} vorgestellten Anforderungsanalyse
+(Tabellen~\ref{tab:anf_mazerunner} und~\ref{tab:anf_dobot}) in einen Zeitplan ein.
 Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderungsanalyse sowie das Kürzel der Bachelorarbeitspakete (BAP).
 
 \begin{figure}[H]
@@ -46,9 +39,9 @@ Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderung
     group label font=\small\bfseries,
     bar/.append style={fill=gray!35, draw=gray!60},
     group/.append style={fill=black!55, draw=black!70},
-]{1}{32}
-\gantttitle{Februar}{3}\gantttitle{März}{5}\gantttitle{April}{4}\gantttitle{Mai}{5}\gantttitle{Juni}{4}\gantttitle{Juli}{4}\gantttitle{August}{4}\gantttitle{September}{3} \\
-\gantttitle[title label font=\footnotesize\bfseries, title label node/.append style={anchor=east, xshift=-0.1cm}]{Kalenderwoche}{0}\gantttitlelist{6,...,37}{1} \\
+]{1}{29}
+\gantttitle{Februar}{3}\gantttitle{März}{5}\gantttitle{April}{4}\gantttitle{Mai}{5}\gantttitle{Juni}{4}\gantttitle{Juli}{4}\gantttitle{August}{4} \\
+\gantttitle[title label font=\footnotesize\bfseries, title label node/.append style={anchor=east, xshift=-0.1cm}]{Kalenderwoche}{0}\gantttitlelist{6,...,34}{1} \\
 \ganttgroup{Bearbeitung IIM-Projekt (KW\,6--22)}{1}{17} \\
 \ganttbar{MR-1\;\;Gesamte Maze-Runner-Anlage in Betrieb nehmen}{1}{22} \\
 \ganttbar{MR-2\;\;CAD-Modell Maze-Runner in NVIDIA Isaac Sim konvertieren}{1}{2} \\
@@ -69,9 +62,27 @@ Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderung
 \ganttbar{BAP3\;\;Kap.\,4--5: Entwicklung Digitale Zwillinge}{22}{24} \\
 \ganttbar{BAP4\;\;Kap.\,6--7: Potenziale, Fazit und Ausblick}{24}{26} \\
 \ganttbar{BAP5\;\;Validierung, Überarbeitung, Korrekturlesen}{26}{28} \\
-\ganttbar{BAP6\;\;Abgabe}{28}{28}
+\ganttbar{BAP6\;\;Abgabe}{28}{28} \\
+\ganttbar{BAP7\;\;Kolloquium (19.\,August~2026)}{29}{29}
 \end{ganttchart}%
 }
 \caption{Zeit- und Arbeitsplan der Bachelorarbeit}
 \label{fig:gantt}
 \end{figure}
+
+\subsection{Aufbau der Arbeit}
+Die Arbeit gliedert sich in sieben Kapitel.
+Kapitel~\hyperref[sec:einleitung]{1} führt in Ausgangssituation, Problemstellung und
+Zielsetzung ein, bevor Kapitel~\hyperref[sec:grundlagen]{2} die theoretischen
+Grundlagen der Fabrikplanung, Virtuellen Inbetriebnahme und der eingesetzten
+Technologien darlegt.
+Das vorliegende Kapitel~\hyperref[sec:methodik]{3} beschreibt die Methodik und
+Vorgehensweise sowie den Zeit- und Arbeitsplan.
+Anschließend erfolgt in Kapitel~\hyperref[sec:entwicklung]{4} die Entwicklung der
+Digitalen Zwillinge beider Anlagen einschließlich Inbetriebnahme.
+Kapitel~\hyperref[sec:ergebnisse]{5} dokumentiert daraufhin die Entwicklungspipeline,
+stellt die entstandene Omniverse-Extension sowie die Reproduzierbarkeitsdokumentation
+vor und bewertet beide Lösungen gegenüberstellend.
+Im Weiteren fasst Kapitel~\hyperref[sec:potenziale]{6} Potenziale, Herausforderungen
+und Handlungsempfehlungen zusammen, bevor Kapitel~\hyperref[sec:fazit]{7}
+abschließend eine Gesamtbewertung und einen Ausblick auf weiterführende Arbeiten gibt.

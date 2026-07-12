@@ -1,0 +1,38 @@
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1 (Quelle: \blx@tocontentsinit {0}\cite {vdi5200b2}).}}{3}{figure.caption.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Digitaler Fabrikbetrieb in den Lebenszyklusphasen eines Produktionssystems (Quelle: VDI~4499 Blatt~2 \blx@tocontentsinit {0}\cite {vdi4499b2}, Bild~2).}}{4}{figure.caption.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces IoT-Rahmenwerk für Digitale Zwillinge in der Fertigung mit Anwendungsschicht, Digitalem Zwilling, Gerätekommunikation und beobachtbaren Fertigungselementen (Quelle: ISO/FDIS~23247-1 \blx@tocontentsinit {0}\cite {iso23247}, Figure~2).}}{6}{figure.caption.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Funktionale Referenzarchitektur des Digital-Twin-Frameworks für die Fertigung nach ISO~23247-2 mit den vier Entitäten und den beobachtbaren Fertigungselementen außerhalb der Frameworkgrenze (Quelle: \blx@tocontentsinit {0}\cite {iso23247_2}).}}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales Schichtenmodell mit den Achsen \enquote {Life Cycle \& Value Stream}, \enquote {Hierarchy Levels} und \enquote {Layers} (Quelle: DIN~SPEC~91345 \blx@tocontentsinit {0}\cite {dinspec91345}).}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces NVIDIA Isaac Sim Viewport mit aktiviertem RTX Path Tracing. Simultane Darstellung unterschiedlicher Verarbeitungszustände in einer USD-Szene \blx@tocontentsinit {0}\cite {bmw_nvidia_2021}}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Trainingspipeline für Roboter im NVIDIA-Omniverse-Ökosystem.}}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Paralleles Training von Robotern in NVIDIA Isaac Lab \blx@tocontentsinit {0}\cite {nvidia_isaaclab}}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Erfassen und Übertragen menschlicher Bedienabläufe per VR-Brille mit Isaac TeleOp und Isaac GR00T \blx@tocontentsinit {0}\cite {nvidia_isaacteleoperation,nvidia_groot}}}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene.}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Zeit- und Arbeitsplan der Bachelorarbeit}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Finaler Tischaufbau aus Dobot Magician (links) und Maze-Runner-Anlage (rechts) im Labor für Produktentwicklung und Digitale Fabrik (LFP) der HsH.}}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Aktorik der Maze-Runner-Anlage.}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Produkt der Maze-Runner-Anlage, auf der Drehscheibe fixiert.}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Die drei Trainingslevel der Maze-Runner-Anlage~\blx@tocontentsinit {0}\cite {wang2024mazerunner}}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces OpenUSD-Modell des Maze-Runners in NVIDIA Isaac Sim (Viewport, Stage-Baum und Property-Panel).}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Verschachtelte Gelenke am Schwenkarm-Deckel: \emph {RevoluteJoint~rotatory} (links) und \emph {PrismaticJoint~translatory} (rechts) mit Kollisionskonturen (grün).}}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {18}{\ignorespaces UaExpert-Knotenbrowser mit den von der Siemens-SPS bereitgestellten OPC-UA-Knoten (Server-Adresse, Node-ID, Knotenpfad, Anzeigename).}}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {19}{\ignorespaces TIA Portal V17 mit Programmbausteinen und OPC-UA-Serverschnittstelle des Maze-Runner-SPS-Projekts.}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Benutzeroberfläche der Omniverse-Extension des Maze-Runner-Digitalen-Zwillings in NVIDIA Isaac Sim.}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Maze-Runner-HMI.}}{29}{figure.caption.23}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Dateien des Extensionordners.}}{29}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Ausschnitt der Konfigurationsdatei \texttt {nodes\_db.json}.}}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Digital Twin App Dashboard.}}{32}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Netzwerkarchitektur zur Anbindung Digitaler Zwillinge in NVIDIA Omniverse an die Digital Twin App der Hochschule RheinMain (HSRM).}}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces IST-Zustand der Maze-Runner-Anlage im Hochschullabor (Aufnahme von oben).}}{34}{figure.caption.27}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Task-Tracking-Tool Jira von Atlassian, Maze-Runner-Weiterentwicklung (Stand: Juni 2026)}}{36}{figure.caption.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Aufbau des PnP-Szenarios in NVIDIA Isaac Sim.}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Aufbau des PnP-Szenarios im LFP.}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Gelenkwinkelkonvention des Dobot Magician mit den Nullstellungen der Gelenke J1 bis J4 (Quelle: \blx@tocontentsinit {0}\cite {kuester2026dobottutorial}).}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Komponenten des pneumatischen Sauggreifers, Saugkopf mit Luftschlauchanschluss (links) und Pumpeneinheit mit den Anschlüssen GP1 und SW1 (rechts) (Quelle: \blx@tocontentsinit {0}\cite {kuester2026dobottutorial}).}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Anschluss des Sauggreifers, Verkabelung der Pumpe über GP1 und SW1 (links) sowie Anbindung des Saugkopfs über GP3 am vierten Gelenk (rechts) (Quelle: \blx@tocontentsinit {0}\cite {kuester2026dobottutorial}).}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene.}}{40}{figure.caption.33}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
