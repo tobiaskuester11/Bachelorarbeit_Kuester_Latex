@@ -1,37 +1,48 @@
 \section{Potenziale, Herausforderungen und Handlungsempfehlungen}
 \label{sec:potenziale}
 
+Aus den in Kapitel~\ref{sec:ergebnisse} dokumentierten Ergebnissen lassen sich sowohl konkrete Nutzungsmöglichkeiten für das LFP als auch offene Herausforderungen im laufenden Laborbetrieb ableiten. Dieses Kapitel stellt beide Seiten gegenüber und leitet daraus Handlungsempfehlungen ab.
+
 \subsection{Potenziale im LFP}
+
+Die entwickelten Digitalen Zwillinge eröffnen für Digitale Fabriken und für Gelenkarmroboter jeweils eigene Nutzungsmöglichkeiten.
 
 \subsubsection{Potenziale Digitaler Fabriken}
 Der Digitale Zwilling des Maze Runners eröffnet für das LFP konkrete Nutzungsmöglichkeiten:
 \begin{itemize}
-    \item \textbf{Virtuelle Inbetriebnahme:} Neue Steuerungsprogramme und Taktstrategien lassen sich im Modell erproben, bevor sie auf die reale SPS übertragen werden -- entsprechend der VDI/VDE~3693-Methodik \cite{vdi3693,lechler2019}.
-    \item \textbf{Kollisionsüberwachung:} Der kontinuierliche Abgleich realer und virtueller Trajektorien ermöglicht die frühzeitige Erkennung kritischer Bewegungsbereiche.
-    \item \textbf{Lehre und Demonstration:} Der bidirektional gekoppelte Zwilling ist ein didaktisch hochwertiges Demonstrationsobjekt für Studierende der Ingenieurinformatik und des Maschinenbaus.
+    \item \textbf{Virtuelle Inbetriebnahme:} Neue Steuerungsprogramme und Taktstrategien lassen sich im Modell erproben, bevor sie auf die reale SPS übertragen werden, entsprechend der VDI/VDE~3693-Methodik \cite{vdi3693,lechler2019}.
+    \item \textbf{Kollisionsüberwachung:} Der Abgleich realer und virtueller Trajektorien ermöglicht die frühzeitige Erkennung kritischer Bewegungsbereiche.
+    \item \textbf{Lehre und Demonstration:} Der gekoppelte Zwilling ist ein hochwertiges Demonstrationsobjekt für Studierende der Ingenieurinformatik und des Maschinenbaus.
     \item \textbf{Erweiterbarkeit:} Die datengetriebene Knotenkonfiguration erlaubt die Übertragung der Extension auf weitere SPS-gestützte Anlagen ohne Quellcodeänderungen.
 \end{itemize}
 
 \subsubsection{Potenziale von Gelenkarmrobotern}
 \begin{itemize}
-    \item \textbf{Bewegungsplanung und Programmierunterstützung:} Im Digitalen Schatten lassen sich Pick-and-Place-Trajektorien vorab planen und kollisionsfrei validieren, bevor sie am realen Roboter ausgeführt werden.
-    \item \textbf{Synthetische Datengenerierung:} NVIDIA Isaac Sim ermöglicht die Erzeugung fotorealistischer Trainingsbilder für KI-gestützte Greifpunktdetektions-Modelle -- ein etabliertes Verfahren in der industriellen Bildverarbeitung \cite{mdpi2025isaac}.
-    \item \textbf{Skalierbarkeit des Ansatzes:} Die entwickelte ROS\,2-Architektur ist auf beliebige serielle Roboter übertragbar, die eine Python-Schnittstelle bereitstellen.
-    \item \textbf{VR-Integration:} Der Digitale Schatten des Dobot kann auf der Meta Quest~3 immersiv inspiziert werden. Zukünftig ist eine VR-gestützte Programmierung denkbar, bei der Bewegungsabläufe in der virtuellen Umgebung definiert und anschließend auf den realen Roboter übertragen werden.
+    \item \textbf{Bewegungsplanung und Programmierunterstützung:} Pick-and-Place-Trajektorien lassen sich in der Simulation vorab planen und kollisionsfrei validieren, bevor sie am realen Roboter ausgeführt werden.
+    \item \textbf{Synthetische Datengenerierung:} NVIDIA Isaac Sim ermöglicht die Erzeugung fotorealistischer Trainingsbilder für KI-gestützte Greifpunktdetektions-Modelle, ein etabliertes Verfahren in der industriellen Bildverarbeitung \cite{mdpi2025isaac}.
+    \item \textbf{Skalierbarkeit des Ansatzes:} Die entwickelte, pydobot-basierte Architektur ist auf beliebige serielle Roboter übertragbar, die eine Python-Schnittstelle bereitstellen.
+    \item \textbf{VR-Integration:} Der Digitale Zwilling des Dobot kann auf der Meta Quest~3 immersiv inspiziert werden. Zukünftig ist eine VR-gestützte Programmierung denkbar, bei der Bewegungsabläufe in der virtuellen Umgebung definiert und anschließend auf den realen Roboter übertragen werden.
 \end{itemize}
 
 \subsection{Herausforderungen im Laborbetrieb}
 
+Dem Nutzen stehen Herausforderungen gegenüber, die sich beim laufenden Betrieb beider Anlagen im LFP zeigten.
+
 \subsubsection{Infrastruktur}
-Der Betrieb von Isaac Sim setzt leistungsfähige RTX-fähige GPUs voraus. Die eingesetzte Workstation (NVIDIA RTX 6000 Ada, 48\,GB VRAM) stellt eine Mindestkonfiguration für den Parallelbetrieb beider Zwillinge dar. Für eine Ausweitung auf weitere Anlagen im LFP ist eine Skalierung über Multi-GPU-Setups oder Cloud-Instanzen zu prüfen.
+Der Betrieb von Isaac Sim setzt leistungsfähige RTX-fähige GPUs voraus. Die eingesetzte Workstation (NVIDIA RTX~6000 Ada, 48\,GB VRAM) stellt eine Mindestkonfiguration für den Parallelbetrieb beider Zwillinge dar. Für eine Ausweitung auf weitere Anlagen im LFP ist eine Skalierung über Multi-GPU-Setups oder Cloud-Instanzen zu prüfen.
 
 \subsubsection{Qualifikation}
-Das erfolgreiche Weiterführen und Erweitern der entwickelten Zwillinge erfordert Kenntnisse in OpenUSD, Python-Scripting im Omniverse-Kit-Framework, OPC~UA sowie ROS\,2. Für künftige Lehrveranstaltungen im LFP empfiehlt sich die Erstellung kompakter Einstiegsmodule auf Basis der Reproduktionsanleitung (vgl.\ Anhang~\ref{anhang:repro}).
+Das Weiterführen und Erweitern der entwickelten Zwillinge erfordert Kenntnisse in OpenUSD, Python-Scripting im Omniverse-Kit-Framework, OPC~UA sowie ROS\,2. Für künftige Lehrveranstaltungen im LFP empfiehlt sich die Erstellung kompakter Einstiegsmodule auf Basis der Reproduktionsanleitung (vgl.\ Anhang~\ref{anhang:repro}).
 
 \subsection{Handlungsempfehlungen für das LFP}
+
+Aus den genannten Potenzialen und Herausforderungen ergeben sich sieben Handlungsempfehlungen für das LFP:
 \begin{enumerate}
-    \item \textbf{Dobot bidirektional erweitern:} Implementierung eines Steuerungspfads vom Digitalen Zwilling zur realen Hardware, sobald eine echtzeitfähige USB-Alternative (z.\,B.\ Ethernet-Adapter) verfügbar ist.
-    \item \textbf{Weitere Anlagen integrieren:} Anwendung der in dieser Arbeit erstellten Reproduktionsanleitung auf weitere Laboranlagen. Die datengetriebene Extension-Architektur reduziert den Aufwand pro Anlage erheblich.
-    \item \textbf{VR-Lehrformat ausbauen:} Nutzung der Meta-Quest-3-Demonstration als interaktives Lehrformat. Eine Verbindung mit Game-Engine-Exporten (z.\,B.\ via Omniverse-USD-to-Unreal-Konnektor) erweitert die Geräteverfügbarkeit.
-    \item \textbf{Standardkonformität wahren:} Orientierung an ISO~23247, RAMI~4.0 und AAS-Spezifikation der IDTA, um Anschlussfähigkeit zu Industrie\-partnern zu sichern \cite{iso23247,dinspec91345,idta_aas2025}.
+    \item \textbf{Rückmeldekanäle zuverlässig gestalten:} Ursachenklärung der unregelmäßigen MQTT-Rückmeldung gemeinsam mit den IT-Verantwortlichen der Hochschule RheinMain (HSRM), bevor produktive Anwendungsfälle auf der Rückmeldung aufbauen, um die Maze-Runner-Anlage und deren Digitalen Zwilling zu vervollständigen.
+    \item \textbf{Dobot-Fernsteuerung automatisieren:} Implementierung der Verfolgung eines virtuellen Würfels durch den Roboterarm, sodass die Richtung der Fernsteuerung anschaulich demonstriert und ihr Nutzen ersichtlich wird.
+    \item \textbf{Weitere Anlagen integrieren:} Anwendung der in dieser Arbeit erstellten Reproduktionsanleitung auf weitere Laboranlagen, beispielsweise den im Labor vorhandenen UR3-Roboterarm sowie den KUKA-KR6-Roboterarm. Die datengetriebene Extension-Architektur reduziert den Aufwand pro Anlage erheblich.
+    \item \textbf{Omniverse-Anwendungen in der Lehre vertiefen:} Einbindung und Vertiefung von NVIDIA Isaac Sim in der Lehre, etwa anhand der von NVIDIA bereitgestellten Tutorials, die ohne Codeerstellung durchführbar sind und ein grundlegendes Verständnis der Programmfunktionsweise vermitteln, wobei die Anbindung an reale Anlagen zunächst außen vor bleiben kann. Ergänzend bietet sich die Erprobung weiterer Omniverse-Instanzen an, etwa Isaac Lab, Isaac~GR00T für den humanoiden Roboter des LFP sowie Isaac TeleOp.
+    \item \textbf{Kooperation mit der HSRM ausbauen:} Teilnahme an der von Herrn Wang gehaltenen Vorlesung mit Hochschulen im asiatischen Raum, um die am LFP erzielte Weiterentwicklung der Maze-Runner-Anlage mit den beteiligten Hochschulen zu teilen und im Gegenzug von deren Ergebnissen zu profitieren. Das LFP sollte dabei als eigenständiges Kooperationsglied nach eigenen Vorstellungen und Maßstäben mitwirken und eine eigene Richtung einschlagen.
+    \item \textbf{Informatik-Expertise aufbauen:} Einrichtung einer Anlaufstelle für Informatikprobleme, die zumindest interessierten Studierenden den Einstieg erleichtert, sodass die Betreuung im LFP stärker auf Maschinenbau-Fragestellungen ausgerichtet wird, die Softwareerstellung voraussetzen, wie beispielsweise die in dieser Arbeit dokumentierte Erstellung von Python-Code.
+    \item \textbf{Standardkonformität wahren:} Orientierung an ISO~23247, RAMI~4.0 und der AAS-Spezifikation der IDTA, um die Anschlussfähigkeit zu Industriepartnern zu sichern \cite{iso23247,dinspec91345,idta_aas2025}.
 \end{enumerate}

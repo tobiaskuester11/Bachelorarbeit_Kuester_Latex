@@ -1,6 +1,6 @@
-PWD C:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex
+PWD c:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex
 INPUT C:\Users\lfphs\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex\main.tex
 OUTPUT main.log
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
@@ -738,6 +738,12 @@ INPUT .\00_Bilder\nodes_db.png
 INPUT .\00_Bilder\nodes_db.png
 INPUT .\00_Bilder\nodes_db.png
 INPUT .\00_Bilder\nodes_db.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
+INPUT .\00_Bilder\DigitalTwinAppDashboard.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
 INPUT .\00_Bilder\Internal_Block_Diagram.png
@@ -791,6 +797,12 @@ INPUT .\00_Bilder\Sauggreifer_Anschließen.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
+INPUT .\00_Bilder\dobot_wege_1_2_v11.png
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex
 INPUT .\05_Inbetriebnahme_und_Reproduzierbarkeit\Inbetriebnahme_und_Reproduzierbarkeit.tex

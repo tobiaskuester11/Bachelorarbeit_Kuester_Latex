@@ -2491,22 +2491,25 @@
     <bcf:citekey order="117" intorder="1">kuester2026dobottutorial</bcf:citekey>
     <bcf:citekey order="118" intorder="1">kuester2026dobottutorial</bcf:citekey>
     <bcf:citekey order="119" intorder="1">kritzinger2018</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">ros_urdf</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">nvidia_isaacsim</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">nvidia_physx</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">kritzinger2018</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">kritzinger2018</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">pixar_openusd</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">vdi3693</bcf:citekey>
-    <bcf:citekey order="126" intorder="2">lechler2019</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">mdpi2025isaac</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">iso23247</bcf:citekey>
-    <bcf:citekey order="128" intorder="2">dinspec91345</bcf:citekey>
-    <bcf:citekey order="128" intorder="3">idta_aas2025</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">kritzinger2018</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">idta_aas2025</bcf:citekey>
-    <bcf:citekey order="130" intorder="2">zhang2025aas</bcf:citekey>
-    <bcf:citekey order="131" intorder="1">mdpi2025isaac</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">pydobot_docs</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">nvidia_isaacsim_manipulator_tutorial</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">ros_urdf</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">nvidia_physx</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">nvidia_isaacsim_robot_setup_tutorials</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">kritzinger2018</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">pixar_openusd</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">kritzinger2018</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">vdi3693</bcf:citekey>
+    <bcf:citekey order="128" intorder="2">lechler2019</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">mdpi2025isaac</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">iso23247</bcf:citekey>
+    <bcf:citekey order="130" intorder="2">dinspec91345</bcf:citekey>
+    <bcf:citekey order="130" intorder="3">idta_aas2025</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">kritzinger2018</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">nvidia_isaacsim_manipulator_tutorial</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">idta_aas2025</bcf:citekey>
+    <bcf:citekey order="133" intorder="2">zhang2025aas</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">mdpi2025isaac</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -1411,6 +1411,104 @@
       \field{type}{techreport}
       \field{year}{2026}
     \endentry
+    \entry{pydobot_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0118d21d82cc4c026a1c8056a6f0ab6b}{%
+           family={{DCoderUltra}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{fullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{fullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{bibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorbibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authornamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorfullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorfullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{pydobot -- Python-Bibliothek zur seriellen Ansteuerung des Dobot Magician}
+      \field{title}{{pydobot 0.2.1} Documentation}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
+      \endverb
+      \verb{url}
+      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
+      \endverb
+    \endentry
+    \entry{nvidia_isaacsim_manipulator_tutorial}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac-Sim-Tutorial -- URDF-Import und Assemblierung eines Manipulators (UR10e) mit Robotiq-2F-140-Greifer}
+      \field{title}{Tutorial 6: {Setup a Manipulator}}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/tutorial_import_assemble_manipulator.html
+      \endverb
+      \verb{url}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/tutorial_import_assemble_manipulator.html
+      \endverb
+    \endentry
+    \entry{nvidia_isaacsim_robot_setup_tutorials}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{13}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac-Sim-Tutorialreihe -- Progressiver Lernpfad zum Aufbau virtueller Roboter}
+      \field{title}{Robot Setup Tutorials Series}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/index.html
+      \endverb
+      \verb{url}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/index.html
+      \endverb
+    \endentry
     \entry{mdpi2025isaac}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}

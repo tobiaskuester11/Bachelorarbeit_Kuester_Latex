@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {4.1}Anforderungsanalyse}{19}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Toolkette}{20}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Anlage 1: Rundtakttisch \enquote {Maze-Runner}}{21}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Beschreibung der Anlage}{22}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}Beschreibung der Anlage}{21}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Geometrie und USD-Konvertierung}{23}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Kinematik und Physik in NVIDIA Isaac Sim}{24}{subsubsection.4.3.3}%
 \contentsline {subsubsection}{\numberline {4.3.4}SPS-Konfiguration}{25}{subsubsection.4.3.4}%
@@ -47,31 +47,31 @@
 \contentsline {subsubsection}{\numberline {4.4.1}Beschreibung der Anlage}{37}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Problemstellung und Konzept für den Digitalen Zwilling}{39}{subsubsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.3}URDF-Modellierung und Import in NVIDIA Isaac Sim}{40}{subsubsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Systemarchitektur und ROS\,2-Anbindung}{41}{subsubsection.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Inbetriebnahme}{41}{subsubsection.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.4}Systemarchitektur und Dobot-Anbindung}{41}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Inbetriebnahme}{42}{subsubsection.4.4.5}%
 \contentsline {section}{\numberline {5.}Dokumentation der Entwicklungspipeline}{42}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Omniverse-Extension und ROS\,2-Anbindung als Entwicklungsergebnisse}{42}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Reproduzierbarkeitsdokumentation}{42}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}{42}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Reproduzierbarkeitsdokumentation Dobot Magician}{43}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Medienformate}{43}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Übergabe an das LFP}{43}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Gegenüberstellung und Gesamtbewertung}{43}{subsection.5.3}%
-\contentsline {section}{\numberline {6.}Potenziale, Herausforderungen und Handlungsempfehlungen}{44}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Potenziale im LFP}{44}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Potenziale Digitaler Fabriken}{44}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Potenziale von Gelenkarmrobotern}{44}{subsubsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.2}Herausforderungen im Laborbetrieb}{44}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Infrastruktur}{44}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Qualifikation}{45}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Handlungsempfehlungen für das LFP}{45}{subsection.6.3}%
-\contentsline {section}{\numberline {7.}Zusammenfassung und Ausblick}{45}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Zusammenfassung}{45}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Ausblick}{46}{subsection.7.2}%
-\contentsline {section}{\nonumberline Literatur}{47}{section*.34}%
-\contentsline {section}{\numberline {A}Verwendete KI-Software}{51}{section.A}%
-\contentsline {section}{\numberline {B}Reproduktions-Anleitung (Auszug)}{52}{section.B}%
-\contentsline {section}{\numberline {C}Auszug aus der URDF-Beschreibung des Dobot}{52}{section.C}%
-\contentsline {section}{\numberline {D}Küster Omniverse Tutorial -- Reproduktionsanleitung}{52}{section.D}%
-\contentsline {section}{\numberline {E}Schnittstellenmatrix Maze Runner (Auszug)}{106}{section.E}%
+\contentsline {subsection}{\numberline {5.2}Reproduzierbarkeitsdokumentation}{43}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}{43}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Reproduzierbarkeitsdokumentation Dobot Magician}{44}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Medienformate}{44}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Übergabe an das LFP}{44}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Gegenüberstellung und Gesamtbewertung}{45}{subsection.5.3}%
+\contentsline {section}{\numberline {6.}Potenziale, Herausforderungen und Handlungsempfehlungen}{45}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Potenziale im LFP}{45}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Potenziale Digitaler Fabriken}{46}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Potenziale von Gelenkarmrobotern}{46}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Herausforderungen im Laborbetrieb}{46}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Infrastruktur}{46}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Qualifikation}{47}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Handlungsempfehlungen für das LFP}{47}{subsection.6.3}%
+\contentsline {section}{\numberline {7.}Zusammenfassung und Ausblick}{48}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Zusammenfassung}{48}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Ausblick}{48}{subsection.7.2}%
+\contentsline {section}{\nonumberline Literatur}{50}{section*.35}%
+\contentsline {section}{\numberline {A}Verwendete KI-Software}{55}{section.A}%
+\contentsline {section}{\numberline {B}Reproduktions-Anleitung (Auszug)}{56}{section.B}%
+\contentsline {section}{\numberline {C}Auszug aus der URDF-Beschreibung des Dobot}{56}{section.C}%
+\contentsline {section}{\numberline {D}Küster Omniverse Tutorial -- Reproduktionsanleitung}{56}{section.D}%
+\contentsline {section}{\numberline {E}Schnittstellenmatrix Maze Runner (Auszug)}{110}{section.E}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -142,7 +142,7 @@ Versions\-kontrolle
   & Git, GitHub-Verzeichnis, VS~Code GitHub-Extension \\
 Kommunikations\-anbindung
   & OPC-UA via open62541, MQTT via paho-mqtt~1.6.1
-  & ROS\,2 Humble, \emph{pydobot} (USB~3.0/COM-Port), interne ROS\,2-Extension von NVIDIA Isaac Sim \\
+  & \emph{pydobot} (USB~3.0/COM-Port) \\
 Validierung
   & Funktionsprüfung an der Maze-Runner-Anlage im Labor, korrektes Verhalten der NVIDIA Isaac Sim Szene
   & Funktionsprüfung mit realer Hardware im Pick-and-Place-Szenario, korrektes Verhalten der NVIDIA Isaac Sim Szene \\
@@ -329,6 +329,8 @@ Es dient dazu, Prozessdaten aufzubereiten und alle Steuerungsfunktionen ohne dir
 Oben rechts wird der aktive Modus angezeigt, welcher sich über den Button \emph{LIVE} zwischen Live- und Simulationsmodus umschalten lässt.
 Daneben befinden sich die Buttons \emph{Refresh JSON}, über den die Knotenkonfiguration aus der \texttt{nodes\_db.json} neu geladen wird, sowie \emph{Restart Extension}, über den die Extension neu gestartet wird.
 Darunter sind die Knoten aus der \texttt{nodes\_db.json} aufgelistet, jeweils mit ihrem Modus und ihrem aktuellen Wert sowie einem Button zur Fernsteuerung der Aktorik.
+Die untersten drei Knoten \texttt{Sauggreifer}, \texttt{Schwenkarm\_Deckel\_trans} und \texttt{Schwenkarm\_Deckel\_rot} gehören dabei alle zur Routine \texttt{BA\_Start} und werden hier einzeln aufgeführt, um zunächst die Einzelfunktion jedes Aktors zu verifizieren, bevor sie gemeinsam innerhalb der Routine ausgeführt werden.
+Die Ausgabestation der zweiten SPS wurde vorerst nicht in die Extension integriert, da die Schwenkarm-Deckelstation mit \texttt{BA\_Start} bereits die Infrastruktur einer Routine bereitstellt und eine entsprechende Routine für die Ausgabestation lediglich ein Duplikat wäre, sodass die Ressourcen vorerst auf wichtigere Merkmale wie eine korrekte Fehlerbehandlung und die Optimierung der Extension-Performance konzentriert wurden.
 Im SIM-Modus werden alle Knotenzustände lokal verwaltet, sodass Entwicklung und Test ohne physische Hardware möglich sind.
 Der Button \emph{Gesamtprozess} ist dabei nur im Simulationsmodus verfügbar und demonstriert einmalig den gesamten Prozess.
 Grund dafür ist, dass ein Automatikbetrieb von der SPS verwaltet und aus Sicherheitsgründen nicht ferngesteuert werden sollte.
@@ -401,7 +403,7 @@ Da all dies gebündelt in einer Oberfläche dargestellt werden kann, eignet sich
 
 \begin{figure}[H]
     \centering
-    \fbox{\parbox[c][6cm][c]{0.8\linewidth}{\centering Platzhalter: Digital Twin App Dashboard}}
+    \includegraphics[width=\linewidth]{DigitalTwinAppDashboard}
     \caption{Digital Twin App Dashboard.}
     \label{fig:digitaltwinapp_dashboard}
 \end{figure}
@@ -462,10 +464,10 @@ Ergänzend wurde die Kamera in Betrieb genommen und mit einem eigenen Stativ aus
 
 Im elektrischen Bereich wurde eine Kaltgerätebuchse mit integriertem Schalter verbaut, über den sich die gesamte Anlage spannungsfrei schalten lässt.
 Die aus der Schuko-Steckdose gespeisten 230\,V werden dabei über diesen Schalter auf die Eingänge des neuen WAGO-Netzteils geschaltet, welches die gesamte Anlage anschließend mit 24\,V Gleichspannung versorgt.
-Dabei wurde außerdem der zunächst nicht angeschlossene Not-Aus-Schalter ergänzt, welcher die Versorgungsspannung der Aktorik separat von der SPS-Versorgungsspannung spannungsfrei schaltet, wodurch die SPS im Not-Aus-Fall nicht vollständig spannungsfrei geschaltet wird.
-Hierfür mussten weitere Kabel verlängert, ergänzt oder ausgetauscht werden, was durch einen Ende-zu-Ende-Schaltplan in der Dokumentation unterstützt wurde.
-Das neue WAGO-Netzteil ist zudem leistungsfähiger als das zuvor in Abbildung~\ref{fig:ist_zustand_mazerunner} sichtbare Netzteil und glättet Spannungsspitzen im HsH-Netz, wodurch die SPS vor Beschädigung geschützt wird.
-Zudem wurde das Kabelmanagement optimiert, etwa durch den Verbau von Kabelkanälen auf der Rückseite der Aluminiumprofile sowie das Bündeln von Kabeln und Schläuchen mittels Klettkabelbindern.
+Dabei wurde außerdem der zunächst nicht angeschlossene Not-Aus-Schalter ergänzt, welcher die Versorgungsspannung der Aktorik separat von der SPS-Versorgungsspannung spannungsfrei schaltet, wodurch die SPS im Not-Aus-Fall nicht heruntergefahren wird.
+Hierfür mussten weitere Kabel ergänzt oder ausgetauscht werden, was durch einen Ende-zu-Ende-Schaltplan in der Dokumentation unterstützt wurde.
+Das neue WAGO-Netzteil ist zudem leistungsfähiger als das zuvor in Abbildung~\ref{fig:ist_zustand_mazerunner} sichtbare Netzteil und glättet Spannungsspitzen im HsH-Netz, wodurch die SPS vor Beschädigung durch Überspannung geschützt wird.
+Zudem wurde das Kabelmanagement optimiert, etwa durch den Verbau von Kabelkanälen auf der Rückseite der Aluminiumprofile sowie das Bündeln von Kabeln und Schläuchen mittels Klett- und Spiralkabelbindern.
 Der VPN-Router wird dabei über einen eigenen DC-DC-Wandler von 24\,V auf 5\,V versorgt.
 
 An der SPS selbst waren die Konfiguration in TIA Portal, insbesondere die Änderung der IP-Adresse, sowie der Erwerb der notwendigen Lizenzen für TIA Portal und das zugehörige Safety-Paket aufwendig.
@@ -480,7 +482,7 @@ Bei den meisten Halterungen mussten nachträglich Bohrungen in Autodesk Inventor
 Auch die Bodenplatten der Magazin- und Deckelrutsche sowie deren Schieber mussten aufgrund der potenziellen Verkeilung in den vorhandenen Bohrungen angepasst werden.
 Die Schieber wurden dabei zugleich neu skaliert.
 
-Zuletzt mussten alle Stationen sowie die drei induktiven Sensoren genauestens justiert werden, da der Produktionsfluss nur funktioniert, wenn es millimetergenau abgestimmt ist.
+Zuletzt mussten alle Stationen sowie die drei induktiven Sensoren genauestens justiert werden, da der Produktionsfluss nur nach millimetergenauer Abstimmung gewährleistet ist.
 
 Im Rahmen der Inbetriebnahme mussten zudem einzelne Bauteile neu beschafft werden.
 Für das Kugelmagazin wurden Metallkugeln mit einem Durchmesser von drei Millimetern bestellt.
@@ -511,7 +513,7 @@ In der produzierenden Industrie bilden Pick-and-Place-Aufgaben (PnP) einen funda
 Dabei werden Werkstücke automatisiert gegriffen, transportiert und abgelegt, was die Grundlage für Montage-, Sortier- und Palettieraufgaben quer durch alle Branchen bildet.
 Der Ablauf gliedert sich in der Regel in die Schritte Anfahren, Greifen, Verfahren, Ablegen und Rückfahren.
 Im Rahmen dieser Arbeit wird daher ein Pick-and-Place-Szenario als Anwendungsfall für den Dobot~Magician definiert, bei dem die anzufahrenden Punkte per Teach-In-Methode an den Dobot übergeben und später automatisiert abgefahren werden.
-Konkret wird dabei zunächst die auf dem als Würfel mit vier Zentimetern Kantenlänge abstrahierten FTS abgelegte Schutzkappe angesaugt und anschließend auf das Heck eines Modellfahrzeugs des DeLorean aus \enquote{Zurück in die Zukunft} montiert, wie in Abbildung~\ref{fig:dobot_pp_szenario} zu sehen ist.
+Konkret wird dabei zunächst die zylinderförmige Schutzkappe angesaugt, die über das fahrerlose Transportsystem (FTS), das als weißer Würfel abstrahiert ist, angeliefert wird und anschließend auf das Heck eines Modellfahrzeugs des DeLorean aus \enquote{Zurück in die Zukunft} montiert wird, wie in Abbildung~\ref{fig:dobot_pp_szenario} virtuell und Abbildung~\ref{fig:dobot_labor} real zu sehen ist.
 
 \begin{figure}[H]
     \centering
@@ -532,7 +534,8 @@ Konkret wird dabei zunächst die auf dem als Würfel mit vier Zentimetern Kanten
 
 \subsubsection{Beschreibung der Anlage}
 Der Dobot Magician ist ein vierachsiger Desktop-Roboterarm (Dobot Robotics Co.,~Ltd., Shenzhen, China), der für den Einsatz in der universitären Lehre konzipiert wurde~\cite{dobot_magician}.
-Er realisiert eine Kinematik mit vier Freiheitsgraden (Degrees of Freedom, DOF) und den Gelenken J1 (Basisrotation), J2 (Schulter), J3 (Ellbogen) und J4 (Werkzeugkopf) bei einer maximalen Reichweite von \SI{320}{\milli\meter} und einer Nutzlast von bis zu \SI{500}{\gram}.
+Er realisiert eine Kinematik mit vier Freiheitsgraden (Degrees of Freedom, DOF) und den Gelenken J1 (Basisrotation), J2 (Schulter), J3 (Ellbogen) und J4 (Drehung des Werkzeugkopfs um die Z-Achse) bei einer maximalen Reichweite von \SI{320}{\milli\meter} und einer Nutzlast von bis zu \SI{500}{\gram}.
+J4 wird über den in Abbildung~\ref{fig:dobot_sauggreifer} gezeigten Servomotor des Sauggreifers realisiert.
 Die Kommunikation mit dem Rechner erfolgt über USB mittels eines proprietären seriellen Protokolls.
 
 \begin{figure}[H]
@@ -543,8 +546,8 @@ Die Kommunikation mit dem Rechner erfolgt über USB mittels eines proprietären 
 \end{figure}
 
 Der Dobot Magician besitzt ein Parallelogrammgetriebe im Unterarm, das die Werkzeugplatte unabhängig von Schulter- und Ellbogengelenk horizontal ausrichtet.
-Dadurch können mit dem Sauggreifer ausschließlich Bauteile von oben gegriffen werden, wobei sich dessen Orientierung nur durch eine Drehung um die Z-Achse verändern lässt.
 Dieses Getriebe bildet eine geschlossene kinematische Kette, die für die Simulation besondere Anforderungen stellt (vgl.\ Abschnitt~\ref{subsubsec:dobot_urdf}).
+Dadurch können mit dem Sauggreifer ausschließlich Bauteile von oben gegriffen werden, wobei sich dessen Orientierung nur durch eine Drehung um die Z-Achse mittels des in Abbildung~\ref{fig:dobot_sauggreifer} gezeigten Servomotors verändern lässt.
 
 Als Endeffektor für das Pick-and-Place-Szenario ist am Dobot Magician ein pneumatischer Sauggreifer montiert.
 Dieser besteht aus einem Saugkopf mit Luftschlauchanschluss am vierten Gelenk sowie einer separaten Pumpeneinheit, die über die digitalen Anschlüsse GP1, GP3 und SW1 angesteuert wird, wie Abbildung~\ref{fig:dobot_sauggreifer} zeigt~\cite{kuester2026dobottutorial}.
@@ -569,21 +572,19 @@ Die gezeigte Hardware soll nun in NVIDIA Isaac Sim zu einem Digitalen Zwilling �
 
 \subsubsection{Problemstellung und Konzept für den Digitalen Zwilling}
 \label{subsubsec:dobot_konzept}
-Der Dobot Magician weist gegenüber dem Maze-Runner grundlegend andere Randbedingungen auf, die eine eigenständige Konzeption des Digitalen Zwillings erfordern.
-Während die SPS-gestützte Anlage über standardisierte Schnittstellen und ein etabliertes OPC-UA-Informationsmodell verfügt, kommuniziert der Dobot Magician ausschließlich über ein proprietäres, seriell-basiertes USB-Protokoll.
-Dieses Protokoll ist nicht nativ in ROS\,2 oder Isaac Sim integriert, was eine Middleware-Schicht notwendig macht.
-Zudem ist eine direkte bidirektionale Steuerung aus der Simulation heraus aufgrund fehlender Echtzeitrückkopplung auf Gelenkebene in der Anfangsausbaustufe nicht vorgesehen.
+Das proprietäre, seriell-basierte USB-Protokoll des Dobot Magician ist nicht nativ in Isaac Sim integriert, was eine Middleware-Schicht notwendig macht.
 Das Ziel ist zunächst die Realisierung eines Digitalen Schattens nach Kritzinger et al., der die Gelenkzustände des physischen Roboters kontinuierlich im virtuellen Modell abbildet~\cite{kritzinger2018}.
 
-Das Konzept sieht eine zweistufige Architektur vor.
-In der ersten Stufe liest ein direkt unter Windows ausgeführtes, auf der \emph{pydobot}-Bibliothek basierendes Python-Skript die Gelenkwinkel J1--J4 zyklisch aus und publiziert diese als standardisierte \texttt{sensor\_msgs/JointState}-Nachrichten, wofür die intern vorinstallierte ROS\,2-Extension von NVIDIA Isaac Sim die Middleware bildet.
-In der zweiten Stufe empfängt Isaac Sim diese Nachrichten über einen \emph{ROS\,2~Subscribe-JointState}-Knoten im Action~Graph und überträgt die Winkelwerte auf die importierte USD-Articulation des Roboters.
+Das Konzept sieht eine eigenständige Kit-Extension namens \texttt{Dobot\_DT\_IsaacSim\_Extension} vor, deren Klasse \texttt{DobotROSNode} über die \emph{pydobot}-Bibliothek~\cite{pydobot_docs} zyklisch die Pose des realen Roboters ausliest und daraus die Gelenkwinkel J1--J4 berechnet.
+Die Kopplung an die Simulation erfolgt dabei über die in Isaac Sim integrierte Dynamic-Control-API, über die die Gelenkwinkel auf die Articulation des importierten Robotermodells geschrieben werden.
 Die kinematische Grundlage bildet eine URDF-Beschreibung, die aus den CAD-Daten des Herstellers abgeleitet und mit Gelenklimits sowie Achsparametern versehen wird.
-
-Dieses Konzept ist ohne proprietäre Lizenzkosten realisierbar und erlaubt eine vollständige Entwicklung und Erprobung ohne physische Hardware durch den Einsatz eines Software-Mocks für die Gelenkkommunikation.
 
 \subsubsection{URDF-Modellierung und Import in NVIDIA Isaac Sim}
 \label{subsubsec:dobot_urdf}
+
+Um den Dobot Magician in NVIDIA Isaac Sim zu simulieren, müssen das Robotermodell geladen und dessen Gelenke definiert werden.
+Anstatt das Modell dafür als gesamte Baugruppe zu importieren und die Gelenke nachträglich zu definieren, ermöglicht die URDF-Beschreibung den direkten Import der einzelnen STL-Meshes samt der zwischen ihnen definierten Gelenke.
+Abbildung~\ref{fig:dobot_urdf_aufbau} zeigt diesen Ablauf, der im Folgenden kurz erläutert wird und sich am Workflow eines von NVIDIA bereitgestellten Tutorials zum Import und zur Assemblierung von Manipulatoren in Isaac Sim orientiert~\cite{nvidia_isaacsim_manipulator_tutorial}.
 
 \begin{figure}[H]
     \centering
@@ -595,43 +596,48 @@ Dieses Konzept ist ohne proprietäre Lizenzkosten realisierbar und erlaubt eine 
 Wie in Abbildung~\ref{fig:dobot_urdf_aufbau} zu sehen ist, wird die kinematische Struktur des Dobot Magician in einer URDF-Datei formalisiert.
 Die vier Glieder werden als STL-Meshes referenziert. Die zugehörigen Gelenke erhalten Drehachsen, Bewegungsgrenzen und Antriebsparameter~\cite{ros_urdf}.
 Die Roboterbasis wird über einen starren Weltanker verankert, um physikalische Stabilität zu gewährleisten.
-Der Isaac-Sim-URDF-Importer überführt die Beschreibung in eine USD-Articulation. Die Optionen \emph{Merge Fixed Joints} und \emph{Fix Base Link} müssen dabei aktiviert sein.
-Die Eigenschaft \emph{Instanceable} ist für alle beweglichen Gelenke zu deaktivieren, da der Action~Graph sonst keine Schreibzugriffe auf die Gelenktransformationen erhält~\cite{nvidia_isaacsim}.
+Der Isaac-Sim-URDF-Importer überführt die Beschreibung anschließend in eine USD-Articulation.
 
 Eine Herausforderung stellt das Parallelogrammgetriebe des Unterarms dar.
-Dieses bildet eine geschlossene kinematische Kette: Zwei mechanische Pfade zwischen Schultergelenk und Werkzeugplatte erzeugen gegenseitige Abhängigkeiten, die über einfache Vorwärtskinematik nicht auflösbar sind.
+Dieses bildet eine geschlossene kinematische Kette, wobei zwei mechanische Pfade zwischen Schultergelenk und Werkzeugplatte gegenseitige Abhängigkeiten erzeugen, die über einfache Vorwärtskinematik nicht auflösbar sind.
 Physik-Engines wie NVIDIA PhysX unterstützen ausschließlich offene kinematische Bäume. Geschlossene Schleifen erfordern entweder explizite Schleifenschlussbedingungen oder eine vereinfachte Modellierung~\cite{nvidia_physx}.
-Im vorliegenden Modell wird die geschlossene Kette durch eine Näherung als offene Kette abgebildet. Das Parallelogrammgetriebe wird im URDF nicht vollständig modelliert, stattdessen wird die Parallelführung durch die Gelenkkonfiguration angenähert.
+Das Parallelogrammgetriebe selbst wird deshalb im URDF nicht modelliert.
+Anstelle der physischen Gelenke J3 und J4 definiert das Modell die aktiven Gelenke \texttt{joint\_5} und \texttt{joint\_6}, wobei \texttt{joint\_5} als Differenz der realen Schulter- und Ellbogenwinkel zurückgerechnet wird und dadurch den Unterarm in Weltkoordinaten horizontal hält, während \texttt{joint\_6} den Endeffektor unabhängig von der Armkonfiguration senkrecht ausrichtet.
 Für den angestrebten Digitalen Schatten ist diese Vereinfachung hinreichend, da die Darstellung der Endeffektorpose im Vordergrund steht, nicht die exakte Simulation der internen Mechanik.
 
-\subsubsection{Systemarchitektur und ROS\texorpdfstring{\,}{}2-Anbindung}
-Die Datenkopplung zwischen realem Roboter und NVIDIA Isaac Sim wird vollständig lokal ohne externe Netzwerkabhängigkeiten realisiert.
-Die Hardware-Anbindung erfolgt über ein direkt unter Windows ausgeführtes Python-Bridge-Skript, das über die \emph{pydobot}-Bibliothek die aktuellen Gelenkwinkel J1--J4 direkt aus dem Roboter ausliest.
+\subsubsection{Systemarchitektur und Dobot-Anbindung}
+Die Datenkopplung zwischen realem Roboter und NVIDIA Isaac Sim wird vollständig über die USB-Verbindung realisiert, über die der Dobot Magician mittels der \emph{pydobot}-Bibliothek an die Extension angebunden ist.
+Im Folgenden werden der Auslesepfad sowie der Steuerpfad anhand eines internen Blockdiagramms in Abbildung~\ref{fig:dobot_wege} dargestellt, wobei die grün eingefärbten Bereiche NVIDIA Isaac Sim und die blau eingefärbten Bereiche der Extension zuzuordnen sind~\cite{nvidia_isaacsim_robot_setup_tutorials}.
 
-Ein wesentlicher Unterschied zum Maze-Runner besteht in der Art der übertragenen Signale.
-Die Siemens-SPS verarbeitet diskrete Schaltsignale, während die pydobot-Schnittstelle kontinuierliche Gelenkwinkel in Grad zurückliefert.
-Das Bridge-Skript rechnet diese Werte in Bogenmaß um und publiziert sie mit \SI{20}{\hertz} als \texttt{sensor\_msgs/JointState}-Nachricht im lokalen ROS\,2-Netz, wofür die intern vorinstallierte ROS\,2-Extension von NVIDIA Isaac Sim die Middleware bildet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{dobot_wege_1_2_v11}
+    \caption{Datenflussstruktur der Dobot-Magician-Extension zwischen realem Roboter und NVIDIA Isaac Sim.}
+    \label{fig:dobot_wege}
+\end{figure}
 
-Die Aktuierung in NVIDIA Isaac Sim erfolgt über den Action~Graph.
-Ein \emph{ROS\,2~Subscribe-JointState}-Node empfängt die Winkelwerte und leitet sie über einen \emph{Articulation~Controller} an die URDF-Gelenkhierarchie weiter.
-Damit ist eine funktionale Synchronisation im Sinne eines Digitalen Schattens nach Kritzinger et al.\ realisiert~\cite{kritzinger2018}.
-Eine weitergehende Validierung und der Ausbau zur bidirektionalen Steuerung sind Gegenstand zukünftiger Arbeiten.
+Im oberen Pfad werden die aktuellen Gelenkwerte des Dobot Magician ausgelesen und anschließend in die USD-Szene übertragen.
+Ausgangspunkt ist die Methode \texttt{\_sim\_updater()} der \texttt{Dobot\_DT\_IsaacSim\_Extension} (kurz DT-Extension), die durch das Isaac-Sim-Update-Event ausgelöst wird, ein von NVIDIA Isaac Sim bereitgestelltes Callback, das bei jedem gerenderten Simulationsframe aufgerufen wird und damit den \SI{60}{\hertz}-Takt des Auslesepfads vorgibt.
+\texttt{\_sim\_updater()} ruft die Methode \texttt{real\_read\_joints()} der Klasse \texttt{DobotROSNode} auf, welche über \emph{pydobot} den Befehl \texttt{device.pose()} absetzt.
+\emph{pydobot} überträgt diesen Befehl als \texttt{GetPose}-Kommando in hexadezimaler Darstellung über das UART-Protokoll, das der Dobot Magician am USB-Port spricht.
+Der Roboter antwortet mit der aktuellen XYZ-Koordinate sowie der Werkzeugkopfdrehung um die Z-Achse in Millimetern und Grad, woraus \emph{pydobot} ein Python-Tupel mit den Gelenkstellungen J1 bis J4 bildet.
+\texttt{real\_read\_joints()} berechnet daraus die Rohwinkel der Gelenke und liefert sie an \texttt{\_sim\_updater()} zurück, die sie an \texttt{SimBridge.apply\_joints()} übergibt.
+Diese rechnet die Winkel von Grad in Radiant um und schreibt sie über die Dynamic-Control-API auf die Gelenke der importierten Articulation, sodass das virtuelle Modell dem realen Arm in Echtzeit folgt.
+
+Auf Weg~2 löst ein Klick im Dobot-HMI eine der \texttt{real\_*}-Methoden aus, etwa für Jog-Befehle, Vakuumgreifer-Schaltungen oder das Anfahren der Home-Position.
+Diese übersetzen den Aufruf über \emph{pydobot} in einen seriellen Steuerbefehl an den Dobot Magician, der die Zielposition intern über inverse Kinematik anfährt, ohne eine Rückmeldung an den Code zu senden.
+Aufgezeichnete Pick-and-Place-Sequenzen laufen dabei über einen eigenen Thread, der mittels \texttt{wait\_for\_cmd()} blockierend auf den Bewegungsabschluss wartet, während direkte UI-Befehle wie Jog- oder Vakuumgreifer-Schaltungen nicht auf eine Rückmeldung warten.
+
+Da beide Wege parallel und unabhängig voneinander laufen, liest \texttt{real\_read\_joints()} im nächsten Takt stets die aktuelle Ist-Position aus, unabhängig davon, ob über Weg~2 noch eine Bewegung läuft.
+Damit ist eine funktionale Synchronisation im Sinne eines Digitalen Schattens nach Kritzinger et al.\ realisiert, die um die auf Weg~2 beschriebene, manuell auslösbare Fernsteuerung in Gegenrichtung ergänzt wird, während eine durchgängig automatisierte bidirektionale Kopplung Gegenstand zukünftiger Arbeiten bleibt~\cite{kritzinger2018}.
 
 \subsubsection{Inbetriebnahme}
 \label{subsubsec:dobot_inbetriebnahme}
 
-Die Inbetriebnahme des Dobot-Magician-Digitalen-Zwillings erfolgte in drei aufeinanderfolgenden Phasen.
+Für die Inbetriebnahme wird der Dobot Magician zunächst in eine im FDM-Druckverfahren gefertigte Halterung eingesetzt, die auf dem Tisch der Maze-Runner-Anlage verschraubt ist.
+Anschließend wird der Dobot Magician über das mitgelieferte Netzteil mit Spannung versorgt und per USB an den Laptop angeschlossen.
+Der in Abbildung~\ref{fig:dobot_sauggreifer} und Abbildung~\ref{fig:dobot_sauggreifer_anschluss} gezeigte Sauggreifer wird in die Werkzeugführung eingeführt, mit der mitgelieferten Schraube fixiert und anschließend über die Schnittstellen GP1 und GP3 sowie die Versorgungsstecker für Vakuumpumpe und Servomotor verkabelt, wobei die Vakuumpumpe das notwendige Vakuum erzeugt.
 
-In der ersten Phase wurden die Systemvoraussetzungen geschaffen.
-Auf dem Windows-Host wurden ROS\,2~Humble sowie die \emph{pydobot}-Bibliothek installiert.
-
-In der zweiten Phase wurde die Datenkommunikation validiert.
-Das Bridge-Skript wurde mit dem physischen Roboter verbunden und die ausgelesenen Gelenkwinkel J1--J4 auf Plausibilität geprüft.
-Die ROS\,2-Topics wurden auf korrekte \texttt{sensor\_msgs/JointState}-Nachrichten im 20-Hz-Takt überprüft.
-Für die hardware-unabhängige Entwicklung wurde ein Software-Mock eingesetzt, der die vollständige Pipeline ohne physischen Roboter testbar macht.
-
-In der dritten Phase wurde die Isaac-Sim-Anbindung konfiguriert.
-Der URDF-Import wurde mit den dokumentierten Parametern durchgeführt und der Action~Graph mit dem \emph{ROS\,2~Subscribe-JointState}-Knoten verbunden.
-Die Bewegungsübertragung wurde visuell durch parallele Beobachtung von physischem Roboter und virtuellem Modell verifiziert.
-Da in der Anfangsausbaustufe keine Echtzeitregelung vorgesehen ist, entfällt eine Optimierungsschleife.
-Der Fokus liegt auf der stabilen Übertragung der Gelenkzustände als Digitaler Schatten nach Kritzinger et al.~\cite{kritzinger2018}.
+Das Modellauto des DeLorean und der das FTS abstrahierende Würfel, auf dem die Schutzkappe abliegt, werden auf demselben Tisch an mit Bleistift markierten Stellen platziert, deren Abstände in die Isaac-Sim-Szene übernommen und durch die Simulation verifiziert werden.
+Die FDM-gefertigte Halterung ist auch in Abbildung~\ref{fig:dobot_pp_szenario} und Abbildung~\ref{fig:dobot_labor} zu sehen.
+Bei der Platzierung wird der Aktionsradius des Dobot Magician berücksichtigt, sodass dieser auch die Ausgabestation der Maze-Runner-Anlage erreichen kann.

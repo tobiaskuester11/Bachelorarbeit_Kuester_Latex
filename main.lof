@@ -35,4 +35,5 @@
 \contentsline {figure}{\numberline {31}{\ignorespaces Komponenten des pneumatischen Sauggreifers, Saugkopf mit Luftschlauchanschluss (links) und Pumpeneinheit mit den Anschlüssen GP1 und SW1 (rechts) (Quelle: \blx@tocontentsinit {0}\cite {kuester2026dobottutorial}).}}{39}{figure.caption.31}%
 \contentsline {figure}{\numberline {32}{\ignorespaces Anschluss des Sauggreifers, Verkabelung der Pumpe über GP1 und SW1 (links) sowie Anbindung des Saugkopfs über GP3 am vierten Gelenk (rechts) (Quelle: \blx@tocontentsinit {0}\cite {kuester2026dobottutorial}).}}{39}{figure.caption.32}%
 \contentsline {figure}{\numberline {33}{\ignorespaces Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene.}}{40}{figure.caption.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Datenflussstruktur der Dobot-Magician-Extension zwischen realem Roboter und NVIDIA Isaac Sim.}}{41}{figure.caption.34}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

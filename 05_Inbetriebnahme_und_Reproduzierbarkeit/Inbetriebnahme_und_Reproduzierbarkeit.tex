@@ -1,16 +1,20 @@
 \section{Dokumentation der Entwicklungspipeline}
 \label{sec:ergebnisse}
 
+Damit die entwickelten Digitalen Zwillinge über die Laufzeit dieser Arbeit hinaus im LFP genutzt, gewartet und auf weitere Anlagen übertragen werden können, mussten Entwicklungsergebnisse, Reproduktionsschritte und Übergabeartefakte durchgängig dokumentiert werden. Dieses Kapitel fasst zunächst die beiden entstandenen Softwareerweiterungen zusammen, beschreibt anschließend die Reproduzierbarkeitsdokumentation und schließt mit einer Gegenüberstellung beider Anlagen.
+
 \subsection{Omniverse-Extension und ROS\,2-Anbindung als Entwicklungsergebnisse}
 
-Im Rahmen dieser Arbeit wurden zwei funktionsfähige Softwareerweiterungen für NVIDIA NVIDIA Isaac Sim entwickelt, erprobt und an das LFP übergeben.
+Im Rahmen dieser Arbeit wurden zwei funktionsfähige Softwareerweiterungen für NVIDIA Isaac Sim entwickelt, erprobt und an das LFP übergeben.
 
-\textbf{Maze Runner -- Omniverse-Extension:} Die entwickelte modulare Extension im \emph{Omniverse Kit Extension Framework} umfasst acht spezialisierte Module und realisiert eine bidirektionale Echtzeit-Datenkopplung zwischen der Siemens-SPS S7-1200 und dem Digitalen Zwilling in NVIDIA Isaac Sim (vgl.\ Abschnitt~\ref{subsubsec:mazerunner_extension}). Die datengetriebene Konfiguration über \texttt{nodes\_db.json} ermöglicht die Übertragung der Extension auf weitere SPS-gestützte Anlagen ohne Quellcodeänderungen. In 30-minütigen Dauerläufen wurde eine stabile End-to-End-Latenz von \SI{18}{\milli\second} (Standardabweichung \SI{4}{\milli\second}) nachgewiesen.
+\textbf{Maze-Runner-Extension:} Die entwickelte modulare Extension im \emph{Omniverse Kit Extension Framework} gliedert sich in zwölf spezialisierte Module (vgl.\ Abschnitt~\ref{subsubsec:mazerunner_extension}) und koppelt die Siemens-SPS S7-1200 über den \emph{DigitalTwinService} bidirektional an den Digitalen Zwilling in NVIDIA Isaac Sim. Die datengetriebene Konfiguration über \texttt{nodes\_db.json} ermöglicht die Übertragung der Extension auf weitere SPS-gestützte Anlagen ohne Quellcodeänderungen. Der Steuerpfad von der Extension zur SPS erreicht dabei eine Latenz zwischen \SI{100}{\milli\second} und \SI{500}{\milli\second} (vgl.\ Abschnitt~\ref{subsubsec:mazerunner_sps}). Die Rückmeldung der Sensorwerte aus der SPS an den Digitalen Zwilling über die MQTT-WebSocket-Schnittstelle ließ sich im Laborbetrieb dagegen nicht durchgängig zuverlässig nachweisen, worauf Abschnitt~\ref{subsec:gesamtbewertung} genauer eingeht.
 
-\textbf{Dobot Magician -- ROS\,2-Bridge:} Für den Dobot Magician entstand ein dreistufiges ROS\,2-Brückensystem: Das Python-Skript \texttt{dobot\_ros\_bridge.py} liest die Gelenkwinkel J1--J4 über die \emph{pydobot}-Bibliothek zyklisch aus und publiziert sie als standardisierte \texttt{sensor\_msgs/JointState}-Nachrichten im 20-Hz-Takt. NVIDIA Isaac Sim empfängt diese über den Action~Graph und aktualisiert das URDF-Modell in Echtzeit. Beide Erweiterungen sind im LFP-GitLab-Repository versioniert und gemäß der Reproduzierbarkeitsdokumentation (vgl.\ Abschnitt~\ref{subsec:reprodoku}) nachvollziehbar.
+\textbf{Dobot-Magician-Extension:} Für den Dobot Magician entstand mit \texttt{Dobot\_DT\_IsaacSim\_Extension} eine eigenständige Kit-Extension, deren Klasse \texttt{DobotROSNode} über die \emph{pydobot}-Bibliothek zyklisch die Pose des realen Roboters ausliest und die berechneten Gelenkwinkel direkt über die in Isaac Sim integrierte Dynamic-Control-API auf die Articulation des importierten Robotermodells schreibt. In Gegenrichtung sendet die Extension über ein Bedienpanel Jog-Befehle, Vakuumgreifer-Schaltungen sowie automatisierte Pick-and-Place-Sequenzen an den realen Gelenkarmroboter, wobei Letztere zuvor per Teach-In am physischen Gelenkarmroboter aufgezeichnet wurden. Beide Erweiterungen sind im GitHub-Repository versioniert und gemäß der Reproduzierbarkeitsdokumentation (vgl.\ Abschnitt~\ref{subsec:reprodoku}) nachvollziehbar.
 
 \subsection{Reproduzierbarkeitsdokumentation}
 \label{subsec:reprodoku}
+
+Damit beide Digitalen Zwillinge unabhängig von den beteiligten Personen reproduziert werden können, wurde für jede Anlage eine eigenständige Anleitung erstellt und in komplementären Medienformaten an das LFP übergeben.
 
 \subsubsection{Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}
 Aus den Erfahrungen der Modellerstellung wurde eine generische Anleitung in sieben Schritten abgeleitet (vgl.\ Anhang~\ref{anhang:repro}):
@@ -21,31 +25,40 @@ Aus den Erfahrungen der Modellerstellung wurde eine generische Anleitung in sieb
     \item Auswahl und Einrichtung der geeigneten Middleware (OPC~UA, MQTT, ROS\,2),
     \item Implementierung der bidirektionalen Datenkopplung,
     \item Validierung anhand definierter Testszenarien,
-    \item Übergabe und Versionierung im LFP-Repository.
+    \item Übergabe und Versionierung im GitHub-Repository.
 \end{enumerate}
 
 \subsubsection{Reproduzierbarkeitsdokumentation Dobot Magician}
 Analog zur Maze-Runner-Dokumentation wurde für den Dobot Magician eine eigenständige Inbetriebnahme-Anleitung erstellt. Diese umfasst:
 \begin{enumerate}
-    \item Einrichtung von ROS\,2~Humble und der \emph{pydobot}-Bibliothek direkt unter Windows, wofür die intern vorinstallierte ROS\,2-Extension von NVIDIA Isaac Sim als Middleware dient,
+    \item Einrichtung von \emph{pydobot} unter Windows sowie Installation der Extension \texttt{Dobot\_DT\_IsaacSim\_Extension} über den Extension-Manager oder das Hilfsskript \texttt{install\_extension.py},
     \item URDF-Import in NVIDIA Isaac Sim mit den erforderlichen Parametereinstellungen (\emph{Merge Fixed Joints}, \emph{Fix Base Link}, deaktiviertes \emph{Instanceable}),
-    \item Konfiguration des Action~Graphs und Verifikation der Gelenkzustandsübertragung,
+    \item Verifikation der Dynamic-Control-Kopplung anhand der Gelenkzustandsübertragung,
     \item Betrieb des Software-Mocks für hardware-unabhängige Entwicklung und Tests.
 \end{enumerate}
-Alle Schritte sind im LFP-GitLab-Repository versioniert. Die Anleitung ist so strukturiert, dass sie ohne physischen Roboter vollständig nachvollzogen werden kann.
+Alle Schritte sind im GitHub-Repository versioniert. Die Anleitung ist so strukturiert, dass sie ohne physischen Roboter vollständig nachvollzogen werden kann.
 
 \subsubsection{Medienformate}
 Die Anleitungen wurden in komplementären Formaten aufbereitet:
-\begin{itemize}
+\begin{enumerate}
     \item \textbf{Foliensatz} (PowerPoint, 32 Folien) als didaktische Grundlage für Lehrveranstaltungen,
-    \item \textbf{VR-Demonstration} auf Meta Quest~3 zur immersiven Inspektion der Digitalen Zwillinge.
-\end{itemize}
+    \item \textbf{VR-Demonstration} auf Meta Quest~3 zur immersiven Inspektion der Digitalen Zwillinge,
+    \item \textbf{Maze-Runner-GitHub-Repository} mit allen im Rahmen dieser Arbeit erarbeiteten Dateien, von der Installation von NVIDIA Isaac Sim über die Konfiguration der SPS und die Anbindung an die Netzwerkinfrastruktur der Hochschule RheinMain bis hin zur Extension selbst mit ihren Modulen sowie der Maze-Runner-USD-Szene,
+    \item \textbf{Dobot-Extension-GitHub-Repository} mit der technischen Dokumentation der Dobot-Magician-Extension, der URDF-Datei mit den zugehörigen CAD-Dateien sowie Hilfsskripten, etwa zur Kalibrierung, zur Installation der Extension oder zum Setzen des Extension-Pfads unter Windows.
+\end{enumerate}
+Beide Anleitungen wurden von mehreren Personen getestet, deren Rückmeldungen eingearbeitet wurden.
 
 \subsubsection{Übergabe an das LFP}
-Alle erstellten Artefakte -- USD-Stages, URDF-Dateien, Python-Extensions, OPC-UA-Konfigurationen, Reproduktionsanleitungen und die schriftliche Ausarbeitung -- wurden gemäß Aufgabenstellung digital an das LFP übergeben und in einem internen GitLab-Repository versioniert. Eine Open-Access-Ver\-öffent\-lichung über die Bibliothek der HsH ist vorgesehen.
+Alle erstellten Artefakte -- USD-Stages, URDF-Dateien, Python-Extensions, OPC-UA-Konfigurationen, Reproduktionsanleitungen und die schriftliche Ausarbeitung -- wurden gemäß Aufgabenstellung digital an das LFP übergeben und in einem GitHub-Repository versioniert. Eine Veröffentlichung innerhalb der für IEEE geplanten Schriftenreihe des LFP ist vorgesehen.
 
 \subsection{Gegenüberstellung und Gesamtbewertung}
-Beide Anlagen bestätigen die Machbarkeit einer durchgängigen Datenkette von CAD über OpenUSD bis zur Echtzeit-Simulation in NVIDIA Isaac Sim ohne proprietäre Konvertierungsschritte~\cite{pixar_openusd}. Die Protokollwahl, OPC~UA für die SPS-Anlage und ROS\,2 für den Roboter, richtet sich nach den unterschiedlichen Kommunikationsanforderungen beider Anlagen. Hinsichtlich der Skalierbarkeit wächst die GPU-Last linear mit der Anzahl gleichzeitig simulierter Articulations, was die in Kapitel~\ref{sec:grundlagen} adressierte Infrastrukturanforderung bestätigt. Eine Kombination beider Ansätze -- OPC~UA für die Anlagenebene, ROS\,2 für die Roboterebene -- wird für vergleichbare Laboraufbauten empfohlen.
+\label{subsec:gesamtbewertung}
+
+Beide Anlagen bestätigen die Machbarkeit einer durchgängigen Datenkette von CAD über OpenUSD bis zur Echtzeit-Simulation in NVIDIA Isaac Sim ohne proprietäre Konvertierungsschritte~\cite{pixar_openusd}. Die Protokollwahl, OPC~UA und MQTT für die SPS-Anlage sowie ROS\,2 für den Roboter, richtet sich nach den unterschiedlichen Kommunikationsanforderungen beider Anlagen.
+
+Beim Maze Runner ließ sich die Rückmeldung der Sensorwerte aus der SPS an den Digitalen Zwilling über die MQTT-WebSocket-Schnittstelle im Laborbetrieb nicht durchgängig echtzeitfähig nachweisen. Über den eingerichteten Subscribe-Mechanismus gingen zwar MQTT-Pakete ein, jedoch nicht durchgängig echtzeitfähig und zuverlässig genug, um als Grundlage für einen echtzeitfähigen Digitalen Zwilling zu dienen. Als mögliche Ursache kommt weniger eine interne Netzwerktrennung im Backend als vielmehr die Netzwerktrennung zwischen dem Maze-Runner-Netzwerk und dem Backend der Hochschule RheinMain über die bestehende VPN-Verbindung infrage, ohne dass die dortigen IT-Verantwortlichen hierfür eine abschließende Erklärung liefern konnten. Die Kopplung erreicht damit im praktischen Betrieb nicht durchgängig die von Kritzinger et al.\ definierte Stufe eines bidirektionalen Digitalen Zwillings~\cite{kritzinger2018}. Da der Steuerpfad von der Simulation zur SPS zuverlässig funktioniert, während die Rückmeldung eingeschränkt bleibt, entspricht der erreichte Zustand eher einer erweiterten Fernsteuerung mit ergänzendem, nicht durchgängig verfügbarem Digitalen Schatten.
+
+Beim Dobot Magician ist zumindest die Richtung vom realen Gelenkarmroboter zur Simulation durchgängig automatisiert. Gelenkwinkel werden über die Dynamic-Control-API kontinuierlich ausgelesen und auf die Simulation übertragen, während Steuerbefehle und aufgezeichnete Pick-and-Place-Sequenzen in der Gegenrichtung über die UI-Buttons des Bedienpanels der Extension manuell ausgelöst werden. Für die Aufzeichnung dieser Sequenzen wird am realen Gelenkarmroboter die Motorbremse gelöst, sodass der Arm per Hand in die gewünschte Position geführt und die Pose per Teach-In übernommen werden kann. Hinsichtlich der Skalierbarkeit wächst die GPU-Last linear mit der Anzahl gleichzeitig simulierter Articulations, was die in Kapitel~\ref{sec:grundlagen} adressierte Infrastrukturanforderung bestätigt. Für vergleichbare Laboraufbauten wird eine Kombination beider Ansätze empfohlen, OPC~UA und MQTT für die Anlagenebene sowie ROS\,2 für die Roboterebene, wobei die Zuverlässigkeit der Rückmeldekanäle vor einer produktiven Nutzung gesondert zu prüfen ist.
 
 % =====================================================================
 % GEPARKT (2026-07-05): Abschnitt "Projektorganisation" aus Kapitel 4.1
