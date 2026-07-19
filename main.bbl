@@ -450,6 +450,34 @@
       \field{title}{{VDI 4499 Blatt 1} Digitale Fabrik -- Grundlagen}
       \field{year}{2008}
     \endentry
+    \entry{grieves2014}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4b5d6786e8fb5cd63db15f454210559d}{%
+           family={Grieves},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Michael W. Grieves, LLC}%
+      }
+      \strng{namehash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{fullhash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{fullhashraw}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{bibnamehash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{authorbibnamehash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{authornamehash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{authorfullhash}{4b5d6786e8fb5cd63db15f454210559d}
+      \strng{authorfullhashraw}{4b5d6786e8fb5cd63db15f454210559d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Erstmalige Einführung des Digital-Twin-Konzepts als Modell aus physischem Produkt, virtuellem Produkt und deren Datenverknüpfung}
+      \field{howpublished}{White paper}
+      \field{title}{Digital Twin: Manufacturing Excellence through Virtual Factory Replication}
+      \field{year}{2014}
+    \endentry
     \entry{Grieves2017}{incollection}{}{}
       \name{author}{2}{}{%
         {{hash=4b5d6786e8fb5cd63db15f454210559d}{%
@@ -498,8 +526,8 @@
       \strng{editornamehash}{e5bf1afb0f61b22dff884da6d08b17a4}
       \strng{editorfullhash}{1a21a2737a961924ee91ad3bb6ed55ff}
       \strng{editorfullhashraw}{1a21a2737a961924ee91ad3bb6ed55ff}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Digital Twin Prototype (DTP), Digital Twin Instance (DTI), Digital Twin Environment (DTE)}
@@ -576,6 +604,48 @@
       \verb{doi}
       \verb 10.1007/978-3-642-35950-7_16870-1
       \endverb
+    \endentry
+    \entry{shao2023standardized}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=72647c69b834f44cc66fb202bb149440}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Guodong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7adbbc09e94698e6653593dbea95083e}{%
+           family={Kibira},
+           familyi={K\bibinitperiod},
+           given={Deogratias},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c87e371601914af72606f711c1008dee}{%
+           family={Frechette},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology (NIST), Engineering Laboratory}%
+      }
+      \list{location}{1}{%
+        {Gaithersburg, MD}%
+      }
+      \strng{namehash}{fef5b6807bfbfda14b03b0f9272d2946}
+      \strng{fullhash}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \strng{fullhashraw}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \strng{bibnamehash}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \strng{authorbibnamehash}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \strng{authornamehash}{fef5b6807bfbfda14b03b0f9272d2946}
+      \strng{authorfullhash}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \strng{authorfullhashraw}{9bd1a169cd3850a19b046bf3cde81eb3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Standardisierungsherausforderungen und ISO-23247-Digital-Twin-Framework für die Fertigung}
+      \field{title}{Digital Twins for Advanced Manufacturing: The Standardized Approach}
+      \field{type}{techreport}
+      \field{year}{2023}
     \endentry
     \entry{iso23247}{misc}{}{}
       \name{author}{1}{}{%
@@ -683,8 +753,8 @@
       \strng{authornamehash}{3673f8af49eafe343f060e84279d20c5}
       \strng{authorfullhash}{3673f8af49eafe343f060e84279d20c5}
       \strng{authorfullhashraw}{3673f8af49eafe343f060e84279d20c5}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Verwaltungsschale (AAS) -- Metamodell-Spezifikation}
@@ -718,8 +788,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Omniverse Connect -- CAD/BIM/PLM-Konnektoren}
@@ -751,8 +821,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Omniverse Nucleus -- Kollaborationsarchitektur}
@@ -950,8 +1020,8 @@
       \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
       \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
       \field{extraname}{10}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Isaac ROS -- Hardwarebeschleunigte ROS-2-Pakete für mobile Robotik}
@@ -1209,6 +1279,128 @@
       \verb https://www.rfc-editor.org/rfc/rfc9110
       \endverb
     \endentry
+    \entry{dobot_magician}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a7615a029948f7e548b1c5ebcffc4517}{%
+           family={{Dobot Robotics Co., Ltd.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{fullhash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{fullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{bibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorbibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authornamehash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorfullhash}{a7615a029948f7e548b1c5ebcffc4517}
+      \strng{authorfullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Dobot Magician -- Technische Spezifikation und Bedienung}
+      \field{note}{Product documentation, Dobot Robotics, Shenzhen, China}
+      \field{title}{{Dobot Magician} -- User Guide, Version~1.6.3}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.dobot-robots.com/service/download-center.html
+      \endverb
+      \verb{url}
+      \verb https://www.dobot-robots.com/service/download-center.html
+      \endverb
+    \endentry
+    \entry{pydobot_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0118d21d82cc4c026a1c8056a6f0ab6b}{%
+           family={{DCoderUltra}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{fullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{fullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{bibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorbibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authornamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorfullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \strng{authorfullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{pydobot -- Python-Bibliothek zur seriellen Ansteuerung des Dobot Magician}
+      \field{title}{{pydobot 0.2.1} Documentation}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
+      \endverb
+      \verb{url}
+      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
+      \endverb
+    \endentry
+    \entry{dobot_communication_protocol}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=d6527f819a246f208d1e70b9f8f45b65}{%
+           family={{Shenzhen Yuejiang Technology Co., Ltd}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{fullhash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{fullhashraw}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{bibnamehash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{authorbibnamehash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{authornamehash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{authorfullhash}{d6527f819a246f208d1e70b9f8f45b65}
+      \strng{authorfullhashraw}{d6527f819a246f208d1e70b9f8f45b65}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Offizielle Protokollspezifikation der seriellen UART-Kommunikation des Dobot Magician, u.\,a.\ Baudrate, Paketaufbau und Prüfsumme}
+      \field{number}{Issue V1.1.5}
+      \field{title}{{Dobot Magician} Communication Protocol}
+      \field{type}{techreport}
+      \field{urlday}{19}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.alcom.no/wp-content/uploads/2019/11/Dobot-Communication-Protocol-V1.1.5-1.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.alcom.no/wp-content/uploads/2019/11/Dobot-Communication-Protocol-V1.1.5-1.pdf
+      \endverb
+    \endentry
+    \entry{vdi_konstruktionsmethodik}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f6f69b98245ca8f1ba171764663d7465}{%
+           family={{VDI Zentrum Ressourceneffizienz}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{fullhash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{fullhashraw}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{bibnamehash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{authorbibnamehash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{authornamehash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{authorfullhash}{f6f69b98245ca8f1ba171764663d7465}
+      \strng{authorfullhashraw}{f6f69b98245ca8f1ba171764663d7465}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Übersicht zur Konstruktionsmethodik nach der Richtlinienreihe VDI~2221/2222/2223/2225, referenziert VDI~2221:1993-05}
+      \field{howpublished}{Methodenbeschreibung}
+      \field{title}{Konstruktionsmethodik}
+      \field{year}{2017}
+    \endentry
     \entry{wang2024mazerunner}{report}{}{}
       \name{author}{2}{}{%
         {{hash=93a575777f636107b8f65a815802b18f}{%
@@ -1236,8 +1428,8 @@
       \strng{authornamehash}{e6532c03e6fd130452156729ae0626ef}
       \strng{authorfullhash}{e6532c03e6fd130452156729ae0626ef}
       \strng{authorfullhashraw}{e6532c03e6fd130452156729ae0626ef}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Leitfaden Maze Runner -- Konstruktion, Hardware und Trainingslevel}
@@ -1262,8 +1454,8 @@
       \strng{authornamehash}{55c56bb70386528befccec0a6d28d6ec}
       \strng{authorfullhash}{55c56bb70386528befccec0a6d28d6ec}
       \strng{authorfullhashraw}{55c56bb70386528befccec0a6d28d6ec}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{annotation}{Moodle-Kursübersicht Trainingslevel Maze Runner -- CAD, 3D-Druck, SPS, Verkabelung, Cloud-Anbindung, Live-View}
@@ -1346,39 +1538,6 @@
       \field{type}{techreport}
       \field{year}{2026}
     \endentry
-    \entry{dobot_magician}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=a7615a029948f7e548b1c5ebcffc4517}{%
-           family={{Dobot Robotics Co., Ltd.}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{fullhash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{fullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{bibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{authorbibnamehash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{authornamehash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{authorfullhash}{a7615a029948f7e548b1c5ebcffc4517}
-      \strng{authorfullhashraw}{a7615a029948f7e548b1c5ebcffc4517}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Dobot Magician -- Technische Spezifikation und Bedienung}
-      \field{note}{Product documentation, Dobot Robotics, Shenzhen, China}
-      \field{title}{{Dobot Magician} -- User Guide, Version~1.6.3}
-      \field{urlday}{26}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{year}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.dobot-robots.com/service/download-center.html
-      \endverb
-      \verb{url}
-      \verb https://www.dobot-robots.com/service/download-center.html
-      \endverb
-    \endentry
     \entry{kuester2026dobottutorial}{report}{}{}
       \name{author}{1}{}{%
         {{hash=24a474eab5d3bfbc58fb3bc77954bd3b}{%
@@ -1410,38 +1569,6 @@
       \field{title}{Anleitung zur Erstellung eines Digitalen Zwillings -- {Dobot Magician} Anlagenaufbereitung in {NVIDIA Isaac Sim}}
       \field{type}{techreport}
       \field{year}{2026}
-    \endentry
-    \entry{pydobot_docs}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=0118d21d82cc4c026a1c8056a6f0ab6b}{%
-           family={{DCoderUltra}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{fullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{fullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{bibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{authorbibnamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{authornamehash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{authorfullhash}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \strng{authorfullhashraw}{0118d21d82cc4c026a1c8056a6f0ab6b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{pydobot -- Python-Bibliothek zur seriellen Ansteuerung des Dobot Magician}
-      \field{title}{{pydobot 0.2.1} Documentation}
-      \field{urlday}{13}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
-      \endverb
-      \verb{url}
-      \verb https://dcoderultra.codeberg.page/pydobot/modules.html
-      \endverb
     \endentry
     \entry{nvidia_isaacsim_manipulator_tutorial}{online}{}{}
       \name{author}{1}{}{%
@@ -1509,6 +1636,122 @@
       \verb https://docs.isaacsim.omniverse.nvidia.com/5.1.0/robot_setup_tutorials/index.html
       \endverb
     \endentry
+    \entry{farmbot_picking_up_seeds}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1432926a5a1f9e6c075b0604a2bdb7c6}{%
+           family={{FarmBot Inc.}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{fullhash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{fullhashraw}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{bibnamehash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{authorbibnamehash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{authornamehash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{authorfullhash}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \strng{authorfullhashraw}{1432926a5a1f9e6c075b0604a2bdb7c6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Fehlerbehebung an Vakuumpumpen -- Reinigung der Membran bei Verunreinigung}
+      \field{title}{Picking Up Seeds}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://genesis.farm.bot/v1.8/extras/troubleshooting/picking-up-seeds
+      \endverb
+      \verb{url}
+      \verb https://genesis.farm.bot/v1.8/extras/troubleshooting/picking-up-seeds
+      \endverb
+    \endentry
+    \entry{nvidia_isaacsim_ros2_manipulation}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{14}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Isaac-Sim-Action-Graph mit ROS-2-Subscriber- und Articulation-Controller-Knoten zur Gelenksteuerung}
+      \field{title}{{ROS 2} Manipulation Tutorial -- Action Graph, Articulation Controller}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/latest/ros2_tutorials/tutorial_ros2_manipulation.html
+      \endverb
+      \verb{url}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/latest/ros2_tutorials/tutorial_ros2_manipulation.html
+      \endverb
+    \endentry
+    \entry{macenski2023composition}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=32de857faf63cd1f724ac8acd558e91b}{%
+           family={Macenski},
+           familyi={M\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9c1719794cacc820c4ec360f90eff730}{%
+           family={Soragna},
+           familyi={S\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f05202cd0f73c798a49b697c4184200}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0c7cbc686f30144c4e3a9ad83c046e66}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Zhenpeng},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e50f9da548a8963dec23dce06a35fa9}
+      \strng{fullhash}{46522130c15d5ed8e49f20d4fd41f17e}
+      \strng{fullhashraw}{46522130c15d5ed8e49f20d4fd41f17e}
+      \strng{bibnamehash}{46522130c15d5ed8e49f20d4fd41f17e}
+      \strng{authorbibnamehash}{46522130c15d5ed8e49f20d4fd41f17e}
+      \strng{authornamehash}{7e50f9da548a8963dec23dce06a35fa9}
+      \strng{authorfullhash}{46522130c15d5ed8e49f20d4fd41f17e}
+      \strng{authorfullhashraw}{46522130c15d5ed8e49f20d4fd41f17e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Performance-Analyse von ROS-2-Node-Composition, Executors und Multi-Prozess- vs. Einzelprozess-Kommunikation}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Impact of {ROS 2} Node Composition in Robotic Systems}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{arXiv:2305.09933}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2305.09933
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2305.09933
+      \endverb
+    \endentry
     \entry{mdpi2025isaac}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -1551,6 +1794,105 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.3390/machines13070620
+      \endverb
+    \endentry
+    \entry{nvidia_isaacsim_robot_assets}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{extraname}{15}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Übersicht der in Isaac Sim vorinstallierten Roboter-Assets, u.\,a.\ der Universal-Robots-Baureihe (UR3/3e, UR5/5e, UR10/10e, UR16e)}
+      \field{title}{{Isaac Sim} -- Robot Assets}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/4.5.0/assets/usd_assets_robots.html
+      \endverb
+      \verb{url}
+      \verb https://docs.isaacsim.omniverse.nvidia.com/4.5.0/assets/usd_assets_robots.html
+      \endverb
+    \endentry
+    \entry{kuka_sim_connectivity}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7b74a3d9eb19b2e6c7f34cb19fc34622}{%
+           family={{KUKA AG}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{fullhash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{fullhashraw}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{bibnamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorbibnamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authornamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorfullhash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorfullhashraw}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Produktbeschreibung des KUKA.Sim-Connectivity-AddOn mit OPC-UA-Schnittstelle zur SPS-Anbindung}
+      \field{title}{{KUKA.Sim} Connectivity {AddOn}}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://my.kuka.com/s/product/kukasim-connectivity-addon-10-f-1yr/01t1i000001Wu1UAAS
+      \endverb
+      \verb{url}
+      \verb https://my.kuka.com/s/product/kukasim-connectivity-addon-10-f-1yr/01t1i000001Wu1UAAS
+      \endverb
+    \endentry
+    \entry{kuka_sim_overview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7b74a3d9eb19b2e6c7f34cb19fc34622}{%
+           family={{KUKA AG}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{fullhash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{fullhashraw}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{bibnamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorbibnamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authornamehash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorfullhash}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \strng{authorfullhashraw}{7b74a3d9eb19b2e6c7f34cb19fc34622}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Produktübersicht der Offline-Programmier- und Simulationssoftware KUKA.Sim, u.\,a.\ mit VR-Visualisierung ohne Programmierkenntnisse}
+      \field{title}{{KUKA.Sim} -- Simulation Software}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kuka.com/en-us/products/robotics-systems/software/simulation-planning-optimization/kuka_sim
+      \endverb
+      \verb{url}
+      \verb https://www.kuka.com/en-us/products/robotics-systems/software/simulation-planning-optimization/kuka_sim
       \endverb
     \endentry
     \entry{zhang2025aas}{article}{}{}
@@ -1602,6 +1944,58 @@
       \range{pages}{23}
       \verb{doi}
       \verb 10.1007/s10270-024-01255-0
+      \endverb
+    \endentry
+    \entry{yang2022fluidmachinery}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=68d4747f396b8c8dd2209ca3a8ea466a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=249da813d604d350b10899da1aa7767f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c3d0d31d5f88b1863b0e8617b9fd7057}{%
+           family={Lv},
+           familyi={L\bibinitperiod},
+           given={Zhihan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d22baad701d761acd6adb48dfcb1914b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Faming},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fd9f5b8cc47cb9d03a910d0ac0f1b976}{%
+           family={Olofsson},
+           familyi={O\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{166ce9d007168b640c509f2403f18968}
+      \strng{fullhash}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \strng{fullhashraw}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \strng{bibnamehash}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \strng{authorbibnamehash}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \strng{authornamehash}{166ce9d007168b640c509f2403f18968}
+      \strng{authorfullhash}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \strng{authorfullhashraw}{f7e496542bd4e9a9767bfaf721f2e1dc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Digitale Zwillinge und Metaverse-Anwendungen für Strömungsmaschinen (Pumpen, Ventilatoren) über den Fertigungskontext hinaus}
+      \field{journaltitle}{Sensors}
+      \field{number}{23}
+      \field{title}{Application of Digital Twins and Metaverse in the Field of Fluid Machinery Pumps and Fans: {A} Review}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{9294}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22239294
       \endverb
     \endentry
   \enddatalist

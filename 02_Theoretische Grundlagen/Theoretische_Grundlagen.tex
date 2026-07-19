@@ -13,7 +13,7 @@ durchgängiges Datenmanagement, das diese Phasengrenzen überwindet und die bish
 isoliert arbeitenden Planungsabschnitte miteinander vernetzt.
 Anschließend werden die Virtuelle Inbetriebnahme nach VDI/VDE~3693 sowie
 Klassifikationen Digitaler Zwillinge eingeführt.
-Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) und der normative Rahmen
+Das Referenzarchitekturmodell Industrie~4.0 (RAMI~4.0, DIN~SPEC~91345) und der normative Rahmen
 nach ISO~23247 verorten den Digitalen Zwilling im industriellen Kontext,
 bevor abschließend die eingesetzten Technologien und Kommunikationsstandards
 vorgestellt werden.
@@ -106,7 +106,8 @@ Neben der Klassifikation nach Kritzinger et al.\ finden sich in der Literatur we
 Begriffssystematiken, die verwandte, jedoch konzeptuell abweichende Konstrukte
 beschreiben.
 
-Grieves und Vickers unterscheiden zwei Ausprägungen des Digitalen Zwillings.
+Der Begriff des Digitalen Zwillings geht auf Grieves zurück, der das Konzept 2014 als Modell aus physischem Produkt, virtuellem Produkt und einer verbindenden Datenschicht einführte~\cite{grieves2014}.
+Grieves und Vickers unterscheiden darauf aufbauend zwei Ausprägungen des Digitalen Zwillings.
 Der \textbf{Digital Twin Prototype (DTP)} bezeichnet das in der Entwicklungsphase
 entstehende virtuelle Modell, das Anforderungen, ein vollständig annotiertes 3D-Modell,
 Stücklisten und Fertigungsprozesse eines noch nicht gebauten Produkts beschreibt.
@@ -146,6 +147,10 @@ Die Klassifikation nach Kritzinger et al.\ beschreibt, in welchem Maß der Daten
 zwischen physischem Objekt und digitalem Abbild automatisiert ist.
 Sie beantwortet damit die Frage nach dem Kopplungsgrad, beschreibt aber nicht, welche
 physischen Elemente beobachtet werden können und wie das Gesamtsystem dabei strukturiert ist.
+Da Digitale-Zwilling-Implementierungen in der Praxis bislang überwiegend als kundenspezifische
+Einzellösungen entstehen, die sich nur eingeschränkt mit anderen Systemen integrieren lassen,
+wird in der Literatur ein normierter Rahmen für Interoperabilität, Zuverlässigkeit und
+Sicherheit gefordert~\cite{shao2023standardized}.
 Die Normenreihe ISO~23247 schließt diese Lücke und beschreibt das Digital-Twin-Framework
 für die Fertigung als schichtbasiertes IoT-Rahmenwerk, das Abbildung~\ref{fig:dt_manufacturing}
 veranschaulicht.
@@ -198,24 +203,17 @@ Für die Einordnung nach Betriebsebene diente traditionell die Automatisierungsp
 die Feldgeräte, Steuerungen und IT-Systeme in eine vertikale Hierarchie gliedert.
 Sie erfasst jedoch weder den Produktlebenszyklus noch die Architekturschichten, die
 für eine vollständige Beschreibung vernetzter Industrie-4.0-Komponenten notwendig sind.
-Das Referenzarchitekturmodell RAMI~4.0 (DIN~SPEC~91345) schließt diese Lücke und
+RAMI~4.0 schließt diese Lücke und
 erweitert die Automatisierungspyramide um die Achsen Lebenszyklus und Wertschöpfung
 sowie sechs Architekturschichten, wie Abbildung~\ref{fig:rami40} verdeutlicht. Es stellt damit den dreidimensionalen Rahmen bereit,
 in dem sich Maschinen, Anlagen, Softwarekomponenten und Digitale Zwillinge einheitlich
 beschreiben und zueinander in Beziehung setzen lassen \cite{dinspec91345}.
 Das Modell richtet sich an alle Fachabteilungen, die an Industrie-4.0-Systemen
-mitwirken.
-
-\begin{itemize}
-    \item Maschinenbauer und Anlagenbauer (mechanische Konstruktion, Steuerungstechnik)
-    \item Elektro- und Automatisierungsingenieure (SPS, Feldbusse, Sensorik)
-    \item IT-Architekten und Softwareentwickler (Cloud, MES, ERP-Anbindung)
-    \item Inbetriebnehmer vor Ort
-    \item Betreiber und Produktionsplaner
-    \item Systemintegratoren
-    \item Normungsgremien und Zertifizierungsstellen
-\end{itemize}
-
+mitwirken, von Maschinen- und Anlagenbauern über Elektro- und Automatisierungsingenieure
+bis hin zu IT-Architekten und Softwareentwicklern, die für die Cloud-, MES- und
+ERP-Anbindung zuständig sind.
+Ebenso eingebunden sind Inbetriebnehmer vor Ort, Betreiber und Produktionsplaner,
+Systemintegratoren sowie Normungsgremien und Zertifizierungsstellen.
 Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bieten, ordnet RAMI~4.0 jedes Asset entlang der drei Achsen Lebenszyklus, Hierarchieebene und Architekturschicht ein, wie Abbildung~\ref{fig:rami40} zeigt.
 
 \begin{figure}[H]
@@ -231,8 +229,9 @@ Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bie
 Grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
 oder virtuelle Objekt mit definierten Eigenschaften und Wert verstanden wird, vom
 einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage \cite{dinspec91345}.
-Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell) angelegt
-werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert \cite{idta_aas2025}.
+Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell, AAS) angelegt
+werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert. Die AAS wird
+von der Industrial Digital Twin Association (IDTA) standardisiert \cite{idta_aas2025}.
 
 Die \textbf{Hierarchieachse} übernimmt die Struktur der Automatisierungspyramide mit
 den Ebenen Feldgerät, Steuerungseinheit, Arbeitsstation und Arbeitszelle und ergänzt
@@ -260,7 +259,7 @@ zu müssen.
 \subsection{NVIDIA Omniverse-Ökosystem}
 \label{subsec:omniverse}
 NVIDIA Omniverse ist eine GPU-beschleunigte Kollaborationsplattform, die
-Engineering-Werkzeuge verschiedener Hersteller über Konnektoren in OpenUSD-Szenen
+Engineering-Werkzeuge verschiedener Hersteller über Konnektoren in OpenUSD-Stages
 zusammenführt, Änderungen über den Nucleus-Server im 24/7-Dauerbetrieb zwischen
 allen Clients synchronisiert und Anlage sowie Produkt parallel in derselben Szene
 simuliert \cite{nvidia_omniverse}.
@@ -276,12 +275,12 @@ Wie eine solche Simulation in NVIDIA Isaac Sim aussieht, zeigt Abbildung~\ref{fi
     \centering
     \includegraphics[width=\linewidth]{BMW_Isaac Sim.jpg}
     \caption{NVIDIA Isaac Sim Viewport mit aktiviertem RTX Path Tracing. Simultane
-        Darstellung unterschiedlicher Verarbeitungszustände in einer USD-Szene
+        Darstellung unterschiedlicher Verarbeitungszustände in einer USD-Stage
         \cite{bmw_nvidia_2021}}
     \label{fig:isaac_bmw}
 \end{figure}
 
-Im Viewport sind gleichzeitig unterschiedliche Darstellungszustände einer USD-Szene
+Im Viewport sind gleichzeitig unterschiedliche Darstellungszustände einer USD-Stage
 sichtbar.
 Der reflektierende Teil der Karosserie im Vordergrund ist mit RTX Path Tracing berechnet.
 Reflexionen auf der Metalloberfläche und der Schattenwurf entstehen durch Lichtpfadsimulation.
@@ -296,27 +295,26 @@ Datensatz vorhanden ist.
 Anwendungsframework mit drei Eigenschaften, die es von klassischen
 Fabrikplanungswerkzeugen unterscheiden.
 
-\begin{itemize}
-    \item \textbf{Konnektoreninfrastruktur:} Omniverse bindet bestehende
-        Engineering-Werkzeuge über sogenannte \emph{Connectors} an, die
-        herstellerspezifische Daten in OpenUSD übersetzen und einen bidirektionalen
-        Datenaustausch herstellen. Dies umfasst Anbindungen an CAD-, BIM- und
-        PLM-Systeme wie Autodesk Revit, Siemens NX und PTC Creo
-        \cite{nvidia_omniverse_connectors}. Bestandsmodelle lassen sich so ohne
-        manuellen Konvertierungsaufwand in einer gemeinsamen Szene zusammenführen.
-    \item \textbf{Nucleus als zentrale Kollaborationsschicht:} Das technische Rückgrat
-        bildet der \emph{Omniverse Nucleus} (\emph{database and collaboration engine}),
-        an dem mehrere Clients gleichzeitig live verbunden sind. Änderungen an den
-        Modellen werden in Echtzeit zwischen allen Clients synchronisiert, wobei die
-        Plattform als Enterprise-Variante für einen hochverfügbaren 24/7-Dauerbetrieb
-        in produktionsnahen Szenarien ausgelegt ist \cite{nvidia_nucleus_arch}.
-    \item \textbf{Parallele Simulation von Anlage und Produkt:} Basierend auf dem
-        NVIDIA DSX Blueprint für AI-Factory-Digitale-Zwillinge werden Geometrie-,
-        thermische und elektrische Simulationsdaten verschiedener Disziplinen über
-        USD-Layer verknüpft. Sowohl die Anlage als auch das prozessierte Produkt liegen
-        in derselben Szene als parallel simulierbare Entitäten vor
-        \cite{nvidia_omniverse,nvidia_isaacsim}.
-\end{itemize}
+Die erste Eigenschaft betrifft die Konnektoreninfrastruktur, über die Omniverse bestehende
+Engineering-Werkzeuge anbindet.
+Sogenannte \emph{Connectors} übersetzen herstellerspezifische Daten in OpenUSD und stellen
+einen bidirektionalen Datenaustausch her, was Anbindungen an CAD-, BIM- und
+PLM-Systeme wie Autodesk Revit, Siemens NX und PTC Creo umfasst
+\cite{nvidia_omniverse_connectors}.
+Bestandsmodelle lassen sich auf diese Weise ohne manuellen Konvertierungsaufwand in einer
+gemeinsamen Szene zusammenführen.
+Die zweite Eigenschaft ist der \emph{Omniverse Nucleus} (\emph{database and collaboration
+engine}) als zentrale Kollaborationsschicht, an dem mehrere Clients gleichzeitig live
+verbunden sind.
+Änderungen an den Modellen werden dabei in Echtzeit zwischen allen Clients synchronisiert,
+wobei die Plattform als Enterprise-Variante für einen hochverfügbaren 24/7-Dauerbetrieb
+in produktionsnahen Szenarien ausgelegt ist \cite{nvidia_nucleus_arch}.
+Die dritte Eigenschaft betrifft die parallele Simulation von Anlage und Produkt.
+Basierend auf dem NVIDIA DSX Blueprint für AI-Factory-Digitale-Zwillinge werden Geometrie-,
+thermische und elektrische Simulationsdaten verschiedener Disziplinen über
+USD-Layer verknüpft, sodass sowohl die Anlage als auch das prozessierte Produkt in
+derselben Szene als parallel simulierbare Entitäten vorliegen
+\cite{nvidia_omniverse,nvidia_isaacsim}.
 
 NVIDIA Isaac Sim wird mit einem vorinstallierten Extension-Katalog ausgeliefert, der
 allgemeine Werkzeuge innerhalb der Simulationsumgebung bereitstellt, wie eine
@@ -435,7 +433,7 @@ werkzeugspezifische Konvertierungen in einer gemeinsamen Szene zusammenwachsen
 Dies schafft auf Datenformatsebene die Grundlage für das durchgängige Datenmodell,
 das VDI~4499 als Ziel der Digitalen Fabrik beschreibt.
 
-Innerhalb einer USD-Szene wird jedes Objekt als \emph{Prim} (Primitiv) abgebildet \cite{pixar_openusd}.
+Innerhalb einer USD-Stage wird jedes Objekt als \emph{Prim} (Primitiv) abgebildet \cite{pixar_openusd}.
 Ein \emph{Mesh}-Prim speichert dabei das Polygonnetz eines Bauteils, ein \emph{Xform}-Prim enthält Transformationsdaten zu Position, Rotation und Skalierung und dient als Gruppenknoten für untergeordnete Prims \cite{pixar_openusd}.
 Durch die Verschachtelung von Xform-Prims entsteht eine Baumstruktur, die die Hierarchie aus Baugruppe, Unterbaugruppe und Einzelteil eines CAD-Modells direkt abbilden kann \cite{pixar_openusd}.
 Beim Import eines STEP-Modells werden Baugruppenhierarchien automatisch als Xform-Knoten und Einzelteile als Mesh-Prims übernommen, sodass die logische Gliederung der CAD-Baugruppe in der Simulationsszene erhalten bleibt \cite{nvidia_isaacsim}.
@@ -443,10 +441,10 @@ OpenUSD wurde ursprünglich von Pixar Animation Studios entwickelt und als offen
 
 Für die roboterspezifische Strukturbeschreibung ermöglicht das \emph{Unified Robot
 Description Format} (URDF) den Import von Einzelteilen und deren Zusammenfügen über
-Gelenke zu einer OpenUSD-Szene \cite{ros_urdf}.
+Gelenke zu einer OpenUSD-Stage \cite{ros_urdf}.
 URDF formalisiert kinematische Glieder (\emph{links}), Gelenke (\emph{joints}) sowie deren Parameter und Materialeigenschaften in einer XML-Struktur und wird in der Robotik als verbreitetes Standardbeschreibungsformat eingesetzt \cite{ros_urdf}.
 Eine URDF-Datei ermöglicht zusammen mit den Bauteil-Dateien des Roboters den Import einer Baugruppe mit allen Gelenken, die nach dem Import unmittelbar für die bidirektionale Kopplung zur realen Anlage bereitsteht \cite{ros_urdf}.
-Beim Import in NVIDIA Isaac Sim wird die URDF-Beschreibung in eine USD-Stage konvertiert, sodass die Baugruppe anschließend als OpenUSD-Szene vorliegt \cite{nvidia_isaacsim}.
+Beim Import in NVIDIA Isaac Sim wird die URDF-Beschreibung in eine USD-Stage konvertiert \cite{nvidia_isaacsim}.
 Wie in Abbildung~\ref{fig:urdf_usd_theorie} gezeigt, referenziert die URDF-Beschreibung zunächst die starren Bauteile als Links und legt deren Gelenke mit Typ, Achse, Grenzwert, Steifigkeit und Dämpfung fest.
 Der URDF-Importer überführt Links in Xform- und Mesh-Prims und Gelenke in PhysicsJoint-Prims, beispielsweise als Dreh- oder Schubgelenk, unter Übernahme der in der URDF-Beschreibung hinterlegten Parameter.
 Die resultierende USD-Stage enthält damit alle Links und Joints und bildet die Grundlage für Simulation, Weiterbearbeitung und Speicherung der zusammengefügten Baugruppe, wobei Steifigkeit, Dämpfung und Masse anschließend das Beschleunigungsverhalten der Physiksimulation bestimmen und die Links die zugehörigen Kollisionskörper bilden.
@@ -509,3 +507,12 @@ Als Transportprotokoll dient \emph{Hypertext Transfer Protocol} (HTTP), das die 
 Eine \emph{Uniform Resource Locator} (URL) ist die Adresse einer Ressource in einem Rechnernetz, gültig sowohl im lokalen Netz als auch im Internet.
 Über eine GET-Anfrage wird der aktuelle Zustand der unter einer URL bereitgestellten Ressource abgerufen, über eine POST-Anfrage werden strukturierte Daten an denselben Endpunkt gesendet.
 Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, der Server mit den angeforderten Daten antwortet und kein dauerhafter Verbindungskanal vorgehalten werden muss \cite{ietf_rfc9110}.
+
+\subsubsection{Serielle Kommunikation mit dem Dobot Magician über pydobot und UART}
+Der Steuerungscomputer sendet Kommandos an den Dobot Magician seriell über den USB-Anschluss.
+Bei serieller Kommunikation werden die Bits eines Datenworts nacheinander über eine einzige Leitung übertragen, im Unterschied zur parallelen Übertragung, bei der mehrere Bits gleichzeitig über getrennte Leitungen laufen.
+Der USB-Anschluss des Dobot Magician ist intern über einen CH340-Chip als USB-zu-UART-Wandler mit dessen Steuerungselektronik verbunden, sodass die Kommandos dort im Protokoll \emph{Universal Asynchronous Receiver Transmitter} (UART) ankommen \cite{dobot_magician}.
+
+Um mit dem Dobot Magician über den USB-Anschluss kommunizieren zu können, wird die Python-Bibliothek \emph{pydobot} eingesetzt, die in Python-Code aufgerufene Befehle in Hexadezimal-Kommandos für die serielle Kommunikation übersetzt und die Antwort des Dobot Magician wieder in Python-Objekte umwandelt \cite{pydobot_docs}.
+Ruft ein Programm \texttt{get\_pose()} auf, sendet \emph{pydobot} dafür die Bytefolge \texttt{AA AA 02 0A 00 F6} über UART, worauf der Dobot Magician mit der aktuellen Position des Endeffektors sowie den vier Gelenkwinkeln antwortet \cite{dobot_communication_protocol}.
+Der Aufruf \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} überträgt entsprechend das Kommando \texttt{SetPTPCmd} mit den Zielkoordinaten und dem gewählten Bewegungsmodus als Parameter und lässt den Dobot Magician die angegebene Position anfahren \cite{pydobot_docs}.

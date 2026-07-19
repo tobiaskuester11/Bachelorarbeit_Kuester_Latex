@@ -41,6 +41,15 @@
   annotation = {Lexikalische Definition: Digitaler Zwilling}
 }
 
+@techreport{shao2023standardized,
+  author      = {Shao, Guodong and Kibira, Deogratias and Frechette, Simon},
+  title       = {Digital Twins for Advanced Manufacturing: The Standardized Approach},
+  institution = {National Institute of Standards and Technology (NIST), Engineering Laboratory},
+  address     = {Gaithersburg, MD},
+  year        = {2023},
+  annotation  = {Standardisierungsherausforderungen und ISO-23247-Digital-Twin-Framework für die Fertigung}
+}
+
 @article{mihai2022,
   author     = {Mihai, Stefan and Yaqoob, Mahnoor and Hung, Dang V. and others},
   title      = {Digital Twins: {A} Survey on Enabling Technologies, Challenges, Trends and Future Prospects},
@@ -84,13 +93,12 @@
 % 3. Normen, Richtlinien & Spezifikationen (DIN, VDI, ISO, IEC)
 % -----------------------------------------------------------------------------
 
-@misc{vdi2222,
-  author       = {{Verein Deutscher Ingenieure}},
-  title        = {{VDI 2222 Blatt 1} Konstruktionsmethodik -- Methodisches Entwickeln von L{\"o}sungsprinzipien},
-  howpublished = {Richtlinie},
-  address      = {D{\"u}sseldorf},
-  year         = {1997},
-  annotation   = {VDI 2222 -- Konstruktionsmethodik}
+@misc{vdi_konstruktionsmethodik,
+  author       = {{VDI Zentrum Ressourceneffizienz}},
+  title        = {Konstruktionsmethodik},
+  howpublished = {Methodenbeschreibung},
+  year         = {2017},
+  annotation   = {Übersicht zur Konstruktionsmethodik nach der Richtlinienreihe VDI~2221/2222/2223/2225, referenziert VDI~2221:1993-05}
 }
 
 @misc{vdi4499,
@@ -431,6 +439,24 @@
   annotation   = {Isaac-Sim-Tutorial -- URDF-Import und Assemblierung eines Manipulators (UR10e) mit Robotiq-2F-140-Greifer}
 }
 
+@online{nvidia_isaacsim_ros2_manipulation,
+  author       = {{NVIDIA Corporation}},
+  title        = {{ROS 2} Manipulation Tutorial -- Action Graph, Articulation Controller},
+  year         = {2025},
+  url          = {https://docs.isaacsim.omniverse.nvidia.com/latest/ros2_tutorials/tutorial_ros2_manipulation.html},
+  urldate      = {2026-07-13},
+  annotation   = {Isaac-Sim-Action-Graph mit ROS-2-Subscriber- und Articulation-Controller-Knoten zur Gelenksteuerung}
+}
+
+@online{farmbot_picking_up_seeds,
+  author       = {{FarmBot Inc.}},
+  title        = {Picking Up Seeds},
+  year         = {2026},
+  url          = {https://genesis.farm.bot/v1.8/extras/troubleshooting/picking-up-seeds},
+  urldate      = {2026-07-13},
+  annotation   = {Fehlerbehebung an Vakuumpumpen -- Reinigung der Membran bei Verunreinigung}
+}
+
 @online{nvidia_isaacsim_robot_setup_tutorials,
   author       = {{NVIDIA Corporation}},
   title        = {Robot Setup Tutorials Series},
@@ -470,6 +496,15 @@
   urldate      = {2026-07-02},
   year         = {2026},
   annotation   = {Moodle-Kursübersicht Trainingslevel Maze Runner -- CAD, 3D-Druck, SPS, Verkabelung, Cloud-Anbindung, Live-View}
+}
+
+@misc{grieves2014,
+  author       = {Grieves, Michael},
+  title        = {Digital Twin: Manufacturing Excellence through Virtual Factory Replication},
+  howpublished = {White paper},
+  publisher    = {Michael W. Grieves, LLC},
+  year         = {2014},
+  annotation   = {Erstmalige Einführung des Digital-Twin-Konzepts als Modell aus physischem Produkt, virtuellem Produkt und deren Datenverknüpfung}
 }
 
 @incollection{Grieves2017,
@@ -515,4 +550,53 @@
   url          = {https://docs.isaacsim.omniverse.nvidia.com/4.2.0/installation/install_ros.html#isaac-included-ros-packages},
   urldate      = {2026-07-13},
   annotation   = {In NVIDIA Isaac Sim eingebettete ROS-2-Pakete und Installationshinweise}
+}
+
+@online{nvidia_isaacsim_robot_assets,
+  author       = {{NVIDIA Corporation}},
+  title        = {{Isaac Sim} -- Robot Assets},
+  year         = {2025},
+  url          = {https://docs.isaacsim.omniverse.nvidia.com/4.5.0/assets/usd_assets_robots.html},
+  urldate      = {2026-07-17},
+  annotation   = {Übersicht der in Isaac Sim vorinstallierten Roboter-Assets, u.\,a.\ der Universal-Robots-Baureihe (UR3/3e, UR5/5e, UR10/10e, UR16e)}
+}
+
+@online{kuka_sim_connectivity,
+  author       = {{KUKA AG}},
+  title        = {{KUKA.Sim} Connectivity {AddOn}},
+  year         = {2024},
+  url          = {https://my.kuka.com/s/product/kukasim-connectivity-addon-10-f-1yr/01t1i000001Wu1UAAS},
+  urldate      = {2026-07-17},
+  annotation   = {Produktbeschreibung des KUKA.Sim-Connectivity-AddOn mit OPC-UA-Schnittstelle zur SPS-Anbindung}
+}
+
+@online{kuka_sim_overview,
+  author       = {{KUKA AG}},
+  title        = {{KUKA.Sim} -- Simulation Software},
+  year         = {2024},
+  url          = {https://www.kuka.com/en-us/products/robotics-systems/software/simulation-planning-optimization/kuka_sim},
+  urldate      = {2026-07-17},
+  annotation   = {Produktübersicht der Offline-Programmier- und Simulationssoftware KUKA.Sim, u.\,a.\ mit VR-Visualisierung ohne Programmierkenntnisse}
+}
+
+@article{yang2022fluidmachinery,
+  author       = {Yang, Bin and Yang, Shuang and Lv, Zhihan and Wang, Faming and Olofsson, Thomas},
+  title        = {Application of Digital Twins and Metaverse in the Field of Fluid Machinery Pumps and Fans: {A} Review},
+  journal      = {Sensors},
+  volume       = {22},
+  number       = {23},
+  pages        = {9294},
+  year         = {2022},
+  doi          = {10.3390/s22239294},
+  annotation   = {Digitale Zwillinge und Metaverse-Anwendungen für Strömungsmaschinen (Pumpen, Ventilatoren) über den Fertigungskontext hinaus}
+}
+
+@techreport{dobot_communication_protocol,
+  author       = {{Shenzhen Yuejiang Technology Co., Ltd}},
+  title        = {{Dobot Magician} Communication Protocol},
+  number       = {Issue V1.1.5},
+  year         = {2019},
+  url          = {https://www.alcom.no/wp-content/uploads/2019/11/Dobot-Communication-Protocol-V1.1.5-1.pdf},
+  urldate      = {2026-07-19},
+  annotation   = {Offizielle Protokollspezifikation der seriellen UART-Kommunikation des Dobot Magician, u.\,a.\ Baudrate, Paketaufbau und Prüfsumme}
 }
