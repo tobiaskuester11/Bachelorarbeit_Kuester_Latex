@@ -137,10 +137,23 @@ Simulationsmodelle oder Korrelationen erzeugt den eigentlichen Digitalen Zwillin
 \cite{stark2019}.
 Besonders betonen Stark und Damerau dabei den Aspekt der Einzigartigkeit, ein
 Digitaler Zwilling bildet stets eine bestimmte physische Instanz ab, nicht ein
-generisches Modell.
+generisches Modell \cite{stark2019}.
 
 Da diese Begriffe in der vorliegenden Arbeit nicht weiter verwendet werden, dient
 die Klassifikation nach Kritzinger et al.\ als alleiniger Bezugsrahmen.
+
+Ergänzend zu dieser datenflussbasierten Einordnung lässt sich ein Digitaler Zwilling auch nach seinem Funktionsumfang klassifizieren.
+Shao et al.\ ordnen Digitale Zwillinge dazu nach ihrem Funktionsumfang in fünf Stufen wachsender Komplexität ein, deskriptive, diagnostische, prädiktive, präskriptive und intelligente Digitale Zwillinge, wie Abbildung~\ref{fig:dt_applications} darstellt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Shao_DT_Applications}
+    \caption{Anwendungsstufen Digitaler Zwillinge wachsender Komplexität, von deskriptiv bis intelligent, mit beispielhaften unterstützenden Technologien
+        (Quelle: \cite{shao2023standardized}, Figure~1).}
+    \label{fig:dt_applications}
+\end{figure}
+
+Deskriptive Digitale Zwillinge stellen erfasste Sensordaten dar und beantworten, was am physischen System geschieht. Diagnostische Digitale Zwillinge untersuchen zusätzlich Ursachen von Abweichungen mittels Simulation oder Data-Mining. Prädiktive Digitale Zwillinge sagen anhand von Modellierung und Mustererkennung künftiges Verhalten voraus, etwa den Verschleißzeitpunkt eines Werkzeugs oder Roboters. Präskriptive Digitale Zwillinge leiten daraus optimale Steuerungsparameter ab, während intelligente Digitale Zwillinge diese Steuerung mithilfe künstlicher Intelligenz eigenständig ausführen und sich fortlaufend anpassen~\cite{shao2023standardized}. Diese Einordnung zeigt mögliche Entwicklungsrichtungen auf, in die sich bestehende Digitale Zwillinge im laufenden Betrieb weiterentwickeln lassen und wird in Abschnitt~\ref{sec:potenziale} wieder aufgegriffen.
 
 \subsection{Digitale Zwillinge im Fertigungskontext}
 Die Klassifikation nach Kritzinger et al.\ beschreibt, in welchem Maß der Datenfluss
@@ -218,7 +231,7 @@ Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bie
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.28\linewidth]{rami.jpg}}
+    \includegraphics[width=\linewidth]{rami.jpg}
     \caption{RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales
         Schichtenmodell mit den Achsen \enquote{Life Cycle \& Value Stream},
         \enquote{Hierarchy Levels} und \enquote{Layers}
@@ -226,7 +239,7 @@ Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bie
     \label{fig:rami40}
 \end{figure}
 
-Grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
+Die grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
 oder virtuelle Objekt mit definierten Eigenschaften und Wert verstanden wird, vom
 einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage \cite{dinspec91345}.
 Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell, AAS) angelegt
@@ -294,7 +307,6 @@ Datensatz vorhanden ist.
 \emph{Omniverse Kit} als Kern der Plattform ist ein erweiterbares
 Anwendungsframework mit drei Eigenschaften, die es von klassischen
 Fabrikplanungswerkzeugen unterscheiden.
-
 Die erste Eigenschaft betrifft die Konnektoreninfrastruktur, über die Omniverse bestehende
 Engineering-Werkzeuge anbindet.
 Sogenannte \emph{Connectors} übersetzen herstellerspezifische Daten in OpenUSD und stellen
@@ -343,11 +355,11 @@ Als Ausgangspunkt für das Training dient dabei wahlweise ein virtuelles Modell,
 wie zum Beispiel aus einem CAD- oder URDF-Import oder ein vorgefertigtes Modell
 aus dem Isaac-Sim-Katalog, oder eine per \textbf{Isaac TeleOp} aufgezeichnete
 menschliche Bedienabfolge.
-\textbf{Isaac Sim} simuliert daraus zunächst die zugehörige Szene, die
+\textbf{NVIDIA Isaac Sim} simuliert daraus zunächst die zugehörige Szene, die
 \textbf{NVIDIA Cosmos} anschließend hinsichtlich Beleuchtung, Textur und
 Materialeigenschaften vervielfältigt.
 Mit Hilfe der Variation trainiert \textbf{Isaac Lab} den Roboter per
-Reinforcement Learning, wobei wiederum Isaac Sim als Simulationskern dient.
+Reinforcement Learning, wobei wiederum NVIDIA Isaac Sim als Simulationskern dient.
 Das trainierte Modell lässt sich anschließend direkt über Isaac ROS auf reale
 Hardware übertragen.
 Betrifft das Training menschenähnliche Bewegungsabläufe eines humanoiden
@@ -361,12 +373,12 @@ Abbildung~\ref{fig:isaac_ecosystem} zeigt diesen Ablauf im Überblick.
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.28\linewidth]{isaac_ecosystem_horizontal_v2}}
+    \includegraphics[width=\linewidth]{isaac_ecosystem_horizontal_v2}
     \caption{Trainingspipeline für Roboter im NVIDIA-Omniverse-Ökosystem.}
     \label{fig:isaac_ecosystem}
 \end{figure}
 
-Isaac Sim simuliert dabei anhand des virtuellen Modells oder der
+NVIDIA Isaac Sim simuliert dabei anhand des virtuellen Modells oder der
 TeleOp-Aufzeichnung zunächst die physikalische Umgebung des Roboters,
 einschließlich seines Körpers, seiner Gelenke und der Objekte, mit denen er
 interagiert.
@@ -400,7 +412,7 @@ trainieren lassen, profitieren feinmotorische, menschenähnliche Bedienabläufe
 zusätzlich von menschlicher Demonstration als Trainingsgrundlage.
 \textbf{Isaac TeleOp} zeichnet dafür menschliche Bedienabläufe auf, wobei
 Eingabegeräte wie VR-Brillen zum Einsatz kommen.
-Die erfassten Abläufe werden zunächst in Isaac Sim auf den simulierten Roboter
+Die erfassten Abläufe werden zunächst in NVIDIA Isaac Sim auf den simulierten Roboter
 übertragen, die entstehende Szene wird anschließend durch NVIDIA Cosmos
 vervielfältigt und in Isaac Lab trainiert, bevor das Ergebnis per
 \textbf{Isaac GR00T} in ein Steuerungsmodell für humanoide Roboter überführt wird.
@@ -417,11 +429,14 @@ abspielt \cite{nvidia_isaacteleoperation,nvidia_groot}.
     \label{fig:isaac_teleop}
 \end{figure}
 
+\begingroup
+\interlinepenalty=10000
 Unabhängig vom gewählten Weg erfolgt die Übertragung auf reale Hardware über
 \textbf{Isaac ROS}.
 Isaac ROS stellt hardwarebeschleunigte ROS\,2-Pakete für Wahrnehmung und
 Manipulation bereit und bildet damit die Brücke zwischen den trainierten Modellen
 und der physischen Robotersteuerung \cite{nvidia_isaacros}.
+\endgroup
 
 
 \subsection{Datenformate OpenUSD und URDF}
@@ -448,6 +463,7 @@ Beim Import in NVIDIA Isaac Sim wird die URDF-Beschreibung in eine USD-Stage kon
 Wie in Abbildung~\ref{fig:urdf_usd_theorie} gezeigt, referenziert die URDF-Beschreibung zunächst die starren Bauteile als Links und legt deren Gelenke mit Typ, Achse, Grenzwert, Steifigkeit und Dämpfung fest.
 Der URDF-Importer überführt Links in Xform- und Mesh-Prims und Gelenke in PhysicsJoint-Prims, beispielsweise als Dreh- oder Schubgelenk, unter Übernahme der in der URDF-Beschreibung hinterlegten Parameter.
 Die resultierende USD-Stage enthält damit alle Links und Joints und bildet die Grundlage für Simulation, Weiterbearbeitung und Speicherung der zusammengefügten Baugruppe, wobei Steifigkeit, Dämpfung und Masse anschließend das Beschleunigungsverhalten der Physiksimulation bestimmen und die Links die zugehörigen Kollisionskörper bilden.
+Die so verbundenen Links und Joints bilden dabei zusammen eine \emph{Articulation}, eine PhysX-Abstraktion, die die gesamte kinematische Kette als ein zusammenhängendes physikalisches System simuliert \cite{nvidia_physx}.
 
 \begin{figure}[H]
     \centering
@@ -460,7 +476,7 @@ Die resultierende USD-Stage enthält damit alle Links und Joints und bildet die 
 \subsection{Middleware-Architekturen für die industrielle Kommunikation}
 
 Middleware-Architekturen vermitteln die Kommunikation zwischen der physischen Anlage
-und der Omniverse-Extension, die den digitalen Zwilling in der Simulationsszene steuert.
+und der NVIDIA-Isaac-Sim-Extension, die den Digitalen Zwilling in der Simulationsszene steuert.
 Sie übernehmen den Transport von Sensordaten, Steuerungsbefehlen und Zustandsinformationen
 in Echtzeit.
 Die im Folgenden vorgestellten Protokolle OPC~UA, MQTT und ROS~2 sind industriell
@@ -509,10 +525,10 @@ Eine \emph{Uniform Resource Locator} (URL) ist die Adresse einer Ressource in ei
 Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, der Server mit den angeforderten Daten antwortet und kein dauerhafter Verbindungskanal vorgehalten werden muss \cite{ietf_rfc9110}.
 
 \subsubsection{Serielle Kommunikation mit dem Dobot Magician über pydobot und UART}
-Der Steuerungscomputer sendet Kommandos an den Dobot Magician seriell über den USB-Anschluss.
-Bei serieller Kommunikation werden die Bits eines Datenworts nacheinander über eine einzige Leitung übertragen, im Unterschied zur parallelen Übertragung, bei der mehrere Bits gleichzeitig über getrennte Leitungen laufen.
-Der USB-Anschluss des Dobot Magician ist intern über einen CH340-Chip als USB-zu-UART-Wandler mit dessen Steuerungselektronik verbunden, sodass die Kommandos dort im Protokoll \emph{Universal Asynchronous Receiver Transmitter} (UART) ankommen \cite{dobot_magician}.
+Der Steuerungscomputer kann über die Python-Bibliothek \emph{pydobot} seriell über den USB-Anschluss und das Protokoll \emph{Universal Asynchronous Receiver Transmitter} (UART) mit dem Dobot Magician kommunizieren \cite{pydobot_docs}.
+Aus Sicht der Programmierung ruft ein Programm dazu Methoden wie \texttt{get\_pose()} zum Abfragen der aktuellen Position oder \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} zum Anfahren einer Zielposition auf, wobei \emph{pydobot} diese Aufrufe in das jeweilige Kommando übersetzt und die Antwort des Dobot Magician wieder in ein Python-Objekt umwandelt \cite{pydobot_docs}.
 
-Um mit dem Dobot Magician über den USB-Anschluss kommunizieren zu können, wird die Python-Bibliothek \emph{pydobot} eingesetzt, die in Python-Code aufgerufene Befehle in Hexadezimal-Kommandos für die serielle Kommunikation übersetzt und die Antwort des Dobot Magician wieder in Python-Objekte umwandelt \cite{pydobot_docs}.
-Ruft ein Programm \texttt{get\_pose()} auf, sendet \emph{pydobot} dafür die Bytefolge \texttt{AA AA 02 0A 00 F6} über UART, worauf der Dobot Magician mit der aktuellen Position des Endeffektors sowie den vier Gelenkwinkeln antwortet \cite{dobot_communication_protocol}.
-Der Aufruf \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} überträgt entsprechend das Kommando \texttt{SetPTPCmd} mit den Zielkoordinaten und dem gewählten Bewegungsmodus als Parameter und lässt den Dobot Magician die angegebene Position anfahren \cite{pydobot_docs}.
+Ruft ein Programm \texttt{get\_pose()} auf, sendet \emph{pydobot} dafür die Bytefolge \texttt{AA AA 02 0A 00 F6}, welche die Kommando-ID~10 für \texttt{GetPose} codiert, worauf der Dobot Magician mit der aktuellen Position des Endeffektors sowie den vier Gelenkwinkeln antwortet \cite{dobot_communication_protocol}.
+Der Aufruf \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} überträgt entsprechend das Kommando \texttt{SetPTPCmd} (Set-Point-to-Point-Command) mit den Zielkoordinaten und dem gewählten Bewegungsmodus als Parameter und lässt den Dobot Magician die angegebene Position anfahren \cite{pydobot_docs}.
+Bei dieser seriellen Kommunikation werden die Bits eines Datenworts nacheinander über eine einzige Leitung übertragen, im Unterschied zur parallelen Übertragung, bei der mehrere Bits gleichzeitig über getrennte Leitungen laufen.
+Der USB-Anschluss des Dobot Magician ist dafür intern über einen CH340-Chip als USB-zu-UART-Wandler mit dessen Steuerungselektronik verbunden \cite{dobot_magician}.

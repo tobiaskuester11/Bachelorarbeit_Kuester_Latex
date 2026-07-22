@@ -1,6 +1,6 @@
-PWD C:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex
+PWD c:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex
 INPUT C:\Users\lfphs\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Bachelorarbeit\Bachelorarbeit_Kuester_Latex\main.tex
 OUTPUT main.log
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
@@ -583,6 +583,12 @@ INPUT .\00_Bilder\vdi4499_phasenmodell_cropped.png
 INPUT .\00_Bilder\vdi4499_phasenmodell_cropped.png
 INPUT .\00_Bilder\vdi4499_phasenmodell_cropped.png
 INPUT .\00_Bilder\vdi4499_phasenmodell_cropped.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
+INPUT .\00_Bilder\Shao_DT_Applications.png
 INPUT .\00_Bilder\DT for manufacturing.png
 INPUT .\00_Bilder\DT for manufacturing.png
 INPUT .\00_Bilder\DT for manufacturing.png
@@ -658,6 +664,21 @@ INPUT .\00_Bilder\Dobot und Mazerunner.png
 INPUT .\00_Bilder\Dobot und Mazerunner.png
 INPUT .\00_Bilder\Dobot und Mazerunner.png
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr9.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi9.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy9.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\lfphs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT .\00_Bilder\Mazerunner_Aktorik.png
@@ -815,6 +836,12 @@ INPUT .\00_Bilder\Sauggreifer_Anschließen.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
 INPUT .\00_Bilder\aufbau_digitaler_zwilling_urdf_usd_horizontal.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
+INPUT .\00_Bilder\Dobot_after_urdf.png
 INPUT .\00_Bilder\dobot_wege_v20_cropped.png
 INPUT .\00_Bilder\dobot_wege_v20_cropped.png
 INPUT .\00_Bilder\dobot_wege_v20_cropped.png
@@ -831,12 +858,6 @@ INPUT .\06_Potenziale_Herausforderungen\Potenziale_Herausforderungen.tex
 INPUT .\06_Potenziale_Herausforderungen\Potenziale_Herausforderungen.tex
 INPUT .\06_Potenziale_Herausforderungen\Potenziale_Herausforderungen.tex
 INPUT 06_Potenziale_Herausforderungen\Potenziale_Herausforderungen.tex
-INPUT .\00_Bilder\Shao_DT_Applications.png
-INPUT .\00_Bilder\Shao_DT_Applications.png
-INPUT .\00_Bilder\Shao_DT_Applications.png
-INPUT .\00_Bilder\Shao_DT_Applications.png
-INPUT .\00_Bilder\Shao_DT_Applications.png
-INPUT .\00_Bilder\Shao_DT_Applications.png
 INPUT .\09_Fazit und Ausblick\Fazit und Ausblick.tex
 INPUT .\09_Fazit und Ausblick\Fazit und Ausblick.tex
 INPUT .\09_Fazit und Ausblick\Fazit und Ausblick.tex

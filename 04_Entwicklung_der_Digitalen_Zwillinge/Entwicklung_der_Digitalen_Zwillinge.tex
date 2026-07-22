@@ -10,7 +10,7 @@ Ergänzend wird dem Dobot Magician ein eigenständiges Pick-and-Place-Szenario z
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.25\linewidth]{Dobot und Mazerunner}}
+    \includegraphics[width=\linewidth]{Dobot und Mazerunner}
     \caption{Finaler Tischaufbau aus Dobot Magician (links) und Maze-Runner-Anlage
         (rechts) im Labor für Produktentwicklung und Digitale Fabrik (LFP) der HsH.}
     \label{fig:dobot_mazerunner_tisch}
@@ -19,7 +19,7 @@ Ergänzend wird dem Dobot Magician ein eigenständiges Pick-and-Place-Szenario z
 \begin{longtable}{@{}clp{6.5cm}@{}}
 \caption{Kennung, Komponente und Funktion im gemeinsamen Tischaufbau aus
     Abbildung~\ref{fig:dobot_mazerunner_tisch}, Kennzeichnung in der Abbildung
-    folgt separat (1--19 Maze-Runner, A--E Dobot Magician)}
+    folgt separat (1--20 Maze-Runner, A--E Dobot Magician)}
 \label{tab:tischaufbau_komponenten}\\
 \toprule
 \textbf{Kennung} & \textbf{Komponente} & \textbf{Funktion} \\
@@ -33,22 +33,23 @@ Ergänzend wird dem Dobot Magician ein eigenständiges Pick-and-Place-Szenario z
 1 & Bodenmagazin-Station & Zuführung Bodenteile \\
 2 & Deckelmagazin-Station & Zuführung Deckelteile \\
 3 & Pufferstation & Zwischenlager Deckelmagazin \\
-4 & Drehscheibe mit Kugelmagazin & Drehteller mit Kugelzuführung \\
-5 & Erste Schwenkarmstation & Deckeltransfer zur Drehscheibe \\
-6 & Presse & Fügt Boden und Deckel zusammen \\
-7 & Ausgabeschwenkarmstation & Produktausgabe \\
-8 & Steuer-Buttons & Manuelle Stationsbedienung \\
-9 & Not-Aus-Knopf & Sicherheitsabschaltung \\
-10 & Treiberplatinen & Schrittmotoransteuerung \\
-11 & 230-V-Zufuhr & Netzanschluss \\
-12 & 24-V-Netzteil & Ein-/Ausgangsversorgung \\
-13 & Verteilerschienen & Elektrische Verteilung \\
-14 & SPS~1 & Hauptsteuerung \\
-15 & SPS~2 & Steuerung Ausgabeschwenkarmstation \\
-16 & VPN-Router & Fernzugriff \\
-17 & Magnetventile & Druckluftsteuerung \\
-18 & Druckminderer & Reduzierung auf vier~Bar \\
-19 & Druckluftzufuhr & Versorgung durch Laborkompressor \\
+4 & Drehscheibe & Rotation des Rundtakttisches \\
+5 & Kugelmagazinstation & Zuführung Kugeln \\
+6 & Erste Schwenkarmstation & Deckeltransfer zur Drehscheibe \\
+7 & Presse & Fügt Boden und Deckel zusammen \\
+8 & Ausgabeschwenkarmstation & Produktausgabe \\
+9 & Steuer-Buttons & Manuelle Stationsbedienung \\
+10 & Not-Aus-Knopf & Sicherheitsabschaltung \\
+11 & Treiberplatinen & Schrittmotoransteuerung \\
+12 & 230-V-Zufuhr & Netzanschluss \\
+13 & 24-V-Netzteil & Ein-/Ausgangsversorgung \\
+14 & Verteilerschienen & Elektrische Verteilung \\
+15 & SPS~1 & Hauptsteuerung \\
+16 & SPS~2 & Steuerung Ausgabeschwenkarmstation \\
+17 & VPN-Router & Fernzugriff \\
+18 & Magnetventile & Druckluftsteuerung \\
+19 & Druckminderer & Reduzierung auf vier~Bar \\
+20 & Druckluftzufuhr & Versorgung durch Laborkompressor \\
 \multicolumn{3}{@{}l}{\textbf{Dobot Magician}} \\
 A & Dobot Magician & Vierachsiger Roboterarm \\
 B & Vakuumpumpe & Sauggreifer-Unterdruck \\
@@ -67,8 +68,7 @@ Wunschforderungen, die bei verbleibenden Ressourcen angestrebt werden, entsprich
 ingenieurwissenschaftlichem Vorgehen.
 Die Nummerierung der Anforderungen schafft im weiteren Verlauf der Arbeit eine
 eindeutige Rückverfolgbarkeit.
-Im Folgenden sind die Anforderungstabellen der beiden Digitalen Zwillinge aufgeführt.
-Das Kürzel MR steht für Maze-Runner, DM steht für Dobot Magician.
+Im Folgenden sind die Anforderungstabellen der beiden Digitalen Zwillinge aufgeführt.\footnote{Das Kürzel MR steht für Maze-Runner, DM steht für Dobot Magician.}
 
 \begin{table}[H]
 \centering
@@ -194,17 +194,17 @@ Ergänzend kommen rein mechanische Komponenten wie federangetriebene Fixierarme 
 Diese Stationen speichern die Produktkomponenten über Turmmagazine und führen sie über pneumatisch betriebene Schieber der Drehscheibe und der Pufferstation zu.
 Die Bauteile wurden als CAD-Modell konstruiert, im FDM-Verfahren gefertigt und auf einem gemeinsamen Montagetisch montiert~\cite{wang2024mazerunner}.
 Abbildung~\ref{fig:maze_l1} zeigt eine dieser Versorgungsstationen mit dem zylindrischen Bauteilmagazin und dem Pneumatikzylinder, der den Schieber antreibt.
-Als Aktoren kommen Magnetventile sowie Pneumatikzylinder zum Einsatz~\cite{wang2024mazerunner}.
+Als Aktoren kommen durch Magnetventile geschaltete Pneumatikzylinder zum Einsatz~\cite{wang2024mazerunner}.
 
 \textbf{Das zweite Level} bildet die Station \enquote{Drehscheibe mit Kugelmagazin} und ergänzt die Anlage um eine schrittmotorgesteuerte Drehscheibe sowie ein Kugelmagazin.
-Der zentrale Drehteller wird über einen Schrittmotor mit Zahnradübertragung angetrieben, ein induktiver Näherungsschalter erfasst die Drehteller-Position und übergibt das Signal an die SPS.
-Die SPS dreht den Drehteller so lange, bis der induktive Sensor auslöst und die Zielposition damit erreicht ist.
+Die zentrale Drehscheibe wird über einen Schrittmotor mit Zahnradübertragung angetrieben, ein induktiver Näherungsschalter erfasst die Position der Drehscheibe und übergibt das Signal an die SPS.
+Die SPS dreht die Drehscheibe so lange, bis der induktive Sensor auslöst und die Zielposition damit erreicht ist.
 Das Kugelmagazin wird ebenfalls über einen Schrittmotor gesteuert, wobei das kugeltreibende Zahnrad stets eine volle Umdrehung ohne Sensorik ausführt.
 Abbildung~\ref{fig:maze_l2} zeigt die Antriebseinheit mit dem Zahnrad der Drehscheibe sowie das trichterförmige Kugelmagazin~\cite{wang2024mazerunner}.
 
 \textbf{Das dritte Level} bildet die \enquote{Ausgabeschwenkarmstation} und vervollständigt die Produktionslinie um zwei Schwenkarmstationen sowie eine Presse.
 Die erste Schwenkarmstation saugt den Deckel des Deckelmagazins über einen Sauggreifer aus der Pufferstation an und legt ihn auf das Bodenmagazin auf der Drehscheibe, wo die pneumatische Presse beide Komponenten anschließend zusammenfügt.
-Die zweite Schwenkarmstation, die Ausgabeschwenkarmstation, überführt das fertige Produkt vom Drehteller zum Ausgabeteillager.
+Die zweite Schwenkarmstation, die Ausgabeschwenkarmstation, überführt das fertige Produkt von der Drehscheibe zum Ausgabeteillager.
 Abbildung~\ref{fig:maze_l3} zeigt die Ausgabeschwenkarmstation, deren Schrittmotor die Drehbewegung des Arms ausführt, während ein Pneumatikzylinder die vertikale Hubbewegung übernimmt~\cite{wang2024mazerunner}.
 
 \begin{figure}[H]
@@ -255,10 +255,10 @@ Am Beispiel des Deckelmagazins ist ein \emph{primPath} markiert, der als Adresse
 
 \subsubsection{Kinematik und Physik in NVIDIA Isaac Sim}
 Die kinematische Struktur des Rundtakttisches wird in NVIDIA Isaac Sim durch PhysX-\emph{Articulations} abgebildet.
-Der zentrale Drehteller wird als \emph{Revolute Joint} parametriert, die pneumatischen Schieber als \emph{Prismatic Joints}.
+Die zentrale Drehscheibe wird als \emph{Revolute Joint} parametriert, die pneumatischen Schieber als \emph{Prismatic Joints}.
 Die Antriebsparameter Steifigkeit und Dämpfung legen das dynamische Verhalten der Gelenke fest.
 Eine höhere Steifigkeit bewirkt, dass der Antrieb die Zielposition mit größerer Kraft ansteuert, während die Dämpfung für sanfteres Anfahren und Abbremsen sorgt.
-Massen und Trägheitsmomente wurden automatisch berechnet, Reibungskoeffizienten wurden auf den Isaac-Sim-Standardwerten belassen.
+Massen und Trägheitsmomente wurden dabei automatisch aus der Geometrie berechnet, während die Reibungskoeffizienten auf den Standardwerten von NVIDIA Isaac Sim belassen wurden.
 Die Parametrierung wurde durch Abgleich mit dem realen Anlagenverhalten verifiziert~\cite{nvidia_physx}.
 
 Besondere Sorgfalt erfordert die Modellierung verschachtelter Gelenke, wie sie am Schwenkarm-Deckel auftreten.
@@ -278,10 +278,10 @@ Die Gelenke sind im allgemeinen \texttt{\_move}-Ordner abgelegt, wie Abbildung~\
 \subsubsection{SPS-Konfiguration}
 \label{subsubsec:mazerunner_steuerung_anwendung}
 
-Bevor die Omniverse-Extension einzelne SPS-Variablen adressieren kann, müssen zunächst deren Node-IDs im OPC-UA-Adressraum der Anlage bekannt sein.
+Bevor die NVIDIA-Isaac-Sim-Extension einzelne SPS-Variablen adressieren kann, müssen zunächst deren Node-IDs im OPC-UA-Adressraum der Anlage bekannt sein.
 Die Siemens-SPS stellt sämtliche für den Digitalen Zwilling relevanten Signale als OPC-UA-fähige Knoten bereit, die sich mit dem Browsing-Werkzeug UaExpert auslesen lassen.
 Abbildung~\ref{fig:uaexpert} zeigt einen Ausschnitt der auf diese Weise identifizierten Knoten mit Server-Adresse, Node-ID, Knotenpfad und Anzeigename.
-Jede identifizierte Node-ID wird im \emph{DigitalTwinService} hinterlegt und lässt sich anschließend über einen REST-API-Aufruf per HTTP ansteuern und abfragen, worüber die Omniverse-Extension im weiteren Verlauf lesend und schreibend auf die SPS zugreift.
+Jede identifizierte Node-ID wird im \emph{DigitalTwinService} hinterlegt und lässt sich anschließend über einen REST-API-Aufruf per HTTP ansteuern und abfragen, worüber die NVIDIA-Isaac-Sim-Extension im weiteren Verlauf lesend und schreibend auf die SPS zugreift.
 
 \begin{figure}[H]
     \centering
@@ -290,37 +290,37 @@ Jede identifizierte Node-ID wird im \emph{DigitalTwinService} hinterlegt und lä
     \label{fig:uaexpert}
 \end{figure}
 
-Die Knoten eins bis fünf werden als solche nicht direkt von der Extension verwendet.
-Die hier hinterlegten Variablen werden stattdessen innerhalb der SPS von der Routine \texttt{BA\_Start} angesprochen, welche das Ansaugen und Ablegen des Deckels sowie die Steuerung des Schrittmotors, des Zylinders und des Schwenkarms verwaltet.
+Die Knoten eins bis fünf wurden nur teilweise zur Zwischenprüfung verwendet und sind deshalb auch in der Extension aufgeführt.
+Für die Anwendung des Digitalen Zwillings werden davon nur einzelne Variablen benötigt, die innerhalb der SPS gekapselt über die Routine \texttt{BA\_Start} angesprochen werden, welche das Ansaugen und Ablegen des Deckels sowie die Steuerung des Schrittmotors, des Zylinders und des Schwenkarms verwaltet.
 Beim Schrittmotor steuert \texttt{BA\_Start} dabei sowohl dessen Drehrichtung als auch die durch den induktiven Sensor ausgelöste Beendigung der Drehbewegung.
 Die Extension arbeitet dabei ausschließlich mit dem Knoten \texttt{BA\_Start}.
 Die weiteren Knoten sieben bis elf sind äquivalent zu den Tastern am Tisch.
 
 Im Folgenden wird auf die Projektstruktur des TIA-Portal-V17-Projekts \texttt{Maze\_1214+1211} eingegangen, welches die beiden SPS-Bausteine unter \texttt{PLC\_1} und \texttt{PLC\_2} beinhaltet.
-Abbildung~\ref{fig:tia_portal} zeigt die aufgeklappte Projektstruktur von \texttt{PLC\_1}, die den Inhalt der Main-Methode, welche in Netzwerken programmiert ist, sowie die OPC-UA-Schnittstelle umfasst, in der die Variablen definiert sind, die über einen Client am Server abgefragt werden können.
+Abbildung~\ref{fig:tia_portal} zeigt die aufgeklappte Projektstruktur von \texttt{PLC\_1} mit dem Inhalt der in Netzwerken programmierten Main-Methode sowie der OPC-UA-Schnittstelle, in der die Variablen definiert sind, die über einen Client am Server abgefragt werden können.
 Jedes Netzwerk der Main-Methode wird dauerhaft abgefragt und setzt bei erfüllter Eingangsbedingung die jeweils aufgeführte Variable.
 An der Programmierung selbst wurde dabei nichts verändert, TIA Portal diente lediglich dem tieferen Anlagenverständnis sowie der Einbindung der SPS in das Netzwerk der HSRM.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{TIA_Portal_V17}
+    \includegraphics[width=0.8\linewidth]{TIA_Portal_V17}
     \caption{TIA Portal V17 mit Programmbausteinen und OPC-UA-Serverschnittstelle des Maze-Runner-SPS-Projekts.}
     \label{fig:tia_portal}
 \end{figure}
 
-\subsubsection{Aufbau der Omniverse-Extension}
+\subsubsection{Aufbau der NVIDIA-Isaac-Sim-Extension der Maze-Runner-Anlage}
 \label{subsubsec:mazerunner_extension}
 
-Im Folgenden wird gezeigt, wie auf Grundlage der Inhalte der vorangegangenen drei Abschnitte eine Omniverse-Extension aufgebaut wird.
+Im Folgenden wird gezeigt, wie auf Grundlage der Inhalte der vorangegangenen drei Abschnitte eine NVIDIA-Isaac-Sim-Extension aufgebaut wird.
 An die Isaac-Sim-Oberfläche wurde ein Human-Machine-Interface (HMI) angedockt, das die Interaktion sowie die Diagnose und Aufbereitung der Ereignisse des Digitalen Zwillings darstellt.
 Abbildung~\ref{fig:mazerunner_extension} zeigt die Isaac-Sim-Oberfläche mit dem geöffneten Maze-Runner-HMI.
-Programmiert wurden das HMI sowie das dahinterstehende Backend innerhalb einer modularen Omniverse-Extension im \emph{Omniverse Kit Extension Framework}~\cite{nvidia_kit_extensions_advanced}.
+Programmiert wurden das HMI sowie das dahinterstehende Backend innerhalb einer modularen NVIDIA-Isaac-Sim-Extension im \emph{Omniverse Kit Extension Framework}~\cite{nvidia_kit_extensions_advanced}.
 Im Folgenden wird darauf eingegangen, welche Bestandteile die Extension hat, wie diese zusammenarbeiten und wie sie erstellt wurden.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{MazerunnerExtension}
-    \caption{Benutzeroberfläche der Omniverse-Extension des Maze-Runner-Digitalen-Zwillings in NVIDIA Isaac Sim.}
+    \caption{Benutzeroberfläche der NVIDIA-Isaac-Sim-Extension des Maze-Runner-Digitalen-Zwillings in NVIDIA Isaac Sim.}
     \label{fig:mazerunner_extension}
 \end{figure}
 
@@ -368,10 +368,10 @@ Der eigentliche Quellcode der Extension gliedert sich in die folgenden zwölf Mo
     \item \textbf{nodes\_db.json} -- Definiert über eine JSON-Konfigurationsdatei die Verknüpfung jedes SPS-Knotens mit dem Digitalen Zwilling, wobei jeder Eintrag die OPC-UA-Node-ID, den USD-Pfad des Zielgelenks, den Gelenktyp, den Zielwert sowie den Mode enthält, wie in Abbildung~\ref{fig:nodes_db} zu sehen ist.
     Das Feld \texttt{mode} legt dabei fest, wie ein Knoten auf einen Steuerbefehl reagiert.
     Für Bauteile, die nur zwischen zwei Endlagen wechseln, wie den Schieber, wird der Modus \emph{toggle} verwendet.
-    Da sich Gelenke in Isaac Sim nur in eine im Feld \texttt{target\_value} hinterlegte Zielposition fahren lassen, ergibt sich für rotierende Bauteile wie die Drehscheibe die Schwierigkeit, eine fortlaufende Drehung abzubilden.
+    Da sich Gelenke in NVIDIA Isaac Sim nur in eine im Feld \texttt{target\_value} hinterlegte Zielposition fahren lassen, ergibt sich für rotierende Bauteile wie die Drehscheibe die Schwierigkeit, eine fortlaufende Drehung abzubilden.
     Dafür wird der Modus \emph{impulse} genutzt, bei dem der bisherige \texttt{target\_value} um den im Feld \texttt{step\_degrees} hinterlegten Wert erhöht und als neuer \texttt{target\_value} gesetzt wird.
     Dieser Wert beträgt im vorliegenden Fall sechzig Grad, was der Anordnung der sechs vom induktiven Sensor detektierten Metallpins auf der Drehscheibe entspricht.
-    Ein dritter Modus namens \emph{routine} führt eine Abfolge von mehreren Einzelaktionen durch, eine Schrittkette,
+    Ein dritter Modus namens \emph{routine} führt eine Abfolge von mehreren Einzelaktionen als Schrittkette durch,
     \item \textbf{node\_manager.py} -- Lädt die Knoten aus \texttt{nodes\_db.json}, baut die Knotenliste im UI auf und fährt bei Zustandsänderungen die passenden Gelenke in der Szene über das Feld \texttt{target\_value} in ihre Zielposition,
     \item \textbf{ui\_builder.py} -- Baut das in NVIDIA Isaac Sim angedockte Maze-Runner-HMI einmalig auf und liefert Referenzen auf alle UI-Widgets an \texttt{extension.py} zurück, das gesamte in Abbildung~\ref{fig:mazerunner_hmi} gezeigte Fenster mit Statusanzeigen, Knotenlisten, Buttons, Überschriften, Logger und allen weiteren Komponenten,
     \item \textbf{api\_client.py} -- Sendet asynchrone HTTP-Requests an den \emph{DigitalTwinService} der HSRM und nutzt \texttt{node\_manager.py} zum Aktualisieren der Anzeige nach Antwort, wie in Abbildung~\ref{fig:blockdiagramm} über REST-API und MQTT-WebSocket dargestellt,
@@ -384,7 +384,7 @@ Der eigentliche Quellcode der Extension gliedert sich in die folgenden zwölf Mo
     \item \textbf{constants.py} -- Bündelt zentrale Konfigurationswerte wie API-Schlüssel, URLs, Farbwerte für Panelflächen und Geometrie-Offsets für die gesamte Extension.
 \end{enumerate}
 
-Diese aus zwölf Modulen bestehende Extension wird im Folgenden als \texttt{Mazerunner\_DT\_IsaacSim\_Extension} bezeichnet.
+Diese aus zwölf Modulen bestehende Extension wird im Folgenden als \texttt{Mazerunner\_DT\_IsaacSim\_Extension}, kurz Mazerunner-Extension, bezeichnet.
 
 \begin{figure}[H]
     \centering
@@ -396,7 +396,7 @@ Diese aus zwölf Modulen bestehende Extension wird im Folgenden als \texttt{Maze
 \subsubsection{Maze-Runner-Netzwerkarchitektur}
 \label{subsubsec:mazerunner_sps}
 
-Von der HSRM wird gemeinsam mit Partnerhochschulen aus dem asiatischen und dem brasilianischen Raum eine Onlinevorlesung angeboten, in der alle beteiligten Hochschulen wechselseitig auf die Digitalen Zwillinge der anderen Standorte zugreifen können.
+Von der HSRM wird gemeinsam mit internationalen Partnerhochschulen eine globale Onlinevorlesung angeboten, in der alle beteiligten Hochschulen wechselseitig auf die Digitalen Zwillinge der anderen Standorte zugreifen können.
 Diese hochschulübergreifende Vernetzung entspricht in der Hierarchieachse des RAMI-4.0-Modells der Ebene \emph{Vernetzte Welt}.
 Die Maze-Runner-Anlage soll im Rahmen dieser Hochschulkooperation ebenfalls an die dafür genutzte Plattform, die \emph{Digital Twin App}, angebunden werden.
 Das Ergebnis dieser Integration ist, dass sich die Anlage von überall steuern lässt und zudem das Bereitstellen eines Kamera-Livestreams der Anlage, das Live-Übertragen einer Isaac-Sim-Simulation sowie ein Panel mit Schaltflächen zur Fernsteuerung der Aktorik unterstützt werden, wie in Abbildung~\ref{fig:digitaltwinapp_dashboard} dargestellt ist.
@@ -422,7 +422,7 @@ Auch die Website \emph{DigitaltwinApp.de} ist aus dem freien Internet erreichbar
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.25\linewidth]{MazeRunnerIBD}}
+    \includegraphics[width=\linewidth]{MazeRunnerIBD}
     \caption{Netzwerkarchitektur zur Anbindung Digitaler Zwillinge in NVIDIA Omniverse an die Digital Twin App der HSRM.}
     \label{fig:blockdiagramm}
 \end{figure}
@@ -451,38 +451,38 @@ Im Vergleich zum finalen Tischaufbau aus Abbildung~\ref{fig:dobot_mazerunner_tis
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.25\linewidth]{Ist-Zustand_Mazerunner}}
+    \includegraphics[width=\linewidth]{Ist-Zustand_Mazerunner}
     \caption{IST-Zustand der Maze-Runner-Anlage im Hochschullabor (Aufnahme von oben).}
     \label{fig:ist_zustand_mazerunner}
 \end{figure}
 
-Im Rahmen der Inbetriebnahme wurden Anpassungen an Halterungen, Elektrik, SPS und Druckluftversorgung vorgenommen, auf die im Folgenden genauer eingegangen wird.
+Im Rahmen der Inbetriebnahme wurden Anpassungen an den in Tabelle~\ref{tab:tischaufbau_komponenten} aufgeführten Stationen sowie an Halterungen, Elektrik, SPS und Druckluftversorgung vorgenommen, auf die im Folgenden genauer eingegangen wird.
+Für den Betrieb mit dem Arbeitsdruck von vier Bar musste ein Druckluftminderer, wie in Abbildung~\ref{fig:dobot_mazerunner_tisch} mit Nummer 19 gekennzeichnet, mit den passenden Anschlüssen verbaut werden, der eingangsseitig per Schnellkupplung mit dem Kompressor verbunden ist und ausgangsseitig über den sechs Millimeter durchmessenden Schlauch die in Abbildung~\ref{fig:dobot_mazerunner_tisch} mit Nummer 18 gekennzeichneten Magnetventile speist.
 
-Für den Betrieb mit dem Arbeitsdruck von vier Bar musste ein Druckluftminderer mit den passenden Anschlüssen verbaut werden, der eingangsseitig mit der Schnellkupplung verbunden ist und ausgangsseitig über den sechs Millimeter durchmessenden Schlauch die Magnetventile speist.
-
-Die Inbetriebnahme begann mit dem VPN-Router, der zunächst in das Netzwerk der Digitalen Fabrik im Labor aufgenommen und freigegeben werden musste, damit er die HSRM und darüber den \emph{DigitalTwinService} erreichen kann.
-Anschließend musste sichergestellt werden, dass die SPS im selben Subnetz wie der Router konfiguriert ist, sodass beide SPS-Anlagen über den Router im selben Netz erreichbar sind.
+Die netzwerkseitige Inbetriebnahme begann mit der Konfiguration des VPN-Routers der Maze-Runner-Anlage, wie in Abbildung~\ref{fig:dobot_mazerunner_tisch} mit Nummer 17 gekennzeichnet ist, der zunächst in das Netzwerk der Digitalen Fabrik im Labor aufgenommen und freigegeben werden musste, damit er die HSRM und darüber den \emph{DigitalTwinService} erreichen kann.
+Anschließend musste sichergestellt werden, dass die SPS im selben Subnetz wie der Router konfiguriert ist, sodass beide SPS-Anlagen (Nummern 15 und 16 in Abbildung~\ref{fig:dobot_mazerunner_tisch}) über den Router im selben Netz erreichbar sind.
 Ergänzend wurde die Kamera in Betrieb genommen und mit einem eigenen Stativ ausgestattet.
 
 Im elektrischen Bereich wurde eine Kaltgerätebuchse mit integriertem Schalter verbaut, über den sich die gesamte Anlage spannungsfrei schalten lässt.
-Die aus der Schuko-Steckdose gespeisten 230\,V werden dabei über diesen Schalter auf die Eingänge des neuen WAGO-Netzteils geschaltet, welches die gesamte Anlage anschließend mit 24\,V Gleichspannung versorgt.
-Dabei wurde außerdem der zunächst nicht angeschlossene Not-Aus-Schalter ergänzt, welcher die Versorgungsspannung der Aktorik separat von der SPS-Versorgungsspannung spannungsfrei schaltet, wodurch die SPS im Not-Aus-Fall nicht heruntergefahren wird.
+Die aus der Schuko-Steckdose gespeisten 230\,V werden dabei über diesen Schalter auf die Eingänge des neuen WAGO-Netzteils geschaltet, das mit Nummer 13 in Abbildung~\ref{fig:dobot_mazerunner_tisch} gekennzeichnet ist und die gesamte Anlage anschließend mit 24\,V Gleichspannung versorgt.
+Dabei wurde außerdem der zunächst nicht angeschlossene Not-Aus-Schalter ergänzt, mit Nummer 10 in Abbildung~\ref{fig:dobot_mazerunner_tisch} gekennzeichnet, welcher die Versorgungsspannung der Aktorik separat von der SPS-Versorgungsspannung spannungsfrei schaltet, wodurch die SPS im Not-Aus-Fall nicht heruntergefahren wird.
 Konkret versorgt der in Abbildung~\ref{fig:sps_io} gezeigte Pin \texttt{3L+}, der ganz linke Pin der unteren Ausgangsseite, die Aktorik mit Spannung, wobei genau diese Zuleitung vom Not-Aus-Schalter unterbrochen wird.
 Sämtliche Ein- und Ausgänge der SPS mussten dabei überprüft werden, wobei die zugehörigen Kabel bereits von der HSRM etikettiert waren.
 Hierfür mussten weitere Kabel ergänzt oder ausgetauscht werden, was durch einen Ende-zu-Ende-Schaltplan in der Dokumentation unterstützt wurde.
 Das neue WAGO-Netzteil ist zudem leistungsfähiger als das zuvor in Abbildung~\ref{fig:ist_zustand_mazerunner} sichtbare Netzteil und glättet Spannungsspitzen im HsH-Netz, wodurch die SPS vor Beschädigung durch Überspannung geschützt wird.
 Zudem wurde das Kabelmanagement optimiert, etwa durch den Verbau von Kabelkanälen auf der Rückseite der Aluminiumprofile sowie das Bündeln von Kabeln und Schläuchen mittels Klett- und Spiralkabelbindern.
-Der VPN-Router wird dabei über einen eigenen DC-DC-Wandler von 24\,V auf 5\,V versorgt.
+Der VPN-Router wird dabei über einen eigenen DC-DC-Wandler versorgt, der die 24\,V auf 5\,V für dessen Micro-USB-Anschluss wandelt.
 
 An der SPS selbst waren die Konfiguration in TIA Portal, insbesondere die Änderung der IP-Adresse, sowie der Erwerb der notwendigen Lizenzen für TIA Portal und das zugehörige Safety-Paket aufwendig.
 
 Während der Inbetriebnahme wurden sämtliche Halterungen ergänzt und optimiert.
 Die graue Halterung der Magnetventile wurde entfernt, diese wurden stattdessen direkt am Aluminiumprofil verschraubt, wie in Abbildung~\ref{fig:magnetventile} zu sehen ist.
-Die treppenförmige Halterung der Schrittmotortreiber wurde von der HSRM entwickelt, wie in Abbildung~\ref{fig:schrittmotortreiber} dargestellt ist.
-Im Rahmen dieser Arbeit wurde sie um eine weitere Stufe erweitert und ermöglicht eine zugängliche und kompakte Montage.
+Auch die Kaltgerätebuchse erhielt eine eigene Halterung.
+Die treppenförmige Halterung der Schrittmotortreiber, mit Nummer 11 in Abbildung~\ref{fig:dobot_mazerunner_tisch} gekennzeichnet, wurde von der HSRM entwickelt, wie in Abbildung~\ref{fig:schrittmotortreiber} im Detail dargestellt ist.
+Im Rahmen dieser Arbeit wurde sie um eine Stufe erweitert und ermöglicht eine zugängliche und kompakte Montage.
 Über die DIP-Schalter in der Mitte der Platine lassen sich anhand der auf dem Treiber aufgedruckten DIP-Schalter-Matrix sowohl die Stromstärke als auch die Pulszahl pro Umdrehung einstellen, wie in den beiden Tabellen in Abbildung~\ref{fig:schrittmotortreiber} zu sehen ist.
 Oberhalb davon befinden sich die Enable-Pins sowie die für die Drehrichtung entscheidenden Direction-Pins.
-So ist bei der im Vordergrund sichtbaren Platine der Drehscheibe nur der Pin \texttt{DIR-} angeschlossen, während bei der dahinterliegenden Platine des Schwenkarms beide Direction-Pins für die Vorwärts- und Rückwärtsbewegung angeschlossen sind.
+So ist bei der im Vordergrund sichtbaren Platine der Drehscheibe (Nummer 4 in Abbildung~\ref{fig:dobot_mazerunner_tisch}) nur der Pin \texttt{DIR-} angeschlossen, während bei der dahinterliegenden Platine des Schwenkarms beide Direction-Pins für die Vorwärts- und Rückwärtsbewegung angeschlossen sind.
 Die Halterung des induktiven Sensors, der die Drehscheibenbewegung erfasst, war gebrochen und musste neu ausgedruckt werden.
 Der VPN-Router erhielt ebenfalls eine eigene Halterung, die zugleich den zugehörigen DC-DC-Wandler beherbergt.
 Bei den meisten Halterungen mussten nachträglich Bohrungen in Autodesk Inventor hinzugefügt werden, damit sie mit dem Aufbau verschraubt werden konnten.
@@ -516,11 +516,11 @@ Die Schieber wurden dabei zugleich neu skaliert.
 Zuletzt mussten alle Stationen sowie die drei induktiven Sensoren genauestens justiert werden, da der Produktionsfluss nur nach millimetergenauer Abstimmung gewährleistet ist.
 Die höchste Präzision erforderte dabei das Ansaugen und Ablegen des Deckels auf dem Boden, da hier millimetergenau gearbeitet werden muss und die weiteren Schritte stark von dieser Präzision abhängen.
 
-Im Rahmen der Inbetriebnahme mussten zudem einzelne Bauteile neu beschafft werden.
-Für das Kugelmagazin wurden Metallkugeln mit einem Durchmesser von drei Millimetern bestellt.
-Der fehlende Saugnapf der Ausgabeschwenkarmstation wurde nachbestellt.
+Im Rahmen der Inbetriebnahme mussten zudem einzelne Bauteile neu beschafft werden, die entweder fehlten oder ausgetauscht werden mussten.
+Für das Kugelmagazin wurden dabei Metallkugeln mit einem Durchmesser von drei Millimetern bestellt, und der fehlende Saugnapf der Ausgabeschwenkarmstation wurde nachbestellt.
+Ergänzend wurden ein kurzes Netzwerkkabel sowie ein Kameraarm beschafft, über den die Kamera oberhalb der Anlage angebracht werden konnte.
 
-Im speziellen Aufbau der HsH wurde vor allem die Entwicklung des Digitalen Zwillings priorisiert, während Weiterentwicklungen der physischen Anlage zunächst einen geringeren Stellenwert hatten.
+Im speziellen Aufbau der HsH wurde vor allem die Entwicklung des Digitalen Zwillings priorisiert, während Weiterentwicklungen der Anlage zunächst einen geringeren Stellenwert hatten.
 Aus diesem Grund wurde auf die Zuführung weiterer Bauteile zunächst kein Wert gelegt und lediglich ein einzelner Fertigungszyklus vorgesehen, weshalb die Turmmagazine an der Decke sowie die Bodenrutsche vorerst weggelassen wurden.
 Die pneumatischen Zylinder sind dabei um fünf Zentimeter zu lang, sodass der Schieber im ausgefahrenen Zustand mit dem Gewinde der Zylinderfassung in das Magazin hineinfährt.
 Um dies zu vermeiden, müsste entweder die Rutschenlänge neu dimensioniert oder ein kürzerer Schieber als der in Abbildung~\ref{fig:ist_zustand_mazerunner} gezeigte eingebaut werden.
@@ -568,7 +568,7 @@ Konkret wird dabei zunächst die zylinderförmige Schutzkappe angesaugt, die üb
 
 \subsubsection{Beschreibung der Anlage}
 Der Dobot Magician ist ein vierachsiger Desktop-Roboterarm (Dobot Robotics Co.,~Ltd., Shenzhen, China), der für den Einsatz in der universitären Lehre konzipiert wurde~\cite{dobot_magician}.
-Er realisiert eine Kinematik mit vier Freiheitsgraden (Degrees of Freedom, DoF) und den Gelenken J1 (Basisrotation), J2 (Schulter), J3 (Ellbogen) und J4 (Drehung des Werkzeugkopfs um die Z-Achse) bei einer maximalen Reichweite von \SI{320}{\milli\meter} und einer Nutzlast von bis zu \SI{500}{\gram}.
+Er realisiert eine Kinematik mit vier Freiheitsgraden (Degrees of Freedom, DoF) und den Gelenken J1 (Basisrotation), J2 (Schulter), J3 (Ellbogen) und J4 (Joint~4, Drehung des Werkzeugkopfs um die Z-Achse) bei einer maximalen Reichweite von \SI{320}{\milli\meter} und einer Nutzlast von bis zu \SI{500}{\gram}.
 J4 wird über den in Abbildung~\ref{fig:dobot_sauggreifer} gezeigten Servomotor des Sauggreifers realisiert.
 Die Kommunikation des Dobot Magician mit einem Computer erfolgt über USB mittels des UART-Protokolls.
 
@@ -584,8 +584,8 @@ Dieses Getriebe bildet eine geschlossene kinematische Kette, die für die Simula
 Dadurch können mit dem Sauggreifer ausschließlich Bauteile von oben gegriffen werden, wobei sich dessen Orientierung nur durch eine Drehung um die Z-Achse mittels des in Abbildung~\ref{fig:dobot_sauggreifer} gezeigten Servomotors verändern lässt.
 
 Als Endeffektor für das Pick-and-Place-Szenario ist am Dobot Magician ein pneumatischer Sauggreifer montiert.
-Dieser besteht aus einem Saugkopf mit Luftschlauchanschluss sowie einer separaten Pumpeneinheit, die über die digitalen Anschlüsse GP1 und SW1 angesteuert wird, wie Abbildung~\ref{fig:dobot_sauggreifer} zeigt~\cite{kuester2026dobottutorial}.
-Die Pumpe wird über GP1 und SW1 mit der Steuerung des Dobot Magician verbunden, während der Servomotor (J4), der oben am Unterarm über Port GP3 angeschlossen ist, den unteren Teil des Endeffektors um die Z-Achse dreht, wie Abbildung~\ref{fig:dobot_sauggreifer_anschluss} zeigt~\cite{kuester2026dobottutorial}.
+Dieser besteht aus einem Saugkopf mit Luftschlauchanschluss sowie einer separaten Pumpeneinheit, die über die digitalen Anschlüsse GP1 (General Purpose) und Switch~1 (SW1) angesteuert wird, wie Abbildung~\ref{fig:dobot_sauggreifer} zeigt~\cite{kuester2026dobottutorial}.
+Die Pumpe wird mit der Steuerung des Dobot Magician verbunden, während der Servomotor (J4), der oben am Unterarm über Port GP3 angeschlossen ist, den unteren Teil des Endeffektors um die Z-Achse dreht, wie Abbildung~\ref{fig:dobot_sauggreifer_anschluss} zeigt~\cite{kuester2026dobottutorial}.
 
 \begin{figure}[H]
     \centering
@@ -605,11 +605,11 @@ Für den Digitalen Zwilling werden ausschließlich der Dobot Magician selbst und
 
 \subsubsection{Problemstellung und Konzept für den Digitalen Zwilling}
 \label{subsubsec:dobot_konzept}
-Der Dobot Magician kommuniziert ausschließlich über das UART-Protokoll, das über den USB-Port angesprochen wird und nicht nativ in Isaac Sim integriert ist, weshalb eine Middleware-Schicht notwendig ist.
+Der Dobot Magician kommuniziert ausschließlich über das UART-Protokoll, das über den USB-Port angesprochen wird und nicht nativ in NVIDIA Isaac Sim integriert ist, weshalb eine Middleware-Schicht notwendig ist.
 Das Ziel ist zunächst die Realisierung eines Digitalen Schattens nach Kritzinger et al., der die Gelenkzustände des physischen Dobot Magician kontinuierlich im virtuellen Modell abbildet~\cite{kritzinger2018}.
 
-Das Konzept sieht eine eigenständige Kit-Extension namens \texttt{Dobot\_DT\_IsaacSim\_Extension} vor, die über die \emph{pydobot}-Bibliothek~\cite{pydobot_docs} zyklisch die Pose des realen Dobot Magician ausliest und daraus die Gelenkwinkel J1--J4 berechnet.
-Die Kopplung an die Simulation erfolgt dabei über die in Isaac Sim integrierte Dynamic-Control-API, über die die Gelenkwinkel auf die Articulation des importierten Robotermodells geschrieben werden.
+Das Konzept sieht eine eigenständige Kit-Extension namens \texttt{Dobot\_DT\_IsaacSim\_Extension}, im Folgenden kurz Dobot-Extension genannt, vor, die über die \emph{pydobot}-Bibliothek~\cite{pydobot_docs} zyklisch die Pose des realen Dobot Magician ausliest und daraus die Gelenkwinkel J1--J4 berechnet, welche an die USD-Stage weitergeleitet werden.
+Die Kopplung an die Simulation erfolgt dabei über die in NVIDIA Isaac Sim integrierte Dynamic-Control-API, über die die Gelenkwinkel auf die Articulation des importierten Robotermodells geschrieben werden.
 Die kinematische Grundlage bildet eine URDF-Beschreibung, die aus den CAD-Daten des Herstellers abgeleitet und mit Gelenklimits sowie Achsparametern versehen wird.
 
 \subsubsection{URDF-Modellierung und Import in NVIDIA Isaac Sim}
@@ -617,7 +617,7 @@ Die kinematische Grundlage bildet eine URDF-Beschreibung, die aus den CAD-Daten 
 
 Um den Dobot Magician in NVIDIA Isaac Sim zu simulieren, müssen das Robotermodell geladen und dessen Gelenke definiert werden.
 Anstatt das Modell dafür als gesamte Baugruppe zu importieren und die Gelenke nachträglich zu definieren, ermöglicht die URDF-Beschreibung den direkten Import der einzelnen STL-Meshes samt der zwischen ihnen definierten Gelenke.
-Abbildung~\ref{fig:dobot_urdf_aufbau} zeigt diesen Ablauf, der im Folgenden kurz erläutert wird und sich am Workflow eines von NVIDIA bereitgestellten Tutorials zum Import und zur Assemblierung von Manipulatoren in Isaac Sim orientiert~\cite{nvidia_isaacsim_manipulator_tutorial}.
+Abbildung~\ref{fig:dobot_urdf_aufbau} zeigt diesen Ablauf, der im Folgenden kurz erläutert wird und sich am Workflow eines von NVIDIA bereitgestellten Tutorials zum Import und zur Assemblierung von Manipulatoren in NVIDIA Isaac Sim orientiert~\cite{nvidia_isaacsim_manipulator_tutorial}.
 
 \begin{figure}[H]
     \centering
@@ -629,55 +629,64 @@ Abbildung~\ref{fig:dobot_urdf_aufbau} zeigt diesen Ablauf, der im Folgenden kurz
 Wie in Abbildung~\ref{fig:dobot_urdf_aufbau} zu sehen ist, wird die kinematische Struktur des Dobot Magician in einer URDF-Datei formalisiert.
 Die vier Glieder werden als STL-Meshes referenziert. Die zugehörigen Gelenke erhalten Drehachsen, Bewegungsgrenzen und Antriebsparameter~\cite{ros_urdf}.
 Die Roboterbasis wird über einen starren Weltanker verankert, um physikalische Stabilität zu gewährleisten.
-Der Isaac-Sim-URDF-Importer überführt die Beschreibung anschließend in eine USD-Articulation.
+Der Isaac-Sim-URDF-Importer überführt die Beschreibung anschließend in eine USD-Articulation und erzeugt den in Abbildung~\ref{fig:dobot_after_urdf} gezeigten Strukturbaum, wobei das DomeLight nicht automatisch durch den Import entsteht, sondern nachträglich über ein Hilfsskript oder die Oberfläche von NVIDIA Isaac Sim ergänzt werden muss.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Dobot_after_urdf}
+    \caption{Dobot Magician und resultierende Stage-Hierarchie nach dem URDF-Import in NVIDIA Isaac Sim.}
+    \label{fig:dobot_after_urdf}
+\end{figure}
 
 Eine Herausforderung stellt das Parallelogrammgetriebe des Unterarms dar.
 Dieses bildet eine geschlossene kinematische Kette, wobei zwei mechanische Pfade zwischen Schultergelenk und Werkzeugaufnahme gegenseitige Abhängigkeiten erzeugen, die über einfache Vorwärtskinematik nicht auflösbar sind.
 Physik-Engines wie NVIDIA PhysX unterstützen ausschließlich offene kinematische Bäume. Geschlossene Schleifen erfordern entweder explizite Schleifenschlussbedingungen oder eine vereinfachte Modellierung~\cite{nvidia_physx}.
 Das Parallelogrammgetriebe selbst wird deshalb im URDF nicht modelliert.
 Die Gelenke \texttt{j1} bis \texttt{j3} werden direkt aus den empfangenen Gelenkwinkeln des realen Dobot Magician gesetzt, während das aktive Gelenk \texttt{j6} die Werkzeugaufnahme repräsentiert und aus \texttt{j1} bis \texttt{j3} berechnet wird, um diese unabhängig von der Armkonfiguration korrekt auszurichten.
+Der Saugkopf des Sauggreifers wird als eigener Link \texttt{link\_suction} modelliert, der über das Fixed Joint \texttt{joint\_suction} starr mit \texttt{link\_6} verbunden ist und dessen Bewegungen folgt, wie in Abbildung~\ref{fig:dobot_after_urdf} zu sehen ist.
+Die CAD-Geometrie dieses Links wurde mit dem Text-to-CAD-Werkzeug Zoo Studio anhand des in Abbildung~\ref{fig:dobot_sauggreifer} gezeigten Saugkopfs erstellt (s.\ Anhang~\ref{anhang:ki}).
 Das physische Gelenk J4, die Drehung des Werkzeugkopfs um die Z-Achse, wird in der Simulation dagegen nicht verwendet.
 Für den angestrebten Digitalen Schatten ist diese Vereinfachung hinreichend, da die Darstellung der Endeffektorpose im Vordergrund steht, nicht die exakte Simulation der internen Mechanik.
 
-\subsubsection{Systemarchitektur und Dobot-Anbindung}
+\subsubsection{Aufbau der NVIDIA-Isaac-Sim-Extension des Dobot Magician}
 Die Datenkopplung zwischen realem Dobot Magician und NVIDIA Isaac Sim wird vollständig über die USB-Verbindung realisiert, über die der Dobot Magician mittels der \emph{pydobot}-Bibliothek an die Extension angebunden ist.
-Im Folgenden werden der Auslesepfad sowie der Steuerpfad anhand eines internen Blockdiagramms in Abbildung~\ref{fig:dobot_wege} dargestellt, wobei die grün eingefärbten Bereiche NVIDIA Isaac Sim und die blau eingefärbten Bereiche der Extension zuzuordnen sind~\cite{nvidia_isaacsim_robot_setup_tutorials}.
+Im Folgenden werden der Auslesepfad sowie der Steuerpfad der Dobot-Gelenke anhand eines internen Blockdiagramms in Abbildung~\ref{fig:dobot_wege} dargestellt, wobei die grün eingefärbten Bereiche NVIDIA Isaac Sim und die blau eingefärbten Bereiche der Extension zuzuordnen sind~\cite{nvidia_isaacsim_robot_setup_tutorials}.
+Die Methodennamen der Extension folgen dabei einer festen Namenskonvention. Mit \texttt{sim\_} beginnende Methoden wirken auf die Simulation, mit \texttt{real\_} beginnende Methoden auf den realen Dobot Magician. So aktualisiert \texttt{\_sim\_updater()} beispielsweise die Simulation, während \texttt{real\_read\_joints()} die Gelenke des realen Dobot Magician ausliest.
 
 \begin{figure}[H]
-    \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.25\linewidth]{dobot_wege_v20_cropped}}
+    \hspace*{-2cm}\includegraphics[width=19cm]{dobot_wege_v20_cropped}
     \caption{Datenflussstruktur der Dobot-Magician-Extension zwischen realem Dobot Magician und NVIDIA Isaac Sim.}
     \label{fig:dobot_wege}
 \end{figure}
 
 Im oberen Pfad werden die aktuellen Gelenkwerte des Dobot Magician ausgelesen und anschließend in die USD-Stage übertragen.
-Ausgangspunkt ist die Methode \texttt{\_sim\_updater()} der \texttt{Dobot\_DT\_IsaacSim\_Extension} (kurz DT-Extension), die durch das Isaac-Sim-Update-Event ausgelöst wird, ein von NVIDIA Isaac Sim bereitgestelltes Callback, das bei jedem gerenderten Simulationsframe aufgerufen wird und damit den \SI{60}{\hertz}-Takt des Auslesepfads vorgibt.
-\texttt{\_sim\_updater()} ruft die Methode \texttt{real\_read\_joints()} der DT-Extension auf, welche über \emph{pydobot} den Befehl \texttt{device.pose()} absetzt.
+Ausgangspunkt ist die Methode \texttt{\_sim\_updater()} der Dobot-Extension, die durch das Isaac-Sim-Update-Event ausgelöst wird, ein von NVIDIA Isaac Sim bereitgestelltes Callback, das bei jedem gerenderten Simulationsframe mit rund \SI{60}{\hertz} aufgerufen wird, den eigentlichen Auslesepfad jedoch über ein internes Zeit-Gate auf \SI{2}{\hertz} drosselt.
+\texttt{\_sim\_updater()} ruft die Methode \texttt{real\_read\_joints()} der Dobot-Extension auf, welche über \emph{pydobot} den Befehl \texttt{device.pose()} absetzt.
 \emph{pydobot} überträgt diesen Befehl als \texttt{GetPose}-Kommando in hexadezimaler Darstellung über das UART-Protokoll, das der Dobot Magician am USB-Port spricht.
 Der Dobot Magician antwortet mit allen Gelenkwinkeln in Grad sowie der XYZ-Koordinate des Endeffektors in Millimetern, woraus \emph{pydobot} ein Python-Tupel mit den Gelenkstellungen J1 bis J4 bildet.
-\texttt{real\_read\_joints()} berechnet daraus die Rohwinkel der Gelenke und liefert sie an \texttt{\_sim\_updater()} zurück, die sie an \texttt{SimBridge.apply\_joints()} übergibt.
-Diese rechnet die Winkel von Grad in Radiant um und schreibt sie über die Dynamic-Control-API auf die Gelenke der importierten Articulation, sodass das virtuelle Modell dem realen Arm in Echtzeit folgt.
+\texttt{real\_read\_joints()} berechnet daraus die Rohwinkel der Gelenke für die USD-Stage und liefert sie an \texttt{\_sim\_updater()} zurück, die sie an \texttt{SimBridge.apply\_joints()} übergibt.
+Diese rechnet die Winkel von Grad in Radiant um und schreibt sie über die Dynamic-Control-API auf die Gelenke des Dobot-Modells, sodass das virtuelle Modell dem realen Arm folgt.
 
-Auf Pfad~2 löst ein Klick im Dobot-HMI eine der \texttt{real\_*}-Methoden aus, etwa für Jog-Befehle, Vakuumgreifer-Schaltungen oder das Anfahren der Home-Position.
+Auf Pfad~2 löst ein Klick-Event im Dobot-HMI eine der \texttt{real\_*}-Methoden aus, etwa für Jog-Befehle, Vakuumgreifer-Schaltungen oder das Anfahren der Home-Position.
 Diese übersetzen den Aufruf über \emph{pydobot} in einen seriellen Steuerbefehl an den Dobot Magician, der die Zielposition intern über inverse Kinematik anfährt, ohne eine Rückmeldung an den Code zu senden.
-Aufgezeichnete Pick-and-Place-Sequenzen laufen dabei über einen eigenen Thread, der mittels \texttt{wait\_for\_cmd()} blockierend auf den Bewegungsabschluss wartet, während direkte UI-Befehle wie Jog- oder Vakuumgreifer-Schaltungen nicht auf eine Rückmeldung warten.
 
 Da beide Pfade parallel und unabhängig voneinander laufen, liest \texttt{real\_read\_joints()} im nächsten Takt stets die aktuelle Ist-Position aus, unabhängig davon, ob über Pfad~2 noch eine Bewegung läuft.
-Damit ist eine funktionale Synchronisation im Sinne eines Digitalen Schattens nach Kritzinger et al.\ realisiert, die um die auf Pfad~2 beschriebene, manuell auslösbare Fernsteuerung in Gegenrichtung ergänzt wird, während eine durchgängig automatisierte bidirektionale Kopplung Gegenstand zukünftiger Arbeiten bleibt~\cite{kritzinger2018}.
+Damit ist eine funktionale Synchronisation im Sinne eines Digitalen Schattens nach Kritzinger et al.\ realisiert, die um die auf Pfad~2 beschriebene, manuell auslösbare Fernsteuerung in Gegenrichtung ergänzt wird~\cite{kritzinger2018}.
+Aufgezeichnete Pick-and-Place-Sequenzen laufen dabei über einen eigenen Thread, der mittels \texttt{wait\_for\_cmd()} blockierend auf den Bewegungsabschluss wartet, während direkte UI-Befehle wie Jog- oder Vakuumgreifer-Schaltungen nicht auf eine Rückmeldung warten.
 
 \subsubsection{Inbetriebnahme des Dobot Magician}
 \label{subsubsec:dobot_inbetriebnahme}
 
-Für die Inbetriebnahme wird der Dobot Magician zunächst über das mitgelieferte Netzteil mit Spannung versorgt und per USB an den Laptop angeschlossen.
+Für die Inbetriebnahme wird der Dobot Magician zunächst über das mitgelieferte Netzteil mit Spannung versorgt und per USB an den COM3-Port des Laptops angeschlossen.
 Anschließend wird er über einen Schalter eingeschaltet.
 Der in Abbildung~\ref{fig:dobot_sauggreifer} und Abbildung~\ref{fig:dobot_sauggreifer_anschluss} gezeigte Sauggreifer wird in die Werkzeugführung eingeführt und mit der mitgelieferten Schraube fixiert.
-Anschließend wird er über die Schnittstellen GP1 und GP3 sowie die Versorgungsstecker für Vakuumpumpe und Servomotor verkabelt, wobei die Vakuumpumpe das notwendige Vakuum erzeugt und der Servomotor zwar an GP3 angeschlossen, in diesem Anwendungsfall jedoch nicht genutzt wird.
+Der am Sauggreifer montierte Servomotor wird an GP3 angeschlossen, in diesem Anwendungsfall jedoch nicht genutzt, da er sich nicht über reguläre Bewegungsbefehle, sondern nur über die Low-Level-Kommandos \texttt{SetIOMultiplexing} und \texttt{SetIOPWM} ansteuern lässt, für die \emph{pydobot} lediglich eine rohe \texttt{set\_io()}-Methode ohne Winkelabstraktion bereitstellt~\cite{dobot_communication_protocol,pydobot_docs}.
+Der Versorgungsstecker der Vakuumpumpe wird an GP1 auf der Rückseite des Dobot Magician sowie an SW1 zum Schalten der Vakuumpumpe angeschlossen.
 
 Um sicherzustellen, dass die Abstände stets gleich und Anlage sowie USD-Stage zueinander äquivalent sind, werden auf dem Tisch der Maze-Runner-Anlage Markierungen gesetzt, die den Abmessungen in der USD-Stage entsprechen und durch die Simulation verifiziert wurden.
 An diesen Markierungen werden das Modellauto des DeLorean sowie der das FTS abstrahierende Würfel, auf dem die Schutzkappe abliegt, platziert.
 
 Der Dobot Magician selbst wird in eine im FDM-Druckverfahren gefertigte Halterung eingesetzt, die auf dem Tisch der Maze-Runner-Anlage verschraubt ist und auch in Abbildung~\ref{fig:dobot_pp_szenario} und Abbildung~\ref{fig:dobot_labor} zu sehen ist.
-Dafür wurden zunächst verschiedene Größen der Halterung im FDM-Verfahren ausgedruckt und getestet.
 Bei der Platzierung wird der Aktionsradius des Dobot Magician berücksichtigt, sodass dieser auch die Ausgabestation der Maze-Runner-Anlage erreichen kann.
 
 Im laufenden Betrieb begann die Vakuumpumpe aufgrund von Verunreinigungen zu blasen statt zu saugen.
