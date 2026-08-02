@@ -1,0 +1,642 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.19)  2 AUG 2026 11:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./zusammenfassung.tex
+(zusammenfassung.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen150
+\@IEEEtrantmpdimenB=\dimen151
+\@IEEEtrantmpdimenC=\dimen152
+\@IEEEtrantmpcountA=\count275
+\@IEEEtrantmpcountB=\count276
+\@IEEEtrantmpcountC=\count277
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen153
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
+n input line 937.
+\CLASSINFOnormalsizebaselineskip=\dimen154
+\CLASSINFOnormalsizeunitybaselineskip=\dimen155
+\IEEEnormaljot=\dimen156
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen157
+\IEEEquantizedlengthdiff=\dimen158
+\IEEEquantizedtextheightdiff=\dimen159
+\IEEEilabelindentA=\dimen160
+\IEEEilabelindentB=\dimen161
+\IEEEilabelindent=\dimen162
+\IEEEelabelindent=\dimen163
+\IEEEdlabelindent=\dimen164
+\IEEElabelindent=\dimen165
+\IEEEiednormlabelsep=\dimen166
+\IEEEiedmathlabelsep=\dimen167
+\IEEEiedtopsep=\skip49
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@IEEEsubequation=\count282
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count283
+\c@table=\count284
+\@IEEEeqnnumcols=\count285
+\@IEEEeqncolcnt=\count286
+\@IEEEsubeqnnumrollback=\count287
+\@IEEEquantizeheightA=\dimen168
+\@IEEEquantizeheightB=\dimen169
+\@IEEEquantizeheightC=\dimen170
+\@IEEEquantizeprevdepth=\dimen171
+\@IEEEquantizemultiple=\count288
+\@IEEEquantizeboxA=\box53
+\@IEEEtmpitemindent=\dimen172
+\IEEEPARstartletwidth=\dimen173
+\c@IEEEbiography=\count289
+\@IEEEtranrubishbin=\box54
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaT
+eX and XeLaTeX
+\babel@savecnt=\count290
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2111.
+\U@D=\dimen174
+\l@unhyphenated=\language79
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count291
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4206.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\
+babel-ngerman.tex)
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 4330.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
+Language: ngerman 
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-germ
+an.def
+Package babel Info: Making " an active character on input line 500.
+)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count292
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\csq@reset=\count293
+\csq@gtype=\count294
+\csq@glevel=\count295
+\csq@qlevel=\count296
+\csq@maxlvl=\count297
+\csq@tshold=\count298
+\csq@ltx@everypar=\toks21
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2026-05-15 v3.5.5 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count299
+\l__siunitx_number_exponent_fixed_int=\count300
+\l__siunitx_number_min_decimal_int=\count301
+\l__siunitx_number_min_integer_int=\count302
+\l__siunitx_number_round_precision_int=\count303
+\l__siunitx_number_lower_threshold_int=\count304
+\l__siunitx_number_upper_threshold_int=\count305
+\l__siunitx_number_group_first_int=\count306
+\l__siunitx_number_group_size_int=\count307
+\l__siunitx_number_group_min_int=\count308
+\l__siunitx_number_group_minimum_int=\count309
+\l__siunitx_compound_count_int=\count310
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
+ns.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen177
+))
+\l__siunitx_table_tmp_box=\box55
+\l__siunitx_table_tmp_dim=\dimen178
+\l__siunitx_table_column_width_dim=\dimen179
+\l__siunitx_table_integer_box=\box56
+\l__siunitx_table_decimal_box=\box57
+\l__siunitx_table_uncert_box=\box58
+\l__siunitx_table_before_box=\box59
+\l__siunitx_table_after_box=\box60
+\l__siunitx_table_before_dim=\dimen180
+\l__siunitx_table_carry_dim=\dimen181
+\l__siunitx_unit_tmp_int=\count311
+\l__siunitx_unit_position_int=\count312
+\l__siunitx_unit_total_int=\count313
+\l__siunitx_sexagesimal_tmp_dim=\dimen182
+\l__siunitx_sexagesimal_marker_box=\box61
+\l__siunitx_sexagesimal_unit_box=\box62
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen183
+\ar@mcellbox=\box63
+\extrarowheight=\dimen184
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box64
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen185
+\captionmargin=\dimen186
+\caption@leftmargin=\dimen187
+\caption@rightmargin=\dimen188
+\caption@width=\dimen189
+\caption@indent=\dimen190
+\caption@parindent=\dimen191
+\caption@hangindent=\dimen192
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count314
+\c@continuedfloat=\count315
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count316
+) (zusammenfassung.aux
+Package babel Info: 'ngerman' activates 'german' shorthands.
+(babel)             Reported on input line 10.
+)
+\openout1 = `zusammenfassung.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+-- Lines per column: 56 (exact).
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count317
+\scratchdimen=\dimen193
+\scratchbox=\box65
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen194
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
+slations-basic-dictionary-german.trsl
+File: translations-basic-dictionary-german.trsl (german translation file `trans
+lations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `german'. on input line 13.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<../00_Bilder/05_IoT_Rahmenwerk_ISO23247-1_Zusammenfassung.png, id=1, 799.98875
+pt x 509.905pt>
+File: ../00_Bilder/05_IoT_Rahmenwerk_ISO23247-1_Zusammenfassung.png Graphic fil
+e (type png)
+<use ../00_Bilder/05_IoT_Rahmenwerk_ISO23247-1_Zusammenfassung.png>
+Package pdftex.def Info: ../00_Bilder/05_IoT_Rahmenwerk_ISO23247-1_Zusammenfass
+ung.png  used on input line 51.
+(pdftex.def)             Requested size: 231.83954pt x 147.7675pt.
+<../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extension.png, id=3, 1154.51324
+pt x 570.33075pt>
+File: ../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extension.png Graphic file
+ (type png)
+<use ../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extension.png>
+Package pdftex.def Info: ../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extensi
+on.png  used on input line 65.
+(pdftex.def)             Requested size: 231.83954pt x 114.52536pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/Users/lfphs/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/l
+fphs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+ <../00_Bilder/05_IoT_Rahmenwerk_ISO23247-1_Zusammenfassung.png>]
+<../00_Bilder/03_Kritzinger_Klassifikation_Digitaler_Zwilling.png, id=12, 284.3
+9583pt x 85.31876pt>
+File: ../00_Bilder/03_Kritzinger_Klassifikation_Digitaler_Zwilling.png Graphic 
+file (type png)
+<use ../00_Bilder/03_Kritzinger_Klassifikation_Digitaler_Zwilling.png>
+Package pdftex.def Info: ../00_Bilder/03_Kritzinger_Klassifikation_Digitaler_Zw
+illing.png  used on input line 76.
+(pdftex.def)             Requested size: 226.79846pt x 68.04027pt.
+<../00_Bilder/04_Shao_Reifegradmodell_Digitaler_Zwilling.png, id=13, 1808.7575p
+t x 972.63374pt>
+File: ../00_Bilder/04_Shao_Reifegradmodell_Digitaler_Zwilling.png Graphic file 
+(type png)
+<use ../00_Bilder/04_Shao_Reifegradmodell_Digitaler_Zwilling.png>
+Package pdftex.def Info: ../00_Bilder/04_Shao_Reifegradmodell_Digitaler_Zwillin
+g.png  used on input line 85.
+(pdftex.def)             Requested size: 226.79846pt x 121.94994pt.
+<../00_Bilder/15_Aktorik_Mazerunner_Anlage.png, id=14, 317.38576pt x 307.74976p
+t>
+File: ../00_Bilder/15_Aktorik_Mazerunner_Anlage.png Graphic file (type png)
+<use ../00_Bilder/15_Aktorik_Mazerunner_Anlage.png>
+Package pdftex.def Info: ../00_Bilder/15_Aktorik_Mazerunner_Anlage.png  used on
+ input line 101.
+(pdftex.def)             Requested size: 140.85605pt x 136.5733pt.
+<../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png, id=15, 3035.34pt x 4047.12
+pt>
+File: ../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png Graphic file (type png
+)
+<use ../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png>
+Package pdftex.def Info: ../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png  us
+ed on input line 101.
+(pdftex.def)             Requested size: 102.40356pt x 136.5733pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+7.
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 108.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 108.
+<../00_Bilder/27_Netzwerkarchitektur_DigitalTwinApp_HSRM.png, id=16, 894.34125p
+t x 633.36626pt>
+File: ../00_Bilder/27_Netzwerkarchitektur_DigitalTwinApp_HSRM.png Graphic file 
+(type png)
+<use ../00_Bilder/27_Netzwerkarchitektur_DigitalTwinApp_HSRM.png>
+Package pdftex.def Info: ../00_Bilder/27_Netzwerkarchitektur_DigitalTwinApp_HSR
+M.png  used on input line 113.
+(pdftex.def)             Requested size: 438.60315pt x 310.62279pt.
+
+[2 <../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extension.png> <../00_Bilder
+/03_Kritzinger_Klassifikation_Digitaler_Zwilling.png> <../00_Bilder/04_Shao_Rei
+fegradmodell_Digitaler_Zwilling.png> <../00_Bilder/15_Aktorik_Mazerunner_Anlage
+.png> <../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png>]
+<../00_Bilder/34_PnP_Szenario_LFP.png, id=27, 422.57875pt x 595.22375pt>
+File: ../00_Bilder/34_PnP_Szenario_LFP.png Graphic file (type png)
+<use ../00_Bilder/34_PnP_Szenario_LFP.png>
+Package pdftex.def Info: ../00_Bilder/34_PnP_Szenario_LFP.png  used on input li
+ne 126.
+(pdftex.def)             Requested size: 120.95892pt x 170.3762pt.
+<../00_Bilder/33_PnP_Szenario_IsaacSim.png, id=28, 383.93437pt x 534.49687pt>
+File: ../00_Bilder/33_PnP_Szenario_IsaacSim.png Graphic file (type png)
+<use ../00_Bilder/33_PnP_Szenario_IsaacSim.png>
+Package pdftex.def Info: ../00_Bilder/33_PnP_Szenario_IsaacSim.png  used on inp
+ut line 131.
+(pdftex.def)             Requested size: 120.95892pt x 168.39186pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+[]\T1/ptm/m/n/10 Er kom-mu-ni-ziert aus-schlieÿ-lich se-ri-ell über
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+\T1/ptm/m/n/10 UART mit-tels USB-Port, wo-für die Ex-ten-si-on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+\T1/pcr/m/n/10 Dobot_DT_IsaacSim_Extension \T1/ptm/m/n/10 die Python-
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 137--138
+\T1/ptm/m/n/10 Bibliothek \T1/ptm/m/it/10 py-do-bot \T1/ptm/m/n/10 nutzt, um zy
+-klisch die rea-le Po-se
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 137--138
+\T1/ptm/m/n/10 aus-zu-le-sen und die be-rech-ne-ten Ge-lenk-win-kel über die
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 137--138
+\T1/ptm/m/n/10 URDF-Import ge-la-de-ne Ar-ti-cu-la-ti-on des Ro-bo-ter-mo-dells
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+\T1/ptm/m/n/10 zu schrei-ben, wo-bei das ki-ne-ma-tisch ge-schlos-se-ne
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 137--138
+\T1/ptm/m/n/10 Par-al-le-lo-gramm-ge-trie-be des Un-ter-arms nicht im URDF-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+\T1/ptm/m/n/10 Modell nach-ge-bil-det, son-dern rech-ne-risch kom-pen-siert
+ []
+
+<../00_Bilder/40_Datenflussstruktur_Dobot_Extension.png, id=29, 2447.1425pt x 1
+856.9375pt>
+File: ../00_Bilder/40_Datenflussstruktur_Dobot_Extension.png Graphic file (type
+ png)
+<use ../00_Bilder/40_Datenflussstruktur_Dobot_Extension.png>
+Package pdftex.def Info: ../00_Bilder/40_Datenflussstruktur_Dobot_Extension.png
+  used on input line 144.
+(pdftex.def)             Requested size: 252.0pt x 191.20152pt.
+
+Underfull \hbox (badness 1377) in paragraph at lines 150--156
+[]\T1/ptm/m/n/10 Für bei-de An-la-gen wur-de ei-ne me-tho-di-sche Re-pro-du-
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 157--158
+[]\T1/ptm/m/n/10 Die In-be-trieb-nah-me und Wei-ter-ent-wick-lung der Maze-
+ []
+
+[3]
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+ [4 <../00_Bilder/27_Netzwerkarchitektur_DigitalTwinApp_HSRM.png> <../00_Bilder
+/34_PnP_Szenario_LFP.png> <../00_Bilder/33_PnP_Szenario_IsaacSim.png> <../00_Bi
+lder/40_Datenflussstruktur_Dobot_Extension.png>]
+Underfull \hbox (badness 5359) in paragraph at lines 184--185
+\T1/ptm/m/n/10 zur Un-ter-stüt-zung der Soft-wa-re-ent-wick-lung, al-ter-
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 184--185
+\T1/ptm/m/n/10 na-tiv bei zu ho-her Kom-ple-xi-tät gra-fi-sche Offline-
+ []
+
+<../00_Bilder/42_Tutorial_UR10_Assemblierung_RobotAssembler.png, id=40, 449.880
+75pt x 187.902pt>
+File: ../00_Bilder/42_Tutorial_UR10_Assemblierung_RobotAssembler.png Graphic fi
+le (type png)
+<use ../00_Bilder/42_Tutorial_UR10_Assemblierung_RobotAssembler.png>
+Package pdftex.def Info: ../00_Bilder/42_Tutorial_UR10_Assemblierung_RobotAssem
+bler.png  used on input line 189.
+(pdftex.def)             Requested size: 231.83954pt x 96.83224pt.
+[5 <../00_Bilder/42_Tutorial_UR10_Assemblierung_RobotAssembler.png>]
+<../00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png, id=45, 1077.02374pt x 
+1012.78375pt>
+File: ../00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png Graphic file (type
+ png)
+<use ../00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png>
+Package pdftex.def Info: ../00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png
+  used on input line 211.
+(pdftex.def)             Requested size: 171.35815pt x 161.13693pt.
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[6 <../00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png>]
+(zusammenfassung.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 10695 strings out of 467691
+ 250801 string characters out of 5414987
+ 647765 words of memory out of 5000000
+ 39680 multiletter control sequences out of 15000+600000
+ 729577 words of font info for 131 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,8n,80p,572b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier
+/ucrr8a.pfb><C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
+/utmb8a.pfb><C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
+/utmbi8a.pfb><C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
+s/utmr8a.pfb><C:/Users/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on zusammenfassung.pdf (6 pages, 25314327 bytes).
+PDF statistics:
+ 76 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

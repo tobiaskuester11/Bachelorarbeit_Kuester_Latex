@@ -1,0 +1,634 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cl
+s
+Document Class: scrartcl 2026/02/02 v3.49.2 KOMA-Script document class (article
+)
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.st
+y
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
+y
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-ho
+ok.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+))) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.st
+y)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsize11pt
+.clo)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.st
+y)) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel
+-english.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\
+babel-ngerman.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-germ
+an.def)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg))
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+))) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def))
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty)))
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
+ns.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty))
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg))
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgfgantt\pgfgantt.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryarrows.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarybackgrounds.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypatterns.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+arypatterns.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfcalend
+ar.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfcale
+ndar.code.tex)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.bbx
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
+mp.bbx
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx))))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.cbx
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-ve
+rb.cbx))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
+)) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd)
+(main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
+slations-basic-dictionary-german.trsl)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
+slations-basic-dictionary-english.trsl)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lb
+x
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
+x) (main.bbl) (Kapitel 0/Deckblatt.tex
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+[1{C:/Users/lfphs/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lf
+phs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./00_Bilder/00_
+HsH_Logo_Fakultaet_II.png>]) (Kapitel 0/Abstract.tex)
+(Kapitel 0/Aufgabenstellung.tex [1]
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd))
+(Kapitel 0/Eidesstattliche Erklaerung.tex [2]) [3] (main.toc [4]
+Underfull \hbox (badness 7451) in paragraph at lines 54--54
+ [][] [][][]\T1/phv/m/n/10.95 (+20) NVIDIA-Isaac-Sim-Extensions der Maze-Runner
+-Anlage und des Dobot- 
+) [5] (main.lof [6]
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd)
+Underfull \hbox (badness 1412) in paragraph at lines 45--45
+ [][] [][][]\T1/phv/m/n/10.95 (+20) NVIDIA-Isaac-Sim-Tutorial zur As-sem-b-lie-
+rung ei-nes UR10-Manipulators mit 
+) (main.lot) (Kapitel 0/Abkuerzungsverzeichnis.tex [7{C:/Users/lfphs/AppData/Lo
+cal/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [8]) [9]
+(01_Einleitung/Einleitung.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 
+      [1]) (02_Theoretische Grundlagen/Theoretische_Grundlagen.tex [2] [3 <./00
+_Bilder/01_Phasenmodell_Fabrikplanung_VDI5200.png>] [4 <./00_Bilder/02_Digitale
+r_Fabrikbetrieb_Lebenszyklusphasen_VDI4499.png>] [5 <./00_Bilder/03_Kritzinger_
+Klassifikation_Digitaler_Zwilling.png>] [6] [7 <./00_Bilder/04_Shao_Reifegradmo
+dell_Digitaler_Zwilling.png>] [8 <./00_Bilder/05_IoT_Rahmenwerk_ISO23247-1.png>
+] [9 <./00_Bilder/06_Referenzarchitektur_ISO23247-2.png>] [10 <./00_Bilder/07_R
+AMI40_Referenzarchitekturmodell.jpg>]
+Underfull \hbox (badness 1253) in paragraph at lines 283--295
+\T1/phv/m/n/10.95 (+20) NVIDIA Om-ni-ver-se ist ei-ne GPU-beschleunigte Kol-la-
+bo-ra-ti-ons-platt-form, die Engineering-
+[11 <./00_Bilder/08_Isaac_Sim_Viewport_RTX_PathTracing.jpg>] [12] [13 <./00_Bil
+der/09_Trainingspipeline_NVIDIA_Omniverse_Oekosystem.png> <./00_Bilder/10_Paral
+leles_Training_Isaac_Lab.png (PNG copy)>] [14 <./00_Bilder/11_Isaac_TeleOp_GR00
+T_Bedienablaeufe.png (PNG copy)>] [15 <./00_Bilder/12_Aufbau_Digitaler_Zwilling
+_URDF_USD_Theorie.png>] [16])
+(03_Methodik_und_Vorgehensweise/Methodik_und_Vorgehensweise.tex [17])
+(04_Entwicklung_der_Digitalen_Zwillinge/Entwicklung_der_Digitalen_Zwillinge.tex
+[18] [19]
+Overfull \hbox (9.76895pt too wide) in paragraph at lines 25--25
+[]|\T1/phv/b/n/10.95 (-20) Kennung| 
+
+Overfull \hbox (9.76895pt too wide) in paragraph at lines 29--29
+[]|\T1/phv/b/n/10.95 (-20) Kennung| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\T1/phv/m/n/10.95 (+20) Druckluftminderer mit La-bor-
+ [20 <./00_Bilder/14_Tischaufbau_Dobot_Mazerunner_LFP.png>] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Anforderungs-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+5) Anforderungs-liste,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) Schnitt-stellen-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Modell-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Maze-Runner-CAD-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Einzelteile und URDF-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) CAD-Baugruppe
+
+Underfull \hbox (badness 2401) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Autodesk In-ven-tor, Zoo
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Import und
+
+Underfull \hbox (badness 1796) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) STEP-Import, Kon-ver-tie-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Kinematik-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Ordner-struktur mit
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Artikulationsbaum via
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Articulation-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Steuerungs-
+
+Underfull \hbox (badness 5771) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) TIA Por-tal V17 (SPS-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) Programmierung,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) OPC-UA-Server),
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) Ua-Ex-pert (OPC-UA-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Steuerungs-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Extension-
+
+Underfull \hbox (badness 5652) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) KI-Werkzeugen (s. An-
+
+Underfull \hbox (badness 5652) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) KI-Werkzeugen (s. An-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Versions-
+
+Underfull \hbox (badness 6961) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Git, GitHub-Verzeichnis,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) VS Co-de GitHub-
+
+Underfull \hbox (badness 6961) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Git, GitHub-Verzeichnis,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) VS Co-de GitHub-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) GitHub-
+
+Overfull \hbox (2.51656pt too wide) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (-20) Kommunikations-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Architektur-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) diagramm,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) Konfigurations-
+
+Underfull \hbox (badness 1173) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) La-bor, kor-rek-tes Ver-hal-
+
+Underfull \hbox (badness 5036) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (+20) ler Hard-wa-re im Pick-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Messprotokolle,
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (+20) Schritt-für-Schritt-
+
+Overfull \hbox (39.75665pt too wide) in paragraph at lines 180--180
+\T1/phv/m/n/10.95 (-20) Reproduzierbarkeitsdokumentation
+
+Overfull \hbox (10.31133pt too wide) in paragraph at lines 180--180
+[]|\T1/phv/m/n/10.95 (-20) Reproduzierbarkeits-
+[22] [23]
+Overfull \hbox (5.39522pt too wide) in paragraph at lines 207--208
+ [][] 
+
+Overfull \hbox (7.09761pt too wide) in paragraph at lines 214--215
+ [][] 
+[24] [25 <./00_Bilder/15_Aktorik_Mazerunner_Anlage.png> <./00_Bilder/16_Produkt
+_Mazerunner_Drehscheibe.png>] [26 <./00_Bilder/17a_Trainingslevel1_Magazinstati
+on.png> <./00_Bilder/17b_Trainingslevel2_Drehscheibe_Kugelmagazin.png> <./00_Bi
+lder/17c_Trainingslevel3_Ausgabeschwenkarm.png>] [27 <./00_Bilder/18_OpenUSD_Mo
+dell_Mazerunner_IsaacSim.png>] [28 <./00_Bilder/19_Verschachtelte_Gelenke_Schwe
+nkarm_Deckel.png> <./00_Bilder/20_UaExpert_Knotenbrowser_OPCUA.png>] [29 <./00_
+Bilder/21_TIA_Portal_V17_Programmbausteine.png>] [30 <./00_Bilder/22_Benutzerob
+erflaeche_Mazerunner_Extension.png>]
+Overfull \hbox (22.18207pt too wide) in paragraph at lines 373--374
+ [][] 
+[31 <./00_Bilder/23_Mazerunner_HMI.png> <./00_Bilder/24_Extensionordner_Mazerun
+ner.png>] [32] [33 <./00_Bilder/25_Konfigurationsdatei_nodes_db_json.png>]
+[34 <./00_Bilder/26_DigitalTwinApp_Dashboard_HSRM.png>] [35 <./00_Bilder/27_Net
+zwerkarchitektur_DigitalTwinApp_HSRM.png>] [36{C:/Users/lfphs/AppData/Local/Pro
+grams/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/lfphs/AppData/Local/Pro
+grams/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./00_Bilder/28_Ist_Zustand_Mazerunn
+er_LFP_Feb2026.png>] [37] [38 <./00_Bilder/29_Magnetventile_Aluminiumprofil.png
+> <./00_Bilder/30_Ein_Ausgaenge_SiemensSPS_S71200.png> <./00_Bilder/31_Schrittm
+otortreiber_Halterung.png>] [39 <./00_Bilder/32_Jira_Kanban_Mazerunner_Weiteren
+twicklung.png>]
+Overfull \hbox (39.69283pt too wide) in paragraph at lines 581--594
+[][]   [] 
+[40 <./00_Bilder/33_PnP_Szenario_IsaacSim.png> <./00_Bilder/34_PnP_Szenario_LFP
+.png>] [41 <./00_Bilder/35_Gelenkwinkelkonvention_Dobot_J1_J4.png>] [42 <./00_B
+ilder/36_Komponenten_Sauggreifer.png> <./00_Bilder/37_Anschluss_Sauggreifer.png
+>] [43 <./00_Bilder/39_Stage_Hierarchie_Dobot_URDF_Import.png>] [44] [45 <./00_
+Bilder/40_Datenflussstruktur_Dobot_Extension.png>])
+(05_Inbetriebnahme_und_Reproduzierbarkeit/Inbetriebnahme_und_Reproduzierbarkeit
+.tex [46]
+Underfull \hbox (badness 2772) in paragraph at lines 14--15
+[]\T1/phv/b/n/10.95 (+20) Maze-Runner-Extension: \T1/phv/m/n/10.95 (+20) Die mo
+-du-la-re Ex-ten-si-on na-mens \T1/lmtt/m/n/10.95 Mazerunner_DT_IsaacSim_
+[47] [48] [49])
+(06_Potenziale_Herausforderungen/Potenziale_Herausforderungen.tex [50] [51]
+[52] [53]) (09_Fazit und Ausblick/Fazit und Ausblick.tex [54 <./00_Bilder/41_Tu
+torial_MockRobot_ActionGraph.png> <./00_Bilder/42_Tutorial_UR10_Assemblierung_R
+obotAssembler.png>] [55]) [56] [57] [58] [59] [60]
+Overfull \hbox (12.31151pt too wide) in paragraph at lines 106--106
+[]\T1/phv/b/n/10.95 (-20) Übersicht zur Kon-struk-ti-ons-me-tho-dik nach der Ri
+cht-li-ni-en-rei-he VDI 2221/2222/2223/2225,
+[61] [62] [63] (Anhang/Anhang.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) VS-Code-Extension,
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\T1/phv/m/n/10.95 (+20) Python-Code-Unterstützung
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) (NVIDIA-Isaac-Sim-Extension),
+
+Underfull \hbox (badness 2626) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) des Literatur- und Do-ku-men-
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) ten-ord-ners, Er-stel-lung der
+
+Underfull \hbox (badness 3746) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) Da-ten-fluss-struk-tur der Dobot-
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\T1/phv/m/n/10.95 (+20) Ragnar
+
+Underfull \hbox (badness 3168) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) AI Text- & Image-to-
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) der Schutz-ver-klei-dung für
+
+Underfull \hbox (badness 6808) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) den ^^R  Mr.Fusion^^P-Reaktor am
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) Place-Szenario des Do-bot
+
+Underfull \hbox (badness 1803) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) ei-nem In-nen-durch-mes-ser von
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/phv/m/n/10.95 (+20) 13mm, ei-nem Au-ÿen-durch-
+
+Underfull \hbox (badness 4859) in paragraph at lines 34--34
+[]|\T1/phv/m/n/10.95 (+20) Strukturierung In-halts-ver-zeich-
+) [64] [65] [66 <./00_Bilder/43_Datenflussstruktur_Dobot_Extension_Detailliert.
+png>] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+ )
+(see the transcript file for additional information)<C:/Users/lfphs/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/lfphs/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lfphs/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lfphs/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/lfphs/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/lfphs/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (76 pages, 78874833 bytes).
+Transcript written on main.log.

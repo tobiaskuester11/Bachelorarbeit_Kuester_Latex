@@ -1,0 +1,125 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(zusammenfassung.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+-- This is a 10 point document.
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\
+babel-ngerman.tex)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-germ
+an.def)))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg))
+ (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+))) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
+ns.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty))
+) (C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def) (zusammenfassung.aux)
+-- Lines per column: 56 (exact).
+
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg))
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
+slations-basic-dictionary-german.trsl)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{C:/User
+s/lfphs/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lfphs/AppDat
+a/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <../00_Bilder/05_IoT_Rahme
+nwerk_ISO23247-1_Zusammenfassung.png>]
+(C:\Users\lfphs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd)
+Underfull \hbox (badness 6412) in paragraph at lines 106--108
+[]\T1/ptm/m/n/10 Der Do-bot Ma-gi-ci-an ist ein vier-ach-si-ger Desktop-
+
+Underfull \hbox (badness 2173) in paragraph at lines 106--108
+\T1/ptm/m/n/10 kap-pe auf ein Mo-dell-fahr-zeug des De-Lo-rean aus ^^R  Zu-
+
+Underfull \hbox (badness 5817) in paragraph at lines 106--108
+\T1/ptm/m/n/10 rück in die Zu-kunft^^P auf-ge-setzt wird. Er kom-mu-ni-
+
+Underfull \hbox (badness 2941) in paragraph at lines 106--108
+\T1/ptm/m/n/10 ziert aus-schlieÿ-lich se-ri-ell über UART, wo-für die Ex-
+[2 <../00_Bilder/22_Benutzeroberflaeche_Mazerunner_Extension.png> <../00_Bilder
+/03_Kritzinger_Klassifikation_Digitaler_Zwilling.png> <../00_Bilder/15_Aktorik_
+Mazerunner_Anlage.png> <../00_Bilder/16_Produkt_Mazerunner_Drehscheibe.png>]
+Underfull \vbox (badness 4779) has occurred while \output is active [3 <../00_B
+ilder/27_Netzwerkarchitektur_DigitalTwinApp_HSRM.png> <../00_Bilder/40_Datenflu
+ssstruktur_Dobot_Extension.png> <../00_Bilder/34_PnP_Szenario_LFP.png> <../00_B
+ilder/33_PnP_Szenario_IsaacSim.png>]
+Underfull \hbox (badness 1412) in paragraph at lines 141--142
+[]\T1/ptm/m/n/10 Die In-be-trieb-nah-me und Wei-ter-ent-wick-lung der Maze-
+
+Underfull \hbox (badness 5359) in paragraph at lines 163--164
+\T1/ptm/m/n/10 zur Un-ter-stüt-zung der Soft-wa-re-ent-wick-lung, al-ter-
+
+Underfull \hbox (badness 2261) in paragraph at lines 163--164
+\T1/ptm/m/n/10 na-tiv bei zu ho-her Kom-ple-xi-tät gra-fi-sche Offline-
+[4]
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[5] (zusammenfassung.aux) )
+(see the transcript file for additional information)<C:/Users/lfphs/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lfphs/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/lf
+phs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/
+lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
+lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users
+/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users
+/lfphs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on zusammenfassung.pdf (5 pages, 24669784 bytes).
+Transcript written on zusammenfassung.log.

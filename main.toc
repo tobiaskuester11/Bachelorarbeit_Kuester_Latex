@@ -19,61 +19,59 @@
 \contentsline {subsection}{\numberline {2.2}Virtuelle Inbetriebnahme nach VDI/VDE~3693}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Klassifikation Digitaler Zwillinge}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Weitere Begrifflichkeiten zu Digitalen Zwillingen}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Digitale Zwillinge im Fertigungskontext}{6}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Normativer Rahmen nach ISO~23247-2}{7}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Referenzarchitekturmodell RAMI~4.0}{8}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}NVIDIA Omniverse-Ökosystem}{10}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Datenformate OpenUSD und URDF}{13}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.5}Digitale Zwillinge im Fertigungskontext}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Normativer Rahmen nach ISO~23247-2}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Referenzarchitekturmodell RAMI~4.0}{9}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}NVIDIA Omniverse-Ökosystem}{11}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Datenformate OpenUSD und URDF}{14}{subsection.2.9}%
 \contentsline {subsection}{\numberline {2.10}Middleware-Architekturen für die industrielle Kommunikation}{15}{subsection.2.10}%
-\contentsline {subsubsection}{\numberline {2.10.1}OPC UA (DIN EN IEC 62541)}{15}{subsubsection.2.10.1}%
-\contentsline {subsubsection}{\numberline {2.10.2}MQTT v5.0}{15}{subsubsection.2.10.2}%
-\contentsline {subsubsection}{\numberline {2.10.3}ROS 2 und DDS}{15}{subsubsection.2.10.3}%
+\contentsline {subsubsection}{\numberline {2.10.1}OPC UA (DIN EN IEC 62541)}{16}{subsubsection.2.10.1}%
+\contentsline {subsubsection}{\numberline {2.10.2}MQTT v5.0}{16}{subsubsection.2.10.2}%
+\contentsline {subsubsection}{\numberline {2.10.3}ROS 2 und DDS}{16}{subsubsection.2.10.3}%
 \contentsline {subsubsection}{\numberline {2.10.4}REST API}{16}{subsubsection.2.10.4}%
-\contentsline {subsubsection}{\numberline {2.10.5}Serielle Kommunikation mit dem Dobot Magician über pydobot und UART}{16}{subsubsection.2.10.5}%
-\contentsline {section}{\numberline {3.}Methodik und Vorgehensweise}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Zeit- und Arbeitsplan}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Aufbau der Arbeit}{17}{subsection.3.2}%
-\contentsline {section}{\numberline {4.}Entwicklung der Digitalen Zwillinge}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Anforderungsanalyse}{19}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Toolkette}{20}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Anlage 1: Rundtakttisch \enquote {Maze-Runner}}{21}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Beschreibung der Anlage}{22}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Geometrie und USD-Konvertierung}{23}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Kinematik und Physik in NVIDIA Isaac Sim}{24}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}SPS-Konfiguration}{25}{subsubsection.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.5}Aufbau der NVIDIA-Isaac-Sim-Extension der Maze-Runner-Anlage}{27}{subsubsection.4.3.5}%
-\contentsline {subsubsection}{\numberline {4.3.6}Maze-Runner-Netzwerkarchitektur}{30}{subsubsection.4.3.6}%
-\contentsline {subsubsection}{\numberline {4.3.7}Inbetriebnahme und Optimierung}{33}{subsubsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.4}Anlage 2: Desktoproboter \enquote {Dobot Magician}, Pick-and-Place-Szenario}{37}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Beschreibung der Anlage}{37}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Problemstellung und Konzept für den Digitalen Zwilling}{39}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}URDF-Modellierung und Import in NVIDIA Isaac Sim}{40}{subsubsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Aufbau der NVIDIA-Isaac-Sim-Extension des Dobot Magician}{41}{subsubsection.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Inbetriebnahme des Dobot Magician}{43}{subsubsection.4.4.5}%
-\contentsline {section}{\numberline {5.}Dokumentation der Entwicklungspipeline}{43}{section.5}%
-\contentsline {subsection}{\numberline {5.1}NVIDIA-Isaac-Sim-Extensions der Maze-Runner-Anlage und des Dobot-Gelenkarmroboters als Entwicklungsergebnisse}{44}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Reproduzierbarkeitsdokumentation}{45}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}{45}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Reproduzierbarkeitsdokumentation Dobot Magician}{45}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Medienformate}{46}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Übergabe an das LFP}{46}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Gegenüberstellung und Gesamtbewertung}{46}{subsection.5.3}%
-\contentsline {section}{\numberline {6.}Potenziale, Herausforderungen und Handlungsempfehlungen}{47}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Potenziale Digitaler Zwillinge für die Industrie}{47}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Potenziale für das LFP}{48}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Potenziale Digitaler Fabriken}{48}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Potenziale von Gelenkarmrobotern}{48}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Herausforderungen im Laborbetrieb}{49}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Infrastruktur}{49}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Qualifikation}{49}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Handlungsempfehlungen für das LFP}{49}{subsection.6.4}%
-\contentsline {section}{\numberline {7.}Fazit}{51}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Zusammenfassung}{51}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Ausblick}{51}{subsection.7.2}%
-\contentsline {section}{\nonumberline Literatur}{53}{section*.38}%
-\contentsline {section}{\numberline {A}Verwendete KI-Software}{59}{section.A}%
-\contentsline {section}{\numberline {B}Reproduktions-Anleitung (Auszug)}{59}{section.B}%
-\contentsline {section}{\numberline {C}Auszug aus der URDF-Beschreibung des Dobot}{59}{section.C}%
-\contentsline {section}{\numberline {D}Küster Omniverse Tutorial -- Reproduktionsanleitung}{59}{section.D}%
-\contentsline {section}{\numberline {E}Schnittstellenmatrix Maze Runner (Auszug)}{61}{section.E}%
+\contentsline {subsubsection}{\numberline {2.10.5}Serielle Kommunikation mit dem Dobot Magician über pydobot und UART}{17}{subsubsection.2.10.5}%
+\contentsline {section}{\numberline {3.}Methodik und Vorgehensweise}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Zeit- und Arbeitsplan}{18}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Aufbau der Arbeit}{19}{subsection.3.2}%
+\contentsline {section}{\numberline {4.}Entwicklung der Digitalen Zwillinge}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Anforderungsanalyse}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Toolkette}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Anlage 1: Rundtakttisch \enquote {Maze-Runner}}{24}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Beschreibung der Anlage}{24}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Geometrie und USD-Konvertierung}{26}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Kinematik und Physik in NVIDIA Isaac Sim}{27}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}SPS-Konfiguration}{28}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Aufbau der NVIDIA-Isaac-Sim-Extension der Maze-Runner-Anlage}{30}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Maze-Runner-Netzwerkarchitektur}{33}{subsubsection.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}Inbetriebnahme und Optimierung}{36}{subsubsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.4}Anlage 2: Desktoproboter \enquote {Dobot Magician}, Pick-and-Place-Szenario}{40}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Beschreibung der Anlage}{40}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Problemstellung und Konzept für den Digitalen Zwilling}{42}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}URDF-Modellierung und Import in NVIDIA Isaac Sim}{43}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Aufbau der NVIDIA-Isaac-Sim-Extension des Dobot Magician}{44}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Inbetriebnahme des Dobot Magician}{46}{subsubsection.4.4.5}%
+\contentsline {section}{\numberline {5.}Dokumentation der Entwicklungspipeline}{46}{section.5}%
+\contentsline {subsection}{\numberline {5.1}NVIDIA-Isaac-Sim-Extensions der Maze-Runner-Anlage und des Dobot-Gelenkarmroboters als Entwicklungsergebnisse}{47}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Reproduzierbarkeitsdokumentation}{48}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Methodische Schritt-für-Schritt-Anleitung -- Maze Runner}{48}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Methodische Schritt-für-Schritt-Anleitung -- Dobot Magician}{48}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Medienformate}{49}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Übergabe an das LFP}{49}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Gegenüberstellung und Gesamtbewertung}{49}{subsection.5.3}%
+\contentsline {section}{\numberline {6.}Potenziale, Herausforderungen und Handlungsempfehlungen}{50}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Potenziale Digitaler Zwillinge für die Industrie}{50}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Potenziale für das LFP}{51}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Potenziale der Maze-Runner-Anlage}{51}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Potenziale von Gelenkarmrobotern}{52}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Herausforderungen im Laborbetrieb}{52}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Infrastruktur}{52}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Qualifikation}{52}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}Handlungsempfehlungen für das LFP}{53}{subsection.6.4}%
+\contentsline {section}{\numberline {7.}Fazit}{55}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Zusammenfassung}{55}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Ausblick}{56}{subsection.7.2}%
+\contentsline {section}{\nonumberline Literatur}{58}{section*.40}%
+\contentsline {section}{\numberline {A}Verwendete KI-Software}{64}{section.A}%
+\contentsline {section}{\numberline {B}Datenflussstruktur der Dobot-Magician-Extension (Vollansicht)}{64}{section.B}%
+\contentsline {section}{\numberline {C}Küster Omniverse Tutorial -- Reproduzierbarkeitsdokumentation}{66}{section.C}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

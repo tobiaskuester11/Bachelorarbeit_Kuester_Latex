@@ -14,21 +14,31 @@ Konstruktionsmethodik nach der Richtlinienreihe VDI~2221~ff.\ beschreibt~\cite{v
 \subsection{Zeit- und Arbeitsplan}
 Die praktische Umsetzung des Digitalen Zwillings der Maze-Runner-Anlage sowie
 deren Inbetriebnahme wurde im Februar~2026 im Rahmen eines Projektes im Studiengang
-Ingenieurinformatik im Maschinenbau (IIM, im Folgenden IIM-Projekt) aufgenommen.
-Als dieses abgeschlossen war, wurde der Dobot Magician als Digitaler Zwilling
-in NVIDIA Isaac Sim überführt, woraufhin die Bachelorarbeit am 15.~Juni~2026 angemeldet wurde.
+Ingenieurinformatik im Maschinenbau (IIM, im Folgenden IIM-Projekt) begonnen und bis
+Kalenderwoche~20 bearbeitet.
+In diesem Zeitraum wurden die Anforderungen MR-2 bis MR-7 der Maze-Runner-Anlage
+vollständig umgesetzt, darunter die Konvertierung des CAD-Modells, die Anbindung an
+die Netzwerkinfrastruktur der HSRM, die Simulation der Bewegungsachsen sowie die
+Schritt-für-Schritt-Reproduzierbarkeitsdokumentation.
+Aufbauend auf diesen im Vorprojekt erbrachten Leistungen mussten die Anlage sowie der
+anschließend begonnene Digitale Zwilling des Dobot Magician im Rahmen der
+Bachelorarbeit weiterbearbeitet werden, woraufhin die Bachelorarbeit am 15.~Juni~2026
+angemeldet wurde.
 Die Bearbeitungszeit beträgt mindestens acht Wochen, sodass die Abgabe frühestens
 am 10.~August~2026~(KW~33) erfolgen kann, das Kolloquium ist für den
 19.~August~2026~(KW~34) vorgesehen.
 Da eine Vielzahl an Festforderungen termingerecht zu erfüllen ist, schafft der Zeitplan die Grundlage dafür, den Überblick zu behalten, wann welche Aufgaben abgeschlossen sein müssen.
-Abbildung~\ref{fig:gantt} ordnet die Anforderungen aus der in
-Abschnitt~\ref{subsec:anforderungsanalyse} vorgestellten Anforderungsanalyse
-(Tabellen~\ref{tab:anf_mazerunner} und~\ref{tab:anf_dobot}) in einen Zeitplan ein.
+Abbildung~\ref{fig:gantt} ordnet daher ausschließlich die während der Bachelorarbeit
+ab Kalenderwoche~25 noch zu bearbeitenden Anforderungen aus der in
+Kapitel~\ref{subsec:anforderungsanalyse} vorgestellten Anforderungsanalyse
+(Tabellen~\ref{tab:anf_mazerunner} und~\ref{tab:anf_dobot}) in einen Zeitplan ein,
+das im Vorprojekt abgeschlossene IIM-Projekt selbst ist gemäß Prüfungsordnung nicht
+Bestandteil dieses Zeitplans.
 Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderungsanalyse sowie das Kürzel der Bachelorarbeitspakete (BAP).
 
 \begin{figure}[H]
 \centering
-\hspace*{-0.75cm}\resizebox{\dimexpr\linewidth+1.5cm\relax}{!}{%
+\resizebox{\linewidth}{!}{%
 \begin{ganttchart}[
     hgrid,
     vgrid,
@@ -41,31 +51,23 @@ Jeder Balken trägt das Kürzel der zugehörigen Anforderung aus der Anforderung
     group label font=\small\bfseries,
     bar/.append style={fill=gray!35, draw=gray!60},
     group/.append style={fill=black!55, draw=black!70},
-]{1}{29}
-\gantttitle{Februar}{3}\gantttitle{März}{5}\gantttitle{April}{4}\gantttitle{Mai}{5}\gantttitle{Juni}{4}\gantttitle{Juli}{4}\gantttitle{August}{4} \\
-\gantttitle[title label font=\footnotesize\bfseries, title label node/.append style={anchor=east, xshift=-0.1cm}]{Kalenderwoche}{0}\gantttitlelist{6,...,34}{1} \\
-\ganttgroup{Bearbeitung IIM-Projekt (KW\,6--22)}{1}{17} \\
-\ganttbar{MR-1\;\;Gesamte Maze-Runner-Anlage in Betrieb nehmen}{1}{22} \\
-\ganttbar{MR-2\;\;CAD-Modell Maze-Runner in NVIDIA Isaac Sim konvertieren}{1}{2} \\
-\ganttbar{MR-3\;\;Netzwerkinfrastruktur der HSRM für Digital Twin App anpassen}{2}{3} \\
-\ganttbar{MR-4\;\;Bewegungsachsen mit PhysX in NVIDIA Isaac Sim simulieren}{3}{7} \\
-\ganttbar{MR-5\;\;Reale Anlage über Digital Twin App der HSRM steuern}{3}{11} \\
-\ganttbar{MR-6\;\;Digitales Modell bei OPC-UA-Befehl ebenfalls steuern}{3}{11} \\
-\ganttbar{MR-7\;\;Schritt-für-Schritt-Reproduzierbarkeitsdokumentation}{1}{17} \\
-\ganttbar{MR-8\;\;Steuerungswerte der SPS per MQTT empfangen}{10}{17} \\
-\ganttbar{MR-9\;\;Anlage in VR mit Meta Quest~3 demonstrieren}{17}{19} \\
-\ganttbar{DM-1\;\;CAD-Modell Dobot Magician in NVIDIA Isaac Sim konvertieren}{17}{20} \\
-\ganttbar{DM-2\;\;Bidirektionalen Datenfluss via ROS\,2 herstellen}{18}{20} \\
-\ganttbar{DM-3\;\;Pick-and-Place-Szenario in der Simulation ausführen}{19}{21} \\
-\ganttbar{DM-4\;\;Erstellung Digitaler Zwilling dokumentieren}{17}{23} \\
-\ganttgroup{Bearbeitung Bachelorarbeit (KW\,23--33)}{18}{28} \\
-\ganttbar{BAP1\;\;Literaturrecherche, Theoretische Grundlagen}{18}{21} \\
-\ganttbar{BAP2\;\;Anforderungsliste, Methodik, Grundlagen}{20}{22} \\
-\ganttbar{BAP3\;\;Kap.\,4--5: Entwicklung Digitale Zwillinge}{22}{24} \\
-\ganttbar{BAP4\;\;Kap.\,6--7: Potenziale, Fazit und Ausblick}{24}{26} \\
-\ganttbar{BAP5\;\;Validierung, Überarbeitung, Korrekturlesen}{26}{28} \\
-\ganttbar{BAP6\;\;Abgabe}{28}{28} \\
-\ganttbar{BAP7\;\;Kolloquium (19.\,August~2026)}{29}{29}
+]{1}{10}
+\gantttitle{Juni}{2}\gantttitle{Juli}{4}\gantttitle{August}{4} \\
+\gantttitle[title label font=\footnotesize\bfseries, title label node/.append style={anchor=east, xshift=-0.1cm}]{Bearbeitungszeit der Bachelorarbeit in Kalenderwochen}{0}\gantttitlelist{25,...,34}{1} \\
+\ganttbar{MR-1\;\;Inbetriebnahme der gesamten Maze-Runner-Anlage}{1}{2} \\
+\ganttbar{MR-8\;\;Steuerungswerte der SPS per MQTT empfangen}{2}{4} \\
+\ganttbar{MR-9\;\;Anlage in VR mit Meta Quest~3 demonstrieren}{3}{5} \\
+\ganttbar{DM-1\;\;CAD-Modell Dobot Magician in NVIDIA Isaac Sim konvertieren}{1}{2} \\
+\ganttbar{DM-2\;\;Bidirektionalen Datenfluss via pydobot-Bibliothek herstellen}{2}{4} \\
+\ganttbar{DM-3\;\;Pick-and-Place-Szenario in der Simulation ausführen}{4}{6} \\
+\ganttbar{DM-4\;\;Erstellung Digitaler Zwilling dokumentieren}{1}{8} \\
+\ganttbar{BAP1\;\;Literaturrecherche, Theoretische Grundlagen}{1}{3} \\
+\ganttbar{BAP2\;\;Anforderungsliste, Methodik, Grundlagen}{2}{4} \\
+\ganttbar{BAP3\;\;Kap.\,4--5: Entwicklung Digitale Zwillinge}{4}{6} \\
+\ganttbar{BAP4\;\;Kap.\,6--7: Potenziale, Fazit und Ausblick}{6}{8} \\
+\ganttbar{BAP5\;\;Validierung, Überarbeitung, Korrekturlesen}{8}{9} \\
+\ganttbar{BAP6\;\;Abgabe}{9}{9} \\
+\ganttbar{BAP7\;\;Kolloquium (19.\,August~2026)}{10}{10}
 \end{ganttchart}%
 }
 \caption{Zeit- und Arbeitsplan der Bachelorarbeit}
@@ -83,7 +85,7 @@ Vorgehensweise sowie den Zeit- und Arbeitsplan.
 Anschließend erfolgt in Kapitel~\hyperref[sec:entwicklung]{4} die Entwicklung der
 Digitalen Zwillinge beider Anlagen einschließlich Inbetriebnahme.
 Kapitel~\hyperref[sec:ergebnisse]{5} dokumentiert daraufhin die Entwicklungspipeline,
-stellt die entstandene NVIDIA-Isaac-Sim-Extension sowie die Reproduzierbarkeitsdokumentation
+stellt die entstandenen NVIDIA-Isaac-Sim-Extensions sowie die Reproduzierbarkeitsdokumentation
 vor und bewertet beide Lösungen gegenüberstellend.
 Im Weiteren fasst Kapitel~\hyperref[sec:potenziale]{6} Potenziale, Herausforderungen
 und Handlungsempfehlungen zusammen, bevor Kapitel~\hyperref[sec:fazit]{7}

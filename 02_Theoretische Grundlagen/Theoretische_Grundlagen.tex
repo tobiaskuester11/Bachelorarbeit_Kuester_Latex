@@ -31,9 +31,9 @@ wie Abbildung~\ref{fig:vdi5200_phasen} verdeutlicht.
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[trim={30pt 655pt 30pt 70pt},clip,width=1.28\linewidth]{vdi5200_phasenmodell}}
-    \caption{Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1, Bild~1
-        (Quelle: \cite{vdi5200b2}).}
+    \includegraphics[width=\linewidth]{01_Phasenmodell_Fabrikplanung_VDI5200}
+    \caption{Phasenmodell der Fabrikplanung nach VDI~5200 Blatt~1
+        (Quelle: VDI~5200 Blatt~2 \cite{vdi5200b2}, Bild~1).}
     \label{fig:vdi5200_phasen}
 \end{figure}
 
@@ -48,7 +48,7 @@ konkretisiert \cite{vdi4499b2}.
 
 \begin{figure}[H]
     \centering
-    \makebox[\linewidth][c]{\includegraphics[width=1.15\linewidth]{vdi4499_phasenmodell_cropped}}
+    \includegraphics[width=\linewidth]{02_Digitaler_Fabrikbetrieb_Lebenszyklusphasen_VDI4499}
     \caption{Digitaler Fabrikbetrieb in den Lebenszyklusphasen eines Produktionssystems
         (Quelle: VDI~4499 Blatt~2 \cite{vdi4499b2}, Bild~2).}
     \label{fig:vdi4499_phasen}
@@ -71,7 +71,7 @@ Anlage \cite{vdi3693} und unterscheidet dabei verschiedene Modellarten
 Technische Grundlage bilden dabei cyber-physische Produktionssysteme (CPPS), die durch
 bidirektionale Echtzeit-Kopplung zwischen physischer Anlage und digitalem Abbild die
 Voraussetzung für Digitale Zwillinge schaffen \cite{monostori2014}.
-Lechler et al.\ belegen empirisch, dass VIBN die Qualität und Effizienz im Engineering
+Lechler et al.\ zeigen in ihrem Literaturüberblick, dass VIBN die Qualität und Effizienz im Engineering
 steigert, Anlaufzeiten durch frühzeitige Fehlererkennung verkürzt und eine sicherere
 Inbetriebnahme ermöglicht, indem erkannte Fehler bereits vor der realen Inbetriebnahme
 behoben werden \cite{lechler2019}.
@@ -93,6 +93,15 @@ drei Reifegrade \cite{kritzinger2018}.
         Objekt \cite{kritzinger2018}. Veränderungen am physischen Objekt führen
         unmittelbar zu Anpassungen des digitalen Abbildes und umgekehrt.
 \end{itemize}
+Abbildung~\ref{fig:kritzinger_klassifikation} veranschaulicht die drei Reifegrade anhand des jeweiligen Datenflusses zwischen physischem und digitalem Objekt, wobei die gestrichelten Pfeile den manuellen und die durchgezogenen Pfeile den automatisierten Datenfluss kennzeichnen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{03_Kritzinger_Klassifikation_Digitaler_Zwilling}
+    \caption{Datenfluss im Digitalen Modell, im Digitalen Schatten und im Digitalen Zwilling (Quelle: \cite{kritzinger2018}).}
+    \label{fig:kritzinger_klassifikation}
+\end{figure}
+
 Diese Klassifikation bildet den Bewertungsmaßstab für den in den nachfolgenden Kapiteln
 beschriebenen Umsetzungsgrad.
 Sie deckt dabei nicht jede denkbare Datenflussrichtung eigenständig ab.
@@ -106,7 +115,7 @@ Neben der Klassifikation nach Kritzinger et al.\ finden sich in der Literatur we
 Begriffssystematiken, die verwandte, jedoch konzeptuell abweichende Konstrukte
 beschreiben.
 
-Der Begriff des Digitalen Zwillings geht auf Grieves zurück, der das Konzept 2014 als Modell aus physischem Produkt, virtuellem Produkt und einer verbindenden Datenschicht einführte~\cite{grieves2014}.
+Der Begriff des Digitalen Zwillings geht auf Grieves zurück, der das Konzept 2003 als Modell aus physischem Produkt, virtuellem Produkt und einer verbindenden Datenschicht einführte~\cite{grieves2014}.
 Grieves und Vickers unterscheiden darauf aufbauend zwei Ausprägungen des Digitalen Zwillings.
 Der \textbf{Digital Twin Prototype (DTP)} bezeichnet das in der Entwicklungsphase
 entstehende virtuelle Modell, das Anforderungen, ein vollständig annotiertes 3D-Modell,
@@ -147,13 +156,13 @@ Shao et al.\ ordnen Digitale Zwillinge dazu nach ihrem Funktionsumfang in fünf 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Shao_DT_Applications}
+    \includegraphics[width=\linewidth]{04_Shao_Reifegradmodell_Digitaler_Zwilling}
     \caption{Anwendungsstufen Digitaler Zwillinge wachsender Komplexität, von deskriptiv bis intelligent, mit beispielhaften unterstützenden Technologien
-        (Quelle: \cite{shao2023standardized}, Figure~1).}
+        (Quelle: Shao et al.\ \cite{shao2023standardized}, Figure~1).}
     \label{fig:dt_applications}
 \end{figure}
 
-Deskriptive Digitale Zwillinge stellen erfasste Sensordaten dar und beantworten, was am physischen System geschieht. Diagnostische Digitale Zwillinge untersuchen zusätzlich Ursachen von Abweichungen mittels Simulation oder Data-Mining. Prädiktive Digitale Zwillinge sagen anhand von Modellierung und Mustererkennung künftiges Verhalten voraus, etwa den Verschleißzeitpunkt eines Werkzeugs oder Roboters. Präskriptive Digitale Zwillinge leiten daraus optimale Steuerungsparameter ab, während intelligente Digitale Zwillinge diese Steuerung mithilfe künstlicher Intelligenz eigenständig ausführen und sich fortlaufend anpassen~\cite{shao2023standardized}. Diese Einordnung zeigt mögliche Entwicklungsrichtungen auf, in die sich bestehende Digitale Zwillinge im laufenden Betrieb weiterentwickeln lassen und wird in Abschnitt~\ref{sec:potenziale} wieder aufgegriffen.
+Deskriptive Digitale Zwillinge stellen erfasste Sensordaten dar und beantworten, was am physischen System geschieht. Diagnostische Digitale Zwillinge untersuchen zusätzlich Ursachen von Abweichungen mittels Simulation oder Data-Mining. Prädiktive Digitale Zwillinge sagen anhand von Modellierung und Mustererkennung künftiges Verhalten voraus, etwa den Verschleißzeitpunkt eines Werkzeugs oder Roboters. Präskriptive Digitale Zwillinge leiten daraus optimale Steuerungsparameter ab, während intelligente Digitale Zwillinge diese Steuerung mithilfe künstlicher Intelligenz eigenständig ausführen und sich fortlaufend anpassen~\cite{shao2023standardized}. Diese Einordnung zeigt mögliche Entwicklungsrichtungen auf, in die sich bestehende Digitale Zwillinge im laufenden Betrieb weiterentwickeln lassen und wird in Kapitel~\ref{sec:potenziale} wieder aufgegriffen.
 
 \subsection{Digitale Zwillinge im Fertigungskontext}
 Die Klassifikation nach Kritzinger et al.\ beschreibt, in welchem Maß der Datenfluss
@@ -170,7 +179,7 @@ veranschaulicht.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{DT for manufacturing}
+    \includegraphics[width=\linewidth]{05_IoT_Rahmenwerk_ISO23247-1}
     \caption{IoT-Rahmenwerk für Digitale Zwillinge in der Fertigung mit Anwendungsschicht,
         Digitalem Zwilling, Gerätekommunikation und beobachtbaren Fertigungselementen
         (Quelle: ISO/FDIS~23247-1 \cite{iso23247}, Figure~2).}
@@ -199,11 +208,11 @@ ISO~23247-1 legt das übergeordnete Rahmenwerk für Digitale Zwillinge in der Fe
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\linewidth]{{Functional view of the Digital Twin reference model for manufacturing}}
+    \includegraphics[width=\linewidth]{06_Referenzarchitektur_ISO23247-2}
     \caption{Funktionale Referenzarchitektur des Digital-Twin-Frameworks für die Fertigung
         nach ISO~23247-2 mit den vier Entitäten und den beobachtbaren Fertigungselementen
         außerhalb der Frameworkgrenze
-        (Quelle: \cite{iso23247_2}).}
+        (Quelle: ISO~23247-2 \cite{iso23247_2}, Figure~3).}
     \label{fig:iso23247}
 \end{figure}
 
@@ -220,10 +229,10 @@ RAMI~4.0 schließt diese Lücke und
 erweitert die Automatisierungspyramide um die Achsen Lebenszyklus und Wertschöpfung
 sowie sechs Architekturschichten, wie Abbildung~\ref{fig:rami40} verdeutlicht. Es stellt damit den dreidimensionalen Rahmen bereit,
 in dem sich Maschinen, Anlagen, Softwarekomponenten und Digitale Zwillinge einheitlich
-beschreiben und zueinander in Beziehung setzen lassen \cite{dinspec91345}.
+beschreiben und zueinander in Beziehung setzen lassen \cite{plattformi40_rami40_orientierungsrahmen}.
 Das Modell richtet sich an alle Fachabteilungen, die an Industrie-4.0-Systemen
 mitwirken, von Maschinen- und Anlagenbauern über Elektro- und Automatisierungsingenieure
-bis hin zu IT-Architekten und Softwareentwicklern, die für die Cloud-, MES- und
+bis hin zu IT-Architekten und Softwareentwicklern, die für die \mbox{Cloud-,} MES- und
 ERP-Anbindung zuständig sind.
 Ebenso eingebunden sind Inbetriebnehmer vor Ort, Betreiber und Produktionsplaner,
 Systemintegratoren sowie Normungsgremien und Zertifizierungsstellen.
@@ -231,17 +240,17 @@ Um diesen unterschiedlichen Fachabteilungen eine gemeinsame Bezugsgröße zu bie
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{rami.jpg}
+    \includegraphics[width=\linewidth]{07_RAMI40_Referenzarchitekturmodell.jpg}
     \caption{RAMI~4.0: Referenzarchitekturmodell Industrie~4.0 als dreidimensionales
         Schichtenmodell mit den Achsen \enquote{Life Cycle \& Value Stream},
         \enquote{Hierarchy Levels} und \enquote{Layers}
-        (Quelle: DIN~SPEC~91345 \cite{dinspec91345}).}
+        (Quelle: Plattform Industrie 4.0 und ZVEI \cite{plattformi40_rami40_orientierungsrahmen}).}
     \label{fig:rami40}
 \end{figure}
 
 Die grundlegende Einheit des Modells ist das \textbf{Asset}, worunter jedes physische
 oder virtuelle Objekt mit definierten Eigenschaften und Wert verstanden wird, vom
-einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage \cite{dinspec91345}.
+einzelnen Sensor über eine Steuerungseinheit bis zur gesamten Anlage \cite{plattformi40_rami40_orientierungsrahmen}.
 Für jedes Asset kann eine Verwaltungsschale (Asset Administration Shell, AAS) angelegt
 werden, die seine Eigenschaften und Fähigkeiten maschinenlesbar digital repräsentiert. Die AAS wird
 von der Industrial Digital Twin Association (IDTA) standardisiert \cite{idta_aas2025}.
@@ -249,17 +258,17 @@ von der Industrial Digital Twin Association (IDTA) standardisiert \cite{idta_aas
 Die \textbf{Hierarchieachse} übernimmt die Struktur der Automatisierungspyramide mit
 den Ebenen Feldgerät, Steuerungseinheit, Arbeitsstation und Arbeitszelle und ergänzt
 sie um Betrieb sowie Vernetzte Welt, welche übergeordnete Cloud- und IoT-Dienste
-einschließt. Jedes Asset lässt sich einer oder mehreren dieser Ebenen zuordnen \cite{dinspec91345}.
+einschließt. Jedes Asset lässt sich einer oder mehreren dieser Ebenen zuordnen \cite{plattformi40_rami40_orientierungsrahmen}.
 
 In vertikaler Richtung gliedern sechs \textbf{Architekturschichten} jede Hierarchieebene
 und beschreiben, welche Fähigkeiten ein Asset dort bereitstellt. Sie umfassen die Schichten Asset (die physische Komponente selbst),
-Integration, Kommunikation, Information, Funktionen und Geschäftsprozesse \cite{dinspec91345}.
+Integration, Kommunikation, Information, Funktionen und Geschäftsprozesse \cite{plattformi40_rami40_orientierungsrahmen}.
 Kommunikationsstandards wie OPC~UA sind der Kommunikationsschicht zuzuordnen,
 Datenformate wie OpenUSD der Informationsschicht.
 
 Die dritte Achse erfasst den \textbf{Lebenszyklus} eines Assets von der Entwicklung
 über den Betrieb bis zur Außerbetriebnahme und unterscheidet dabei zwischen Typ, dem
-allgemeinen Modell einer Komponente, und Instanz, dem konkreten Exemplar im Einsatz \cite{dinspec91345}.
+allgemeinen Modell einer Komponente, und Instanz, dem konkreten Exemplar im Einsatz \cite{plattformi40_rami40_orientierungsrahmen}.
 Digitale Zwillinge bilden stets Instanzen ab, da sie den aktuellen Zustand einer
 bestimmten physischen Anlage repräsentieren \cite{kritzinger2018}.
 
@@ -286,7 +295,7 @@ Wie eine solche Simulation in NVIDIA Isaac Sim aussieht, zeigt Abbildung~\ref{fi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{BMW_Isaac Sim.jpg}
+    \includegraphics[width=\linewidth]{08_Isaac_Sim_Viewport_RTX_PathTracing.jpg}
     \caption{NVIDIA Isaac Sim Viewport mit aktiviertem RTX Path Tracing. Simultane
         Darstellung unterschiedlicher Verarbeitungszustände in einer USD-Stage
         \cite{bmw_nvidia_2021}}
@@ -310,7 +319,7 @@ Fabrikplanungswerkzeugen unterscheiden.
 Die erste Eigenschaft betrifft die Konnektoreninfrastruktur, über die Omniverse bestehende
 Engineering-Werkzeuge anbindet.
 Sogenannte \emph{Connectors} übersetzen herstellerspezifische Daten in OpenUSD und stellen
-einen bidirektionalen Datenaustausch her, was Anbindungen an CAD-, BIM- und
+einen bidirektionalen Datenaustausch her, was Anbindungen an \mbox{CAD-,} BIM- und
 PLM-Systeme wie Autodesk Revit, Siemens NX und PTC Creo umfasst
 \cite{nvidia_omniverse_connectors}.
 Bestandsmodelle lassen sich auf diese Weise ohne manuellen Konvertierungsaufwand in einer
@@ -373,8 +382,8 @@ Abbildung~\ref{fig:isaac_ecosystem} zeigt diesen Ablauf im Überblick.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{isaac_ecosystem_horizontal_v2}
-    \caption{Trainingspipeline für Roboter im NVIDIA-Omniverse-Ökosystem.}
+    \includegraphics[width=\linewidth]{09_Trainingspipeline_NVIDIA_Omniverse_Oekosystem}
+    \caption{Trainingspipeline für Roboter im NVIDIA-Omniverse-Ökosystem (Eigene Darstellung).}
     \label{fig:isaac_ecosystem}
 \end{figure}
 
@@ -401,7 +410,7 @@ reale Hardware übertragen \cite{nvidia_isaaclab}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\linewidth]{isaac lab.png}
+    \includegraphics[width=0.85\linewidth]{10_Paralleles_Training_Isaac_Lab.png}
     \caption{Paralleles Training von Robotern in NVIDIA Isaac Lab
         \cite{nvidia_isaaclab}}
     \label{fig:isaac_lab}
@@ -422,7 +431,7 @@ abspielt \cite{nvidia_isaacteleoperation,nvidia_groot}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\linewidth]{NVIDIA Cosmos.png}
+    \includegraphics[width=0.85\linewidth]{11_Isaac_TeleOp_GR00T_Bedienablaeufe.png}
     \caption{Erfassen und Übertragen menschlicher Bedienabläufe per VR-Brille
         mit Isaac TeleOp und Isaac GR00T
         \cite{nvidia_isaacteleoperation,nvidia_groot}}
@@ -464,11 +473,12 @@ Wie in Abbildung~\ref{fig:urdf_usd_theorie} gezeigt, referenziert die URDF-Besch
 Der URDF-Importer überführt Links in Xform- und Mesh-Prims und Gelenke in PhysicsJoint-Prims, beispielsweise als Dreh- oder Schubgelenk, unter Übernahme der in der URDF-Beschreibung hinterlegten Parameter.
 Die resultierende USD-Stage enthält damit alle Links und Joints und bildet die Grundlage für Simulation, Weiterbearbeitung und Speicherung der zusammengefügten Baugruppe, wobei Steifigkeit, Dämpfung und Masse anschließend das Beschleunigungsverhalten der Physiksimulation bestimmen und die Links die zugehörigen Kollisionskörper bilden.
 Die so verbundenen Links und Joints bilden dabei zusammen eine \emph{Articulation}, eine PhysX-Abstraktion, die die gesamte kinematische Kette als ein zusammenhängendes physikalisches System simuliert \cite{nvidia_physx}.
+Damit die Physik-Engine die Kette als solche erkennt, muss der Wurzelprim, im Regelfall der Basis-Link des importierten Modells, mit der \emph{ArticulationRootAPI} versehen werden, wodurch alle untergeordneten Gelenke automatisch als Freiheitsgrade der Articulation registriert werden.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{aufbau_digitaler_zwilling_urdf_usd_horizontal}
-    \caption{Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene.}
+    \includegraphics[width=\linewidth]{12_Aufbau_Digitaler_Zwilling_URDF_USD_Theorie}
+    \caption{Aufbau des Digitalen Zwillings von der URDF-Beschreibung zur NVIDIA Isaac Sim Szene (Eigene Darstellung nach Open Robotics~\cite{ros_urdf}).}
     \label{fig:urdf_usd_theorie}
 \end{figure}
 
@@ -526,9 +536,9 @@ Praktisch bedeutet das, dass ein Programm eine HTTP-Anfrage an eine URL sendet, 
 
 \subsubsection{Serielle Kommunikation mit dem Dobot Magician über pydobot und UART}
 Der Steuerungscomputer kann über die Python-Bibliothek \emph{pydobot} seriell über den USB-Anschluss und das Protokoll \emph{Universal Asynchronous Receiver Transmitter} (UART) mit dem Dobot Magician kommunizieren \cite{pydobot_docs}.
-Aus Sicht der Programmierung ruft ein Programm dazu Methoden wie \texttt{get\_pose()} zum Abfragen der aktuellen Position oder \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} zum Anfahren einer Zielposition auf, wobei \emph{pydobot} diese Aufrufe in das jeweilige Kommando übersetzt und die Antwort des Dobot Magician wieder in ein Python-Objekt umwandelt \cite{pydobot_docs}.
+Aus Sicht der Programmierung ruft ein Programm dazu Methoden wie \texttt{get\_pose()} zum Abfragen der aktuellen Position oder \texttt{move\_\allowbreak to\_\allowbreak xyz(MODE\_\allowbreak TYPE.MOVJ, x, y, z, r)} zum Anfahren einer Zielposition auf, wobei \emph{pydobot} diese Aufrufe in das jeweilige Kommando übersetzt und die Antwort des Dobot Magician wieder in ein Python-Objekt umwandelt \cite{pydobot_docs}.
 
 Ruft ein Programm \texttt{get\_pose()} auf, sendet \emph{pydobot} dafür die Bytefolge \texttt{AA AA 02 0A 00 F6}, welche die Kommando-ID~10 für \texttt{GetPose} codiert, worauf der Dobot Magician mit der aktuellen Position des Endeffektors sowie den vier Gelenkwinkeln antwortet \cite{dobot_communication_protocol}.
-Der Aufruf \texttt{move\_to\_xyz(MODE\_TYPE.MOVJ, x, y, z, r)} überträgt entsprechend das Kommando \texttt{SetPTPCmd} (Set-Point-to-Point-Command) mit den Zielkoordinaten und dem gewählten Bewegungsmodus als Parameter und lässt den Dobot Magician die angegebene Position anfahren \cite{pydobot_docs}.
+Der Aufruf \texttt{move\_\allowbreak to\_\allowbreak xyz(MODE\_\allowbreak TYPE.MOVJ, x, y, z, r)} überträgt entsprechend das Kommando \texttt{SetPTPCmd} (Set-Point-to-Point-Command) mit den Zielkoordinaten und dem gewählten Bewegungsmodus als Parameter und lässt den Dobot Magician die angegebene Position anfahren \cite{pydobot_docs}.
 Bei dieser seriellen Kommunikation werden die Bits eines Datenworts nacheinander über eine einzige Leitung übertragen, im Unterschied zur parallelen Übertragung, bei der mehrere Bits gleichzeitig über getrennte Leitungen laufen.
 Der USB-Anschluss des Dobot Magician ist dafür intern über einen CH340-Chip als USB-zu-UART-Wandler mit dessen Steuerungselektronik verbunden \cite{dobot_magician}.
